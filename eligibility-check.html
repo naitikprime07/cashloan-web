@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#03001a">
+  <title>Eligibility Check | CashLoan</title>
+  <meta name="description" content="Answer a few quick questions to see an estimate of the loan you may get, then apply.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="app">
+
+  <header class="top sticky">
+    <a class="back" href="blogs.html" data-history aria-label="Go back">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+    </a>
+    <div class="brand">
+      <span class="brand-name">CashLoan &ndash; Instant Personal Loan</span>
+      <span class="brand-desc">Quick, simple and easy online loans</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-head">
+      <h1 id="eligTitle">Eligibility Check</h1>
+      <p id="eligLead">Answer a few quick questions to see an estimate of the loan you may get.</p>
+    </section>
+
+    <div class="tool" id="eligRoot">
+      <form class="panel" id="eligForm" novalidate>
+        <div class="tfield" id="loanPick" hidden>
+          <div class="tlabel"><span>Which loan?</span></div>
+          <div class="pills" role="radiogroup"><label class="pill-opt"><input type="radio" name="loan" value="personal-loan" autocomplete="off" checked><span>Personal Loan</span></label><label class="pill-opt"><input type="radio" name="loan" value="auto-loan" autocomplete="off"><span>Auto Loan</span></label><label class="pill-opt"><input type="radio" name="loan" value="student-loan" autocomplete="off"><span>Student Loan</span></label><label class="pill-opt"><input type="radio" name="loan" value="business-loan" autocomplete="off"><span>Business Loan</span></label><label class="pill-opt"><input type="radio" name="loan" value="payday-loan" autocomplete="off"><span>Payday Loan</span></label><label class="pill-opt"><input type="radio" name="loan" value="home-loan" autocomplete="off"><span>Home Loan</span></label><label class="pill-opt"><input type="radio" name="loan" value="gold-loan" autocomplete="off"><span>Gold Loan</span></label></div>
+        </div>
+
+        <div class="tfield" id="ageField">
+          <div class="tlabel"><label for="age" id="ageLabel">Your age</label></div>
+          <div class="money"><input id="age" name="age" type="number" inputmode="numeric" min="18" max="70" placeholder="e.g. 30" autocomplete="off"><span>years</span></div>
+        </div>
+
+        <div id="incomeFields">
+          <div class="tfield">
+            <div class="tlabel"><label for="income" id="incomeLabel">Monthly income</label></div>
+            <div class="money"><span>&#8377;</span><input id="income" name="income" type="text" inputmode="numeric" placeholder="e.g. 40,000" autocomplete="off"></div>
+            <p class="hint" id="incomeHint" hidden></p>
+          </div>
+          <div class="tfield">
+            <div class="tlabel"><span><span id="workLabel">Employment type</span> <b class="req" title="Required">*</b></span></div>
+            <button class="select is-empty" type="button" data-key="workKind" data-label="employment type" aria-haspopup="dialog" aria-controls="picker" aria-expanded="false">
+              <span class="select-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7.5" width="18" height="12" rx="2.5"/><path d="M9 7.5V6a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v1.5M3 13h18"/></svg></span>
+              <span class="select-value">Select employment type</span>
+              <span class="chev" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span>
+            </button>
+          </div>
+          <div class="tfield">
+            <div class="tlabel"><label for="emis" id="emisLabel">Loan EMIs you already pay each month</label></div>
+            <div class="money"><span>&#8377;</span><input id="emis" name="emis" type="text" inputmode="numeric" placeholder="0" autocomplete="off"></div>
+          </div>
+          <div class="tfield">
+            <div class="tlabel"><span>Your credit score</span></div>
+            <div class="pills" role="radiogroup"><label class="pill-opt"><input type="radio" name="score" value="?" autocomplete="off" checked><span>Not sure</span></label><label class="pill-opt"><input type="radio" name="score" value="0" autocomplete="off"><span>Below 650</span></label><label class="pill-opt"><input type="radio" name="score" value="650" autocomplete="off"><span>650 to 699</span></label><label class="pill-opt"><input type="radio" name="score" value="700" autocomplete="off"><span>700 to 749</span></label><label class="pill-opt"><input type="radio" name="score" value="750" autocomplete="off"><span>750 or more</span></label></div>
+          </div>
+        </div>
+
+        <div id="goldFields" hidden>
+          <div class="tfield">
+            <div class="tlabel"><label for="grams">Weight of your gold</label></div>
+            <div class="money"><input id="grams" name="grams" type="text" inputmode="decimal" placeholder="e.g. 25" autocomplete="off"><span>grams</span></div>
+            <p class="hint">Only the gold counts. Stones and other parts of the jewellery are not valued.</p>
+          </div>
+          <div class="tfield">
+            <div class="tlabel"><span>Purity of your gold</span></div>
+            <div class="pills" role="radiogroup"><label class="pill-opt"><input type="radio" name="purity" value="18" autocomplete="off"><span>18 carat</span></label><label class="pill-opt"><input type="radio" name="purity" value="22" autocomplete="off" checked><span>22 carat</span></label><label class="pill-opt"><input type="radio" name="purity" value="24" autocomplete="off"><span>24 carat</span></label></div>
+          </div>
+          <div class="tfield">
+            <div class="tlabel"><label for="goldRate">Today&rsquo;s rate of 24 carat gold</label></div>
+            <div class="money"><span>&#8377;</span><input id="goldRate" name="goldRate" type="text" inputmode="numeric" placeholder="Rate per gram" autocomplete="off"><span>/ gram</span></div>
+            <p class="hint">Ask a jeweller or check the rate of the day. Lenders value your gold at the day&rsquo;s rate.</p>
+          </div>
+        </div>
+
+        <div class="tfield">
+          <div class="tlabel"><span>Loan period you want</span></div>
+          <div class="pills" id="periodPills" role="radiogroup"></div>
+        </div>
+
+      </form>
+
+      <div class="action-bar">
+        <p class="form-status err" id="formError" role="alert"></p>
+        <button class="btn" type="submit" form="eligForm">Check eligibility</button>
+      </div>
+
+      <div id="result" aria-live="polite" hidden></div>
+    </div>
+
+    <div class="info">
+      <section>
+        <h2>What lenders look at</h2>
+        <ul class="list ticks">
+          <li>Your income and how steady it is.</li>
+          <li>The EMIs you already pay, compared with your income.</li>
+          <li>Your credit score and repayment history.</li>
+          <li>Your age and the period you want.</li>
+        </ul>
+        <p>Your answers stay in your browser and are not sent anywhere. The result is only an estimate. Each lender has its own rules.</p>
+      </section>
+    </div>
+  </main>
+
+  <dialog id="picker" class="picker" aria-label="Select employment type">
+    <div class="options" role="radiogroup" aria-label="Employment type">
+      <label class="option"><span>Salaried</span><input type="radio" name="workType" value="Salaried" autocomplete="off"></label>
+      <label class="option"><span>Self Employed</span><input type="radio" name="workType" value="Self Employed" autocomplete="off"></label>
+    </div>
+  </dialog>
+
+  <footer class="foot">
+    <nav class="foot-nav" aria-label="Footer">
+      <a href="about.html">About</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <p class="copy">&copy; 2026 CashLoan. All rights reserved.</p>
+  </footer>
+
+</div>
+<script src="js/app.js"></script>
+<script src="js/eligibility.js"></script>
+</body>
+</html>

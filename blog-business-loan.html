@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#03001a">
+  <title>Business Loan | CashLoan</title>
+  <meta name="description" content="Fund stock, equipment or expansion. Learn the main types of business loans and what lenders check.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="app">
+
+  <header class="top sticky">
+    <a class="back" href="blogs.html" data-history aria-label="Go back">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+    </a>
+    <div class="brand">
+      <span class="brand-name">CashLoan &ndash; Instant Personal Loan</span>
+      <span class="brand-desc">Quick, simple and easy online loans</span>
+    </div>
+  </header>
+
+  <article class="post-page" style="--a:46,211,183">
+    <img class="post-hero" src="img/business-loan.svg" width="1200" height="675" alt="Illustration of a shop with a green awning and a rising growth chart">
+    <div class="post">
+      <h1><span class="ttl-name">Business Loan</span><span class="sr">: </span><span class="ttl-sub">Working Capital, Term Loans and MSME Support</span></h1>
+      <p class="lead-p">A business loan gives you money to run or grow your business. You can use it for stock, equipment, staff or to manage cash flow. Lenders look closely at your business income and how long the business has been running.</p>
+    </div>
+
+    <section class="post-emi" id="emi">
+      <h2 class="sec-title"><span class="sec-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3.5" width="14" height="17" rx="3"/><path d="M8.5 8h7M8.5 12h.01M12 12h.01M15.5 12h.01M8.5 16h.01M12 16h.01M15.5 16h.01"/></svg></span>Calculate your EMI</h2>
+      <div class="tool" id="emiRoot" data-amount="1000000" data-rate="14" data-months="36">
+      <p class="prefill-note" id="prefillNote" hidden>Filled in from your eligibility result. You can change anything.</p>
+
+      <div class="panel">
+        <div class="tfield">
+          <div class="tlabel"><label for="amount">Loan amount</label></div>
+          <div class="money"><span>&#8377;</span><input id="amount" type="text" inputmode="numeric" autocomplete="off" value="1,00,000"></div>
+          <input class="range" id="amountRange" type="range" min="10000" max="5000000" step="5000" value="100000" autocomplete="off" aria-label="Loan amount slider">
+          <div class="range-meta"><span>&#8377;10K</span><span>&#8377;50L</span></div>
+          <div class="quick">
+            <button type="button" data-amt="50000">50K</button><button type="button" data-amt="100000">1L</button><button type="button" data-amt="500000">5L</button><button type="button" data-amt="1000000">10L</button><button type="button" data-amt="2500000">25L</button>
+          </div>
+        </div>
+
+        <div class="tfield">
+          <div class="tlabel"><label for="rate">Interest rate (a year)</label></div>
+          <div class="money"><input id="rate" type="number" inputmode="decimal" step="0.1" min="1" max="40" autocomplete="off" value="12"><span>%</span></div>
+          <input class="range" id="rateRange" type="range" min="1" max="40" step="0.1" value="12" autocomplete="off" aria-label="Interest rate slider">
+          <div class="range-meta"><span>1%</span><span>40%</span></div>
+        </div>
+
+        <div class="tfield">
+          <div class="tlabel"><label for="tenure">Loan period</label>
+            <div class="seg small" role="radiogroup" aria-label="Period in">
+              <label><input type="radio" name="unit" id="unitYears" value="years" autocomplete="off"><span>Years</span></label>
+              <label><input type="radio" name="unit" id="unitMonths" value="months" autocomplete="off" checked><span>Months</span></label>
+            </div>
+          </div>
+          <div class="money"><input id="tenure" type="number" inputmode="numeric" step="1" min="3" max="360" autocomplete="off" value="12"><span id="tUnitLabel">period</span></div>
+          <input class="range" id="tenureRange" type="range" min="3" max="360" step="1" value="12" autocomplete="off" aria-label="Loan period slider">
+          <div class="range-meta"><span id="tMin">3 mo</span><span id="tMax">360 mo</span></div>
+        </div>
+      </div>
+
+      <div class="panel result" aria-live="polite">
+        <p class="res-label">Your monthly EMI</p>
+        <p class="emi-big" id="emiBig">&#8377;0</p>
+        <div class="donut-row">
+          <div class="donut">
+            <svg viewBox="0 0 120 120" aria-hidden="true">
+              <circle cx="60" cy="60" r="46" fill="none" stroke="#ff8fd0" stroke-width="14"/>
+              <circle id="donutPrincipal" cx="60" cy="60" r="46" fill="none" stroke-width="14" stroke-dasharray="0 289" transform="rotate(-90 60 60)"/>
+            </svg>
+            <div class="donut-mid"><strong id="donutShare">0%</strong><span>interest</span></div>
+          </div>
+          <ul class="legend">
+            <li><i class="dot p"></i><span>Loan amount</span><b id="rPrincipal">-</b></li>
+            <li><i class="dot i"></i><span>Total interest</span><b id="rInterest">-</b></li>
+          </ul>
+        </div>
+        <dl class="kv">
+          <div><dt>Total interest</dt><dd id="kInterest">-</dd></div>
+          <div><dt>Total you will pay</dt><dd id="kTotal">-</dd></div>
+          <div><dt>Loan period</dt><dd id="kPeriod">-</dd></div>
+        </dl>
+      </div>
+
+      <details class="faq year-table">
+        <summary>Year-wise breakup</summary>
+        <div class="tbl-wrap">
+          <table>
+            <thead><tr><th>Year</th><th>Principal</th><th>Interest</th><th>Balance</th></tr></thead>
+            <tbody id="yearRows"></tbody>
+          </table>
+        </div>
+      </details>
+      </div>
+    </section>
+
+    <div class="post post-mid">
+      <dl class="glance">
+        <div><dt><span class="g-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7h8M8 11h8M8 7h2.5a3 3 0 0 1 0 6H8l6.5 5"/></svg></span>Typical amount</dt><dd>From ₹50,000 to several crores, depending on the business</dd></div>
+        <div><dt><span class="g-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg></span>Tenure</dt><dd>Working capital: 1 year, renewable. Term loans: 1 to 5 years or more</dd></div>
+        <div><dt><span class="g-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5.5c0 4.4-3 7.7-7 9.5-4-1.8-7-5.1-7-9.5V6l7-3z"/><path d="M9 12l2.2 2.2L15.5 10"/></svg></span>Security</dt><dd>Unsecured or secured. Small loans can be collateral-free</dd></div>
+        <div><dt><span class="g-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r=".8"/></svg></span>Best for</dt><dd>Shops, traders, small factories, service firms and startups</dd></div>
+      </dl>
+    </div>
+
+    <div class="info post-body">
+      <section>
+        <h2 class="sec-title"><span class="sec-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 11v5M12 8h.01"/></svg></span>What is a business loan?</h2>
+        <p>A business loan is money lent to a proprietor, partnership, LLP or company for business use. The lender checks how long the business has run, its turnover and profit, your bank statements, your GST returns and your personal credit score.</p>
+        <p>There is more than one kind of business loan. Choosing the right kind matters as much as choosing the right lender.</p>
+        <div class="cards">
+          <div class="card"><h3>Working capital loan or overdraft</h3><p>For day-to-day costs such as stock, salaries and rent. With an overdraft you pay interest only on what you use.</p></div>
+          <div class="card"><h3>Term loan</h3><p>For machinery, a shop or an expansion. You repay fixed EMIs over a set number of years.</p></div>
+          <div class="card"><h3>Mudra loan</h3><p>For micro and small businesses. Categories are Shishu (up to ₹50,000), Kishore (up to ₹5 lakh), Tarun (up to ₹10 lakh) and Tarun Plus (up to ₹20 lakh). Check the latest limits with your bank.</p></div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="sec-title"><span class="sec-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8.5" r="3"/><path d="M3.5 19a5.5 5.5 0 0 1 11 0"/><path d="M16 5.6a3 3 0 0 1 0 5.8M17.5 14a5.5 5.5 0 0 1 3 5"/></svg></span>Who can apply</h2>
+        <ul class="list ticks">
+        <li>Sole proprietors, partnership firms, LLPs and companies.</li>
+        <li>Businesses that have run for 1 to 3 years. Startups have fewer options.</li>
+        <li>A steady turnover that shows in your bank statements and GST returns.</li>
+        <li>A good personal credit score of the owner.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="sec-title"><span class="sec-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3.5h7l4 4V19a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 6 19V5A1.5 1.5 0 0 1 7.5 3.5z"/><path d="M13.5 3.5V8H18M9 13h6M9 16.5h4"/></svg></span>Documents you may need</h2>
+        <ul class="list ticks">
+        <li>KYC of the owner or all partners and directors.</li>
+        <li>Business proof such as Udyam registration, GST registration or a shop and establishment licence.</li>
+        <li>Bank statements for the last 6 to 12 months.</li>
+        <li>Income tax returns and financial statements for the last 2 years.</li>
+        <li>GST returns, and property papers if the loan is secured.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="sec-title"><span class="sec-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6h11M9 12h11M9 18h11"/><path d="M4 6l1.2 1.2L7 5.4M4 12l1.2 1.2L7 11.4M4 18l1.2 1.2L7 17.4"/></svg></span>How to apply</h2>
+        <ol class="steps">
+          <li><h3>Decide the purpose and the amount</h3><p>Write down what the money will be used for and how it will earn back the cost.</p></li>
+          <li><h3>Pick the right type of loan</h3><p>Use working capital for daily needs and a term loan for assets that last.</p></li>
+          <li><h3>Check your credit reports</h3><p>Look at both your business and your personal credit report and fix any errors.</p></li>
+          <li><h3>Organise your documents</h3><p>Keep bank statements, returns and registrations in order.</p></li>
+          <li><h3>Compare lenders and schemes</h3><p>Ask about government schemes such as Mudra and credit guarantee schemes that can allow loans without collateral for eligible MSMEs.</p></li>
+          <li><h3>Apply and get evaluated</h3><p>The lender may visit your shop or office and ask questions about your business.</p></li>
+          <li><h3>Use the funds as planned</h3><p>Use the money only for the stated purpose and keep proof of spending.</p></li>
+        </ol>
+      </section>
+
+      <section>
+        <h2 class="sec-title"><span class="sec-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2V16h5v-.1c0-.8.4-1.5 1-2A6 6 0 0 0 12 3z"/></svg></span>Smart tips before you borrow</h2>
+        <div class="tint-card">
+          <ul class="list ticks">
+        <li>Keep business and personal bank accounts separate.</li>
+        <li>File your GST and income tax returns on time. They are the main proof of your income.</li>
+        <li>Match the loan period to the purpose. Use a short loan for stock and a longer one for machinery.</li>
+        <li>Keep EMIs at a level your cash flow can carry, even in slow months.</li>
+        <li>Ask about an overdraft or credit line if your needs change from month to month.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="sec-title"><span class="sec-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4l9 15.5H3L12 4z"/><path d="M12 10v4M12 17h.01"/></svg></span>Mistakes to avoid</h2>
+        <div class="tint-card warn">
+          <ul class="list cross">
+        <li>Using a short-term loan to buy long-term assets.</li>
+        <li>Mixing personal and business money.</li>
+        <li>Not keeping a cash cushion for slow months.</li>
+        <li>Skipping the fine print on fees and personal guarantees.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="sec-title"><span class="sec-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M9.6 9.5a2.5 2.5 0 1 1 3.6 2.2c-.7.4-1.2.9-1.2 1.8M12 16.5h.01"/></svg></span>Common questions</h2>
+        <details class="faq">
+          <summary>Can a new business get a loan?</summary>
+          <p>It is harder, since most lenders like to see 1 to 3 years of records. Government schemes, smaller loans and lenders that accept a co-applicant can help a new business.</p>
+        </details>
+        <details class="faq">
+          <summary>Do I need collateral?</summary>
+          <p>Not always. Small loans can be unsecured, and some MSME loans are covered by a credit guarantee. Bigger loans usually need security.</p>
+        </details>
+        <details class="faq">
+          <summary>What is a business overdraft?</summary>
+          <p>It is a limit on your current account. You can draw money when needed and pay interest only on the amount you use.</p>
+        </details>
+      </section>
+
+      <section>
+        <h2 class="sec-title"><span class="sec-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.5"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.5"/></svg></span>More loans</h2>
+        <div class="related">
+          <a href="eligibility-check.html?loan=personal-loan" style="--a:166,107,255"><img src="img/personal-loan.svg" width="1200" height="675" alt="" loading="lazy"><span class="rel-text"><strong>Personal Loan</strong><span>Quick cash for any personal need</span></span><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></span></a>
+          <a href="eligibility-check.html?loan=gold-loan" style="--a:255,207,92"><img src="img/gold-loan.svg" width="1200" height="675" alt="" loading="lazy"><span class="rel-text"><strong>Gold Loan</strong><span>Quick cash against your gold</span></span><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></span></a>
+          <a href="eligibility-check.html?loan=home-loan" style="--a:255,122,144"><img src="img/home-loan.svg" width="1200" height="675" alt="" loading="lazy"><span class="rel-text"><strong>Home Loan</strong><span>Buy, build or renovate a home</span></span><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></span></a>
+        </div>
+      </section>
+    </div>
+  </article>
+
+  <div class="page-cta"><a class="btn ghost" href="blogs.html">All loans</a></div>
+
+  <footer class="foot">
+    <nav class="foot-nav" aria-label="Footer">
+      <a href="about.html">About</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <p class="copy">&copy; 2026 CashLoan. All rights reserved.</p>
+  </footer>
+
+</div>
+<script src="js/app.js"></script>
+<script src="js/emi.js"></script>
+</body>
+</html>

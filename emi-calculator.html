@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#03001a">
+  <title>EMI Calculator | CashLoan</title>
+  <meta name="description" content="Work out your monthly EMI, total interest and total payment for any loan amount, interest rate and period.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="app">
+
+  <header class="top sticky">
+    <a class="back" href="blogs.html" data-history aria-label="Go back">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+    </a>
+    <div class="brand">
+      <span class="brand-name">CashLoan &ndash; Instant Personal Loan</span>
+      <span class="brand-desc">Quick, simple and easy online loans</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-head">
+      <h1>EMI Calculator</h1>
+      <p>Set the amount, rate and period to see what you would pay every month.</p>
+    </section>
+
+    <div class="tool" id="emiRoot">
+      <p class="prefill-note" id="prefillNote" hidden>Filled in from your choices. You can change anything.</p>
+
+      <div class="panel">
+        <div class="tfield">
+          <div class="tlabel"><label for="amount">Loan amount</label></div>
+          <div class="money"><span>&#8377;</span><input id="amount" type="text" inputmode="numeric" autocomplete="off" value="1,00,000"></div>
+          <input class="range" id="amountRange" type="range" min="10000" max="5000000" step="5000" value="100000" autocomplete="off" aria-label="Loan amount slider">
+          <div class="range-meta"><span>&#8377;10K</span><span>&#8377;50L</span></div>
+          <div class="quick">
+            <button type="button" data-amt="50000">50K</button><button type="button" data-amt="100000">1L</button><button type="button" data-amt="500000">5L</button><button type="button" data-amt="1000000">10L</button><button type="button" data-amt="2500000">25L</button>
+          </div>
+        </div>
+
+        <div class="tfield">
+          <div class="tlabel"><label for="rate">Interest rate (a year)</label></div>
+          <div class="money"><input id="rate" type="number" inputmode="decimal" step="0.1" min="1" max="40" autocomplete="off" value="12"><span>%</span></div>
+          <input class="range" id="rateRange" type="range" min="1" max="40" step="0.1" value="12" autocomplete="off" aria-label="Interest rate slider">
+          <div class="range-meta"><span>1%</span><span>40%</span></div>
+        </div>
+
+        <div class="tfield">
+          <div class="tlabel"><label for="tenure">Loan period</label>
+            <div class="seg small" role="radiogroup" aria-label="Period in">
+              <label><input type="radio" name="unit" id="unitYears" value="years" autocomplete="off"><span>Years</span></label>
+              <label><input type="radio" name="unit" id="unitMonths" value="months" autocomplete="off" checked><span>Months</span></label>
+            </div>
+          </div>
+          <div class="money"><input id="tenure" type="number" inputmode="numeric" step="1" min="3" max="360" autocomplete="off" value="12"><span id="tUnitLabel">period</span></div>
+          <input class="range" id="tenureRange" type="range" min="3" max="360" step="1" value="12" autocomplete="off" aria-label="Loan period slider">
+          <div class="range-meta"><span id="tMin">3 mo</span><span id="tMax">360 mo</span></div>
+        </div>
+      </div>
+
+      <div class="panel result" aria-live="polite">
+        <p class="res-label">Your monthly EMI</p>
+        <p class="emi-big" id="emiBig">&#8377;0</p>
+        <div class="donut-row">
+          <div class="donut">
+            <svg viewBox="0 0 120 120" aria-hidden="true">
+              <circle cx="60" cy="60" r="46" fill="none" stroke="#ff8fd0" stroke-width="14"/>
+              <circle id="donutPrincipal" cx="60" cy="60" r="46" fill="none" stroke-width="14" stroke-dasharray="0 289" transform="rotate(-90 60 60)"/>
+            </svg>
+            <div class="donut-mid"><strong id="donutShare">0%</strong><span>interest</span></div>
+          </div>
+          <ul class="legend">
+            <li><i class="dot p"></i><span>Loan amount</span><b id="rPrincipal">-</b></li>
+            <li><i class="dot i"></i><span>Total interest</span><b id="rInterest">-</b></li>
+          </ul>
+        </div>
+        <dl class="kv">
+          <div><dt>Total interest</dt><dd id="kInterest">-</dd></div>
+          <div><dt>Total you will pay</dt><dd id="kTotal">-</dd></div>
+          <div><dt>Loan period</dt><dd id="kPeriod">-</dd></div>
+        </dl>
+      </div>
+
+      <details class="faq year-table">
+        <summary>Year-wise breakup</summary>
+        <div class="tbl-wrap">
+          <table>
+            <thead><tr><th>Year</th><th>Principal</th><th>Interest</th><th>Balance</th></tr></thead>
+            <tbody id="yearRows"></tbody>
+          </table>
+        </div>
+      </details>
+
+      <div class="btn-row"><a class="btn ghost" href="eligibility-check.html">Check how much you may get</a></div>
+    </div>
+
+    <div class="info">
+      <section>
+        <h2>How the EMI is worked out</h2>
+        <div class="formula">EMI = P &times; r &times; (1 + r)<sup>n</sup> &divide; ((1 + r)<sup>n</sup> &minus; 1)<br><span style="color:var(--muted)">P = loan amount, r = monthly interest rate (yearly rate &divide; 12), n = number of months</span></div>
+        <p>The figures are an illustration. The real EMI, rate and fees such as the processing fee depend on the lender.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="foot">
+    <nav class="foot-nav" aria-label="Footer">
+      <a href="about.html">About</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <p class="copy">&copy; 2026 CashLoan. All rights reserved.</p>
+  </footer>
+
+</div>
+<script src="js/app.js"></script>
+<script src="js/emi.js"></script>
+</body>
+</html>

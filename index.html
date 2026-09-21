@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#03001a">
+  <title>Select Repayment Period | CashLoan</title>
+  <meta name="description" content="Choose how long you'd like to repay your cash loan and learn how the repayment period affects your EMI.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="app">
+
+  <section class="screen has-art">
+
+    <header class="top">
+      <div class="brand">
+        <span class="brand-name">CashLoan &ndash; Instant Personal Loan</span>
+        <span class="brand-desc">Quick, simple and easy online loans</span>
+      </div>
+    </header>
+    <svg class="hero-art icon-cluster" viewBox="0 0 130 110" aria-hidden="true">
+      <defs><linearGradient id="ic0" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#c9a3ff"/><stop offset="1" stop-color="#6a3fd6"/></linearGradient><linearGradient id="ic1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6fd0ff"/><stop offset="1" stop-color="#2367d1"/></linearGradient><linearGradient id="ic2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffe9a3"/><stop offset="1" stop-color="#e3a12c"/></linearGradient><radialGradient id="icG" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#8a4de0" stop-opacity=".5"/><stop offset="1" stop-color="#8a4de0" stop-opacity="0"/></radialGradient></defs>
+      <circle cx="65" cy="56" r="56" fill="url(#icG)"/>
+      <g transform="translate(38 42) rotate(-10)">
+        <rect x="-23" y="-23" width="46" height="46" rx="14" fill="url(#ic0)"/>
+        <rect x="-23" y="-23" width="46" height="46" rx="14" fill="none" stroke="#fff" stroke-opacity=".35" stroke-width="1.5"/>
+        <g fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><rect x="-10" y="-8" width="20" height="18" rx="4"/><path d="M-10 -2H10M-5 -12V-6M5 -12V-6"/></g><circle cx="0" cy="4.5" r="1.8" fill="#fff"/>
+      </g>
+      <g transform="translate(92 34) rotate(9)">
+        <rect x="-23" y="-23" width="46" height="46" rx="14" fill="url(#ic1)"/>
+        <rect x="-23" y="-23" width="46" height="46" rx="14" fill="none" stroke="#fff" stroke-opacity=".35" stroke-width="1.5"/>
+        <g fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle r="10.5"/><path d="M0 -5V0L4.5 3"/></g>
+      </g>
+      <g transform="translate(66 82) rotate(-5)">
+        <rect x="-23" y="-23" width="46" height="46" rx="14" fill="url(#ic2)"/>
+        <rect x="-23" y="-23" width="46" height="46" rx="14" fill="none" stroke="#fff" stroke-opacity=".45" stroke-width="1.5"/>
+        <text x="0" y="9" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="26" fill="#8a5606">&#8377;</text>
+      </g>
+      <path d="M118 10q0 6 6 6q-6 0-6 6q0-6-6-6q6 0 6-6z" fill="#ffd66b"/>
+      <path d="M12 92q0 5 5 5q-5 0-5 5q0-5-5-5q5 0 5-5z" fill="#c9b4ff"/>
+    </svg>
+
+    <h1>Select Your<br>Repayment Period.</h1>
+    <p class="lead">Choose how long you'd like to repay</p>
+    <p class="sub">Get personalised loan recommendations based on your profile, financial needs, eligibility, and preferred repayment options.</p>
+
+    <button class="select is-empty" type="button" data-key="period" data-label="repayment period" aria-haspopup="dialog" aria-controls="picker" aria-expanded="false">
+      <span class="select-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15" rx="3"/><path d="M8 3v4M16 3v4M3.5 10h17"/></svg></span>
+      <span class="select-value">Select repayment period</span>
+      <span class="chev" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span>
+    </button>
+
+    <div class="cta"><p class="field-error" id="fieldError" role="alert"></p><a class="btn" href="loan-amount.html">Next</a></div>
+  </section>
+
+  <div class="info">
+    <section>
+      <p class="eyebrow">Repayment period</p>
+      <h2>How to pick the right repayment period</h2>
+      <p>Your repayment period, also called tenure, is the time you take to pay back a loan along with interest. It decides how big your monthly EMI is and how much interest you pay in total.</p>
+      <div class="cards two">
+        <div class="card"><h3>Shorter period</h3><p>Higher EMI, lower total interest. You become debt-free sooner.</p></div>
+        <div class="card"><h3>Longer period</h3><p>Lower EMI, higher total interest. Easier on your monthly budget.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Which period suits which need?</h2>
+      <dl class="rows">
+        <div><dt>06 - 12 month</dt><dd>Small, urgent needs such as medical bills, repairs or a short cash gap.</dd></div>
+        <div><dt>01 - 03 Year</dt><dd>Personal expenses like gadgets, travel or family functions.</dd></div>
+        <div><dt>03 - 05 Year</dt><dd>Mid-size needs such as home renovation, a vehicle or business working capital.</dd></div>
+        <div><dt>05 - 10 Year</dt><dd>Larger loans for a car, education or business expansion.</dd></div>
+        <div><dt>10+ Year</dt><dd>Very large loans, mainly home loans.</dd></div>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Tips before you decide</h2>
+      <ul class="list">
+        <li>Keep your total monthly EMIs comfortably within your income. Many lenders prefer them to stay under 40&ndash;50% of monthly income.</li>
+        <li>Pick the shortest period you can afford so you pay less interest overall.</li>
+        <li>Check whether the lender allows part-payment or early closure, and what charges apply.</li>
+        <li>Match the period to how long you will actually need the money. Don't stretch it only to get a smaller EMI.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Common questions</h2>
+      <details class="faq">
+        <summary>What is the difference between EMI and tenure?</summary>
+        <p>EMI (Equated Monthly Instalment) is the fixed amount you pay every month. Tenure is how many months or years you keep paying it.</p>
+      </details>
+      <details class="faq">
+        <summary>Does a longer period cost more?</summary>
+        <p>Yes. A longer period lowers each EMI, but interest is charged for more months, so the total you repay is higher.</p>
+      </details>
+      <details class="faq">
+        <summary>Can I repay my loan earlier?</summary>
+        <p>Many lenders allow part-payment or early closure, sometimes with a fee. Always confirm this in the loan terms before you accept.</p>
+      </details>
+    </section>
+  </div>
+
+  <footer class="foot">
+    <nav class="foot-nav" aria-label="Footer">
+      <a href="about.html">About</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <p class="copy">&copy; 2026 CashLoan. All rights reserved.</p>
+  </footer>
+
+  <dialog id="picker" class="picker" aria-label="Select repayment period">
+    <div class="options" role="radiogroup" aria-label="Repayment period">
+      <label class="option"><span>06 - 12 month</span><input type="radio" name="period" value="06 - 12 month" autocomplete="off"></label>
+      <label class="option"><span>01 - 03 Year</span><input type="radio" name="period" value="01 - 03 Year" autocomplete="off"></label>
+      <label class="option"><span>03 - 05 Year</span><input type="radio" name="period" value="03 - 05 Year" autocomplete="off"></label>
+      <label class="option"><span>05 - 10 Year</span><input type="radio" name="period" value="05 - 10 Year" autocomplete="off"></label>
+      <label class="option"><span>10+ Year</span><input type="radio" name="period" value="10+ Year" autocomplete="off"></label>
+    </div>
+  </dialog>
+
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>

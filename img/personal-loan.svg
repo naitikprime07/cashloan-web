@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="Personal loan illustration: a wallet with coins">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1d1250"/><stop offset="1" stop-color="#05021f"/></linearGradient>
+  <radialGradient id="glow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#a66bff" stop-opacity=".5"/><stop offset="1" stop-color="#a66bff" stop-opacity="0"/></radialGradient>
+  <pattern id="dots" width="34" height="34" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="1.6" fill="#fff" opacity=".09"/></pattern>
+  <linearGradient id="acc" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#a66bff"/><stop offset="1" stop-color="#5b2fb8"/></linearGradient>
+  <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffe9a3"/><stop offset="1" stop-color="#e3a12c"/></linearGradient>
+  <linearGradient id="goldbar" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffeaa6"/><stop offset="1" stop-color="#dc9a25"/></linearGradient>
+  <linearGradient id="lav" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f4ecff"/><stop offset="1" stop-color="#b79cf2"/></linearGradient>
+</defs>
+<rect width="1200" height="675" fill="url(#bg)"/>
+<circle cx="600" cy="345" r="360" fill="url(#glow)"/>
+<rect width="1200" height="675" fill="url(#dots)"/>
+<ellipse cx="600" cy="565" rx="330" ry="22" fill="#000" opacity=".32"/>
+
+<g>
+  <circle cx="500" cy="235" r="56" fill="url(#gold)"/>
+  <circle cx="500" cy="235" r="43.7" fill="none" stroke="#b9780f" stroke-opacity=".55" stroke-width="3.4"/>
+  <text x="500" y="255.2" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="56" fill="#8a5606">&#8377;</text>
+</g><g>
+  <circle cx="610" cy="190" r="56" fill="url(#gold)"/>
+  <circle cx="610" cy="190" r="43.7" fill="none" stroke="#b9780f" stroke-opacity=".55" stroke-width="3.4"/>
+  <text x="610" y="210.2" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="56" fill="#8a5606">&#8377;</text>
+</g><g>
+  <circle cx="715" cy="240" r="50" fill="url(#gold)"/>
+  <circle cx="715" cy="240" r="39.0" fill="none" stroke="#b9780f" stroke-opacity=".55" stroke-width="3.0"/>
+  <text x="715" y="258.0" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="50" fill="#8a5606">&#8377;</text>
+</g>
+<rect x="420" y="255" width="210" height="70" rx="12" fill="url(#lav)" transform="rotate(-7 525 290)"/>
+<rect x="360" y="285" width="480" height="255" rx="40" fill="#5b2fb8"/>
+<rect x="360" y="300" width="480" height="240" rx="40" fill="url(#acc)"/>
+<rect x="360" y="300" width="480" height="30" rx="15" fill="#fff" opacity=".12"/>
+<rect x="680" y="370" width="210" height="110" rx="34" fill="#2a1466"/>
+<rect x="680" y="370" width="210" height="110" rx="34" fill="none" stroke="#fff" stroke-opacity=".18" stroke-width="3"/>
+<circle cx="742" cy="425" r="19" fill="url(#gold)"/>
+<path d="M330 210Q330 230 350 230Q330 230 330 250Q330 230 310 230Q330 230 330 210Z" fill="#fff" opacity="0.8"/><path d="M905 204Q905 230 931 230Q905 230 905 256Q905 230 879 230Q905 230 905 204Z" fill="#ffd66b" opacity="0.9"/><path d="M930 484Q930 500 946 500Q930 500 930 516Q930 500 914 500Q930 500 930 484Z" fill="#fff" opacity="0.7"/><path d="M300 446Q300 460 314 460Q300 460 300 474Q300 460 286 460Q300 460 300 446Z" fill="#c9b4ff" opacity="0.8"/>
+
+</svg>

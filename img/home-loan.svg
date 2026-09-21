@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" role="img" aria-label="Home loan illustration: a house with a key">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1d1250"/><stop offset="1" stop-color="#05021f"/></linearGradient>
+  <radialGradient id="glow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#ff7a90" stop-opacity=".5"/><stop offset="1" stop-color="#ff7a90" stop-opacity="0"/></radialGradient>
+  <pattern id="dots" width="34" height="34" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="1.6" fill="#fff" opacity=".09"/></pattern>
+  <linearGradient id="acc" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff7a90"/><stop offset="1" stop-color="#c2304d"/></linearGradient>
+  <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffe9a3"/><stop offset="1" stop-color="#e3a12c"/></linearGradient>
+  <linearGradient id="goldbar" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffeaa6"/><stop offset="1" stop-color="#dc9a25"/></linearGradient>
+  <linearGradient id="lav" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f4ecff"/><stop offset="1" stop-color="#b79cf2"/></linearGradient>
+</defs>
+<rect width="1200" height="675" fill="url(#bg)"/>
+<circle cx="600" cy="345" r="360" fill="url(#glow)"/>
+<rect width="1200" height="675" fill="url(#dots)"/>
+<ellipse cx="600" cy="565" rx="330" ry="22" fill="#000" opacity=".32"/>
+
+<rect x="716" y="215" width="46" height="90" rx="6" fill="#a02745"/>
+<rect x="410" y="330" width="380" height="212" rx="10" fill="#ffe3e8"/>
+<polygon points="380,352 600,170 820,352 790,352 600,196 410,352" fill="#c2304d"/>
+<polygon points="360,360 600,160 840,360" fill="url(#acc)"/>
+<polygon points="600,160 840,360 600,360" fill="#000" opacity=".12"/>
+<circle cx="600" cy="285" r="26" fill="#ffe3e8"/><circle cx="600" cy="285" r="17" fill="#2b2a5e"/>
+<rect x="566" y="416" width="72" height="126" rx="12" fill="#7a2b45"/><circle cx="620" cy="482" r="6" fill="#ffd66b"/>
+<rect x="446" y="392" width="84" height="76" rx="8" fill="#2b2a5e"/><rect x="674" y="392" width="84" height="76" rx="8" fill="#2b2a5e"/>
+<g stroke="#ffe3e8" stroke-width="5"><line x1="488" y1="392" x2="488" y2="468"/><line x1="446" y1="430" x2="530" y2="430"/><line x1="716" y1="392" x2="716" y2="468"/><line x1="674" y1="430" x2="758" y2="430"/></g>
+<circle cx="345" cy="520" r="38" fill="#2ea36f"/><circle cx="385" cy="532" r="30" fill="#3bc487"/><circle cx="852" cy="526" r="30" fill="#2ea36f"/>
+<g fill="none" stroke="#ffd66b" stroke-width="11" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="915" cy="290" r="26"/><path d="M934 309 L992 367"/><path d="M968 343 L986 325"/><path d="M982 357 L1000 339"/>
+</g>
+<g>
+  <circle cx="285" cy="300" r="42" fill="url(#gold)"/>
+  <circle cx="285" cy="300" r="32.8" fill="none" stroke="#b9780f" stroke-opacity=".55" stroke-width="2.5"/>
+  <text x="285" y="315.1" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="42" fill="#8a5606">&#8377;</text>
+</g>
+<path d="M300 190Q300 210 320 210Q300 210 300 230Q300 210 280 210Q300 210 300 190Z" fill="#fff" opacity="0.85"/><path d="M1030 214Q1030 230 1046 230Q1030 230 1030 246Q1030 230 1014 230Q1030 230 1030 214Z" fill="#ffc2cd" opacity="0.9"/><path d="M240 417Q240 430 253 430Q240 430 240 443Q240 430 227 430Q240 430 240 417Z" fill="#ffc2cd" opacity="0.8"/>
+
+</svg>

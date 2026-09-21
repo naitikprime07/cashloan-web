@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#03001a">
+  <title>Select Loan Type | CashLoan</title>
+  <meta name="description" content="Select your desired loan type and understand how personal, auto, student, business, payday, home and gold loans differ.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="app">
+
+  <section class="screen has-art">
+
+    <header class="top">
+      <a class="back" href="employment-type.html" aria-label="Go back">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+      </a>
+      <div class="brand">
+        <span class="brand-name">CashLoan &ndash; Instant Personal Loan</span>
+        <span class="brand-desc">Quick, simple and easy online loans</span>
+      </div>
+    </header>
+    <svg class="hero-art icon-cluster" viewBox="0 0 130 110" aria-hidden="true">
+      <defs>
+        <linearGradient id="liA" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff9aab"/><stop offset="1" stop-color="#d8385a"/></linearGradient>
+        <linearGradient id="liB" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6fd0ff"/><stop offset="1" stop-color="#2367d1"/></linearGradient>
+        <linearGradient id="liC" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffe9a3"/><stop offset="1" stop-color="#e3a12c"/></linearGradient>
+        <radialGradient id="liG" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#8a4de0" stop-opacity=".5"/><stop offset="1" stop-color="#8a4de0" stop-opacity="0"/></radialGradient>
+      </defs>
+      <circle cx="65" cy="56" r="56" fill="url(#liG)"/>
+      <g transform="translate(38 42) rotate(-10)">
+        <rect x="-23" y="-23" width="46" height="46" rx="14" fill="url(#liA)"/>
+        <rect x="-23" y="-23" width="46" height="46" rx="14" fill="none" stroke="#fff" stroke-opacity=".35" stroke-width="1.5"/>
+        <g fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M-11 2L0 -9L11 2"/><path d="M-7 0V10H7V0"/><path d="M-2.5 10V4H2.5V10"/></g>
+      </g>
+      <g transform="translate(92 34) rotate(9)">
+        <rect x="-23" y="-23" width="46" height="46" rx="14" fill="url(#liB)"/>
+        <rect x="-23" y="-23" width="46" height="46" rx="14" fill="none" stroke="#fff" stroke-opacity=".35" stroke-width="1.5"/>
+        <g fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M-12 5V0Q-12 -2 -10 -3L-7 -8H7L10 -3Q12 -2 12 0V5Z"/><path d="M-7 -3H7"/></g>
+        <circle cx="-6.5" cy="6.5" r="3" fill="#fff"/><circle cx="6.5" cy="6.5" r="3" fill="#fff"/>
+      </g>
+      <g transform="translate(66 82) rotate(-5)">
+        <rect x="-23" y="-23" width="46" height="46" rx="14" fill="url(#liC)"/>
+        <rect x="-23" y="-23" width="46" height="46" rx="14" fill="none" stroke="#fff" stroke-opacity=".45" stroke-width="1.5"/>
+        <text x="0" y="9" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="26" fill="#8a5606">&#8377;</text>
+      </g>
+      <path d="M118 10q0 6 6 6q-6 0-6 6q0-6-6-6q6 0 6-6z" fill="#ffd66b"/>
+      <path d="M12 92q0 5 5 5q-5 0-5 5q0-5-5-5q5 0 5-5z" fill="#c9b4ff"/>
+    </svg>
+
+    <h1>Select Your<br>Desired Loan Type</h1>
+    <p class="lead">Select your desired loan type and continue</p>
+    <p class="sub">Find the right loan amount for your needs and plan repayments that fit comfortably within your budget.</p>
+
+    <button class="select is-empty" type="button" data-key="loanType" data-label="loan type" aria-haspopup="dialog" aria-controls="picker" aria-expanded="false">
+      <span class="select-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="2.3"/><circle cx="16" cy="16" r="2.3"/><path d="M17 6.5L7 17.5"/></svg></span>
+      <span class="select-value">Select loan type</span>
+      <span class="chev" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span>
+    </button>
+
+    <div class="cta"><p class="field-error" id="fieldError" role="alert"></p><a class="btn" href="proceed.html">Next</a></div>
+  </section>
+
+  <div class="info">
+    <section>
+      <p class="eyebrow">Loan types</p>
+      <h2>Understand each loan type before you choose</h2>
+      <p>Every loan is built for a different purpose, with its own amount, period and interest rate. Picking the right type helps you avoid paying for features you don't need.</p>
+      <div class="cards">
+        <div class="card"><h3>Personal Loan</h3><p>For any personal need such as medical costs, a wedding or travel. Usually unsecured, so no collateral is needed.</p><p class="meta">Typical period: 1 to 5 years</p></div>
+        <div class="card"><h3>Auto Loan</h3><p>To buy a new or used vehicle. The vehicle acts as security until the loan is fully repaid.</p><p class="meta">Typical period: 1 to 7 years</p></div>
+        <div class="card"><h3>Student Loan</h3><p>For tuition, hostel, books and other course costs. Repayment often starts only after the course ends.</p><p class="meta">Period: course duration plus repayment years</p></div>
+        <div class="card"><h3>Business Loan</h3><p>For working capital, stock, equipment or expansion. Lenders check your business income and how long it has been running.</p><p class="meta">Typical period: 1 to 5 years</p></div>
+        <div class="card"><h3>Payday Loan</h3><p>A small short-term loan that you repay from your next salary. It is quick to get, but the cost is high, so use it only in a real emergency.</p><p class="meta">Typical period: 1 to 3 months</p></div>
+        <div class="card"><h3>Home Loan</h3><p>To buy, build or renovate a home. The property is the security, with long periods and usually lower interest rates.</p><p class="meta">Typical period: up to 30 years</p></div>
+        <div class="card"><h3>Gold Loan</h3><p>Borrow against your gold jewellery or coins. It is quick to get, with little paperwork.</p><p class="meta">Typical period: 3 months to 3 years</p></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Secured vs unsecured</h2>
+      <div class="cards two">
+        <div class="card"><h3>Secured</h3><p>Backed by an asset like a house or vehicle. Usually lower rates and longer periods.</p></div>
+        <div class="card"><h3>Unsecured</h3><p>No asset needed. Approval depends on income and credit score, and rates are usually higher.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Choosing wisely</h2>
+      <ul class="list">
+        <li>Match the loan type to your purpose. A dedicated loan often has better terms than a general one.</li>
+        <li>Compare the total cost, not just the EMI. Look at interest, processing fee and other charges.</li>
+        <li>Check what happens if you repay early or miss a payment.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Common questions</h2>
+      <details class="faq">
+        <summary>Can I use a personal loan for anything?</summary>
+        <p>Usually yes for genuine personal needs, though some lenders do not allow it for investments or speculation. Check the terms.</p>
+      </details>
+      <details class="faq">
+        <summary>Which loan type has the lowest interest?</summary>
+        <p>Secured loans such as home and auto loans are generally cheaper than unsecured ones, but the rate also depends on the lender and your profile.</p>
+      </details>
+    </section>
+  </div>
+
+  <footer class="foot">
+    <nav class="foot-nav" aria-label="Footer">
+      <a href="about.html">About</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <p class="copy">&copy; 2026 CashLoan. All rights reserved.</p>
+  </footer>
+
+  <dialog id="picker" class="picker" aria-label="Select loan type">
+    <div class="options" role="radiogroup" aria-label="Loan type">
+      <label class="option"><span>Personal Loan</span><input type="radio" name="loanType" value="Personal Loan" autocomplete="off"></label>
+      <label class="option"><span>Auto Loan</span><input type="radio" name="loanType" value="Auto Loan" autocomplete="off"></label>
+      <label class="option"><span>Student Loan</span><input type="radio" name="loanType" value="Student Loan" autocomplete="off"></label>
+      <label class="option"><span>Business Loan</span><input type="radio" name="loanType" value="Business Loan" autocomplete="off"></label>
+      <label class="option"><span>Payday Loan</span><input type="radio" name="loanType" value="Payday Loan" autocomplete="off"></label>
+      <label class="option"><span>Home Loan</span><input type="radio" name="loanType" value="Home Loan" autocomplete="off"></label>
+      <label class="option"><span>Gold Loan</span><input type="radio" name="loanType" value="Gold Loan" autocomplete="off"></label>
+    </div>
+  </dialog>
+
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>

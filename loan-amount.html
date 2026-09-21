@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#03001a">
+  <title>Choose Loan Amount | CashLoan</title>
+  <meta name="description" content="Choose the right loan amount for your needs and learn what lenders look at before approving it.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="app">
+
+  <section class="screen has-art">
+
+    <header class="top">
+      <a class="back" href="index.html" aria-label="Go back">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+      </a>
+      <div class="brand">
+        <span class="brand-name">CashLoan &ndash; Instant Personal Loan</span>
+        <span class="brand-desc">Quick, simple and easy online loans</span>
+      </div>
+    </header>
+    <svg class="hero-art icon-cluster" viewBox="0 0 130 110" aria-hidden="true">
+      <defs><linearGradient id="ic0" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7cf0da"/><stop offset="1" stop-color="#0f8f86"/></linearGradient><linearGradient id="ic1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#c9a3ff"/><stop offset="1" stop-color="#6a3fd6"/></linearGradient><linearGradient id="ic2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffe9a3"/><stop offset="1" stop-color="#e3a12c"/></linearGradient><radialGradient id="icG" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#8a4de0" stop-opacity=".5"/><stop offset="1" stop-color="#8a4de0" stop-opacity="0"/></radialGradient></defs>
+      <circle cx="65" cy="56" r="56" fill="url(#icG)"/>
+      <g transform="translate(38 42) rotate(-10)">
+        <rect x="-23" y="-23" width="46" height="46" rx="14" fill="url(#ic0)"/>
+        <rect x="-23" y="-23" width="46" height="46" rx="14" fill="none" stroke="#fff" stroke-opacity=".35" stroke-width="1.5"/>
+        <g fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><rect x="-12" y="-8" width="24" height="16" rx="3.5"/><circle r="3.6"/><path d="M-8 0h.01M8 0h.01"/></g>
+      </g>
+      <g transform="translate(92 34) rotate(9)">
+        <rect x="-23" y="-23" width="46" height="46" rx="14" fill="url(#ic1)"/>
+        <rect x="-23" y="-23" width="46" height="46" rx="14" fill="none" stroke="#fff" stroke-opacity=".35" stroke-width="1.5"/>
+        <g fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M-11 7L-4 0L2 4L11 -7"/><path d="M4.5 -8H11.5V-1"/></g>
+      </g>
+      <g transform="translate(66 82) rotate(-5)">
+        <rect x="-23" y="-23" width="46" height="46" rx="14" fill="url(#ic2)"/>
+        <rect x="-23" y="-23" width="46" height="46" rx="14" fill="none" stroke="#fff" stroke-opacity=".45" stroke-width="1.5"/>
+        <text x="0" y="9" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="26" fill="#8a5606">&#8377;</text>
+      </g>
+      <path d="M118 10q0 6 6 6q-6 0-6 6q0-6-6-6q6 0 6-6z" fill="#ffd66b"/>
+      <path d="M12 92q0 5 5 5q-5 0-5 5q0-5-5-5q5 0 5-5z" fill="#c9b4ff"/>
+    </svg>
+
+    <h1>Choose the<br>Amount You Need</h1>
+    <p class="lead">Choose the right loan amount for you</p>
+    <p class="sub">Find the right loan amount for your needs and plan repayments that fit comfortably within your budget.</p>
+
+    <button class="select is-empty" type="button" data-key="amount" data-label="loan amount" aria-haspopup="dialog" aria-controls="picker" aria-expanded="false">
+      <span class="select-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="12" rx="2.5"/><circle cx="12" cy="12" r="2.6"/><path d="M6.5 12h.01M17.5 12h.01"/></svg></span>
+      <span class="select-value">Select loan amount</span>
+      <span class="chev" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span>
+    </button>
+
+    <div class="cta"><p class="field-error" id="fieldError" role="alert"></p><a class="btn" href="employment-type.html">Next</a></div>
+  </section>
+
+  <div class="info">
+    <section>
+      <p class="eyebrow">Loan amount</p>
+      <h2>How much loan do you really need?</h2>
+      <p>Borrowing the right amount keeps your EMI comfortable and your total interest low. Work out the exact cost of your need first, then add a small buffer for fees.</p>
+      <div class="cards two">
+        <div class="card"><h3>Monthly income</h3><p>Higher and steadier income supports a higher amount.</p></div>
+        <div class="card"><h3>Existing EMIs</h3><p>Loans you already repay reduce what you can add.</p></div>
+        <div class="card"><h3>Credit score</h3><p>A good repayment history builds lender trust.</p></div>
+        <div class="card"><h3>Job stability</h3><p>Steady work or business income helps approval.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>What each range is commonly used for</h2>
+      <dl class="rows">
+        <div><dt>50,000 - 1,00,000</dt><dd>Emergency expenses, medical bills, small purchases or repairs.</dd></div>
+        <div><dt>1,00,000 - 1,50,000</dt><dd>Home improvement, gadgets or family functions.</dd></div>
+        <div><dt>1,50,000 - 2,00,000</dt><dd>Course fees, travel or clearing higher-cost dues.</dd></div>
+        <div><dt>2,00,000 - 3,50,000</dt><dd>Vehicle down payment, wedding expenses or small business needs.</dd></div>
+        <div><dt>3,50,000 - 5,00,000</dt><dd>Bigger goals such as education, business working capital or a major renovation.</dd></div>
+      </dl>
+    </section>
+
+    <section>
+      <h2>Smart borrowing tips</h2>
+      <ul class="list">
+        <li>Borrow only what you need. A bigger loan means a bigger EMI and more interest.</li>
+        <li>Include the processing fee and other charges in your calculation. They are often deducted from the amount you receive.</li>
+        <li>Make sure the EMI fits your monthly budget after essential expenses.</li>
+        <li>Keep your credit score healthy. It can help you qualify for a higher amount.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Common questions</h2>
+      <details class="faq">
+        <summary>Will I get exactly the amount I select?</summary>
+        <p>Not always. The final amount depends on the lender's check of your income, repayment ability and credit profile, so it may differ from what you choose here.</p>
+      </details>
+      <details class="faq">
+        <summary>Are there charges besides interest?</summary>
+        <p>Usually there is a processing fee, plus taxes and possible late-payment or prepayment charges. Read the loan summary before you accept.</p>
+      </details>
+      <details class="faq">
+        <summary>Does a bigger amount take longer to approve?</summary>
+        <p>It can. Larger amounts may need more documents and verification.</p>
+      </details>
+    </section>
+  </div>
+
+  <footer class="foot">
+    <nav class="foot-nav" aria-label="Footer">
+      <a href="about.html">About</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <p class="copy">&copy; 2026 CashLoan. All rights reserved.</p>
+  </footer>
+
+  <dialog id="picker" class="picker" aria-label="Select loan amount">
+    <div class="options" role="radiogroup" aria-label="Loan amount">
+      <label class="option"><span>50,000 - 1,00,000</span><input type="radio" name="amount" value="50,000 - 1,00,000" autocomplete="off"></label>
+      <label class="option"><span>1,00,000 - 1,50,000</span><input type="radio" name="amount" value="1,00,000 - 1,50,000" autocomplete="off"></label>
+      <label class="option"><span>1,50,000 - 2,00,000</span><input type="radio" name="amount" value="1,50,000 - 2,00,000" autocomplete="off"></label>
+      <label class="option"><span>2,00,000 - 3,50,000</span><input type="radio" name="amount" value="2,00,000 - 3,50,000" autocomplete="off"></label>
+      <label class="option"><span>3,50,000 - 5,00,000</span><input type="radio" name="amount" value="3,50,000 - 5,00,000" autocomplete="off"></label>
+    </div>
+  </dialog>
+
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>

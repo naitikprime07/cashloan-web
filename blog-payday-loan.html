@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#03001a">
+  <title>Payday Loan | CashLoan</title>
+  <meta name="description" content="How payday loans work, what they really cost and safer ways to bridge a gap before your salary arrives.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="app">
+
+  <header class="top sticky">
+    <a class="back" href="blogs.html" data-history aria-label="Go back">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+    </a>
+    <div class="brand">
+      <span class="brand-name">CashLoan &ndash; Instant Personal Loan</span>
+      <span class="brand-desc">Quick, simple and easy online loans</span>
+    </div>
+  </header>
+
+  <article class="post-page" style="--a:255,138,76">
+    <img class="post-hero" src="img/payday-loan.svg" width="1200" height="675" alt="Illustration of a calendar with a salary note and rupee coins">
+    <div class="post">
+      <h1><span class="ttl-name">Payday Loan</span><span class="sr">: </span><span class="ttl-sub">A Small Short-Term Loan Until Your Next Salary</span></h1>
+      <p class="lead-p">A payday loan is a small, short-term loan that you repay from your next salary. It can help in a real emergency, but the cost is high, so it should be the last option and not the first.</p>
+    </div>
+
+    <section class="post-emi" id="emi">
+      <h2 class="sec-title"><span class="sec-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3.5" width="14" height="17" rx="3"/><path d="M8.5 8h7M8.5 12h.01M12 12h.01M15.5 12h.01M8.5 16h.01M12 16h.01M15.5 16h.01"/></svg></span>Calculate your EMI</h2>
+      <div class="tool" id="emiRoot" data-amount="20000" data-rate="30" data-months="3">
+      <p class="prefill-note" id="prefillNote" hidden>Filled in from your eligibility result. You can change anything.</p>
+
+      <div class="panel">
+        <div class="tfield">
+          <div class="tlabel"><label for="amount">Loan amount</label></div>
+          <div class="money"><span>&#8377;</span><input id="amount" type="text" inputmode="numeric" autocomplete="off" value="1,00,000"></div>
+          <input class="range" id="amountRange" type="range" min="10000" max="5000000" step="5000" value="100000" autocomplete="off" aria-label="Loan amount slider">
+          <div class="range-meta"><span>&#8377;10K</span><span>&#8377;50L</span></div>
+          <div class="quick">
+            <button type="button" data-amt="50000">50K</button><button type="button" data-amt="100000">1L</button><button type="button" data-amt="500000">5L</button><button type="button" data-amt="1000000">10L</button><button type="button" data-amt="2500000">25L</button>
+          </div>
+        </div>
+
+        <div class="tfield">
+          <div class="tlabel"><label for="rate">Interest rate (a year)</label></div>
+          <div class="money"><input id="rate" type="number" inputmode="decimal" step="0.1" min="1" max="40" autocomplete="off" value="12"><span>%</span></div>
+          <input class="range" id="rateRange" type="range" min="1" max="40" step="0.1" value="12" autocomplete="off" aria-label="Interest rate slider">
+          <div class="range-meta"><span>1%</span><span>40%</span></div>
+        </div>
+
+        <div class="tfield">
+          <div class="tlabel"><label for="tenure">Loan period</label>
+            <div class="seg small" role="radiogroup" aria-label="Period in">
+              <label><input type="radio" name="unit" id="unitYears" value="years" autocomplete="off"><span>Years</span></label>
+              <label><input type="radio" name="unit" id="unitMonths" value="months" autocomplete="off" checked><span>Months</span></label>
+            </div>
+          </div>
+          <div class="money"><input id="tenure" type="number" inputmode="numeric" step="1" min="3" max="360" autocomplete="off" value="12"><span id="tUnitLabel">period</span></div>
+          <input class="range" id="tenureRange" type="range" min="3" max="360" step="1" value="12" autocomplete="off" aria-label="Loan period slider">
+          <div class="range-meta"><span id="tMin">3 mo</span><span id="tMax">360 mo</span></div>
+        </div>
+      </div>
+
+      <div class="panel result" aria-live="polite">
+        <p class="res-label">Your monthly EMI</p>
+        <p class="emi-big" id="emiBig">&#8377;0</p>
+        <div class="donut-row">
+          <div class="donut">
+            <svg viewBox="0 0 120 120" aria-hidden="true">
+              <circle cx="60" cy="60" r="46" fill="none" stroke="#ff8fd0" stroke-width="14"/>
+              <circle id="donutPrincipal" cx="60" cy="60" r="46" fill="none" stroke-width="14" stroke-dasharray="0 289" transform="rotate(-90 60 60)"/>
+            </svg>
+            <div class="donut-mid"><strong id="donutShare">0%</strong><span>interest</span></div>
+          </div>
+          <ul class="legend">
+            <li><i class="dot p"></i><span>Loan amount</span><b id="rPrincipal">-</b></li>
+            <li><i class="dot i"></i><span>Total interest</span><b id="rInterest">-</b></li>
+          </ul>
+        </div>
+        <dl class="kv">
+          <div><dt>Total interest</dt><dd id="kInterest">-</dd></div>
+          <div><dt>Total you will pay</dt><dd id="kTotal">-</dd></div>
+          <div><dt>Loan period</dt><dd id="kPeriod">-</dd></div>
+        </dl>
+      </div>
+
+      <details class="faq year-table">
+        <summary>Year-wise breakup</summary>
+        <div class="tbl-wrap">
+          <table>
+            <thead><tr><th>Year</th><th>Principal</th><th>Interest</th><th>Balance</th></tr></thead>
+            <tbody id="yearRows"></tbody>
+          </table>
+        </div>
+      </details>
+      </div>
+    </section>
+
+    <div class="post post-mid">
+      <dl class="glance">
+        <div><dt><span class="g-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7h8M8 11h8M8 7h2.5a3 3 0 0 1 0 6H8l6.5 5"/></svg></span>Typical amount</dt><dd>Usually ₹5,000 to ₹50,000, often up to about one month’s salary</dd></div>
+        <div><dt><span class="g-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg></span>Tenure</dt><dd>A few weeks to about 3 months</dd></div>
+        <div><dt><span class="g-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5.5c0 4.4-3 7.7-7 9.5-4-1.8-7-5.1-7-9.5V6l7-3z"/><path d="M9 12l2.2 2.2L15.5 10"/></svg></span>Security</dt><dd>None, you repay from your salary</dd></div>
+        <div><dt><span class="g-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r=".8"/></svg></span>Best for</dt><dd>Urgent needs before payday, for salaried people</dd></div>
+      </dl>
+    </div>
+
+    <div class="info post-body">
+      <section>
+        <h2 class="sec-title"><span class="sec-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 11v5M12 8h.01"/></svg></span>What is a payday loan?</h2>
+        <p>A payday loan is a small loan that a lender gives against your regular salary. You repay it in one payment or in a few short instalments, usually when your next salary arrives. Approval is quick and the paperwork is light, because the lender mainly checks that you have a steady salary.</p>
+        <p>That convenience has a price. The interest and fees on payday loans are much higher than on a personal loan, and the short period means the cost is charged over only a few weeks. Late fees can add up fast. Always check the total amount you will repay before you accept.</p>
+        <div class="cards two">
+          <div class="card"><h3>When it can make sense</h3><p>A genuine emergency such as a medical bill or an urgent repair, when you are sure you can repay from your next salary.</p></div>
+          <div class="card"><h3>When to avoid it</h3><p>For shopping or trips, or to repay another loan. Taking a new payday loan to repay an old one can trap you in debt.</p></div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="sec-title"><span class="sec-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8.5" r="3"/><path d="M3.5 19a5.5 5.5 0 0 1 11 0"/><path d="M16 5.6a3 3 0 0 1 0 5.8M17.5 14a5.5 5.5 0 0 1 3 5"/></svg></span>Who can apply</h2>
+        <ul class="list ticks">
+        <li>Salaried people with a regular salary paid into a bank account.</li>
+        <li>Age is usually 21 to 58.</li>
+        <li>A minimum monthly salary, often ₹15,000 to ₹25,000, depending on the lender.</li>
+        <li>A working phone number and a bank account in your own name, with valid KYC.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="sec-title"><span class="sec-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3.5h7l4 4V19a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 6 19V5A1.5 1.5 0 0 1 7.5 3.5z"/><path d="M13.5 3.5V8H18M9 13h6M9 16.5h4"/></svg></span>Documents you may need</h2>
+        <ul class="list ticks">
+        <li>Identity proof such as PAN, Aadhaar or passport.</li>
+        <li>Address proof.</li>
+        <li>The last 1 to 3 salary slips, or 3 months of bank statements that show your salary credit.</li>
+        <li>Employer details, such as the company name and your work email.</li>
+        <li>A selfie or video KYC, if the lender asks for it.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="sec-title"><span class="sec-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6h11M9 12h11M9 18h11"/><path d="M4 6l1.2 1.2L7 5.4M4 12l1.2 1.2L7 11.4M4 18l1.2 1.2L7 17.4"/></svg></span>How to apply</h2>
+        <ol class="steps">
+          <li><h3>Ask if you really need it</h3><p>Check cheaper choices first, such as a salary advance from your employer, help from family or a small personal loan.</p></li>
+          <li><h3>Borrow the smallest amount</h3><p>Take only what you need until payday. A smaller loan costs less and is easier to repay.</p></li>
+          <li><h3>Check that the lender is genuine</h3><p>Choose a bank or an RBI-registered NBFC. Install loan apps only from the official app stores.</p></li>
+          <li><h3>Read the total cost</h3><p>Look at the key fact statement. It shows the interest, fees, taxes and the total you will repay.</p></li>
+          <li><h3>Apply and verify</h3><p>Enter your details, upload your documents and complete the KYC.</p></li>
+          <li><h3>Receive the money</h3><p>The loan should be paid straight into your own bank account.</p></li>
+          <li><h3>Repay on the due date</h3><p>Set a reminder or auto-debit so that you never pay late fees.</p></li>
+        </ol>
+      </section>
+
+      <section>
+        <h2 class="sec-title"><span class="sec-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2V16h5v-.1c0-.8.4-1.5 1-2A6 6 0 0 0 12 3z"/></svg></span>Smart tips before you borrow</h2>
+        <div class="tint-card">
+          <ul class="list ticks">
+        <li>Compare the total amount you repay, not only the daily or monthly rate.</li>
+        <li>Ask if there is a fee for early repayment. Repaying early can save interest.</li>
+        <li>Try a salary advance from your employer first. It is often free or much cheaper.</li>
+        <li>Keep even a small emergency fund, so that you do not need a payday loan again.</li>
+        <li>Never take a second loan to repay the first one.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="sec-title"><span class="sec-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4l9 15.5H3L12 4z"/><path d="M12 10v4M12 17h.01"/></svg></span>Mistakes to avoid</h2>
+        <div class="tint-card warn">
+          <ul class="list cross">
+        <li>Borrowing for things that are not urgent.</li>
+        <li>Ignoring late fees and rollover charges.</li>
+        <li>Taking loans from several apps at the same time.</li>
+        <li>Sharing your OTP or PIN, or giving apps access to your contacts and photos.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="sec-title"><span class="sec-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M9.6 9.5a2.5 2.5 0 1 1 3.6 2.2c-.7.4-1.2.9-1.2 1.8M12 16.5h.01"/></svg></span>Common questions</h2>
+        <details class="faq">
+          <summary>Are payday loans safe?</summary>
+          <p>They are legal when given by a bank or an RBI-registered NBFC. The risk is the high cost, so borrow only for a real emergency and only what you can repay.</p>
+        </details>
+        <details class="faq">
+          <summary>What happens if I cannot repay on time?</summary>
+          <p>The lender will charge late fees and interest, and may report the delay to credit bureaus, which can lower your credit score. Contact the lender early if you expect trouble.</p>
+        </details>
+        <details class="faq">
+          <summary>Will a payday loan affect my credit score?</summary>
+          <p>Yes. Repaying on time can help your record, while late or missed payments can hurt it.</p>
+        </details>
+      </section>
+
+      <section>
+        <h2 class="sec-title"><span class="sec-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.5"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.5"/></svg></span>More loans</h2>
+        <div class="related">
+          <a href="eligibility-check.html?loan=personal-loan" style="--a:166,107,255"><img src="img/personal-loan.svg" width="1200" height="675" alt="" loading="lazy"><span class="rel-text"><strong>Personal Loan</strong><span>Quick cash for any personal need</span></span><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></span></a>
+          <a href="eligibility-check.html?loan=gold-loan" style="--a:255,207,92"><img src="img/gold-loan.svg" width="1200" height="675" alt="" loading="lazy"><span class="rel-text"><strong>Gold Loan</strong><span>Quick cash against your gold</span></span><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></span></a>
+          <a href="eligibility-check.html?loan=business-loan" style="--a:46,211,183"><img src="img/business-loan.svg" width="1200" height="675" alt="" loading="lazy"><span class="rel-text"><strong>Business Loan</strong><span>Fuel your business growth</span></span><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></span></a>
+        </div>
+      </section>
+    </div>
+  </article>
+
+  <div class="page-cta"><a class="btn ghost" href="blogs.html">All loans</a></div>
+
+  <footer class="foot">
+    <nav class="foot-nav" aria-label="Footer">
+      <a href="about.html">About</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <p class="copy">&copy; 2026 CashLoan. All rights reserved.</p>
+  </footer>
+
+</div>
+<script src="js/app.js"></script>
+<script src="js/emi.js"></script>
+</body>
+</html>

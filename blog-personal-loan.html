@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#03001a">
+  <title>Personal Loan | CashLoan</title>
+  <meta name="description" content="Money for medical bills, a wedding, travel or any personal need, with no collateral. Learn how it works and how to pick the right one.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="app">
+
+  <header class="top sticky">
+    <a class="back" href="blogs.html" data-history aria-label="Go back">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+    </a>
+    <div class="brand">
+      <span class="brand-name">CashLoan &ndash; Instant Personal Loan</span>
+      <span class="brand-desc">Quick, simple and easy online loans</span>
+    </div>
+  </header>
+
+  <article class="post-page" style="--a:166,107,255">
+    <img class="post-hero" src="img/personal-loan.svg" width="1200" height="675" alt="Illustration of a purple wallet with rupee coins coming out of it">
+    <div class="post">
+      <h1><span class="ttl-name">Personal Loan</span><span class="sr">: </span><span class="ttl-sub">How It Works and How to Choose</span></h1>
+      <p class="lead-p">A personal loan gives you a lump sum for almost any genuine personal need. You repay it in fixed monthly instalments, called EMIs, and you usually do not have to pledge anything as security.</p>
+    </div>
+
+    <section class="post-emi" id="emi">
+      <h2 class="sec-title"><span class="sec-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3.5" width="14" height="17" rx="3"/><path d="M8.5 8h7M8.5 12h.01M12 12h.01M15.5 12h.01M8.5 16h.01M12 16h.01M15.5 16h.01"/></svg></span>Calculate your EMI</h2>
+      <div class="tool" id="emiRoot" data-amount="300000" data-rate="14" data-months="36">
+      <p class="prefill-note" id="prefillNote" hidden>Filled in from your eligibility result. You can change anything.</p>
+
+      <div class="panel">
+        <div class="tfield">
+          <div class="tlabel"><label for="amount">Loan amount</label></div>
+          <div class="money"><span>&#8377;</span><input id="amount" type="text" inputmode="numeric" autocomplete="off" value="1,00,000"></div>
+          <input class="range" id="amountRange" type="range" min="10000" max="5000000" step="5000" value="100000" autocomplete="off" aria-label="Loan amount slider">
+          <div class="range-meta"><span>&#8377;10K</span><span>&#8377;50L</span></div>
+          <div class="quick">
+            <button type="button" data-amt="50000">50K</button><button type="button" data-amt="100000">1L</button><button type="button" data-amt="500000">5L</button><button type="button" data-amt="1000000">10L</button><button type="button" data-amt="2500000">25L</button>
+          </div>
+        </div>
+
+        <div class="tfield">
+          <div class="tlabel"><label for="rate">Interest rate (a year)</label></div>
+          <div class="money"><input id="rate" type="number" inputmode="decimal" step="0.1" min="1" max="40" autocomplete="off" value="12"><span>%</span></div>
+          <input class="range" id="rateRange" type="range" min="1" max="40" step="0.1" value="12" autocomplete="off" aria-label="Interest rate slider">
+          <div class="range-meta"><span>1%</span><span>40%</span></div>
+        </div>
+
+        <div class="tfield">
+          <div class="tlabel"><label for="tenure">Loan period</label>
+            <div class="seg small" role="radiogroup" aria-label="Period in">
+              <label><input type="radio" name="unit" id="unitYears" value="years" autocomplete="off"><span>Years</span></label>
+              <label><input type="radio" name="unit" id="unitMonths" value="months" autocomplete="off" checked><span>Months</span></label>
+            </div>
+          </div>
+          <div class="money"><input id="tenure" type="number" inputmode="numeric" step="1" min="3" max="360" autocomplete="off" value="12"><span id="tUnitLabel">period</span></div>
+          <input class="range" id="tenureRange" type="range" min="3" max="360" step="1" value="12" autocomplete="off" aria-label="Loan period slider">
+          <div class="range-meta"><span id="tMin">3 mo</span><span id="tMax">360 mo</span></div>
+        </div>
+      </div>
+
+      <div class="panel result" aria-live="polite">
+        <p class="res-label">Your monthly EMI</p>
+        <p class="emi-big" id="emiBig">&#8377;0</p>
+        <div class="donut-row">
+          <div class="donut">
+            <svg viewBox="0 0 120 120" aria-hidden="true">
+              <circle cx="60" cy="60" r="46" fill="none" stroke="#ff8fd0" stroke-width="14"/>
+              <circle id="donutPrincipal" cx="60" cy="60" r="46" fill="none" stroke-width="14" stroke-dasharray="0 289" transform="rotate(-90 60 60)"/>
+            </svg>
+            <div class="donut-mid"><strong id="donutShare">0%</strong><span>interest</span></div>
+          </div>
+          <ul class="legend">
+            <li><i class="dot p"></i><span>Loan amount</span><b id="rPrincipal">-</b></li>
+            <li><i class="dot i"></i><span>Total interest</span><b id="rInterest">-</b></li>
+          </ul>
+        </div>
+        <dl class="kv">
+          <div><dt>Total interest</dt><dd id="kInterest">-</dd></div>
+          <div><dt>Total you will pay</dt><dd id="kTotal">-</dd></div>
+          <div><dt>Loan period</dt><dd id="kPeriod">-</dd></div>
+        </dl>
+      </div>
+
+      <details class="faq year-table">
+        <summary>Year-wise breakup</summary>
+        <div class="tbl-wrap">
+          <table>
+            <thead><tr><th>Year</th><th>Principal</th><th>Interest</th><th>Balance</th></tr></thead>
+            <tbody id="yearRows"></tbody>
+          </table>
+        </div>
+      </details>
+      </div>
+    </section>
+
+    <div class="post post-mid">
+      <dl class="glance">
+        <div><dt><span class="g-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7h8M8 11h8M8 7h2.5a3 3 0 0 1 0 6H8l6.5 5"/></svg></span>Typical amount</dt><dd>₹50,000 to ₹25 lakh, depending on the lender</dd></div>
+        <div><dt><span class="g-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg></span>Tenure</dt><dd>1 to 5 years, some lenders go up to 7</dd></div>
+        <div><dt><span class="g-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5.5c0 4.4-3 7.7-7 9.5-4-1.8-7-5.1-7-9.5V6l7-3z"/><path d="M9 12l2.2 2.2L15.5 10"/></svg></span>Security</dt><dd>None, it is an unsecured loan</dd></div>
+        <div><dt><span class="g-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r=".8"/></svg></span>Best for</dt><dd>Medical needs, weddings, travel, home repairs</dd></div>
+      </dl>
+    </div>
+
+    <div class="info post-body">
+      <section>
+        <h2 class="sec-title"><span class="sec-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 11v5M12 8h.01"/></svg></span>What is a personal loan?</h2>
+        <p>A personal loan is unsecured. The lender decides how much to give based on your income, your existing debts and your credit score, not on an asset you own. Because the lender takes more risk, the interest rate is usually higher than for a home or auto loan.</p>
+        <p>Most lenders send the money straight to your bank account, often within a few days once your documents are checked. You then pay a fixed EMI every month until the loan ends. Many lenders also charge a processing fee, usually a small percentage of the loan amount.</p>
+      </section>
+
+      <section>
+        <h2 class="sec-title"><span class="sec-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8.5" r="3"/><path d="M3.5 19a5.5 5.5 0 0 1 11 0"/><path d="M16 5.6a3 3 0 0 1 0 5.8M17.5 14a5.5 5.5 0 0 1 3 5"/></svg></span>Who can apply</h2>
+        <ul class="list ticks">
+        <li>Salaried people with a steady job, often with 6 months to 1 year at the current employer.</li>
+        <li>Self-employed people and professionals with regular income and 2 or more years in the business or practice.</li>
+        <li>Age is usually between 21 and 58 or 60, depending on the lender.</li>
+        <li>A credit score of 700 or more helps, and 750 or more often gets the best rates.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="sec-title"><span class="sec-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3.5h7l4 4V19a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 6 19V5A1.5 1.5 0 0 1 7.5 3.5z"/><path d="M13.5 3.5V8H18M9 13h6M9 16.5h4"/></svg></span>Documents you may need</h2>
+        <ul class="list ticks">
+        <li>Identity proof such as Aadhaar, PAN, passport or voter ID.</li>
+        <li>Address proof such as a utility bill or rental agreement.</li>
+        <li>Income proof: the last 2 or 3 salary slips, or 6 months of bank statements. Self-employed people usually give income tax returns.</li>
+        <li>A recent passport-size photograph.</li>
+        <li>Bank account details where the money will be sent.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="sec-title"><span class="sec-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6h11M9 12h11M9 18h11"/><path d="M4 6l1.2 1.2L7 5.4M4 12l1.2 1.2L7 11.4M4 18l1.2 1.2L7 17.4"/></svg></span>How to apply</h2>
+        <ol class="steps">
+          <li><h3>Decide how much you need</h3><p>Add up the exact cost of what you need and borrow only that, plus a small buffer for fees.</p></li>
+          <li><h3>Check your budget</h3><p>Use an EMI calculator. Try to keep all your EMIs together below about 40 to 50 percent of your monthly income.</p></li>
+          <li><h3>Check your credit score</h3><p>A higher score means better offers. Fix any errors in your credit report before you apply.</p></li>
+          <li><h3>Compare lenders</h3><p>Look at the interest rate, processing fee, prepayment charges and the total amount you will repay.</p></li>
+          <li><h3>Apply and upload documents</h3><p>Fill in the form and share your documents. Most lenders now do this online.</p></li>
+          <li><h3>Read the agreement</h3><p>Check the key fact statement. It shows the rate, fees and the total cost of the loan in one place.</p></li>
+          <li><h3>Receive the money and repay on time</h3><p>Set up auto-debit so that no EMI is missed.</p></li>
+        </ol>
+      </section>
+
+      <section>
+        <h2 class="sec-title"><span class="sec-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2V16h5v-.1c0-.8.4-1.5 1-2A6 6 0 0 0 12 3z"/></svg></span>Smart tips before you borrow</h2>
+        <div class="tint-card">
+          <ul class="list ticks">
+        <li>Compare the total cost of the loan, not just the EMI.</li>
+        <li>Choose the shortest tenure you can comfortably afford. You will pay less interest overall.</li>
+        <li>Ask whether part-payment or early closure is allowed and what it costs.</li>
+        <li>Avoid applying to many lenders at once. Each application can leave an enquiry on your credit report.</li>
+        <li>Set up auto-debit or a reminder a few days before every due date.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="sec-title"><span class="sec-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4l9 15.5H3L12 4z"/><path d="M12 10v4M12 17h.01"/></svg></span>Mistakes to avoid</h2>
+        <div class="tint-card warn">
+          <ul class="list cross">
+        <li>Borrowing more than you need just because you are eligible for it.</li>
+        <li>Ignoring the processing fee, GST and late-payment charges.</li>
+        <li>Using a personal loan for investing or speculation.</li>
+        <li>Signing without reading the terms and conditions.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="sec-title"><span class="sec-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M9.6 9.5a2.5 2.5 0 1 1 3.6 2.2c-.7.4-1.2.9-1.2 1.8M12 16.5h.01"/></svg></span>Common questions</h2>
+        <details class="faq">
+          <summary>Can I get a personal loan with a low credit score?</summary>
+          <p>It is harder. Some lenders may offer a smaller amount at a higher rate, or ask for a co-applicant. Improving your score first usually saves money.</p>
+        </details>
+        <details class="faq">
+          <summary>Does a personal loan affect my credit score?</summary>
+          <p>Paying on time helps you build a good score. Missed EMIs, or many new applications in a short time, can lower it.</p>
+        </details>
+        <details class="faq">
+          <summary>How fast can I get the money?</summary>
+          <p>Digital lenders can approve in minutes to a day for verified customers. Banks may take several days. It depends on your documents and the lender.</p>
+        </details>
+      </section>
+
+      <section>
+        <h2 class="sec-title"><span class="sec-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.5"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.5"/></svg></span>More loans</h2>
+        <div class="related">
+          <a href="eligibility-check.html?loan=payday-loan" style="--a:255,138,76"><img src="img/payday-loan.svg" width="1200" height="675" alt="" loading="lazy"><span class="rel-text"><strong>Payday Loan</strong><span>Quick cash until your next salary</span></span><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></span></a>
+          <a href="eligibility-check.html?loan=gold-loan" style="--a:255,207,92"><img src="img/gold-loan.svg" width="1200" height="675" alt="" loading="lazy"><span class="rel-text"><strong>Gold Loan</strong><span>Quick cash against your gold</span></span><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></span></a>
+          <a href="eligibility-check.html?loan=business-loan" style="--a:46,211,183"><img src="img/business-loan.svg" width="1200" height="675" alt="" loading="lazy"><span class="rel-text"><strong>Business Loan</strong><span>Fuel your business growth</span></span><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></span></a>
+        </div>
+      </section>
+    </div>
+  </article>
+
+  <div class="page-cta"><a class="btn ghost" href="blogs.html">All loans</a></div>
+
+  <footer class="foot">
+    <nav class="foot-nav" aria-label="Footer">
+      <a href="about.html">About</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <p class="copy">&copy; 2026 CashLoan. All rights reserved.</p>
+  </footer>
+
+</div>
+<script src="js/app.js"></script>
+<script src="js/emi.js"></script>
+</body>
+</html>

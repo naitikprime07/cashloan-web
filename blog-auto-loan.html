@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#03001a">
+  <title>Auto Loan | CashLoan</title>
+  <meta name="description" content="How auto loans work, how much down payment to keep ready and how to compare offers before you sign.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="app">
+
+  <header class="top sticky">
+    <a class="back" href="blogs.html" data-history aria-label="Go back">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+    </a>
+    <div class="brand">
+      <span class="brand-name">CashLoan &ndash; Instant Personal Loan</span>
+      <span class="brand-desc">Quick, simple and easy online loans</span>
+    </div>
+  </header>
+
+  <article class="post-page" style="--a:76,194,255">
+    <img class="post-hero" src="img/auto-loan.svg" width="1200" height="675" alt="Illustration of a blue car with speed lines and a rupee coin">
+    <div class="post">
+      <h1><span class="ttl-name">Auto Loan</span><span class="sr">: </span><span class="ttl-sub">Finance a New or Used Vehicle the Smart Way</span></h1>
+      <p class="lead-p">An auto loan helps you buy a new or used vehicle and pay for it over time. The vehicle itself is the security, so the lender takes less risk and the rate is usually lower than on a personal loan.</p>
+    </div>
+
+    <section class="post-emi" id="emi">
+      <h2 class="sec-title"><span class="sec-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3.5" width="14" height="17" rx="3"/><path d="M8.5 8h7M8.5 12h.01M12 12h.01M15.5 12h.01M8.5 16h.01M12 16h.01M15.5 16h.01"/></svg></span>Calculate your EMI</h2>
+      <div class="tool" id="emiRoot" data-amount="700000" data-rate="9.5" data-months="60">
+      <p class="prefill-note" id="prefillNote" hidden>Filled in from your eligibility result. You can change anything.</p>
+
+      <div class="panel">
+        <div class="tfield">
+          <div class="tlabel"><label for="amount">Loan amount</label></div>
+          <div class="money"><span>&#8377;</span><input id="amount" type="text" inputmode="numeric" autocomplete="off" value="1,00,000"></div>
+          <input class="range" id="amountRange" type="range" min="10000" max="5000000" step="5000" value="100000" autocomplete="off" aria-label="Loan amount slider">
+          <div class="range-meta"><span>&#8377;10K</span><span>&#8377;50L</span></div>
+          <div class="quick">
+            <button type="button" data-amt="50000">50K</button><button type="button" data-amt="100000">1L</button><button type="button" data-amt="500000">5L</button><button type="button" data-amt="1000000">10L</button><button type="button" data-amt="2500000">25L</button>
+          </div>
+        </div>
+
+        <div class="tfield">
+          <div class="tlabel"><label for="rate">Interest rate (a year)</label></div>
+          <div class="money"><input id="rate" type="number" inputmode="decimal" step="0.1" min="1" max="40" autocomplete="off" value="12"><span>%</span></div>
+          <input class="range" id="rateRange" type="range" min="1" max="40" step="0.1" value="12" autocomplete="off" aria-label="Interest rate slider">
+          <div class="range-meta"><span>1%</span><span>40%</span></div>
+        </div>
+
+        <div class="tfield">
+          <div class="tlabel"><label for="tenure">Loan period</label>
+            <div class="seg small" role="radiogroup" aria-label="Period in">
+              <label><input type="radio" name="unit" id="unitYears" value="years" autocomplete="off"><span>Years</span></label>
+              <label><input type="radio" name="unit" id="unitMonths" value="months" autocomplete="off" checked><span>Months</span></label>
+            </div>
+          </div>
+          <div class="money"><input id="tenure" type="number" inputmode="numeric" step="1" min="3" max="360" autocomplete="off" value="12"><span id="tUnitLabel">period</span></div>
+          <input class="range" id="tenureRange" type="range" min="3" max="360" step="1" value="12" autocomplete="off" aria-label="Loan period slider">
+          <div class="range-meta"><span id="tMin">3 mo</span><span id="tMax">360 mo</span></div>
+        </div>
+      </div>
+
+      <div class="panel result" aria-live="polite">
+        <p class="res-label">Your monthly EMI</p>
+        <p class="emi-big" id="emiBig">&#8377;0</p>
+        <div class="donut-row">
+          <div class="donut">
+            <svg viewBox="0 0 120 120" aria-hidden="true">
+              <circle cx="60" cy="60" r="46" fill="none" stroke="#ff8fd0" stroke-width="14"/>
+              <circle id="donutPrincipal" cx="60" cy="60" r="46" fill="none" stroke-width="14" stroke-dasharray="0 289" transform="rotate(-90 60 60)"/>
+            </svg>
+            <div class="donut-mid"><strong id="donutShare">0%</strong><span>interest</span></div>
+          </div>
+          <ul class="legend">
+            <li><i class="dot p"></i><span>Loan amount</span><b id="rPrincipal">-</b></li>
+            <li><i class="dot i"></i><span>Total interest</span><b id="rInterest">-</b></li>
+          </ul>
+        </div>
+        <dl class="kv">
+          <div><dt>Total interest</dt><dd id="kInterest">-</dd></div>
+          <div><dt>Total you will pay</dt><dd id="kTotal">-</dd></div>
+          <div><dt>Loan period</dt><dd id="kPeriod">-</dd></div>
+        </dl>
+      </div>
+
+      <details class="faq year-table">
+        <summary>Year-wise breakup</summary>
+        <div class="tbl-wrap">
+          <table>
+            <thead><tr><th>Year</th><th>Principal</th><th>Interest</th><th>Balance</th></tr></thead>
+            <tbody id="yearRows"></tbody>
+          </table>
+        </div>
+      </details>
+      </div>
+    </section>
+
+    <div class="post post-mid">
+      <dl class="glance">
+        <div><dt><span class="g-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7h8M8 11h8M8 7h2.5a3 3 0 0 1 0 6H8l6.5 5"/></svg></span>Typical amount</dt><dd>Often 80% to 90% of the vehicle’s price</dd></div>
+        <div><dt><span class="g-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg></span>Tenure</dt><dd>1 to 7 years</dd></div>
+        <div><dt><span class="g-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5.5c0 4.4-3 7.7-7 9.5-4-1.8-7-5.1-7-9.5V6l7-3z"/><path d="M9 12l2.2 2.2L15.5 10"/></svg></span>Security</dt><dd>The vehicle itself (hypothecation)</dd></div>
+        <div><dt><span class="g-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r=".8"/></svg></span>Best for</dt><dd>Buying a new or used car or other private vehicle</dd></div>
+      </dl>
+    </div>
+
+    <div class="info post-body">
+      <section>
+        <h2 class="sec-title"><span class="sec-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 11v5M12 8h.01"/></svg></span>What is an auto loan?</h2>
+        <p>In an auto loan the lender pays the dealer, and the vehicle is registered in your name with the lender’s charge noted on the registration certificate. This is called hypothecation. When you finish repaying, the lender gives you a no-objection certificate (NOC) and the charge is removed.</p>
+        <p>You pay a down payment from your own savings, commonly 10 to 20 percent of the price, and finance the rest. Always ask for the effective annual interest rate. A “flat” rate looks lower than it really is because it does not reduce as you repay.</p>
+      </section>
+
+      <section>
+        <h2 class="sec-title"><span class="sec-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8.5" r="3"/><path d="M3.5 19a5.5 5.5 0 0 1 11 0"/><path d="M16 5.6a3 3 0 0 1 0 5.8M17.5 14a5.5 5.5 0 0 1 3 5"/></svg></span>Who can apply</h2>
+        <ul class="list ticks">
+        <li>Salaried people with a stable job and regular income.</li>
+        <li>Self-employed people who can show income tax returns for 1 to 2 years.</li>
+        <li>Age is usually 21 or more, and up to 60 or 65 by the time the loan ends.</li>
+        <li>A good credit score gives you a lower rate and a bigger loan.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="sec-title"><span class="sec-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3.5h7l4 4V19a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 6 19V5A1.5 1.5 0 0 1 7.5 3.5z"/><path d="M13.5 3.5V8H18M9 13h6M9 16.5h4"/></svg></span>Documents you may need</h2>
+        <ul class="list ticks">
+        <li>Identity proof and address proof.</li>
+        <li>Income proof: salary slips and bank statements, or income tax returns if you are self-employed.</li>
+        <li>The dealer’s quotation or proforma invoice for the vehicle.</li>
+        <li>A passport-size photograph and, sometimes, your driving licence.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="sec-title"><span class="sec-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6h11M9 12h11M9 18h11"/><path d="M4 6l1.2 1.2L7 5.4M4 12l1.2 1.2L7 11.4M4 18l1.2 1.2L7 17.4"/></svg></span>How to apply</h2>
+        <ol class="steps">
+          <li><h3>Set your total vehicle budget</h3><p>Think about the on-road price, which includes insurance, road tax and registration, not only the showroom price.</p></li>
+          <li><h3>Plan your down payment</h3><p>A bigger down payment lowers your EMI and the interest you pay.</p></li>
+          <li><h3>Check your credit score</h3><p>This decides the rate you are offered.</p></li>
+          <li><h3>Compare offers</h3><p>Ask banks, NBFCs and the dealer for their rate, processing fee and prepayment terms.</p></li>
+          <li><h3>Choose the vehicle and get a quotation</h3><p>The lender needs a written quotation from the dealer.</p></li>
+          <li><h3>Apply, get sanction and sign</h3><p>Read every page of the agreement before you sign.</p></li>
+          <li><h3>Pay, insure and register</h3><p>Pay the down payment, buy insurance and make sure the lender’s charge is noted on the registration certificate.</p></li>
+        </ol>
+      </section>
+
+      <section>
+        <h2 class="sec-title"><span class="sec-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2V16h5v-.1c0-.8.4-1.5 1-2A6 6 0 0 0 12 3z"/></svg></span>Smart tips before you borrow</h2>
+        <div class="tint-card">
+          <ul class="list ticks">
+        <li>Compare interest rates on a reducing-balance basis so that every offer is measured the same way.</li>
+        <li>A shorter tenure means a higher EMI but much less interest.</li>
+        <li>Keep a comprehensive insurance policy running. Lenders usually require it.</li>
+        <li>Ask about foreclosure charges before you sign, in case you want to close the loan early.</li>
+        <li>Check if optional extras such as extended warranty are really optional.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="sec-title"><span class="sec-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4l9 15.5H3L12 4z"/><path d="M12 10v4M12 17h.01"/></svg></span>Mistakes to avoid</h2>
+        <div class="tint-card warn">
+          <ul class="list cross">
+        <li>Choosing a vehicle only because the EMI looks small.</li>
+        <li>Taking a very long tenure. The vehicle loses value faster than the loan reduces.</li>
+        <li>Forgetting to collect the NOC and get the charge removed after the last EMI.</li>
+        <li>Accepting add-ons that were bundled into the loan without asking.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="sec-title"><span class="sec-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M9.6 9.5a2.5 2.5 0 1 1 3.6 2.2c-.7.4-1.2.9-1.2 1.8M12 16.5h.01"/></svg></span>Common questions</h2>
+        <details class="faq">
+          <summary>Can I get an auto loan for a used vehicle?</summary>
+          <p>Yes. Many lenders finance used vehicles, but the loan amount is usually lower, the tenure shorter and the rate higher than for a new one.</p>
+        </details>
+        <details class="faq">
+          <summary>Should I take dealer finance or a bank loan?</summary>
+          <p>Compare both. Dealer finance is convenient, but check the rate, the fees and any extras added to the price.</p>
+        </details>
+        <details class="faq">
+          <summary>What happens if I miss EMIs?</summary>
+          <p>The lender can charge penalties and report the delay to credit bureaus. If payments stay unpaid, the lender can take the vehicle back as the agreement allows.</p>
+        </details>
+      </section>
+
+      <section>
+        <h2 class="sec-title"><span class="sec-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.5"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.5"/></svg></span>More loans</h2>
+        <div class="related">
+          <a href="eligibility-check.html?loan=personal-loan" style="--a:166,107,255"><img src="img/personal-loan.svg" width="1200" height="675" alt="" loading="lazy"><span class="rel-text"><strong>Personal Loan</strong><span>Quick cash for any personal need</span></span><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></span></a>
+          <a href="eligibility-check.html?loan=home-loan" style="--a:255,122,144"><img src="img/home-loan.svg" width="1200" height="675" alt="" loading="lazy"><span class="rel-text"><strong>Home Loan</strong><span>Buy, build or renovate a home</span></span><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></span></a>
+          <a href="eligibility-check.html?loan=business-loan" style="--a:46,211,183"><img src="img/business-loan.svg" width="1200" height="675" alt="" loading="lazy"><span class="rel-text"><strong>Business Loan</strong><span>Fuel your business growth</span></span><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></span></a>
+        </div>
+      </section>
+    </div>
+  </article>
+
+  <div class="page-cta"><a class="btn ghost" href="blogs.html">All loans</a></div>
+
+  <footer class="foot">
+    <nav class="foot-nav" aria-label="Footer">
+      <a href="about.html">About</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <p class="copy">&copy; 2026 CashLoan. All rights reserved.</p>
+  </footer>
+
+</div>
+<script src="js/app.js"></script>
+<script src="js/emi.js"></script>
+</body>
+</html>

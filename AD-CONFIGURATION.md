@@ -59,3 +59,4 @@ blogs.html loads the existing bottom-anchor.js and opts in using data-bottom-anc
 
 Pixel audit: no fbq, PageView, Meta base script, tracking utility or pixel ID/config exists in this checkout. The owner subsequently authorized a new static pixel feature. See PIXEL-CONFIGURATION.md; Platform-wide one-time tracking is configured with the supplied public pixel ID.
 \nPixel scope update: all HTML pages now use the existing loader and one IndexedDB claim per identifiable browser/origin, not per-page events. PIXEL-CONFIGURATION.md supersedes the earlier Blog List-only pixel audit.\n
+\nCurrent pixel scope: only Blog List loads tracking; /blogs and /blogs.html are allowed. Persistent one-time-browser protection is unchanged. This supersedes the earlier platform-wide scope.\n

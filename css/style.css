@@ -133,14 +133,19 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: clamp(84px, 11vh, 96px) 20px calc(24px + env(safe-area-inset-bottom));
-}
-
-/* Only apply min-height when screen is not followed by .info section */
-/* This prevents huge gap between Next button and following content */
-.screen:not(:has(~ .info)) {
+  padding: clamp(84px, 11vh, 96px) 20px calc(100px + env(safe-area-inset-bottom));
   min-height: 100vh;
   min-height: 100dvh;
+}
+
+/* Keep controls and reserved ads intact on short screens; the page can scroll. */
+.screen > * {
+  flex-shrink: 0;
+}
+
+/* Leave footer links reachable above the fixed Next bar. */
+.app:has(> .screen) {
+  padding-bottom: calc(100px + env(safe-area-inset-bottom));
 }
 
 .screen h1 {
@@ -209,9 +214,16 @@ body {
   bottom: var(--anchor-space, 0px);
 }
 
-.cta {
-  margin-top: 0;
-  padding-top: 0;
+.screen > .cta {
+  position: fixed;
+  inset-inline: 0;
+  bottom: 0;
+  z-index: 5;
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 12px 20px calc(16px + env(safe-area-inset-bottom));
+  background: var(--bg);
 }
 
 .btn {

@@ -11,6 +11,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/pixel-config.js"></script>
+  <script src="js/pixel-loader.js"></script>
 </head>
 <body>
 <div class="app">
@@ -24,6 +26,10 @@
       <span class="brand-desc">Quick, simple and easy online loans</span>
     </div>
   </header>
+
+  <div class="blog-top-ad-container">
+    <div id="gam-blog-top"></div>
+  </div>
 
   <article class="post-page" style="--a:255,122,144">
     <img class="post-hero" src="img/home-loan.svg" width="1200" height="675" alt="Illustration of a red-roofed house with a golden key">
@@ -218,10 +224,19 @@
       <a href="privacy-policy.html">Privacy Policy</a>
       <a href="contact.html">Contact</a>
     </nav>
-    <p class="copy">&copy; 2026 CashLoan. All rights reserved.</p>
+    <p class="copy">&copy; 2026 cashloanplatform.com All rights reserved.</p>
   </footer>
 
 </div>
+<script src="js/ad-config.js"></script>
+<script src="js/gam-loader.js"></script>
+<script>
+  // Initialize blog top ad
+  GAM.cmd.push(function() {
+    GAM.createSlot('gam-blog-top', 'blogTop');
+    GAM.displaySlot('gam-blog-top');
+  });
+</script>
 <script src="js/app.js"></script>
 <script src="js/emi.js"></script>
 </body>

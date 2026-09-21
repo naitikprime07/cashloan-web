@@ -62,6 +62,7 @@ var CONTACT_EMAIL = "support@cashloan.example";
       if (next) {
         next.classList.toggle("is-disabled", !picked);
         next.setAttribute("aria-disabled", picked ? "false" : "true");
+        next.setAttribute("data-google-interstitial", picked ? "true" : "false");
       }
       if (picked) clearError();
     }

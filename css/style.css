@@ -45,7 +45,7 @@ body {
   background:
     radial-gradient(130% 55% at 50% -8%, rgba(116, 52, 196, .24), transparent 62%),
     var(--bg);
-  overflow-x: clip;
+  width: 100%;
 }
 
 /* ---------- Header (name + short description, back button on inner pages) ---------- */
@@ -94,9 +94,14 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
+  padding: clamp(84px, 11vh, 96px) 20px calc(24px + env(safe-area-inset-bottom));
+}
+
+/* Only apply min-height when screen is not followed by .info section */
+/* This prevents huge gap between Next button and following content */
+.screen:not(:has(~ .info)) {
   min-height: 100vh;
   min-height: 100dvh;
-  padding: clamp(84px, 11vh, 96px) 20px calc(24px + env(safe-area-inset-bottom));
 }
 
 .screen h1 {
@@ -114,13 +119,49 @@ body {
 }
 
 .sub {
-  margin: 0 0 30px;
+  margin: 0 0 56px;
   font-size: 11px;
   line-height: 1.4;
   color: var(--faint);
 }
 
-.cta { margin-top: auto; padding-top: 24px; }
+/* Only publisher-owned display wrappers participate in the app layout.
+   Never target Google-generated containers or iframes here. */
+.inline-ad-container,
+.blog-top-ad-container {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: none;
+}
+.inline-ad-container { margin: 32px auto 16px; height: 250px; }
+.blog-top-ad-container { margin: 20px auto 24px; height: 250px; }
+.inline-ad-container > div,
+.blog-top-ad-container > div {
+  width: 100%;
+  min-width: 0;
+  text-align: center;
+  line-height: 0;
+  height: 100%;
+  max-width: 300px;
+}
+/* These heights match the tallest configured creatives, including the
+   250x250 narrow-screen fallback. Reserve them before any script runs. */
+/* The native dialog top layer supplies stacking; no ad z-index overrides. */
+.app.has-bottom-anchor { padding-bottom: var(--anchor-space, 0px); }
+.app.has-bottom-anchor .action-bar { bottom: var(--anchor-space, 0px); }
+
+.cta { margin-top: 0; padding-top: 16px; }
+
+/* Special positioning ONLY for pages with dropdown + ad + Next button */
+.inline-ad-container + .cta {
+  margin-top: 0;
+  padding-top: 0;
+}
 
 .btn {
   display: flex;
@@ -277,6 +318,7 @@ body {
   border: 0;
   background: transparent;
   color: var(--sheet-text);
+  z-index: 30; /* Fallback only; showModal() uses the browser top layer. */
 }
 .picker::backdrop { background: rgba(3, 0, 26, .5); }
 .picker[open] { animation: drop .16s cubic-bezier(.2, .8, .2, 1); transform-origin: top center; }
@@ -773,10 +815,10 @@ dl.rows { margin: 0; }
   content: "";
   position: absolute;
   top: -50px;
-  right: -70px;
-  width: 260px;
+  right: 0;
+  width: min(190px, 100%);
   height: 260px;
-  background: radial-gradient(circle, rgba(116, 52, 196, .5), transparent 66%);
+  background: radial-gradient(circle 130px at 130px 130px, rgba(116, 52, 196, .5), transparent 66%);
   pointer-events: none;
 }
 .blog-head > * { position: relative; }

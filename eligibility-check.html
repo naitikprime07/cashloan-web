@@ -11,6 +11,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/pixel-config.js"></script>
+  <script src="js/pixel-loader.js"></script>
 </head>
 <body>
 <div class="app">
@@ -26,6 +28,10 @@
   </header>
 
   <main>
+    <div class="blog-top-ad-container">
+      <div id="gam-blog-top"></div>
+    </div>
+
     <section class="page-head">
       <h1 id="eligTitle">Eligibility Check</h1>
       <p id="eligLead">Answer a few quick questions to see an estimate of the loan you may get.</p>
@@ -126,10 +132,22 @@
       <a href="privacy-policy.html">Privacy Policy</a>
       <a href="contact.html">Contact</a>
     </nav>
-    <p class="copy">&copy; 2026 CashLoan. All rights reserved.</p>
+    <p class="copy">&copy; 2026 cashloanplatform.com All rights reserved.</p>
   </footer>
 
 </div>
+<div data-bottom-anchor="true"></div>
+<script src="js/ad-config.js"></script>
+<script src="js/gam-loader.js"></script>
+<script>
+  // Initialize blog top ad
+  GAM.cmd.push(function() {
+    GAM.createSlot('gam-blog-top', 'blogTop');
+    GAM.displaySlot('gam-blog-top');
+  });
+</script>
+<script src="js/bottom-anchor.js"></script>
+<script src="js/interstitial-ad.js"></script>
 <script src="js/app.js"></script>
 <script src="js/eligibility.js"></script>
 </body>

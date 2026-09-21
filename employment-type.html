@@ -11,6 +11,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/pixel-config.js"></script>
+  <script src="js/pixel-loader.js"></script>
 </head>
 <body>
 <div class="app">
@@ -58,7 +60,11 @@
       <span class="chev" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span>
     </button>
 
-    <div class="cta"><p class="field-error" id="fieldError" role="alert"></p><a class="btn" href="loan-type.html">Next</a></div>
+    <div class="inline-ad-container">
+      <div id="gam-employment-dropdown-next"></div>
+    </div>
+
+    <div class="cta"><p class="field-error" id="fieldError" role="alert"></p><a class="btn" href="loan-type.html" data-interstitial="true">Next</a></div>
   </section>
 
   <div class="info">
@@ -120,7 +126,7 @@
       <a href="privacy-policy.html">Privacy Policy</a>
       <a href="contact.html">Contact</a>
     </nav>
-    <p class="copy">&copy; 2026 CashLoan. All rights reserved.</p>
+    <p class="copy">&copy; 2026 cashloanplatform.com All rights reserved.</p>
   </footer>
 
   <dialog id="picker" class="picker" aria-label="Select employment type">
@@ -140,6 +146,16 @@
   </dialog>
 
 </div>
+<script src="js/ad-config.js"></script>
+<script src="js/gam-loader.js"></script>
+<script>
+  // Initialize dropdown-next ad on this page
+  GAM.cmd.push(function() {
+    GAM.createSlot('gam-employment-dropdown-next', 'dropdownNext');
+    GAM.displaySlot('gam-employment-dropdown-next');
+  });
+</script>
+<script src="js/interstitial-ad.js"></script>
 <script src="js/app.js"></script>
 </body>
 </html>

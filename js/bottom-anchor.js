@@ -20,7 +20,7 @@
       slot = googletag.defineOutOfPageSlot(config.getAdUnitPath("blogBottomAnchor"),
         googletag.enums.OutOfPageFormat.BOTTOM_ANCHOR);
       if (!slot) {
-        console.warn("[BottomAnchor] Failed to define out-of-page slot");
+        console.info("[BottomAnchor] Native anchor unavailable in this browsing context.");
         return;
       }
       slot.addService(googletag.pubads());
@@ -30,8 +30,9 @@
           Math.max(settings.minReservedHeight || 50, event.size ? event.size[1] : 0) + 30);
       };
       googletag.pubads().addEventListener("slotRenderEnded", listener);
-      // For out-of-page slots, refresh instead of display
-      googletag.pubads().refresh([slot]);
+      // Register native out-of-page slots with display before any optional refresh.
+      googletag.display(slot);
+      if (config.settings.disableInitialLoad) googletag.pubads().refresh([slot]);
     });
   }
   function destroy() {

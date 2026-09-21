@@ -267,6 +267,7 @@ body {
   cursor: pointer;
   transition: border-color .15s, background .15s, box-shadow .15s, transform .12s;
   -webkit-tap-highlight-color: transparent;
+  margin: 0 0 20px 0;
 }
 
 .select:hover {
@@ -1223,11 +1224,12 @@ body {
 }
 
 .features {
-  margin-top: 0px;
+  margin: 0 0 20px 0;
   padding: 6px 14px;
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: 12px;
+
 }
 
 .feature {

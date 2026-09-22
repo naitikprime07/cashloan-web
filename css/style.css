@@ -128,12 +128,12 @@ body {
   color: var(--faint);
 }
 
-/* ---------- First screen: heading + dropdown + Next at the very bottom ---------- */
+/* ---------- First section: Next sits low initially and scrolls with the page ---------- */
 .screen {
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: clamp(84px, 11vh, 96px) 20px calc(100px + env(safe-area-inset-bottom));
+  padding: clamp(84px, 11vh, 96px) 20px calc(16px + env(safe-area-inset-bottom));
   min-height: 100vh;
   min-height: 100dvh;
 }
@@ -141,11 +141,6 @@ body {
 /* Keep controls and reserved ads intact on short screens; the page can scroll. */
 .screen > * {
   flex-shrink: 0;
-}
-
-/* Leave footer links reachable above the fixed Next bar. */
-.app:has(> .screen) {
-  padding-bottom: calc(100px + env(safe-area-inset-bottom));
 }
 
 .screen h1 {
@@ -215,15 +210,8 @@ body {
 }
 
 .screen > .cta {
-  position: fixed;
-  inset-inline: 0;
-  bottom: 0;
-  z-index: 5;
-  width: 100%;
-  max-width: 480px;
-  margin: 0 auto;
-  padding: 12px 20px calc(16px + env(safe-area-inset-bottom));
-  background: var(--bg);
+  margin: 0;
+  padding: 0;
 }
 
 .btn {

@@ -85,90 +85,117 @@
       logicalId: "display-blog-top-blogs",
       page: "blogs",
       adUnit: `${BASE_PATH}/cashloanplatform_display_blogtop`,
+      // "fluid" fills the container (page column) width on every device;
+      // fixed sizes remain the fallback when the response is not fluid.
       sizes: [
         [440, 250],
         [300, 250],
         [250, 250],
+        "fluid",
       ],
     },
     "display-blog-top-eligibility-check": {
       logicalId: "display-blog-top-eligibility-check",
       page: "eligibility-check",
       adUnit: `${BASE_PATH}/cashloanplatform_display_blogtop`,
+      // "fluid" fills the container (page column) width on every device;
+      // fixed sizes remain the fallback when the response is not fluid.
       sizes: [
         [440, 250],
         [300, 250],
         [250, 250],
+        "fluid",
       ],
     },
     "display-blog-top-personal-loan": {
       logicalId: "display-blog-top-personal-loan",
       page: "blog-personal-loan",
       adUnit: `${BASE_PATH}/cashloanplatform_display_blogtop`,
+      // "fluid" fills the container (page column) width on every device;
+      // fixed sizes remain the fallback when the response is not fluid.
       sizes: [
         [440, 250],
         [300, 250],
         [250, 250],
+        "fluid",
       ],
     },
     "display-blog-top-auto-loan": {
       logicalId: "display-blog-top-auto-loan",
       page: "blog-auto-loan",
       adUnit: `${BASE_PATH}/cashloanplatform_display_blogtop`,
+      // "fluid" fills the container (page column) width on every device;
+      // fixed sizes remain the fallback when the response is not fluid.
       sizes: [
         [440, 250],
         [300, 250],
         [250, 250],
+        "fluid",
       ],
     },
     "display-blog-top-student-loan": {
       logicalId: "display-blog-top-student-loan",
       page: "blog-student-loan",
       adUnit: `${BASE_PATH}/cashloanplatform_display_blogtop`,
+      // "fluid" fills the container (page column) width on every device;
+      // fixed sizes remain the fallback when the response is not fluid.
       sizes: [
         [440, 250],
         [300, 250],
         [250, 250],
+        "fluid",
       ],
     },
     "display-blog-top-business-loan": {
       logicalId: "display-blog-top-business-loan",
       page: "blog-business-loan",
       adUnit: `${BASE_PATH}/cashloanplatform_display_blogtop`,
+      // "fluid" fills the container (page column) width on every device;
+      // fixed sizes remain the fallback when the response is not fluid.
       sizes: [
         [440, 250],
         [300, 250],
         [250, 250],
+        "fluid",
       ],
     },
     "display-blog-top-payday-loan": {
       logicalId: "display-blog-top-payday-loan",
       page: "blog-payday-loan",
       adUnit: `${BASE_PATH}/cashloanplatform_display_blogtop`,
+      // "fluid" fills the container (page column) width on every device;
+      // fixed sizes remain the fallback when the response is not fluid.
       sizes: [
         [440, 250],
         [300, 250],
         [250, 250],
+        "fluid",
       ],
     },
     "display-blog-top-home-loan": {
       logicalId: "display-blog-top-home-loan",
       page: "blog-home-loan",
       adUnit: `${BASE_PATH}/cashloanplatform_display_blogtop`,
+      // "fluid" fills the container (page column) width on every device;
+      // fixed sizes remain the fallback when the response is not fluid.
       sizes: [
         [440, 250],
         [300, 250],
         [250, 250],
+        "fluid",
       ],
     },
     "display-blog-top-gold-loan": {
       logicalId: "display-blog-top-gold-loan",
       page: "blog-gold-loan",
       adUnit: `${BASE_PATH}/cashloanplatform_display_blogtop`,
+      // "fluid" fills the container (page column) width on every device;
+      // fixed sizes remain the fallback when the response is not fluid.
       sizes: [
         [440, 250],
         [300, 250],
         [250, 250],
+        "fluid",
       ],
     },
   };

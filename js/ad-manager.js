@@ -5,6 +5,8 @@
   var config = AdConfig, page = config.getPageKey(), plan = config.getPageAdConfig(page);
   var records = new Map(), listeners = [], initialized = false, destroyed = false;
   var lastClick = -Infinity, events = [], lastTrigger = null, interstitialId = null;
+  // Display states that end with no creative hand the reserved space back.
+  var EMPTY_STATES = ["no-fill", "rejected-size", "unsupported-size", "unsupported", "disabled", "failed"];
   function log(message, id, detail) {
     events.push({ event: message, id: id || null, detail: detail || null, at: Date.now() });
     if (events.length > 80) events.shift();
@@ -16,6 +18,13 @@
         next !== "destroyed") { log("consumed callback ignored", record.id); return; }
     record.state = next; log(next, record.id);
     if (next !== "loading") clearTimeout(record.timer);
+    // Only blog-top placements give the space back; the five loan-flow pages
+    // keep their reserved box above the Next button when no ad renders.
+    if (record.kind === "display" && EMPTY_STATES.indexOf(next) !== -1) collapseWrapper(record);
+  }
+  function collapseWrapper(record) {
+    var wrapper = record.element && record.element.closest(".blog-top-ad-container");
+    if (wrapper) wrapper.classList.add("ad-empty");
   }
   function reserveAnchor(height) {
     var app = document.querySelector(".app");

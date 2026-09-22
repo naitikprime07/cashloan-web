@@ -185,7 +185,8 @@ body {
 
 .blog-top-ad-container {
   margin: 20px auto 24px;
-  height: 250px;
+  padding: 0 20px;
+  min-height: 250px;
 }
 
 .inline-ad-container>div,
@@ -198,10 +199,23 @@ body {
   max-width: 300px;
 }
 
+/* Blog-top ads align with the 20px content gutter; the publisher slot may
+   host a 440px creative or a fluid one at the column width. */
+.blog-top-ad-container > div {
+  max-width: 440px;
+}
+
 /* Loan-step ads share the Next button's content column. Creatives retain
    their requested dimensions; only the publisher slot expands to fit. */
 .screen > .inline-ad-container > div {
   max-width: 440px;
+}
+
+/* A blog-top slot that ends without a creative hands its reserved space back
+   to the page instead of showing a blank box. The five loan-flow placements
+   keep their footprint above the Next button. */
+.blog-top-ad-container.ad-empty {
+  display: none;
 }
 
 /* Reserve the 250px footprint before any script runs; a fluid (native

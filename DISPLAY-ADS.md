@@ -25,13 +25,15 @@ All five `display-dropdown-next-*` entries retain `/23338698373/cashloanplatform
 
 Update 2026-09-22 (later than this audit): the five dropdownNext units no longer share a path - each page has its own unit /23338698373/cashloanplatform_native_in_content_01 through _05, and since release 20260922-9 their size lists end with "fluid" (`[[440, 250], [300, 250], [250, 250], "fluid"]`) so native in-content creatives render at the button width on any device; the numeric sizes remain the width-filtered fallback. The [[300,250],[250,250]] statement below is superseded. See FIVE-PAGE-ADS.md.
 
+Update 2026-09-22 (release 20260922-10): the nine blogTop entries also end their size lists with "fluid" (`[[440, 250], [300, 250], [250, 250], "fluid"]`). The blogTop wrapper now reserves 250px via min-height instead of a fixed height, aligns with the 20px content gutter and caps the publisher slot at 440px, so a fluid creative renders at the column width and a 440x250 creative is no longer rejected by the old 300px cap. See Lifecycle below for the no-blank-space behaviour (scoped to blogTop since release 20260922-11).
+
 Each entry has its own object, page, adUnit and sizes array, so changing one placement does not mutate another. HTML data-ad-logical attributes, exact page maps and display registry keys all use the new IDs. The registry key for a display is now its globally unique logical ID (native format keys remain unchanged).
 
 The dropdown sizes at the beginning of this task were accidentally triple-nested. That failed the existing width filter. The intended dimensions remain 300x250 and 250x250, now represented as [[300,250],[250,250]]. The manager validates numeric pairs and records a failed state with a diagnostic if malformed. It continues to select sizes using the actual wrapper width, rather than device width alone; no CSS scaling/cropping or size changes were introduced.
 
 ## Lifecycle
 
-Every current-page placement loads at DOM readiness after shared GPT readiness, before any click is needed. All slots are defined before the first SRA display request. Each gets its own slot object and state, but shares the event dispatcher and bootstrap. Repeated init is guarded; there are no click/resize-driven display requests or retry loops. Nonempty render marks ready; empty render marks no-fill, preserving the footprint. Failed configuration/GPT does not block navigation. Reload creates a fresh document; persisted history events retain existing slots rather than creating duplicates.
+Every current-page placement loads at DOM readiness after shared GPT readiness, before any click is needed. All slots are defined before the first SRA display request. Each gets its own slot object and state, but shares the event dispatcher and bootstrap. Repeated init is guarded; there are no click/resize-driven display requests or retry loops. Nonempty render marks ready. Since release 20260922-11, a blogTop outcome that ends without a creative (no-fill, rejected-size, unsupported-size, unsupported, disabled, failed) adds `ad-empty` to the publisher wrapper and removes the reserved 250px box, so an unfilled blogTop placement leaves no blank space; the five dropdownNext placements deliberately keep their reserved footprint above the Next button on every empty outcome (owner decision), and "unconfirmed" keeps the footprint everywhere because a late render may still arrive. Failed configuration/GPT does not block navigation. Reload creates a fresh document; persisted history events retain existing slots rather than creating duplicates.
 
 ## Verification
 
@@ -50,3 +52,7 @@ Every current-page placement loads at DOM readiness after shared GPT readiness, 
 - DISPLAY-ADS.md and AD-CONFIGURATION.md: report and link to current display naming.
 
 All 14 HTML files now use ad-config.js and ad-manager.js version 20260922-3. Deploy these HTML files and both scripts together. GPT loader, CSS, pixel, form behavior, interstitial identifiers, anchor configuration and all destinations remain unchanged by this update.
+
+Release 20260922-10 changed: js/ad-config.js (blogTop fluid size lists), js/ad-manager.js (empty-outcome wrapper collapse via `ad-empty`), css/style.css (blogTop min-height, 20px gutter, 440px slot cap, `.ad-empty` display:none) and the version links on all 14 ad pages. Deploy the HTML files, both scripts and the CSS together. The blogTop 300px cap statement above is superseded.
+
+Release 20260922-11 scoped the empty-outcome collapse to blogTop wrappers only: the five loan-flow `.inline-ad-container` placements keep their reserved 250px footprint when no ad renders (owner decision; the Next button position stays stable), while the nine blogTop pages still collapse via `.ad-empty`. js/ad-manager.js and css/style.css moved to version 20260922-11 on all 14 ad pages; js/ad-config.js is unchanged at 20260922-10.

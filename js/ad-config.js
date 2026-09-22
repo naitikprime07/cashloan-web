@@ -71,6 +71,7 @@
       page: "blogs",
       adUnit: `${BASE_PATH}/cashloanplatform_display_blogtop`,
       sizes: [
+        [440, 250],
         [300, 250],
         [250, 250],
       ],
@@ -80,6 +81,7 @@
       page: "eligibility-check",
       adUnit: `${BASE_PATH}/cashloanplatform_display_blogtop`,
       sizes: [
+        [440, 250],
         [300, 250],
         [250, 250],
       ],
@@ -89,6 +91,7 @@
       page: "blog-personal-loan",
       adUnit: `${BASE_PATH}/cashloanplatform_display_blogtop`,
       sizes: [
+        [440, 250],
         [300, 250],
         [250, 250],
       ],
@@ -98,6 +101,7 @@
       page: "blog-auto-loan",
       adUnit: `${BASE_PATH}/cashloanplatform_display_blogtop`,
       sizes: [
+        [440, 250],
         [300, 250],
         [250, 250],
       ],
@@ -107,6 +111,7 @@
       page: "blog-student-loan",
       adUnit: `${BASE_PATH}/cashloanplatform_display_blogtop`,
       sizes: [
+        [440, 250],
         [300, 250],
         [250, 250],
       ],
@@ -116,6 +121,7 @@
       page: "blog-business-loan",
       adUnit: `${BASE_PATH}/cashloanplatform_display_blogtop`,
       sizes: [
+        [440, 250],
         [300, 250],
         [250, 250],
       ],
@@ -125,6 +131,7 @@
       page: "blog-payday-loan",
       adUnit: `${BASE_PATH}/cashloanplatform_display_blogtop`,
       sizes: [
+        [440, 250],
         [300, 250],
         [250, 250],
       ],
@@ -134,6 +141,7 @@
       page: "blog-home-loan",
       adUnit: `${BASE_PATH}/cashloanplatform_display_blogtop`,
       sizes: [
+        [440, 250],
         [300, 250],
         [250, 250],
       ],
@@ -143,6 +151,7 @@
       page: "blog-gold-loan",
       adUnit: `${BASE_PATH}/cashloanplatform_display_blogtop`,
       sizes: [
+        [440, 250],
         [300, 250],
         [250, 250],
       ],
@@ -171,14 +180,14 @@
     "interstitial-next-3": {
       logicalId: "interstitial-next-3",
       adUnit: `${BASE_PATH}/cashloanplatform_interstitial_03`,
-      page: "employment-type",
+      page: "loan-type",
       sequence: 3,
       triggerSelector: 'a[data-interstitial-trigger="interstitial-next-3"]',
     },
     "interstitial-next-4": {
       logicalId: "interstitial-next-4",
       adUnit: `${BASE_PATH}/cashloanplatform_interstitial_04`,
-      page: "loan-type",
+      page: "employment-type",
       sequence: 4,
       triggerSelector: 'a[data-interstitial-trigger="interstitial-next-4"]',
     },
@@ -271,12 +280,12 @@
     },
     "loan-type": {
       display: ["display-dropdown-next-loan-type"],
-      interstitial: ["interstitial-next-4"],
+      interstitial: ["interstitial-next-3"],
       anchor: [],
     },
     "employment-type": {
       display: ["display-dropdown-next-employment-type"],
-      interstitial: ["interstitial-next-3"],
+      interstitial: ["interstitial-next-4"],
       anchor: [],
     },
     proceed: {

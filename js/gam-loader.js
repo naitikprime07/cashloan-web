@@ -10,7 +10,9 @@
       if (!window.AdConfig || !AdConfig.enabled) { state = "disabled"; resolve(false); return; }
       state = "loading";
       var settled = false;
-      var timer = setTimeout(function () { finish(false, "timeout"); }, 15000);
+      // A slow script is not a permanent failure. Keep the single readiness
+      // promise alive so a late GPT callback can still prepare the slots.
+      var timer = setTimeout(function () { if (!settled) state = "timeout"; }, 15000);
       function finish(ok, next) {
         if (settled) return;
         settled = true; clearTimeout(timer); state = next; resolve(ok);

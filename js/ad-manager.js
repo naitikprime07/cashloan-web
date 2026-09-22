@@ -5,10 +5,10 @@
   var config = AdConfig, page = config.getPageKey(), plan = config.getPageAdConfig(page);
   var records = new Map(), listeners = [], initialized = false, destroyed = false;
   var lastClick = -Infinity, events = [], lastTrigger = null, interstitialId = null;
-  function log(message, id) {
-    events.push({ event: message, id: id || null, at: Date.now() });
+  function log(message, id, detail) {
+    events.push({ event: message, id: id || null, detail: detail || null, at: Date.now() });
     if (events.length > 80) events.shift();
-    if (config.debug) console.info((id && id.indexOf("interstitial") === 0 ? "[INTERSTITIAL] " : id && id.indexOf("display") === 0 ? "[DISPLAY] " : "[ADS] ") + message, id || "");
+    if (config.debug) console.info((id && id.indexOf("interstitial") === 0 ? "[INTERSTITIAL] " : id && id.indexOf("display") === 0 ? "[DISPLAY] " : "[ADS] ") + message, id || "", detail || "");
   }
   function state(record, next) {
     record.state = next; log(next, record.id);
@@ -65,6 +65,7 @@
   }
   function define(record) {
     try {
+      log("slot:create", record.id, { page: page, adUnit: record.config.adUnit });
       if (record.kind === "display") {
         record.sizes = sizes(record);
         if (!record.sizes.length) { state(record, "unsupported-size"); return; }
@@ -88,7 +89,7 @@
         record.slot = googletag.defineOutOfPageSlot(record.config.adUnit,
           googletag.enums.OutOfPageFormat[record.kind === "anchor" ? "BOTTOM_ANCHOR" : "INTERSTITIAL"]);
       }
-      if (!record.slot) { state(record, "unsupported"); return; }
+      if (!record.slot) { log("slot:null", record.id); state(record, "unsupported"); return; }
       record.slot.addService(googletag.pubads());
       state(record, "defined");
     } catch (e) { if (record.slot) destroyRecord(record); state(record, "failed"); log(e.message, record.id); }
@@ -110,12 +111,12 @@
     });
     if (plan.interstitial.length) {
       var definition = config.getInterstitialConfig(plan.interstitial[0]);
-      if (!plan.interstitial.every(function (id) { return config.getInterstitialConfig(id).adUnit === definition.adUnit; })) {
+      if (!definition || !plan.interstitial.every(function (id) { var item = config.getInterstitialConfig(id); return item && item.page === page && item.adUnit === definition.adUnit; })) {
         log("incompatible interstitial paths on one page");
       } else {
         interstitialId = plan.interstitial.length === 1 ? definition.logicalId : "interstitial:" + page;
         add(interstitialId, "interstitial", definition);
-        log("preload", interstitialId);
+        log("preload:start", interstitialId, { page: page, adUnit: definition.adUnit });
       }
     }
     plan.anchor.forEach(function (id) { add(id + ":" + page, "anchor", config.getAnchorConfig(id)); });
@@ -127,6 +128,7 @@
       listen("slotRequested", function (e) { var r = find(e.slot); if (r) { r.requestCount++; log("request", r.id); } });
       listen("slotRenderEnded", function (e) {
         var r = find(e.slot); if (!r) return;
+        log("renderEnded", r.id, { isEmpty: e.isEmpty, size: e.size });
         if (r.kind === "display" && !e.isEmpty && Array.isArray(e.size) &&
             !r.sizes.some(function (s) { return s[0] === e.size[0] && s[1] === e.size[1]; })) { reject(r); return; }
         if (r.kind === "display" && Array.isArray(e.size)) r.renderedWidth = e.size[0];
@@ -143,7 +145,7 @@
         if (!r.slot || r.displayed) return;
         r.displayed = true; state(r, "loading");
         r.timer = setTimeout(function () { if (r.state === "loading") state(r, "unconfirmed"); }, 30000);
-        try { googletag.display(r.slot); }
+        try { log("display", r.id); googletag.display(r.slot); }
         catch (e) { destroyRecord(r); state(r, "failed"); }
       });
       if (config.settings.disableInitialLoad) {
@@ -169,12 +171,13 @@
     if (performance.now() - lastClick < 800) { e.preventDefault(); e.stopImmediatePropagation(); log("duplicate gesture", id); return; }
     lastClick = performance.now(); lastTrigger = id;
     var record = records.get(interstitialId);
+    log("click", id, { state: record ? record.state : "unavailable" });
     log(record && record.state === "ready" ? "native trigger" : "fallback", id);
     // Preserve the trusted anchor gesture. Native GPT owns show/close/navigation.
   }
   document.addEventListener("click", onClick, true);
   window.addEventListener("pageshow", function () { lastClick = -Infinity; });
-  window.addEventListener("pagehide", function (e) { if (!e.persisted) destroy(); });
+  window.addEventListener("pagehide", function (e) { log("pagehide", lastTrigger, { persisted: e.persisted }); if (!e.persisted) destroy(); });
   window.AdManager = {
     init: init, destroy: destroy,
     getDiagnostics: function () { return { page: page, gpt: GAM.getState(), lastTrigger: lastTrigger,

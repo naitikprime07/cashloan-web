@@ -211,10 +211,6 @@ body {
   padding-bottom: var(--anchor-space, 0px);
 }
 
-.app.has-bottom-anchor .action-bar {
-  bottom: var(--anchor-space, 0px);
-}
-
 .screen > .cta {
   margin: 0;
   padding: 0;
@@ -648,11 +644,8 @@ body {
   margin: 0 0 12px;
 }
 
-/* the main button stays at the bottom of the phone screen while the form is filled in */
+/* Eligibility submit stays after the form and scrolls independently of the anchor. */
 .action-bar {
-  position: sticky;
-  bottom: 0;
-  z-index: 5;
   margin: 0 -20px;
   padding: 28px 20px calc(14px + env(safe-area-inset-bottom));
   background: linear-gradient(180deg, rgba(3, 0, 26, 0), rgba(3, 0, 26, .94) 45%, #03001a);

@@ -20,50 +20,65 @@
       logicalId: "display-dropdown-next-index",
       page: "index",
       adUnit: `${BASE_PATH}/cashloanplatform_native_in_content_01`,
+      // "fluid" fills the container (Next button) width on every device;
+      // fixed sizes remain the fallback when the response is not fluid.
       sizes: [
         [440, 250],
         [300, 250],
         [250, 250],
+        "fluid",
       ],
     },
     "display-dropdown-next-loan-amount": {
       logicalId: "display-dropdown-next-loan-amount",
       page: "loan-amount",
       adUnit: `${BASE_PATH}/cashloanplatform_native_in_content_02`,
+      // "fluid" fills the container (Next button) width on every device;
+      // fixed sizes remain the fallback when the response is not fluid.
       sizes: [
         [440, 250],
         [300, 250],
         [250, 250],
+        "fluid",
       ],
     },
     "display-dropdown-next-employment-type": {
       logicalId: "display-dropdown-next-employment-type",
       page: "employment-type",
       adUnit: `${BASE_PATH}/cashloanplatform_native_in_content_03`,
+      // "fluid" fills the container (Next button) width on every device;
+      // fixed sizes remain the fallback when the response is not fluid.
       sizes: [
         [440, 250],
         [300, 250],
         [250, 250],
+        "fluid",
       ],
     },
     "display-dropdown-next-loan-type": {
       logicalId: "display-dropdown-next-loan-type",
       page: "loan-type",
       adUnit: `${BASE_PATH}/cashloanplatform_native_in_content_04`,
+      // "fluid" fills the container (Next button) width on every device;
+      // fixed sizes remain the fallback when the response is not fluid.
       sizes: [
         [440, 250],
         [300, 250],
         [250, 250],
+        "fluid",
       ],
     },
     "display-dropdown-next-proceed": {
       logicalId: "display-dropdown-next-proceed",
       page: "proceed",
       adUnit: `${BASE_PATH}/cashloanplatform_native_in_content_05`,
+      // "fluid" fills the container (Next button) width on every device;
+      // fixed sizes remain the fallback when the response is not fluid.
       sizes: [
         [440, 250],
         [300, 250],
         [250, 250],
+        "fluid",
       ],
     },
     "display-blog-top-blogs": {

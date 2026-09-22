@@ -180,7 +180,7 @@ body {
 
 .inline-ad-container {
   margin: auto auto 16px;
-  height: 250px;
+  min-height: 250px;
 }
 
 .blog-top-ad-container {
@@ -204,8 +204,8 @@ body {
   max-width: 440px;
 }
 
-/* These heights match the tallest configured creatives, including the
-   250x250 narrow-screen fallback. Reserve them before any script runs. */
+/* Reserve the 250px footprint before any script runs; a fluid (native
+   in-content) creative may grow the box to its own height. */
 /* The native dialog top layer supplies stacking; no ad z-index overrides. */
 .app.has-bottom-anchor {
   padding-bottom: var(--anchor-space, 0px);

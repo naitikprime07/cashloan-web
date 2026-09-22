@@ -23,6 +23,8 @@ This update supersedes the shared display configuration IDs in the earlier archi
 
 All five `display-dropdown-next-*` entries retain `/23338698373/cashloanplatform_display_dropdownnext`. All nine `display-blog-top-*` entries retain `/23338698373/cashloanplatform_display_blogtop`. No separate verified GAM inventory was found in project configuration; no new inventory paths were invented. Account inventory was not accessible.
 
+Update 2026-09-22 (later than this audit): the five dropdownNext units no longer share a path - each page has its own unit /23338698373/cashloanplatform_native_in_content_01 through _05, and since release 20260922-9 their size lists end with "fluid" (`[[440, 250], [300, 250], [250, 250], "fluid"]`) so native in-content creatives render at the button width on any device; the numeric sizes remain the width-filtered fallback. The [[300,250],[250,250]] statement below is superseded. See FIVE-PAGE-ADS.md.
+
 Each entry has its own object, page, adUnit and sizes array, so changing one placement does not mutate another. HTML data-ad-logical attributes, exact page maps and display registry keys all use the new IDs. The registry key for a display is now its globally unique logical ID (native format keys remain unchanged).
 
 The dropdown sizes at the beginning of this task were accidentally triple-nested. That failed the existing width filter. The intended dimensions remain 300x250 and 250x250, now represented as [[300,250],[250,250]]. The manager validates numeric pairs and records a failed state with a diagnostic if malformed. It continues to select sizes using the actual wrapper width, rather than device width alone; no CSS scaling/cropping or size changes were introduced.

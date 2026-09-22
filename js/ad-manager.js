@@ -34,11 +34,12 @@
     var width = wrapper.clientWidth - parseFloat(style.paddingLeft) - parseFloat(style.paddingRight);
     var configured = record.config.sizes;
     if (!Array.isArray(configured) || !configured.length || !configured.every(function (size) {
-      return Array.isArray(size) && size.length === 2 && size.every(function (value) {
+      return size === "fluid" || (Array.isArray(size) && size.length === 2 && size.every(function (value) {
         return Number.isFinite(value) && value > 0;
-      });
-    })) throw new Error("Invalid display sizes: expected [[width, height], ...]");
-    return configured.filter(function (size) { return size[0] <= Math.floor(width); });
+      }));
+    })) throw new Error("Invalid display sizes: expected fluid or [[width, height], ...]");
+    // "fluid" always stays eligible: the creative adapts to the container width.
+    return configured.filter(function (size) { return size === "fluid" || size[0] <= Math.floor(width); });
   }
   function destroyRecord(record) {
     clearTimeout(record.timer);
@@ -74,6 +75,11 @@
         record.sizes = sizes(record);
         if (!record.sizes.length) { state(record, "unsupported-size"); return; }
         record.slot = googletag.defineSlot(record.config.adUnit, record.sizes, record.element.id);
+        if (!record.slot && record.sizes.indexOf("fluid") !== -1) {
+          // GPT refused the fluid request; keep serving the fixed sizes instead.
+          record.sizes = record.sizes.filter(function (size) { return size !== "fluid"; });
+          if (record.sizes.length) record.slot = googletag.defineSlot(record.config.adUnit, record.sizes, record.element.id);
+        }
         if (record.slot) {
           record.slot.defineSizeMapping(googletag.sizeMapping().addSize([0, 0], record.sizes).build());
           record.slot.setConfig({ collapseDiv: "DISABLED", safeFrame: {
@@ -134,7 +140,7 @@
         var r = find(e.slot); if (!r) return;
         log("renderEnded", r.id, { isEmpty: e.isEmpty, size: e.size });
         if (r.kind === "display" && !e.isEmpty && Array.isArray(e.size) &&
-            !r.sizes.some(function (s) { return s[0] === e.size[0] && s[1] === e.size[1]; })) { reject(r); return; }
+            !r.sizes.some(function (s) { return Array.isArray(s) && s[0] === e.size[0] && s[1] === e.size[1]; })) { reject(r); return; }
         if (r.kind === "display" && Array.isArray(e.size)) r.renderedWidth = e.size[0];
         state(r, e.isEmpty ? "no-fill" : "ready");
         if (r.kind === "anchor") reserveAnchor(e.isEmpty ? 0 : Math.max(50, (e.size || [0, 50])[1]) + 30);

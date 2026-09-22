@@ -1,4 +1,28 @@
-# Web interstitial frequency cap confirmed as the cause - live evidence 2026-09-22
+# Display ad now matches the Next button width - fluid requests added 2026-09-22 (version 20260922-9)
+
+User requirement: the in-content display ad above each Next button must look exactly as wide as the button on every device (reported screenshot: a 440px-wide button with a 300px-wide creative centered above it).
+
+Measured on production before the change: the button, the .inline-ad-container and the slot div were all 440px wide; only the served creative was narrower (fixed 300x250 renders at its natural centered size). A slot cannot widen a fixed creative without scaling it, so the fix adds GAM's fluid size, which formats a native in-content creative to exactly the container width.
+
+## Change
+
+- js/ad-config.js: all five display-dropdown-next-* units now request `[[440, 250], [300, 250], [250, 250], "fluid"]`; the fixed sizes remain eligible fallback, so fill cannot regress.
+- js/ad-manager.js: "fluid" passes validation, always stays eligible regardless of wrapper width, defineSlot falls back to the fixed-only list if GPT returns null, and the rendered-size-match rejection ignores non-numeric entries (fluid renders report size null).
+- css/style.css: .inline-ad-container changed from height:250px to min-height:250px so a taller fluid creative may grow the box; the 250px space is still reserved before scripts run.
+- All 14 ad pages now load config/manager (and the five flow pages CSS) at ?v=20260922-9.
+
+## Evidence
+
+- Production probe (2026-09-22, index, normal load): fluid-only and mixed fixed+fluid defineSlot calls succeeded for these units (define:true, no console message); every probe including the numeric-only controls returned no-fill at that moment, so display fill is demand-driven and was temporarily empty - an empty probe does not disprove fluid eligibility.
+- Local smoke with this change: config served with the fluid list, container 440x250 equals button width 440, display slot reached no-fill on localhost (define + request succeeded; a rejected fluid would report failed/unsupported), zero console errors.
+- Existing production fills (earlier in-content creatives at 300x250) confirm the fixed fallback path still serves.
+
+Expected behavior: when a fluid/native in-content creative serves (AdX in-feed demand or a native line item targeting these units), it automatically spans the full button width on any device, including narrow phones (a 360px viewport gives a ~320px ad below a ~320px button); when only a fixed creative serves, it renders centered at natural size as before. A fluid creative's height follows its own design, so the container may grow past 250px; check AdManager.getDiagnostics() - the display slot sizes list now includes "fluid".
+
+Reference: https://developers.google.com/publisher-tag/guides/ad-sizes (fluid: width of the parent container; native ads are the only fluid type).
+
+---
+
 
 This section supersedes earlier observations below.
 

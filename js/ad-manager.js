@@ -4,11 +4,11 @@
   if (window.AdManager || !window.AdConfig || !window.GAM) return;
   var config = AdConfig, page = config.getPageKey(), plan = config.getPageAdConfig(page);
   var records = new Map(), listeners = [], initialized = false, destroyed = false;
-  var lastClick = -Infinity, events = [], lastTrigger = null;
+  var lastClick = -Infinity, events = [], lastTrigger = null, interstitialId = null;
   function log(message, id) {
     events.push({ event: message, id: id || null, at: Date.now() });
     if (events.length > 80) events.shift();
-    if (config.debug) console.info("[ADS] " + message, id || "");
+    if (config.debug) console.info((id && id.indexOf("interstitial") === 0 ? "[INTERSTITIAL] " : id && id.indexOf("display") === 0 ? "[DISPLAY] " : "[ADS] ") + message, id || "");
   }
   function state(record, next) {
     record.state = next; log(next, record.id);
@@ -23,7 +23,7 @@
   function add(id, kind, definition, element) {
     if (records.has(id)) { log("duplicate prevented", id); return; }
     records.set(id, { id: id, kind: kind, config: definition, element: element,
-      slot: null, state: "queued", displayed: false });
+      slot: null, state: "queued", displayed: false, requestCount: 0 });
   }
   function sizes(record) {
     var wrapper = record.element.parentElement;
@@ -112,7 +112,11 @@
       var definition = config.getInterstitialConfig(plan.interstitial[0]);
       if (!plan.interstitial.every(function (id) { return config.getInterstitialConfig(id).adUnit === definition.adUnit; })) {
         log("incompatible interstitial paths on one page");
-      } else add("interstitial:" + page, "interstitial", definition);
+      } else {
+        interstitialId = plan.interstitial.length === 1 ? definition.logicalId : "interstitial:" + page;
+        add(interstitialId, "interstitial", definition);
+        log("preload", interstitialId);
+      }
     }
     plan.anchor.forEach(function (id) { add(id + ":" + page, "anchor", config.getAnchorConfig(id)); });
     log("page preload", page);
@@ -120,7 +124,7 @@
       if (destroyed) return;
       if (!ready) { records.forEach(function (r) { state(r, GAM.getState()); }); return; }
       log("GPT ready");
-      listen("slotRequested", function (e) { var r = find(e.slot); if (r) log("request", r.id); });
+      listen("slotRequested", function (e) { var r = find(e.slot); if (r) { r.requestCount++; log("request", r.id); } });
       listen("slotRenderEnded", function (e) {
         var r = find(e.slot); if (!r) return;
         if (r.kind === "display" && !e.isEmpty && Array.isArray(e.size) &&
@@ -164,7 +168,7 @@
         a.closest('[data-google-interstitial="false"]')) return;
     if (performance.now() - lastClick < 800) { e.preventDefault(); e.stopImmediatePropagation(); log("duplicate gesture", id); return; }
     lastClick = performance.now(); lastTrigger = id;
-    var record = records.get("interstitial:" + page);
+    var record = records.get(interstitialId);
     log(record && record.state === "ready" ? "native trigger" : "fallback", id);
     // Preserve the trusted anchor gesture. Native GPT owns show/close/navigation.
   }
@@ -175,7 +179,7 @@
     init: init, destroy: destroy,
     getDiagnostics: function () { return { page: page, gpt: GAM.getState(), lastTrigger: lastTrigger,
       slots: Array.from(records.values()).map(function (r) { return { id: r.id, kind: r.kind, state: r.state,
-        adUnit: r.config.adUnit, sizes: r.sizes, displayed: r.displayed }; }), events: events.slice() }; }
+        adUnit: r.config.adUnit, sizes: r.sizes, displayed: r.displayed, requestCount: r.requestCount }; }), events: events.slice() }; }
   };
   GAM.init(); // Fetch GPT while the remaining document finishes parsing.
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init, { once: true });

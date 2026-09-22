@@ -1,5 +1,7 @@
 # Complete ad architecture audit ? 2026-09-22
 
+Latest five-page unit mappings and fresh-profile production diagnosis: [FIVE-PAGE-ADS.md](FIVE-PAGE-ADS.md). This supersedes earlier shared-unit and display-size observations.
+
 Display configuration IDs and current production observations have since been updated: see [DISPLAY-ADS.md](DISPLAY-ADS.md) for all 14 independent tags. The shared dropdownNext/blogTop names below describe the earlier audit.
 
 ## Configuration and inventory

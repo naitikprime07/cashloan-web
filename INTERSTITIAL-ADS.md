@@ -1,9 +1,5 @@
-# Native web interstitials
+# Native interstitials
 
-js/interstitial-ad.js registers the existing interstitial unit as INTERSTITIAL and calls display(slot) once. Null slots are supported.
+The current implementation is owned by `js/ad-manager.js`, using static `AdConfig` in `js/ad-config.js`. `js/interstitial-ad.js` is only a compatibility entry point.
 
-Google controls eligible link triggers, frequency caps, presentation, close controls and continuation. Next, blog-card and dynamically inserted Apply Loan anchors retain native href behavior. There are no click interception waits, fabricated show calls, refresh-before-display calls or forced navigation timers. Disabled Next links opt out until a selection is made.
-
-No-fill, unsupported browsers and blocked GPT leave navigation functional. InterstitialAd.preload() is idempotent. getState() reports registration/render state, not a guarantee that an interstitial will be shown. No publisher CSS targets Google wrappers; full-screen ads remain browser-level.
-
-Reference: https://developers.google.com/publisher-tag/samples/display-web-interstitial-ad
+See [AD-CONFIGURATION.md](AD-CONFIGURATION.md) for all 13 logical triggers, actual inventory, lifecycle states, production audit, verification and format limitations. Google owns showing, closing, frequency caps and native link continuation; the manager does not fabricate a manual show or close API.

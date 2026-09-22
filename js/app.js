@@ -1,17 +1,13 @@
 /* Cash Loan - small helper script (no libraries needed) */
 
 // ----- Contact form settings -----
-// CONTACT_ENDPOINT: a web address that accepts a POST with the form details as JSON
-// (for example a Formspree link, a Google Apps Script or your own API).
-// If it is left empty, the Send button opens the visitor's email app instead,
-// with the message ready to send to CONTACT_EMAIL.
 var CONTACT_ENDPOINT = "";
 var CONTACT_EMAIL = "support@cashloan.example";
 
 (function () {
   "use strict";
 
-  var STORE_KEY = "cashloan_choices_v2"; // new name so older saved defaults are ignored
+  var STORE_KEY = "cashloan_choices_v2";
 
   function readStore() {
     try { return JSON.parse(sessionStorage.getItem(STORE_KEY)) || {}; }
@@ -19,11 +15,10 @@ var CONTACT_EMAIL = "support@cashloan.example";
   }
   function writeStore(data) {
     try { sessionStorage.setItem(STORE_KEY, JSON.stringify(data)); }
-    catch (e) { /* private mode - selections just won't carry over */ }
+    catch (e) { /* private mode */ }
   }
 
-  // True when the visitor pressed refresh (reload button / F5). False for a normal visit
-  // and for the back / forward buttons.
+  // True when the visitor pressed refresh (reload button / F5)
   function isReload() {
     var nav = window.performance && performance.getEntriesByType && performance.getEntriesByType("navigation")[0];
     if (nav) return nav.type === "reload";
@@ -43,10 +38,8 @@ var CONTACT_EMAIL = "support@cashloan.example";
     var next = document.querySelector(".cta .btn");
     var errBox = document.getElementById("fieldError");
 
-    // Refreshing the page starts it again with nothing chosen (earlier pages keep their choices)
     if (reloaded) { delete choices[key]; writeStore(choices); }
 
-    // Nothing is chosen by default. Bring back what the visitor picked earlier, if anything.
     radios.forEach(function (r) { r.checked = (r.value === choices[key]); });
     if (!dialog.querySelector("input:checked")) delete choices[key];
 
@@ -54,7 +47,6 @@ var CONTACT_EMAIL = "support@cashloan.example";
       btn.classList.remove("has-error");
       if (errBox) errBox.textContent = "";
     }
-    // Show the choice (or the "Select ..." hint) and lock / unlock the Next button
     function refresh() {
       var picked = !!choices[key];
       label.textContent = picked ? choices[key] : "Select " + what;
@@ -68,52 +60,52 @@ var CONTACT_EMAIL = "support@cashloan.example";
     }
     refresh();
 
-    // Next stays on this page until something is chosen
     if (next) {
       next.addEventListener("click", function (e) {
         if (choices[key]) return;
         e.preventDefault();
         if (errBox) errBox.textContent = "Please select your " + what + " to continue.";
         btn.classList.remove("has-error");
-        void btn.offsetWidth; // restart the shake animation
+        void btn.offsetWidth;
         btn.classList.add("has-error");
       });
     }
 
-    // Put the dropdown right under the select, same width. Flips above if
-    // there is no room below.
     function place() {
       var r = btn.getBoundingClientRect();
       var gap = 10, edge = 12;
       var box = dialog.querySelector(".options");
       dialog.style.width = r.width + "px";
       dialog.style.left = r.left + "px";
-      box.style.maxHeight = ""; // measure the full list first
+      box.style.maxHeight = "";
       var h = dialog.offsetHeight;
-      var below = window.innerHeight - r.bottom - gap - edge;
-      var above = r.top - gap - edge;
-      var useBelow = h <= below || below >= above;
-      var room = useBelow ? below : above;
-      if (h > room) { // long list: keep it on screen and scroll inside the box
-        // end on half a row so it is clear that there are more options below
-        var rowH = box.querySelector(".option").offsetHeight || 46;
-        var rows = Math.max(2, Math.floor((room - 18) / rowH - 0.5));
-        box.style.maxHeight = (18 + (rows + 0.5) * rowH) + "px";
-        h = dialog.offsetHeight;
+      if (r.bottom + gap + h <= window.innerHeight - edge) {
+        dialog.style.top = r.bottom + gap + "px";
+        dialog.style.bottom = "auto";
+      } else {
+        dialog.style.bottom = window.innerHeight - r.top + gap + "px";
+        dialog.style.top = "auto";
       }
-      dialog.style.top = (useBelow ? r.bottom + gap : Math.max(edge, r.top - gap - h)) + "px";
+      box.style.maxHeight = Math.max(120, window.innerHeight - Math.abs(r.bottom + gap - (window.innerHeight - h)) - edge * 2) + "px";
     }
-    window.addEventListener("resize", function () { if (dialog.open) place(); });
-    window.addEventListener("scroll", function () { if (dialog.open) place(); }, { passive: true });
 
     btn.addEventListener("click", function () {
-      if (typeof dialog.showModal === "function") dialog.showModal();
-      else dialog.setAttribute("open", "");
+      var expanded = btn.getAttribute("aria-expanded") === "true";
+      if (expanded) {
+        dialog.close();
+        return;
+      }
       place();
+      dialog.showModal();
       btn.setAttribute("aria-expanded", "true");
-      var checked = dialog.querySelector("input:checked");
-      if (checked) checked.focus();
     });
+
+    window.addEventListener("resize", function () {
+      if (dialog.open) place();
+    });
+    window.addEventListener("scroll", function () {
+      if (dialog.open) place();
+    }, { passive: true });
 
     radios.forEach(function (r) {
       r.addEventListener("change", function () {
@@ -121,16 +113,13 @@ var CONTACT_EMAIL = "support@cashloan.example";
         writeStore(choices);
         refresh();
       });
-      // Enter on a focused option = confirm and close (keyboard users)
       r.addEventListener("keydown", function (e) {
         if (e.key === "Enter") { e.preventDefault(); dialog.close(); }
       });
     });
 
     dialog.addEventListener("click", function (e) {
-      // Tap outside the list (on the dark backdrop) closes the dialog
       if (e.target === dialog) { dialog.close(); return; }
-      // Tap/click on an option closes it right after the radio fills in
       if (e.detail > 0 && e.target.closest(".option")) {
         setTimeout(function () { dialog.close(); }, 160);
       }
@@ -156,7 +145,7 @@ var CONTACT_EMAIL = "support@cashloan.example";
     contactForm.addEventListener("submit", function (e) {
       e.preventDefault();
       var f = contactForm.elements;
-      if (f.website && f.website.value) return; // hidden field: only bots fill it in
+      if (f.website && f.website.value) return;
 
       var data = {
         firstName: f.firstName.value.trim(),
@@ -212,7 +201,8 @@ var CONTACT_EMAIL = "support@cashloan.example";
   document.querySelectorAll("[data-summary]").forEach(function (el) {
     el.textContent = choices[el.getAttribute("data-summary")] || "Not selected";
   });
-  // A refresh starts every page fresh: back to the top, contact form emptied
+
+  // A refresh starts every page fresh
   if (reloaded) {
     var startFresh = function () {
       window.scrollTo(0, 0);
@@ -221,4 +211,5 @@ var CONTACT_EMAIL = "support@cashloan.example";
     };
     window.addEventListener("load", function () { startFresh(); setTimeout(startFresh, 80); });
   }
+
 })();

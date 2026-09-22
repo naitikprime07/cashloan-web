@@ -482,7 +482,7 @@
         ? "?amount=" + e.loan + "&rate=" + e.rate + "&months=" + e.months
         : "";
     html +=
-      '<div class="btn-row"><a class="btn" id="applyBtn" href="blog-' +
+      '<div class="btn-row"><a class="btn" id="applyBtn" data-interstitial-trigger="interstitial-apply-loan" href="blog-' +
       current +
       ".html" +
       q +

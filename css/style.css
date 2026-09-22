@@ -198,6 +198,12 @@ body {
   max-width: 300px;
 }
 
+/* Loan-step ads share the Next button's content column. Creatives retain
+   their requested dimensions; only the publisher slot expands to fit. */
+.screen > .inline-ad-container > div {
+  max-width: 440px;
+}
+
 /* These heights match the tallest configured creatives, including the
    250x250 narrow-screen fallback. Reserve them before any script runs. */
 /* The native dialog top layer supplies stacking; no ad z-index overrides. */

@@ -1,62 +1,94 @@
-# CashLoan ad architecture
+# Complete ad architecture audit ? 2026-09-22
 
-Production origin remains https://cashloanplatform.com. Unit paths and all four existing keys remain in js/ad-config.js.
+Display configuration IDs and current production observations have since been updated: see [DISPLAY-ADS.md](DISPLAY-ADS.md) for all 14 independent tags. The shared dropdownNext/blogTop names below describe the earlier audit.
 
-## Root cause
+## Configuration and inventory
 
-The app is a centered 480px maximum column. Loan-step screens have 20px side padding. The old CSS selector targeting all div IDs starting with google_ads_iframe assigned every Google wrapper a 480px maximum and, above 480px, left:50%, right:auto, and translateX(-50%). This affected display containers and full-screen interstitials. The bottom-anchor script compounded this with guessed DOM selection, left offsets and resize listeners. All these overrides are removed.
+`js/ad-config.js` is the static source of truth (`AdConfig`). No framework, environment files or invented inventory paths are used. `js/gam-loader.js` is the only GPT bootstrap; `js/ad-manager.js` owns all slots, page initialization, event listeners and cleanup. Old interstitial/anchor files are inert compatibility entry points, not independent managers. HTML loads config, GPT loader and manager in that order, versioned `20260922-2`.
 
-The old config/loader selected sizes using browser width despite the narrow app; blogTop was incorrectly configured as rectangles. App-wide overflow clipping is removed. The overflowing blog-header decorative glow is bounded at its source. Ad ancestors have no transforms, filters, perspective or containment.
-
-## Placement map
-
-| Key | Pages and container | Position / lifecycle |
+| Type / logical config | Pages | Actual existing GAM path |
 | --- | --- | --- |
-| dropdownNext | index, loan-amount, loan-type, employment-type; unique gam-*-dropdown-next ID inside .screen > .inline-ad-container | Normal flow, display slot |
-| blogTop | blogs, eligibility-check, seven blog detail pages; gam-blog-top inside .blog-top-ad-container under app or main | Normal flow, banner display slot |
-| interstitial | four loan steps, proceed, blogs, eligibility-check | GPT-generated browser-level INTERSTITIAL |
-| blogBottomAnchor | blogs and eligibility-check, existing data marker | GPT-generated browser-level BOTTOM_ANCHOR |
+| Display / dropdownNext | index, loan-amount, employment-type, loan-type, proceed | /23338698373/cashloanplatform_display_dropdownnext |
+| Display / blogTop | blogs, eligibility-check, all seven blog detail pages | /23338698373/cashloanplatform_display_blogtop |
+| Native interstitial / 13 logical triggers | five loan pages, blogs, eligibility-check | /23338698373/cashloanplatform_interstitial |
+| Native anchor / blogBottomAnchor | blogs, eligibility-check | /23338698373/cashloanplatform_anchor_001 |
 
-Other pages contain no ads. Separate HTML documents reuse gam-blog-top safely. Navigation is normal document navigation, not an SPA.
+No blogBottom display placement or other GPT format was found. Display and anchor registry IDs are `logicalId:actual-page-name`, e.g. `blogTop:blog-auto-loan`, so all page placements are distinct. All seven card triggers share one physical native interstitial slot on blogs; separate logical IDs do not mean seven simultaneous GPT slots.
 
-## Responsive sizing
+## All interstitial mappings
 
-The loader measures wrapper content width and filters sizes before both defineSlot and defineSizeMapping. GPT mapping uses a [0,0] entry with that measured subset because viewport breakpoints cannot represent this narrow container. ResizeObserver rebuilds only slots whose eligible size set changes, destroying the old slot first.
+| Logical ID | Source | Original destination |
+| --- | --- | --- |
+| interstitial-next-1 | index | loan-amount.html |
+| interstitial-next-2 | loan-amount | employment-type.html |
+| interstitial-next-3 | employment-type | loan-type.html |
+| interstitial-next-4 | loan-type | proceed.html |
+| interstitial-next-5 | proceed | blogs.html |
+| interstitial-blog-1 | blogs personal card | eligibility-check.html?loan=personal-loan |
+| interstitial-blog-2 | blogs auto card | eligibility-check.html?loan=auto-loan |
+| interstitial-blog-3 | blogs student card | eligibility-check.html?loan=student-loan |
+| interstitial-blog-4 | blogs business card | eligibility-check.html?loan=business-loan |
+| interstitial-blog-5 | blogs payday card | eligibility-check.html?loan=payday-loan |
+| interstitial-blog-6 | blogs home card | eligibility-check.html?loan=home-loan |
+| interstitial-blog-7 | blogs gold card | eligibility-check.html?loan=gold-loan |
+| interstitial-apply-loan | dynamically generated eligibility result | selected blog-*.html, retaining amount/rate/months parameters |
 
-- Rectangle: 300x250 when it fits; 250x250 fallback. At 320px, step content is only 280px wide.
-- Banner: 300x50/100 and 320x50/100. Configured 468x60, 728x90 and 970x90 are excluded unless actual content width permits them.
-- Banner wrapper has 10px side padding: 300px available at 320px, maximum 460px. Larger banners never serve in this shell.
-- No stretching, scaling, iframe overrides or creative clipping. Too-narrow and empty placements retain their reserved footprint.
+Apply Loan is generated by eligibility.js, not inside the seven static blog details. Those details have blogTop only. All existing hrefs are preserved.
 
-## Lifecycle
+## Problems found and changes
 
-Initialization and script injection are guarded. Pending records prevent duplicate definition/display before GPT loads. Destroy invalidates pending records. Display-only destruction leaves native slots independently managed. Back/forward restoration rechecks geometry without redisplaying unchanged slots.
+- Three conflicting initialization paths: app.js, per-page inline snippets and independent native managers; the unreferenced ad-manager.js expected nonexistent configuration APIs. Replaced with one real registry and removed competing initialization.
+- Display initialization generated container IDs that did not match HTML. Additional dropdown placeholders were below the footer, separate from the original reserved placement. Consolidated one correctly tagged in-content slot per page; proceed's existing footer placement was moved above Next.
+- Requested 728/970px creatives could not fit the 480px app. Restored rectangle inventory sizes 300x250 and 250x250 and filtered against actual wrapper width. The 250px footprint stays stable for fill, slow loading, failure and no-fill. No stretching or cropping.
+- Unsupported calls included showInterstitial(), enableAnchorAds(), enableAsyncRendering() and setLazyLoadOptions(). Removed. False ready/close inferences and fallback polling could double-navigate. Native trusted anchors now remain intact.
+- Seven interstitial preloads on blogs conflicted with native format constraints. Thirteen logical triggers now map to one physical slot per relevant page.
+- Next 3/4 were reversed in configuration. Apply Loan had been assigned to the wrong page. Both corrected.
+- Anchor module hardcoded its own inventory, lacked a complete duplicate guard and failed after an unsupported API call. It now uses shared config, registry, event handling and bottom-space reservation.
+- Reinitialization on persisted pageshow added listeners/slots repeatedly. BFCache pagehide now retains the page's slots; pageshow resets only gesture debounce. Nonpersisted pagehide destroys slots, observers, timers and GPT listeners. Full navigation/reload starts a fresh document.
 
-Native anchors intentionally use the browser viewport; they cannot correctly be narrowed with publisher CSS. Only app bottom clearance and sticky action-bar offset change after fill. Clearance uses reported creative height plus 30px for controls, retained conservatively after dismissal until destruction/no-fill. Google wrappers remain untouched. The picker uses native dialog top-layer stacking, aligned to its select button, without extreme z-index values.
+## Loading and states
 
-## Verification
+GPT fetch begins when the manager script executes. At DOMContentLoaded, all current-page records are queued. After GPT readiness, all relevant slots are defined before the first display call (SRA). Every slot is displayed once; manual initial loading, if enabled in config, requests all registered slots once after display. No click starts an ad request.
 
-Development checks were run during implementation. Their scripts and saved results were removed from the deployment workspace at the owner's request; the live site does not require them.
+States describe observed facts: queued, defined, loading, ready (nonempty slotRenderEnded), no-fill, viewable (display/anchor), consumed (interstitial impressionViewable), unsupported, unsupported-size, rejected-size, failed, disabled, timeout or unconfirmed. Ready does not prove an interstitial has shown. A 15-second GPT bootstrap timeout fails open; a 30-second slot timer records an unconfirmed outcome without issuing duplicate requests. A new document provides the next request opportunity.
 
+`AdManager.getDiagnostics()` returns page, GPT state, slot IDs/types/paths/sizes/states and bounded lifecycle logs. Set `AdConfig.debug=true` for console logs. Logs contain no financial input or application query values. Scroll/resize do not refresh ads. Incompatible creative sizes are rejected entirely, preserving the wrapper. A shrink below a rendered creative width rejects that slot for this document rather than generating resize-driven requests.
 
-These tests verify layout, not GAM delivery. A real GPT smoke check loaded the library and registered display, anchor and interstitial slots without wrapper transforms. No filled native overlay was observed; real anchor presentation and interstitial dismissal still require a filled live session.
+Native interstitial frequency caps and Google eligibility remain authoritative. GPT web INTERSTITIAL has no public publisher-controlled show/close callback contract; immediate close-to-replacement loops are not implemented. A click either follows GPT's native filled-ad flow or continues its original href immediately. Rapid duplicate gestures are suppressed for 800ms; modifier/new-tab clicks and disabled controls retain native behavior.
 
+Native anchor containers are viewport-managed by Google, not limited to the app's 480px column. No CSS rewrites Google containers. Reserve the reported creative height plus 30px controls (minimum total 80px) on fill; no-fill clears reservation. The existing showModal dialog uses the browser top layer and makes background content inert. Real creative close/expansion geometry still needs filled-device verification.
 
-## Stable display footprints
+## Verification and production findings
 
-CSS reserves 250px for dropdownNext (20px above, 16px below) and 100px for blogTop before GPT runs. Both rectangle sizes are 250px tall; 100px accommodates the tallest configured banner. Creatives are centered without scaling or clipping. Blank, delayed, failed, blocked and no-fill states preserve the same footprint. Each display slot overrides page-level collapse behavior using setConfig({ collapseDiv: "DISABLED" }); the global setting and native formats remain unchanged. No JavaScript positions the Next button.
+Local Chromium with a controlled GPT stub: 14 pages x 8 widths (320,360,375,390,412,430,768,1440) = 112 passing cases. Verified one service initialization, registry/display guards, fill/no-fill states, stable Next position, no horizontal overflow, simulated persisted pagehide/pageshow and listener cleanup. This is not a real BFCache restore or proof of ad delivery.
 
+Additional isolated browser checks passed for manual request ordering, unsupported native formats and consumed-slot non-reuse. Disabled Next controls explicitly opt out of native GPT until a selection is made.
 
-## Oversized creative protection
+Blocked-GPT browser test: all five Next links, all seven blog cards and dynamic Apply Loan navigated to the original destination; application query parameters survived. No page JavaScript errors were observed.
 
-Display slot elements now have explicit heights matching their reservations. Their SafeFrame settings disable overlay/push expansion. Render events validate returned sizes; scoped mutation and resize observers reject the whole creative if its rendered geometry escapes the slot or wrapper, including later expansion. Rejected slots remain blank for that document without retrying; their reserved footprint stays intact. Google-generated native anchor/interstitial elements are excluded. No creative is cropped or scaled.
+Production read-only audit on cashloanplatform.com used a clean Chromium context with normal Chrome UA, 390x844 viewport, and approximately 1.8 seconds observation after DOMContentLoaded per page. All 14 URLs returned HTTP 200, no CSP response header, and no observed page JavaScript exception. The NEW manager was absent on all pages: local changes are NOT deployed.
 
+| Production pages | Actual observed ad render results |
+| --- | --- |
+| index, loan-amount, employment-type, loan-type, proceed | dropdownNext and interstitial: no-fill |
+| blogs, eligibility-check?loan=personal-loan | blogTop, anchor and interstitial: no-fill |
+| blog-personal-loan, blog-auto-loan, blog-student-loan, blog-business-loan, blog-payday-loan, blog-home-loan, blog-gold-loan | blogTop: no-fill |
 
-## Blog List integration
+These were real slotRenderEnded empty responses, not an assumption that preload failed. Filled creative visibility/close and readiness at every real user click were not verified in this run. No placement is intentionally fallback-only; all relevant ads are requested early, and all native triggers fail open when unavailable. No account access was available to inspect inventory eligibility, effective frequency caps or demand. An earlier live session reported an extra /23338698373/Latest3 interstitial (absent from local code); its external source remains unresolved, and this run does not establish that it was removed.
 
-blogs.html loads the existing bottom-anchor.js and opts in using data-bottom-anchor. The existing blogBottomAnchor key is reused. Native GPT positions the anchor at browser level; no narrow-shell positioning overrides are applied. The manager reserves creative height plus 30px after fill and no space for no-fill/unsupported formats. Its started flag and generation guard prevent duplicate queued initialization, slots and display calls. Ordinary page navigation scopes slots to each document; back/forward restoration retains the existing instance.
+## Changed files and purpose
 
+- js/ad-config.js: static inventory, logical IDs, correct page mappings and common settings.
+- js/gam-loader.js: one promise-guarded GPT loader, modern configuration, readiness/failure timeout.
+- js/ad-manager.js: unified registry, real lifecycle events, responsive display handling, native formats, diagnostics, native click observation and cleanup.
+- js/interstitial-ad.js and js/bottom-anchor.js: compatibility entry points without their own GPT implementation.
+- js/app.js: removed duplicate ad initialization; retained form/dropdown/navigation code.
+- js/eligibility.js: logical identifier on dynamically created Apply Loan.
+- index.html, loan-amount.html, employment-type.html, loan-type.html, proceed.html: one correctly placed display container, correct Next identifiers and shared versioned scripts.
+- blogs.html, eligibility-check.html: shared display/native initialization and scripts.
+- blog-personal-loan.html, blog-auto-loan.html, blog-student-loan.html, blog-business-loan.html, blog-payday-loan.html, blog-home-loan.html, blog-gold-loan.html: shared blogTop initialization and scripts.
+- AD-CONFIGURATION.md and INTERSTITIAL-ADS.md: current architecture and audit documentation.
 
-Pixel audit: no fbq, PageView, Meta base script, tracking utility or pixel ID/config exists in this checkout. The owner subsequently authorized a new static pixel feature. See PIXEL-CONFIGURATION.md; Platform-wide one-time tracking is configured with the supplied public pixel ID.
-\nPixel scope update: all HTML pages now use the existing loader and one IndexedDB claim per identifiable browser/origin, not per-page events. PIXEL-CONFIGURATION.md supersedes the earlier Blog List-only pixel audit.\n
-\nCurrent pixel scope: only Blog List loads tracking; /blogs and /blogs.html are allowed. Persistent one-time-browser protection is unchanged. This supersedes the earlier platform-wide scope.\n
+CSS and pixel files were not changed. No tests folder was created. Deploy changed HTML and JavaScript together to avoid stale interface combinations.
+
+References: https://developers.google.com/publisher-tag/samples/display-web-interstitial-ad and https://developers.google.com/publisher-tag/samples/display-anchor-ad

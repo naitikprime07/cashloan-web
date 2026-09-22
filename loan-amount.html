@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=20260922-4">
 </head>
 <body>
 <div class="app">
@@ -59,10 +59,10 @@
     </button>
 
     <div class="inline-ad-container">
-      <div id="gam-loan-amount-dropdown-next"></div>
+      <div id="gam-loan-amount-dropdown-next" data-ad-logical="display-dropdown-next-loan-amount"></div>
     </div>
 
-    <div class="cta"><p class="field-error" id="fieldError" role="alert"></p><a class="btn" href="employment-type.html" data-interstitial="true">Next</a></div>
+    <div class="cta"><p class="field-error" id="fieldError" role="alert"></p><a class="btn" href="employment-type.html" data-interstitial="true" data-interstitial-trigger="interstitial-next-2">Next</a></div>
   </section>
 
   <div class="info">
@@ -125,6 +125,8 @@
     <p class="copy">&copy; 2026 cashloanplatform.com All rights reserved.</p>
   </footer>
 
+  <!-- Display Ad Container: dropdownNext -->
+
   <dialog id="picker" class="picker" aria-label="Select loan amount">
     <div class="options" role="radiogroup" aria-label="Loan amount">
       <label class="option"><span>50,000 - 1,00,000</span><input type="radio" name="amount" value="50,000 - 1,00,000" autocomplete="off"></label>
@@ -136,16 +138,9 @@
   </dialog>
 
 </div>
-<script src="js/ad-config.js"></script>
-<script src="js/gam-loader.js"></script>
-<script>
-  // Initialize dropdown-next ad on this page
-  GAM.cmd.push(function() {
-    GAM.createSlot('gam-loan-amount-dropdown-next', 'dropdownNext');
-    GAM.displaySlot('gam-loan-amount-dropdown-next');
-  });
-</script>
-<script src="js/interstitial-ad.js"></script>
-<script src="js/app.js"></script>
+<script src="js/ad-config.js?v=20260922-4"></script>
+<script src="js/gam-loader.js?v=20260922-2"></script>
+<script src="js/ad-manager.js?v=20260922-3"></script>
+<script src="js/app.js?v=20260922-2"></script>
 </body>
 </html>

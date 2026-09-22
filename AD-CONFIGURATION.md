@@ -12,7 +12,8 @@ Display configuration IDs and current production observations have since been up
 | --- | --- | --- |
 | Display / dropdownNext | index, loan-amount, employment-type, loan-type, proceed | /23338698373/cashloanplatform_display_dropdownnext |
 | Display / blogTop | blogs, eligibility-check, all seven blog detail pages | /23338698373/cashloanplatform_display_blogtop |
-| Native interstitial / 13 logical triggers | five loan pages, blogs, eligibility-check | /23338698373/cashloanplatform_interstitial |
+| Native interstitial / index, 7 blog cards, Apply Loan | index, blogs, eligibility-check | /23338698373/cashloanplatform_interstitial |
+| Native interstitial / per-page Next buttons | loan-amount, loan-type, employment-type, proceed | /23338698373/cashloanplatform_interstitial_02/_03/_04/_05 |
 | Native anchor / blogBottomAnchor | blogs, eligibility-check | /23338698373/cashloanplatform_anchor_001 |
 
 No blogBottom display placement or other GPT format was found. Display and anchor registry IDs are `logicalId:actual-page-name`, e.g. `blogTop:blog-auto-loan`, so all page placements are distinct. All seven card triggers share one physical native interstitial slot on blogs; separate logical IDs do not mean seven simultaneous GPT slots.
@@ -23,8 +24,8 @@ No blogBottom display placement or other GPT format was found. Display and ancho
 | --- | --- | --- |
 | interstitial-next-1 | index | loan-amount.html |
 | interstitial-next-2 | loan-amount | employment-type.html |
-| interstitial-next-3 | employment-type | loan-type.html |
-| interstitial-next-4 | loan-type | proceed.html |
+| interstitial-next-3 | loan-type | proceed.html |
+| interstitial-next-4 | employment-type | loan-type.html |
 | interstitial-next-5 | proceed | blogs.html |
 | interstitial-blog-1 | blogs personal card | eligibility-check.html?loan=personal-loan |
 | interstitial-blog-2 | blogs auto card | eligibility-check.html?loan=auto-loan |

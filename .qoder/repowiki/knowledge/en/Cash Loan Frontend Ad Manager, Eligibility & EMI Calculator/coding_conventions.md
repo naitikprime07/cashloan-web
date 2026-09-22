@@ -1,0 +1,6 @@
+- Every module is wrapped in an immediately-invoked function expression with `"use strict"` and guards against re-initialization by checking for an existing `window` global before defining anything.
+- External configuration is exposed as plain `window` objects (`AdConfig`, `PIXEL_CONFIG`, `GAM`, `AdManager`, `CashLoanPixel`) so scripts can be loaded in any order without a module system.
+- Ad placements are declared declaratively in `ad-config.js` using logical IDs and a `PAGE_AD_MAP` that maps page names to lists of display/interstitial/anchor identifiers, keeping runtime code free of ad-unit literals.
+- Asynchronous bootstraps expose a `getState` method returning a string state machine (`idle`/`loading`/`ready`/`failed`/`disabled`/...) and return a cached Promise so concurrent callers share one initialization.
+- DOM interactions use data attributes (`data-key`, `data-summary`, `data-ad-logical`, `data-interstitial-trigger`, `data-google-interstitial`) as the contract between markup and behavior instead of hard-coded selectors.
+- User selections across steps are persisted in `sessionStorage` under the key `cashloan_choices_v2` as JSON, with try/catch around parse/write to tolerate private browsing mode.

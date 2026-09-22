@@ -1,0 +1,1 @@
+Client-side scripts powering the Cash Loan site's Google Ad Manager ad delivery, Meta pixel tracking, loan eligibility estimator, and EMI calculator with no external libraries.

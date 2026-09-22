@@ -165,6 +165,8 @@
     // 5 Next buttons in loan flow
     "interstitial-next-1": {
       logicalId: "interstitial-next-1",
+      type: "interstitial",
+      enabled: true,
       adUnit: `${BASE_PATH}/cashloanplatform_interstitial`,
       page: "index",
       sequence: 1,
@@ -172,6 +174,8 @@
     },
     "interstitial-next-2": {
       logicalId: "interstitial-next-2",
+      type: "interstitial",
+      enabled: true,
       adUnit: `${BASE_PATH}/cashloanplatform_interstitial_02`,
       page: "loan-amount",
       sequence: 2,
@@ -179,6 +183,8 @@
     },
     "interstitial-next-3": {
       logicalId: "interstitial-next-3",
+      type: "interstitial",
+      enabled: true,
       adUnit: `${BASE_PATH}/cashloanplatform_interstitial_03`,
       page: "loan-type",
       sequence: 3,
@@ -186,6 +192,8 @@
     },
     "interstitial-next-4": {
       logicalId: "interstitial-next-4",
+      type: "interstitial",
+      enabled: true,
       adUnit: `${BASE_PATH}/cashloanplatform_interstitial_04`,
       page: "employment-type",
       sequence: 4,
@@ -193,6 +201,8 @@
     },
     "interstitial-next-5": {
       logicalId: "interstitial-next-5",
+      type: "interstitial",
+      enabled: true,
       adUnit: `${BASE_PATH}/cashloanplatform_interstitial_05`,
       page: "proceed",
       sequence: 5,
@@ -202,42 +212,56 @@
     // 7 Blog cards on blogs.html
     "interstitial-blog-1": {
       logicalId: "interstitial-blog-1",
+      type: "interstitial",
+      enabled: true,
       adUnit: `${BASE_PATH}/cashloanplatform_interstitial`,
       page: "blogs",
       triggerSelector: 'a.post-card[href*="personal-loan"]',
     },
     "interstitial-blog-2": {
       logicalId: "interstitial-blog-2",
+      type: "interstitial",
+      enabled: true,
       adUnit: `${BASE_PATH}/cashloanplatform_interstitial`,
       page: "blogs",
       triggerSelector: 'a.post-card[href*="auto-loan"]',
     },
     "interstitial-blog-3": {
       logicalId: "interstitial-blog-3",
+      type: "interstitial",
+      enabled: true,
       adUnit: `${BASE_PATH}/cashloanplatform_interstitial`,
       page: "blogs",
       triggerSelector: 'a.post-card[href*="student-loan"]',
     },
     "interstitial-blog-4": {
       logicalId: "interstitial-blog-4",
+      type: "interstitial",
+      enabled: true,
       adUnit: `${BASE_PATH}/cashloanplatform_interstitial`,
       page: "blogs",
       triggerSelector: 'a.post-card[href*="business-loan"]',
     },
     "interstitial-blog-5": {
       logicalId: "interstitial-blog-5",
+      type: "interstitial",
+      enabled: true,
       adUnit: `${BASE_PATH}/cashloanplatform_interstitial`,
       page: "blogs",
       triggerSelector: 'a.post-card[href*="payday-loan"]',
     },
     "interstitial-blog-6": {
       logicalId: "interstitial-blog-6",
+      type: "interstitial",
+      enabled: true,
       adUnit: `${BASE_PATH}/cashloanplatform_interstitial`,
       page: "blogs",
       triggerSelector: 'a.post-card[href*="home-loan"]',
     },
     "interstitial-blog-7": {
       logicalId: "interstitial-blog-7",
+      type: "interstitial",
+      enabled: true,
       adUnit: `${BASE_PATH}/cashloanplatform_interstitial`,
       page: "blogs",
       triggerSelector: 'a.post-card[href*="gold-loan"]',
@@ -246,6 +270,8 @@
     // Apply Loan button on blog detail pages
     "interstitial-apply-loan": {
       logicalId: "interstitial-apply-loan",
+      type: "interstitial",
+      enabled: true,
       adUnit: `${BASE_PATH}/cashloanplatform_interstitial`,
       page: "eligibility-check",
       triggerSelector: "#applyBtn",

@@ -1,0 +1,1 @@
+No build or test commands exist. Each `.js` file is included directly in its page's HTML. Ad units require `NETWORK_CODE=23338698373` configured in `ad-config.js`; Meta Pixel requires `PIXEL_CONFIG.meta.pixelId` set in `pixel-config.js`. GPT is loaded asynchronously from `https://securepubads.g.doubleclick.net/tag/js/gpt.js` only if `AdConfig.enabled` is true.

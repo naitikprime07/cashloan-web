@@ -11,6 +11,9 @@
     if (config.debug) console.info((id && id.indexOf("interstitial") === 0 ? "[INTERSTITIAL] " : id && id.indexOf("display") === 0 ? "[DISPLAY] " : "[ADS] ") + message, id || "", detail || "");
   }
   function state(record, next) {
+    // Late render/viewability callbacks must not re-arm a consumed native slot.
+    if (record.kind === "interstitial" && record.state === "consumed" &&
+        next !== "destroyed") { log("consumed callback ignored", record.id); return; }
     record.state = next; log(next, record.id);
     if (next !== "loading") clearTimeout(record.timer);
   }
@@ -65,6 +68,7 @@
   }
   function define(record) {
     try {
+      if (record.config.enabled === false) { state(record, "disabled"); return; }
       log("slot:create", record.id, { page: page, adUnit: record.config.adUnit });
       if (record.kind === "display") {
         record.sizes = sizes(record);
@@ -111,7 +115,7 @@
     });
     if (plan.interstitial.length) {
       var definition = config.getInterstitialConfig(plan.interstitial[0]);
-      if (!definition || !plan.interstitial.every(function (id) { var item = config.getInterstitialConfig(id); return item && item.page === page && item.adUnit === definition.adUnit; })) {
+      if (!definition || !plan.interstitial.every(function (id) { var item = config.getInterstitialConfig(id); return item && item.logicalId === id && item.type === "interstitial" && item.page === page && typeof item.adUnit === "string" && /^\/\d+\/[^\s]+$/.test(item.adUnit) && item.adUnit === definition.adUnit; })) {
         log("incompatible interstitial paths on one page");
       } else {
         interstitialId = plan.interstitial.length === 1 ? definition.logicalId : "interstitial:" + page;
@@ -171,7 +175,10 @@
     if (performance.now() - lastClick < 800) { e.preventDefault(); e.stopImmediatePropagation(); log("duplicate gesture", id); return; }
     lastClick = performance.now(); lastTrigger = id;
     var record = records.get(interstitialId);
-    log("click", id, { state: record ? record.state : "unavailable" });
+    var targetPage = new URL(a.href, location.href).pathname;
+    log("click", id, { page: page, targetPage: targetPage,
+      adUnit: record ? record.config.adUnit : null,
+      state: record ? record.state : "unavailable" });
     log(record && record.state === "ready" ? "native trigger" : "fallback", id);
     // Preserve the trusted anchor gesture. Native GPT owns show/close/navigation.
   }

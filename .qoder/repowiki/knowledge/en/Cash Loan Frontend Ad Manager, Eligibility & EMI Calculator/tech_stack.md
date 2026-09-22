@@ -1,0 +1,1 @@
+Vanilla ES5 JavaScript with no frameworks or bundler; integrates Google Ad Manager (GPT) via `googletag` API, Meta Pixel via `connect.facebook.net/en_US/fbevents.js`, IndexedDB for persistent pixel claims, and Web Locks (`navigator.locks`) when available to serialize cross-tab pixel emission.

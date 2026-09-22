@@ -1,3 +1,84 @@
+# Web interstitial frequency cap confirmed as the cause - live evidence 2026-09-22
+
+This section supersedes earlier observations below.
+
+Fresh loads with no recent interstitial impression, production cashloanplatform.com (served version 20260922-6): every page defined and requested only its own slot and every unit filled.
+
+| Page | Logical ID | Unit after /23338698373/ | Slot state | renderEnded |
+| --- | --- | --- | --- | --- |
+| index | interstitial-next-1 | cashloanplatform_interstitial | ready | isEmpty:false, 1111x903 |
+| loan-amount | interstitial-next-2 | cashloanplatform_interstitial_02 | ready | isEmpty:false, 1111x903 |
+| employment-type | interstitial-next-4 | cashloanplatform_interstitial_04 | ready | isEmpty:false, 1111x903 |
+| loan-type | interstitial-next-3 | cashloanplatform_interstitial_03 | ready | isEmpty:false, 1111x903 |
+| proceed | interstitial-next-5 | cashloanplatform_interstitial_05 | ready | isEmpty:false, 1111x903 |
+
+Trigger attributes, hrefs and page ownership matched the config on all five pages; each slot requested exactly once before any click.
+
+Same-session walkthrough: index slot ready, and its Next click showed the native GPT full-page vignette (URL gains #google_vignette). Immediately afterwards, on loan-amount, the interstitial request returned isEmpty:true and its Next click navigated with no ad. That matches Google's web interstitial frequency cap: default 1 impression per 10 minutes per subdomain, enforced through local storage, so after the first shown interstitial further requests are suppressed in the same browser. Separate ad units do not bypass the cap. The application itself is correct on every page: preload, request, validation and click hand-off to GPT all behave identically.
+
+## Per-page show proof (cleared-storage context, same day)
+
+Every page was then re-tested as a new visitor (local storage cleared before load, then select + Next click): all five showed their own full-page interstitial - index, loan-amount (interstitial-next-2), employment-type (interstitial-next-4), loan-type (interstitial-next-3) and proceed (interstitial-next-5) - each with slot state ready before the click and #google_vignette in the URL after it. The control walkthrough without clearing storage showed index only. So every page's tag, trigger, unit and click path work; only the cap window separates them.
+
+Platform floor: GAM allows the web interstitial window to be lowered only to a minimum of 1 impression per 1 minute (default is 10 minutes); no configuration can show two interstitials within the same minute, and GPT may still skip a show for revenue optimization. A fast click-through therefore always shows at most the first interstitial, regardless of separate ad units.
+
+## Resolution: account configuration only, no code change
+
+- Ad Manager > Inventory > Network settings > "Frequency caps" > check "Set format frequency caps" > Format "Web interstitial" > 1 impression per 1 minute (the minimum allowed).
+- Optional per-unit caps: Ad Manager > Inventory > Ad units > each interstitial unit > Settings > same "Frequency caps" section.
+- If both levels apply, the more restrictive cap wins, so the network-level default must be lowered too. The "Any" format option does not apply to web interstitials, and GPT may still skip a show for long-term revenue optimization. Even at 1 per minute a fast multi-page walkthrough cannot show an interstitial on every page.
+
+## Correct per-page verification
+
+Use a fresh private context (or clear site data) per page, select an option, click Next; or read AdManager.getDiagnostics(): interstitial slot state "ready" means filled and shippable, "no-fill" means an empty response (cap or inventory).
+
+References: https://support.google.com/admanager/answer/9840201 (Traffic web interstitials), https://support.google.com/admanager/answer/9387317 (Set format frequency caps).
+
+---
+
+# Current interstitial audit ? 2026-09-22, version 20260922-8
+
+This section supersedes earlier observations below. The real site is a multi-document static site: native anchor navigation, no SPA router. The current sessionStorage use stores form choices, not interstitial availability. Every destination creates its own manager and preloads only that page's slot. No tag #1 state is shared across documents.
+
+## Root cause and all five production results
+
+Fresh browser context per page, normal Chrome UA, HTTPS production, 390x844; observed approximately 2.5 seconds after DOMContentLoaded. All pages: HTTP 200, no CSP response header, GPT ready, native slot created, displayed/registered, one observed interstitial request before any click.
+
+| Page | Logical ID | Path after /23338698373/ | Result/category |
+| --- | --- | --- | --- |
+| index | interstitial-next-1 | cashloanplatform_interstitial | no-fill (H) |
+| loan-amount | interstitial-next-2 | cashloanplatform_interstitial_02 | no-fill (H) |
+| loan-type | interstitial-next-3 | cashloanplatform_interstitial_03 | no-fill (H) |
+| employment-type | interstitial-next-4 | cashloanplatform_interstitial_04 | no-fill (H) |
+| proceed | interstitial-next-5 | cashloanplatform_interstitial_05 | no-fill (H) |
+
+The observed reason none could show in this run is GAM returning an empty response. Slot creation, config resolution and preload were functioning for every ID. This run did not produce a frequency-cap warning: no-fill is not claimed to prove a frequency cap or a particular inventory fault. Account access is needed to determine eligible creatives, targeting, inventory and demand. The paths are syntactically valid and were requested; their account inventory validity cannot be independently certified. Display #1 filled while its interstitial did not, corroborating independent state; the other four displays returned no-fill.
+
+Production served config/loader/manager version 20260922-6. The new version 20260922-8 is local, NOT deployed. This is not proof of a Cloudflare cache fault. Index also emitted the external /23338698373/Latest3 duplicate-format warning; its source is still absent from repository configuration and unresolved.
+
+## Changes in this turn
+
+- js/ad-config.js: explicit type=interstitial and enabled=true on interstitial entries, preserving all ad unit paths and page mappings.
+- js/ad-manager.js: validate logical ID/type/page/path consistency, honor enabled=false, prevent late GPT callbacks from turning a consumed native slot back into ready, and include current page, target pathname (no query/form data), unit and state in click diagnostics.
+- 14 HTML files update shared config/manager query versions to 20260922-8: index.html, loan-amount.html, loan-type.html, employment-type.html, proceed.html, blogs.html, eligibility-check.html, blog-personal-loan.html, blog-auto-loan.html, blog-student-loan.html, blog-business-loan.html, blog-payday-loan.html, blog-home-loan.html, blog-gold-loan.html.
+- FIVE-PAGE-ADS.md: this report. No CSS, display inventory, destinations or GPT loader changes in this turn.
+
+The existing registry keeps separate references and state per active logical ID. A null OOP result never gets display() called. Repeated init never defines/displays again. Destruction passes only the exact recorded slot. A consumed slot is not manually displayed or refreshed again. The next full HTML page provides the fresh-slot/preload opportunity. Persisted history retains its native GPT document rather than repeatedly creating slots/listeners.
+
+## Tests
+
+Controlled Chromium GPT tests passed 20 cases: filled/no-fill/null/thrown-OOP-error for each of all five IDs. Verified correct logical ID, ready/unavailable states, consumed late-callback guard, no additional display/slot/listener on repeat init, and no changes to the independent display slot state.
+
+A separate blocked-GPT browser run clicked through all five real Next anchors and reached blogs: index -> loan-amount -> employment-type -> loan-type -> proceed -> blogs. All existing destinations remain intact. With the user-requested stable page mapping, the logical IDs along that unchanged navigation are 1 -> 2 -> 4 -> 3 -> 5; IDs are not inferred from DOM order. Prior slow-GPT and responsive checks remain documented below.
+
+The existing 800ms gesture debounce is not a publisher-controlled lock until native ad close. GPT controls native overlay interaction and link continuation; no fake show/close callback or arbitrary navigation wait was added. Actual filled show/close for all five cannot be verified while live responses are empty. These tests prove the application's state/fallback handling, not guaranteed production fill. Frequency-cap behavior is Google's and was not bypassed or simulated as real inventory delivery.
+
+Reference: https://developers.google.com/publisher-tag/samples/display-web-interstitial-ad
+
+---
+
+## Earlier audit history
+
 # Latest correction ? exact requested mapping and late GPT recovery
 
 This section supersedes the older mapping and observations below.

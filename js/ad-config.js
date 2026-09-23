@@ -20,66 +20,46 @@
       logicalId: "display-dropdown-next-index",
       page: "index",
       adUnit: `${BASE_PATH}/cashloanplatform_native_in_content_01`,
-      // "fluid" fills the container (Next button) width on every device;
-      // fixed sizes remain the fallback when the response is not fluid.
-      sizes: [
-        [440, 250],
-        [300, 250],
-        [250, 250],
-        "fluid",
-      ],
+      // Fluid-only: the native in-content creative must span the Next button
+      // width on every device. Fixed sizes are dropped so a narrow 300px banner
+      // can never serve and break the button-width match.
+      sizes: ["fluid"],
     },
     "display-dropdown-next-loan-amount": {
       logicalId: "display-dropdown-next-loan-amount",
       page: "loan-amount",
       adUnit: `${BASE_PATH}/cashloanplatform_native_in_content_02`,
-      // "fluid" fills the container (Next button) width on every device;
-      // fixed sizes remain the fallback when the response is not fluid.
-      sizes: [
-        [440, 250],
-        [300, 250],
-        [250, 250],
-        "fluid",
-      ],
+      // Fluid-only: the native in-content creative must span the Next button
+      // width on every device. Fixed sizes are dropped so a narrow 300px banner
+      // can never serve and break the button-width match.
+      sizes: ["fluid"],
     },
     "display-dropdown-next-employment-type": {
       logicalId: "display-dropdown-next-employment-type",
       page: "employment-type",
       adUnit: `${BASE_PATH}/cashloanplatform_native_in_content_03`,
-      // "fluid" fills the container (Next button) width on every device;
-      // fixed sizes remain the fallback when the response is not fluid.
-      sizes: [
-        [440, 250],
-        [300, 250],
-        [250, 250],
-        "fluid",
-      ],
+      // Fluid-only: the native in-content creative must span the Next button
+      // width on every device. Fixed sizes are dropped so a narrow 300px banner
+      // can never serve and break the button-width match.
+      sizes: ["fluid"],
     },
     "display-dropdown-next-loan-type": {
       logicalId: "display-dropdown-next-loan-type",
       page: "loan-type",
       adUnit: `${BASE_PATH}/cashloanplatform_native_in_content_04`,
-      // "fluid" fills the container (Next button) width on every device;
-      // fixed sizes remain the fallback when the response is not fluid.
-      sizes: [
-        [440, 250],
-        [300, 250],
-        [250, 250],
-        "fluid",
-      ],
+      // Fluid-only: the native in-content creative must span the Next button
+      // width on every device. Fixed sizes are dropped so a narrow 300px banner
+      // can never serve and break the button-width match.
+      sizes: ["fluid"],
     },
     "display-dropdown-next-proceed": {
       logicalId: "display-dropdown-next-proceed",
       page: "proceed",
       adUnit: `${BASE_PATH}/cashloanplatform_native_in_content_05`,
-      // "fluid" fills the container (Next button) width on every device;
-      // fixed sizes remain the fallback when the response is not fluid.
-      sizes: [
-        [440, 250],
-        [300, 250],
-        [250, 250],
-        "fluid",
-      ],
+      // Fluid-only: the native in-content creative must span the Next button
+      // width on every device. Fixed sizes are dropped so a narrow 300px banner
+      // can never serve and break the button-width match.
+      sizes: ["fluid"],
     },
     "display-blog-top-blogs": {
       logicalId: "display-blog-top-blogs",

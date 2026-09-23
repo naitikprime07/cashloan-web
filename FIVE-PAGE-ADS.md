@@ -1,3 +1,16 @@
+# Flow-page ads switched to fluid-only - release 20260922-12 (2026-09-22)
+
+User requirement (repeat report): the display ad above each Next button was still rendering at ~300px on mobile instead of the button's width. Root cause: the client already requested `fluid` alongside fixed sizes, but GAM served a fixed 300x250 banner creative, which renders at its natural centered size - a slot can never widen a fixed creative without distortion.
+
+Decision (owner directive to force button width): the five flow-page native in-content units (`display-dropdown-next-*`, units `cashloanplatform_native_in_content_01..05`) now request `sizes: ["fluid"]` only - the fixed `[[440,250],[300,250],[250,250]]` fallbacks were removed so a narrow fixed banner can no longer serve. A fluid/native in-content creative fills the slot div, whose width equals the Next button width (`.screen` content column = min(viewport,480)-40), so the ad spans the button on every device.
+
+Tradeoff (accepted): with fluid-only, a page shows an ad ONLY when a native/fluid creative is eligible. If GAM has no native creative for a unit, the slot no-fills and the reserved 250px box stays blank (flow pages keep their footprint per release 20260922-11; they do not collapse). To restore fill without losing the width match, add/enable a native in-content creative or line item for these units in Ad Manager - do not re-add fixed sizes, which reintroduce the narrow banner.
+
+Scope of change: js/ad-config.js (five size lists -> `["fluid"]`); ad-config.js cache version bumped to `?v=20260922-12` on all 14 ad pages. ad-manager.js unchanged (it already keeps `fluid` eligible at every width, validates it, and falls back to the fixed list only if `defineSlot` returns null - with fluid-only that fallback yields an empty list, so the slot reports `unsupported` and the reserved box remains). css/style.css unchanged (slot `max-width:440px` on `.screen > .inline-ad-container > div`, `min-height:250px`). Blog-top units keep `[[440,250],[300,250],[250,250],"fluid"]` and are unaffected.
+
+---
+
+
 # Display ad now matches the Next button width - fluid requests added 2026-09-22 (version 20260922-9)
 
 User requirement: the in-content display ad above each Next button must look exactly as wide as the button on every device (reported screenshot: a 440px-wide button with a 300px-wide creative centered above it).

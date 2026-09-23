@@ -1,0 +1,8014 @@
+[
+  {
+    "viewport": 320,
+    "button": {
+      "left": 20,
+      "right": 300,
+      "width": 280,
+      "top": 640.8125,
+      "height": 52,
+      "bottom": 692.8125
+    },
+    "wrapper": {
+      "left": 20,
+      "right": 300,
+      "width": 280,
+      "top": 374.8125,
+      "height": 250,
+      "bottom": 624.8125
+    },
+    "slot": {
+      "left": 20,
+      "right": 300,
+      "width": 280,
+      "top": 374.8125,
+      "height": 250,
+      "bottom": 624.8125
+    },
+    "content": {
+      "width": 280,
+      "paddingLeft": "20px",
+      "paddingRight": "20px"
+    },
+    "aligned": true,
+    "pageOverflow": false,
+    "slotScrollbar": false,
+    "buttonPosition": "static",
+    "gap": 16,
+    "creatives": [],
+    "scripts": 1,
+    "diagnostics": {
+      "page": "index",
+      "release": "20260923-1",
+      "gpt": {
+        "state": "ready",
+        "error": null,
+        "servicesEnabled": true
+      },
+      "lastTrigger": null,
+      "triggerIds": [
+        "interstitial-next-1"
+      ],
+      "errors": [],
+      "slots": [
+        {
+          "id": "display-dropdown-next-index",
+          "kind": "display",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_native_in_content_01",
+          "elementId": "gam-index-dropdown-next",
+          "sizes": [
+            [
+              250,
+              250
+            ]
+          ],
+          "mapping": [
+            [
+              [
+                480,
+                0
+              ],
+              [
+                [
+                  440,
+                  250
+                ],
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                340,
+                0
+              ],
+              [
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                290,
+                0
+              ],
+              [
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              []
+            ]
+          ],
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CPiX8baKhJcDFeUFgwMdhsoY_w",
+          "onload": false,
+          "viewable": false
+        },
+        {
+          "id": "interstitial-next-1",
+          "kind": "interstitial",
+          "state": "REQUESTED",
+          "adUnit": "/23338698373/cashloanplatform_interstitial",
+          "elementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_0",
+          "sizes": null,
+          "mapping": null,
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 0,
+          "renderCount": 0,
+          "isEmpty": null,
+          "renderedSize": null,
+          "responseIdentifier": null,
+          "onload": false,
+          "viewable": false
+        }
+      ]
+    },
+    "page": "index",
+    "mode": "preview",
+    "http": 200,
+    "errors": [],
+    "warnings": [],
+    "network": [
+      {
+        "path": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+        "status": 200
+      },
+      {
+        "path": "https://securepubads.g.doubleclick.net/gampad/ads",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "viewport": 320,
+    "button": {
+      "left": 20,
+      "right": 300,
+      "width": 280,
+      "top": 625.421875,
+      "height": 52,
+      "bottom": 677.421875
+    },
+    "wrapper": {
+      "left": 20,
+      "right": 300,
+      "width": 280,
+      "top": 359.421875,
+      "height": 250,
+      "bottom": 609.421875
+    },
+    "slot": {
+      "left": 20,
+      "right": 300,
+      "width": 280,
+      "top": 359.421875,
+      "height": 250,
+      "bottom": 609.421875
+    },
+    "content": {
+      "width": 280,
+      "paddingLeft": "20px",
+      "paddingRight": "20px"
+    },
+    "aligned": true,
+    "pageOverflow": false,
+    "slotScrollbar": false,
+    "buttonPosition": "static",
+    "gap": 16,
+    "creatives": [
+      {
+        "tag": "IFRAME",
+        "left": 35,
+        "right": 285,
+        "width": 250,
+        "top": 359.421875,
+        "height": 250,
+        "bottom": 609.421875,
+        "transform": "none"
+      }
+    ],
+    "scripts": 1,
+    "diagnostics": {
+      "page": "loan-amount",
+      "release": "20260923-1",
+      "gpt": {
+        "state": "ready",
+        "error": null,
+        "servicesEnabled": true
+      },
+      "lastTrigger": null,
+      "triggerIds": [
+        "interstitial-next-2"
+      ],
+      "errors": [],
+      "slots": [
+        {
+          "id": "display-dropdown-next-loan-amount",
+          "kind": "display",
+          "state": "RENDERED",
+          "adUnit": "/23338698373/cashloanplatform_native_in_content_02",
+          "elementId": "gam-loan-amount-dropdown-next",
+          "sizes": [
+            [
+              250,
+              250
+            ]
+          ],
+          "mapping": [
+            [
+              [
+                480,
+                0
+              ],
+              [
+                [
+                  440,
+                  250
+                ],
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                340,
+                0
+              ],
+              [
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                290,
+                0
+              ],
+              [
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              []
+            ]
+          ],
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": false,
+          "renderedSize": [
+            250,
+            250
+          ],
+          "responseIdentifier": "COTC07eKhJcDFXUktwAdbjgttA",
+          "onload": true,
+          "viewable": false
+        },
+        {
+          "id": "interstitial-next-2",
+          "kind": "interstitial",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_interstitial_02",
+          "elementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_02_0",
+          "sizes": null,
+          "mapping": null,
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "COfC07eKhJcDFXUktwAdbjgttA",
+          "onload": false,
+          "viewable": false
+        }
+      ]
+    },
+    "page": "loan-amount",
+    "mode": "preview",
+    "http": 200,
+    "errors": [],
+    "warnings": [
+      "[GPT] Interstitial /23338698373/Latest3 not requested: Format already created on the page.\nhttps://goo.gle/gpt-message#134"
+    ],
+    "network": [
+      {
+        "path": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+        "status": 200
+      },
+      {
+        "path": "https://securepubads.g.doubleclick.net/gampad/ads",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "viewport": 320,
+    "button": {
+      "left": 20,
+      "right": 300,
+      "width": 280,
+      "top": 618.875,
+      "height": 52,
+      "bottom": 670.875
+    },
+    "wrapper": {
+      "left": 20,
+      "right": 300,
+      "width": 280,
+      "top": 352.875,
+      "height": 250,
+      "bottom": 602.875
+    },
+    "slot": {
+      "left": 20,
+      "right": 300,
+      "width": 280,
+      "top": 352.875,
+      "height": 250,
+      "bottom": 602.875
+    },
+    "content": {
+      "width": 280,
+      "paddingLeft": "20px",
+      "paddingRight": "20px"
+    },
+    "aligned": true,
+    "pageOverflow": false,
+    "slotScrollbar": false,
+    "buttonPosition": "static",
+    "gap": 16,
+    "creatives": [],
+    "scripts": 1,
+    "diagnostics": {
+      "page": "employment-type",
+      "release": "20260923-1",
+      "gpt": {
+        "state": "ready",
+        "error": null,
+        "servicesEnabled": true
+      },
+      "lastTrigger": null,
+      "triggerIds": [
+        "interstitial-next-4"
+      ],
+      "errors": [],
+      "slots": [
+        {
+          "id": "display-dropdown-next-employment-type",
+          "kind": "display",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_native_in_content_03",
+          "elementId": "gam-employment-dropdown-next",
+          "sizes": [
+            [
+              250,
+              250
+            ]
+          ],
+          "mapping": [
+            [
+              [
+                480,
+                0
+              ],
+              [
+                [
+                  440,
+                  250
+                ],
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                340,
+                0
+              ],
+              [
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                290,
+                0
+              ],
+              [
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              []
+            ]
+          ],
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CMbDrLiKhJcDFWVjnQkdhXwF5w",
+          "onload": false,
+          "viewable": false
+        },
+        {
+          "id": "interstitial-next-4",
+          "kind": "interstitial",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_interstitial_04",
+          "elementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_04_0",
+          "sizes": null,
+          "mapping": null,
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CIH5rbiKhJcDFWVjnQkdhXwF5w",
+          "onload": false,
+          "viewable": false
+        }
+      ]
+    },
+    "page": "employment-type",
+    "mode": "preview",
+    "http": 200,
+    "errors": [],
+    "warnings": [],
+    "network": [
+      {
+        "path": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+        "status": 200
+      },
+      {
+        "path": "https://securepubads.g.doubleclick.net/gampad/ads",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "viewport": 320,
+    "button": {
+      "left": 20,
+      "right": 300,
+      "width": 280,
+      "top": 644.171875,
+      "height": 52,
+      "bottom": 696.171875
+    },
+    "wrapper": {
+      "left": 20,
+      "right": 300,
+      "width": 280,
+      "top": 378.171875,
+      "height": 250,
+      "bottom": 628.171875
+    },
+    "slot": {
+      "left": 20,
+      "right": 300,
+      "width": 280,
+      "top": 378.171875,
+      "height": 250,
+      "bottom": 628.171875
+    },
+    "content": {
+      "width": 280,
+      "paddingLeft": "20px",
+      "paddingRight": "20px"
+    },
+    "aligned": true,
+    "pageOverflow": false,
+    "slotScrollbar": false,
+    "buttonPosition": "static",
+    "gap": 16,
+    "creatives": [],
+    "scripts": 1,
+    "diagnostics": {
+      "page": "loan-type",
+      "release": "20260923-1",
+      "gpt": {
+        "state": "ready",
+        "error": null,
+        "servicesEnabled": true
+      },
+      "lastTrigger": null,
+      "triggerIds": [
+        "interstitial-next-3"
+      ],
+      "errors": [],
+      "slots": [
+        {
+          "id": "display-dropdown-next-loan-type",
+          "kind": "display",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_native_in_content_04",
+          "elementId": "gam-loan-type-dropdown-next",
+          "sizes": [
+            [
+              250,
+              250
+            ]
+          ],
+          "mapping": [
+            [
+              [
+                480,
+                0
+              ],
+              [
+                [
+                  440,
+                  250
+                ],
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                340,
+                0
+              ],
+              [
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                290,
+                0
+              ],
+              [
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              []
+            ]
+          ],
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CLCwhLmKhJcDFW1GnQkddBMXJQ",
+          "onload": false,
+          "viewable": false
+        },
+        {
+          "id": "interstitial-next-3",
+          "kind": "interstitial",
+          "state": "RENDERED",
+          "adUnit": "/23338698373/cashloanplatform_interstitial_03",
+          "elementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_03_0",
+          "sizes": null,
+          "mapping": null,
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": false,
+          "renderedSize": [
+            320,
+            900
+          ],
+          "responseIdentifier": "CIW3hbmKhJcDFW1GnQkddBMXJQ",
+          "onload": false,
+          "viewable": false
+        }
+      ]
+    },
+    "page": "loan-type",
+    "mode": "preview",
+    "http": 200,
+    "errors": [],
+    "warnings": [
+      "[GPT] Interstitial /23338698373/Latest3 not requested: Format already created on the page.\nhttps://goo.gle/gpt-message#134"
+    ],
+    "network": [
+      {
+        "path": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+        "status": 200
+      },
+      {
+        "path": "https://securepubads.g.doubleclick.net/gampad/ads",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "viewport": 320,
+    "button": {
+      "left": 20,
+      "right": 300,
+      "width": 280,
+      "top": 752.265625,
+      "height": 52,
+      "bottom": 804.265625
+    },
+    "wrapper": {
+      "left": 20,
+      "right": 300,
+      "width": 280,
+      "top": 486.265625,
+      "height": 250,
+      "bottom": 736.265625
+    },
+    "slot": {
+      "left": 20,
+      "right": 300,
+      "width": 280,
+      "top": 486.265625,
+      "height": 250,
+      "bottom": 736.265625
+    },
+    "content": {
+      "width": 280,
+      "paddingLeft": "20px",
+      "paddingRight": "20px"
+    },
+    "aligned": true,
+    "pageOverflow": false,
+    "slotScrollbar": false,
+    "buttonPosition": "static",
+    "gap": 16,
+    "creatives": [],
+    "scripts": 1,
+    "diagnostics": {
+      "page": "proceed",
+      "release": "20260923-1",
+      "gpt": {
+        "state": "ready",
+        "error": null,
+        "servicesEnabled": true
+      },
+      "lastTrigger": null,
+      "triggerIds": [
+        "interstitial-next-5"
+      ],
+      "errors": [],
+      "slots": [
+        {
+          "id": "display-dropdown-next-proceed",
+          "kind": "display",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_native_in_content_05",
+          "elementId": "gam-proceed-dropdown-next",
+          "sizes": [
+            [
+              250,
+              250
+            ]
+          ],
+          "mapping": [
+            [
+              [
+                480,
+                0
+              ],
+              [
+                [
+                  440,
+                  250
+                ],
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                340,
+                0
+              ],
+              [
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                290,
+                0
+              ],
+              [
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              []
+            ]
+          ],
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CNL10rmKhJcDFfzJhAAdjxwtNw",
+          "onload": false,
+          "viewable": false
+        },
+        {
+          "id": "interstitial-next-5",
+          "kind": "interstitial",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_interstitial_05",
+          "elementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_05_0",
+          "sizes": null,
+          "mapping": null,
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "COyk1bmKhJcDFfzJhAAdjxwtNw",
+          "onload": false,
+          "viewable": false
+        }
+      ]
+    },
+    "page": "proceed",
+    "mode": "preview",
+    "http": 200,
+    "errors": [],
+    "warnings": [],
+    "network": [
+      {
+        "path": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+        "status": 200
+      },
+      {
+        "path": "https://securepubads.g.doubleclick.net/gampad/ads",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "viewport": 360,
+    "button": {
+      "left": 20,
+      "right": 340,
+      "width": 320,
+      "top": 615.515625,
+      "height": 52,
+      "bottom": 667.515625
+    },
+    "wrapper": {
+      "left": 20,
+      "right": 340,
+      "width": 320,
+      "top": 349.515625,
+      "height": 250,
+      "bottom": 599.515625
+    },
+    "slot": {
+      "left": 20,
+      "right": 340,
+      "width": 320,
+      "top": 349.515625,
+      "height": 250,
+      "bottom": 599.515625
+    },
+    "content": {
+      "width": 320,
+      "paddingLeft": "20px",
+      "paddingRight": "20px"
+    },
+    "aligned": true,
+    "pageOverflow": false,
+    "slotScrollbar": false,
+    "buttonPosition": "static",
+    "gap": 16,
+    "creatives": [],
+    "scripts": 1,
+    "diagnostics": {
+      "page": "index",
+      "release": "20260923-1",
+      "gpt": {
+        "state": "ready",
+        "error": null,
+        "servicesEnabled": true
+      },
+      "lastTrigger": null,
+      "triggerIds": [
+        "interstitial-next-1"
+      ],
+      "errors": [],
+      "slots": [
+        {
+          "id": "display-dropdown-next-index",
+          "kind": "display",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_native_in_content_01",
+          "elementId": "gam-index-dropdown-next",
+          "sizes": [
+            [
+              300,
+              250
+            ],
+            [
+              250,
+              250
+            ]
+          ],
+          "mapping": [
+            [
+              [
+                480,
+                0
+              ],
+              [
+                [
+                  440,
+                  250
+                ],
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                340,
+                0
+              ],
+              [
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                290,
+                0
+              ],
+              [
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              []
+            ]
+          ],
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "COG8wLqKhJcDFSbHhAAd7P8pYw",
+          "onload": false,
+          "viewable": false
+        },
+        {
+          "id": "interstitial-next-1",
+          "kind": "interstitial",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_interstitial",
+          "elementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_0",
+          "sizes": null,
+          "mapping": null,
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CJjSwrqKhJcDFSbHhAAd7P8pYw",
+          "onload": false,
+          "viewable": false
+        }
+      ]
+    },
+    "page": "index",
+    "mode": "preview",
+    "http": 200,
+    "errors": [],
+    "warnings": [],
+    "network": [
+      {
+        "path": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+        "status": 200
+      },
+      {
+        "path": "https://securepubads.g.doubleclick.net/gampad/ads",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "viewport": 360,
+    "button": {
+      "left": 20,
+      "right": 340,
+      "width": 320,
+      "top": 600.125,
+      "height": 52,
+      "bottom": 652.125
+    },
+    "wrapper": {
+      "left": 20,
+      "right": 340,
+      "width": 320,
+      "top": 334.125,
+      "height": 250,
+      "bottom": 584.125
+    },
+    "slot": {
+      "left": 20,
+      "right": 340,
+      "width": 320,
+      "top": 334.125,
+      "height": 250,
+      "bottom": 584.125
+    },
+    "content": {
+      "width": 320,
+      "paddingLeft": "20px",
+      "paddingRight": "20px"
+    },
+    "aligned": true,
+    "pageOverflow": false,
+    "slotScrollbar": false,
+    "buttonPosition": "static",
+    "gap": 16,
+    "creatives": [
+      {
+        "tag": "IFRAME",
+        "left": 30,
+        "right": 330,
+        "width": 300,
+        "top": 334.125,
+        "height": 250,
+        "bottom": 584.125,
+        "transform": "none"
+      }
+    ],
+    "scripts": 1,
+    "diagnostics": {
+      "page": "loan-amount",
+      "release": "20260923-1",
+      "gpt": {
+        "state": "ready",
+        "error": null,
+        "servicesEnabled": true
+      },
+      "lastTrigger": null,
+      "triggerIds": [
+        "interstitial-next-2"
+      ],
+      "errors": [],
+      "slots": [
+        {
+          "id": "display-dropdown-next-loan-amount",
+          "kind": "display",
+          "state": "RENDERED",
+          "adUnit": "/23338698373/cashloanplatform_native_in_content_02",
+          "elementId": "gam-loan-amount-dropdown-next",
+          "sizes": [
+            [
+              300,
+              250
+            ],
+            [
+              250,
+              250
+            ]
+          ],
+          "mapping": [
+            [
+              [
+                480,
+                0
+              ],
+              [
+                [
+                  440,
+                  250
+                ],
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                340,
+                0
+              ],
+              [
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                290,
+                0
+              ],
+              [
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              []
+            ]
+          ],
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": false,
+          "renderedSize": [
+            300,
+            250
+          ],
+          "responseIdentifier": "CMHdk7uKhJcDFRvDcwEdEuEoLA",
+          "onload": false,
+          "viewable": false
+        },
+        {
+          "id": "interstitial-next-2",
+          "kind": "interstitial",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_interstitial_02",
+          "elementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_02_0",
+          "sizes": null,
+          "mapping": null,
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CMbdk7uKhJcDFRvDcwEdEuEoLA",
+          "onload": false,
+          "viewable": false
+        }
+      ]
+    },
+    "page": "loan-amount",
+    "mode": "preview",
+    "http": 200,
+    "errors": [],
+    "warnings": [
+      "[GPT] Interstitial /23338698373/Latest3 not requested: Format already created on the page.\nhttps://goo.gle/gpt-message#134"
+    ],
+    "network": [
+      {
+        "path": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+        "status": 200
+      },
+      {
+        "path": "https://securepubads.g.doubleclick.net/gampad/ads",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "viewport": 360,
+    "button": {
+      "left": 20,
+      "right": 340,
+      "width": 320,
+      "top": 600.125,
+      "height": 52,
+      "bottom": 652.125
+    },
+    "wrapper": {
+      "left": 20,
+      "right": 340,
+      "width": 320,
+      "top": 334.125,
+      "height": 250,
+      "bottom": 584.125
+    },
+    "slot": {
+      "left": 20,
+      "right": 340,
+      "width": 320,
+      "top": 334.125,
+      "height": 250,
+      "bottom": 584.125
+    },
+    "content": {
+      "width": 320,
+      "paddingLeft": "20px",
+      "paddingRight": "20px"
+    },
+    "aligned": true,
+    "pageOverflow": false,
+    "slotScrollbar": false,
+    "buttonPosition": "static",
+    "gap": 16,
+    "creatives": [],
+    "scripts": 1,
+    "diagnostics": {
+      "page": "employment-type",
+      "release": "20260923-1",
+      "gpt": {
+        "state": "ready",
+        "error": null,
+        "servicesEnabled": true
+      },
+      "lastTrigger": null,
+      "triggerIds": [
+        "interstitial-next-4"
+      ],
+      "errors": [],
+      "slots": [
+        {
+          "id": "display-dropdown-next-employment-type",
+          "kind": "display",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_native_in_content_03",
+          "elementId": "gam-employment-dropdown-next",
+          "sizes": [
+            [
+              300,
+              250
+            ],
+            [
+              250,
+              250
+            ]
+          ],
+          "mapping": [
+            [
+              [
+                480,
+                0
+              ],
+              [
+                [
+                  440,
+                  250
+                ],
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                340,
+                0
+              ],
+              [
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                290,
+                0
+              ],
+              [
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              []
+            ]
+          ],
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CNj3gryKhJcDFZPEcwEdH5cFWw",
+          "onload": false,
+          "viewable": false
+        },
+        {
+          "id": "interstitial-next-4",
+          "kind": "interstitial",
+          "state": "RENDERED",
+          "adUnit": "/23338698373/cashloanplatform_interstitial_04",
+          "elementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_04_0",
+          "sizes": null,
+          "mapping": null,
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": false,
+          "renderedSize": [
+            360,
+            900
+          ],
+          "responseIdentifier": "CKayhLyKhJcDFZPEcwEdH5cFWw",
+          "onload": false,
+          "viewable": false
+        }
+      ]
+    },
+    "page": "employment-type",
+    "mode": "preview",
+    "http": 200,
+    "errors": [],
+    "warnings": [
+      "[GPT] Interstitial /23338698373/Latest3 not requested: Format already created on the page.\nhttps://goo.gle/gpt-message#134"
+    ],
+    "network": [
+      {
+        "path": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+        "status": 200
+      },
+      {
+        "path": "https://securepubads.g.doubleclick.net/gampad/ads",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "viewport": 360,
+    "button": {
+      "left": 20,
+      "right": 340,
+      "width": 320,
+      "top": 600.125,
+      "height": 52,
+      "bottom": 652.125
+    },
+    "wrapper": {
+      "left": 20,
+      "right": 340,
+      "width": 320,
+      "top": 334.125,
+      "height": 250,
+      "bottom": 584.125
+    },
+    "slot": {
+      "left": 20,
+      "right": 340,
+      "width": 320,
+      "top": 334.125,
+      "height": 250,
+      "bottom": 584.125
+    },
+    "content": {
+      "width": 320,
+      "paddingLeft": "20px",
+      "paddingRight": "20px"
+    },
+    "aligned": true,
+    "pageOverflow": false,
+    "slotScrollbar": false,
+    "buttonPosition": "static",
+    "gap": 16,
+    "creatives": [
+      {
+        "tag": "IFRAME",
+        "left": 30,
+        "right": 330,
+        "width": 300,
+        "top": 334.125,
+        "height": 250,
+        "bottom": 584.125,
+        "transform": "none"
+      }
+    ],
+    "scripts": 1,
+    "diagnostics": {
+      "page": "loan-type",
+      "release": "20260923-1",
+      "gpt": {
+        "state": "ready",
+        "error": null,
+        "servicesEnabled": true
+      },
+      "lastTrigger": null,
+      "triggerIds": [
+        "interstitial-next-3"
+      ],
+      "errors": [],
+      "slots": [
+        {
+          "id": "display-dropdown-next-loan-type",
+          "kind": "display",
+          "state": "RENDERED",
+          "adUnit": "/23338698373/cashloanplatform_native_in_content_04",
+          "elementId": "gam-loan-type-dropdown-next",
+          "sizes": [
+            [
+              300,
+              250
+            ],
+            [
+              250,
+              250
+            ]
+          ],
+          "mapping": [
+            [
+              [
+                480,
+                0
+              ],
+              [
+                [
+                  440,
+                  250
+                ],
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                340,
+                0
+              ],
+              [
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                290,
+                0
+              ],
+              [
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              []
+            ]
+          ],
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": false,
+          "renderedSize": [
+            300,
+            250
+          ],
+          "responseIdentifier": "CKHz4LyKhJcDFUGmrAIdwOg7Tg",
+          "onload": true,
+          "viewable": false
+        },
+        {
+          "id": "interstitial-next-3",
+          "kind": "interstitial",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_interstitial_03",
+          "elementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_03_0",
+          "sizes": null,
+          "mapping": null,
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CKbz4LyKhJcDFUGmrAIdwOg7Tg",
+          "onload": false,
+          "viewable": false
+        }
+      ]
+    },
+    "page": "loan-type",
+    "mode": "preview",
+    "http": 200,
+    "errors": [],
+    "warnings": [
+      "[GPT] Interstitial /23338698373/Latest3 not requested: Format already created on the page.\nhttps://goo.gle/gpt-message#134"
+    ],
+    "network": [
+      {
+        "path": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+        "status": 200
+      },
+      {
+        "path": "https://securepubads.g.doubleclick.net/gampad/ads",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "viewport": 360,
+    "button": {
+      "left": 20,
+      "right": 340,
+      "width": 320,
+      "top": 718.125,
+      "height": 52,
+      "bottom": 770.125
+    },
+    "wrapper": {
+      "left": 20,
+      "right": 340,
+      "width": 320,
+      "top": 452.125,
+      "height": 250,
+      "bottom": 702.125
+    },
+    "slot": {
+      "left": 20,
+      "right": 340,
+      "width": 320,
+      "top": 452.125,
+      "height": 250,
+      "bottom": 702.125
+    },
+    "content": {
+      "width": 320,
+      "paddingLeft": "20px",
+      "paddingRight": "20px"
+    },
+    "aligned": true,
+    "pageOverflow": false,
+    "slotScrollbar": false,
+    "buttonPosition": "static",
+    "gap": 16,
+    "creatives": [],
+    "scripts": 1,
+    "diagnostics": {
+      "page": "proceed",
+      "release": "20260923-1",
+      "gpt": {
+        "state": "ready",
+        "error": null,
+        "servicesEnabled": true
+      },
+      "lastTrigger": null,
+      "triggerIds": [
+        "interstitial-next-5"
+      ],
+      "errors": [],
+      "slots": [
+        {
+          "id": "display-dropdown-next-proceed",
+          "kind": "display",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_native_in_content_05",
+          "elementId": "gam-proceed-dropdown-next",
+          "sizes": [
+            [
+              300,
+              250
+            ],
+            [
+              250,
+              250
+            ]
+          ],
+          "mapping": [
+            [
+              [
+                480,
+                0
+              ],
+              [
+                [
+                  440,
+                  250
+                ],
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                340,
+                0
+              ],
+              [
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                290,
+                0
+              ],
+              [
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              []
+            ]
+          ],
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CJySr72KhJcDFdLHhAAd25g4Mg",
+          "onload": false,
+          "viewable": false
+        },
+        {
+          "id": "interstitial-next-5",
+          "kind": "interstitial",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_interstitial_05",
+          "elementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_05_0",
+          "sizes": null,
+          "mapping": null,
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CLe3sL2KhJcDFdLHhAAd25g4Mg",
+          "onload": false,
+          "viewable": false
+        }
+      ]
+    },
+    "page": "proceed",
+    "mode": "preview",
+    "http": 200,
+    "errors": [],
+    "warnings": [],
+    "network": [
+      {
+        "path": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+        "status": 200
+      },
+      {
+        "path": "https://securepubads.g.doubleclick.net/gampad/ads",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "viewport": 375,
+    "button": {
+      "left": 20,
+      "right": 355,
+      "width": 335,
+      "top": 600.125,
+      "height": 52,
+      "bottom": 652.125
+    },
+    "wrapper": {
+      "left": 20,
+      "right": 355,
+      "width": 335,
+      "top": 334.125,
+      "height": 250,
+      "bottom": 584.125
+    },
+    "slot": {
+      "left": 20,
+      "right": 355,
+      "width": 335,
+      "top": 334.125,
+      "height": 250,
+      "bottom": 584.125
+    },
+    "content": {
+      "width": 335,
+      "paddingLeft": "20px",
+      "paddingRight": "20px"
+    },
+    "aligned": true,
+    "pageOverflow": false,
+    "slotScrollbar": false,
+    "buttonPosition": "static",
+    "gap": 16,
+    "creatives": [
+      {
+        "tag": "IFRAME",
+        "left": 37.5,
+        "right": 337.5,
+        "width": 300,
+        "top": 334.125,
+        "height": 250,
+        "bottom": 584.125,
+        "transform": "none"
+      }
+    ],
+    "scripts": 1,
+    "diagnostics": {
+      "page": "index",
+      "release": "20260923-1",
+      "gpt": {
+        "state": "ready",
+        "error": null,
+        "servicesEnabled": true
+      },
+      "lastTrigger": null,
+      "triggerIds": [
+        "interstitial-next-1"
+      ],
+      "errors": [],
+      "slots": [
+        {
+          "id": "display-dropdown-next-index",
+          "kind": "display",
+          "state": "RENDERED",
+          "adUnit": "/23338698373/cashloanplatform_native_in_content_01",
+          "elementId": "gam-index-dropdown-next",
+          "sizes": [
+            [
+              300,
+              250
+            ],
+            [
+              250,
+              250
+            ]
+          ],
+          "mapping": [
+            [
+              [
+                480,
+                0
+              ],
+              [
+                [
+                  440,
+                  250
+                ],
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                340,
+                0
+              ],
+              [
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                290,
+                0
+              ],
+              [
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              []
+            ]
+          ],
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": false,
+          "renderedSize": [
+            300,
+            250
+          ],
+          "responseIdentifier": "CPiNm76KhJcDFRjIhAAdwmwpZQ",
+          "onload": false,
+          "viewable": false
+        },
+        {
+          "id": "interstitial-next-1",
+          "kind": "interstitial",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_interstitial",
+          "elementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_0",
+          "sizes": null,
+          "mapping": null,
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CPyNm76KhJcDFRjIhAAdwmwpZQ",
+          "onload": false,
+          "viewable": false
+        }
+      ]
+    },
+    "page": "index",
+    "mode": "preview",
+    "http": 200,
+    "errors": [],
+    "warnings": [
+      "[GPT] Interstitial /23338698373/Latest3 not requested: Format already created on the page.\nhttps://goo.gle/gpt-message#134"
+    ],
+    "network": [
+      {
+        "path": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+        "status": 200
+      },
+      {
+        "path": "https://securepubads.g.doubleclick.net/gampad/ads",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "viewport": 375,
+    "button": {
+      "left": 20,
+      "right": 355,
+      "width": 335,
+      "top": 600.125,
+      "height": 52,
+      "bottom": 652.125
+    },
+    "wrapper": {
+      "left": 20,
+      "right": 355,
+      "width": 335,
+      "top": 334.125,
+      "height": 250,
+      "bottom": 584.125
+    },
+    "slot": {
+      "left": 20,
+      "right": 355,
+      "width": 335,
+      "top": 334.125,
+      "height": 250,
+      "bottom": 584.125
+    },
+    "content": {
+      "width": 335,
+      "paddingLeft": "20px",
+      "paddingRight": "20px"
+    },
+    "aligned": true,
+    "pageOverflow": false,
+    "slotScrollbar": false,
+    "buttonPosition": "static",
+    "gap": 16,
+    "creatives": [
+      {
+        "tag": "IFRAME",
+        "left": 37.5,
+        "right": 337.5,
+        "width": 300,
+        "top": 334.125,
+        "height": 250,
+        "bottom": 584.125,
+        "transform": "none"
+      }
+    ],
+    "scripts": 1,
+    "diagnostics": {
+      "page": "loan-amount",
+      "release": "20260923-1",
+      "gpt": {
+        "state": "ready",
+        "error": null,
+        "servicesEnabled": true
+      },
+      "lastTrigger": null,
+      "triggerIds": [
+        "interstitial-next-2"
+      ],
+      "errors": [],
+      "slots": [
+        {
+          "id": "display-dropdown-next-loan-amount",
+          "kind": "display",
+          "state": "RENDERED",
+          "adUnit": "/23338698373/cashloanplatform_native_in_content_02",
+          "elementId": "gam-loan-amount-dropdown-next",
+          "sizes": [
+            [
+              300,
+              250
+            ],
+            [
+              250,
+              250
+            ]
+          ],
+          "mapping": [
+            [
+              [
+                480,
+                0
+              ],
+              [
+                [
+                  440,
+                  250
+                ],
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                340,
+                0
+              ],
+              [
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                290,
+                0
+              ],
+              [
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              []
+            ]
+          ],
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": false,
+          "renderedSize": [
+            300,
+            250
+          ],
+          "responseIdentifier": "CJG5176KhJcDFU47gwMdxJYdXg",
+          "onload": true,
+          "viewable": false
+        },
+        {
+          "id": "interstitial-next-2",
+          "kind": "interstitial",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_interstitial_02",
+          "elementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_02_0",
+          "sizes": null,
+          "mapping": null,
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CJO5176KhJcDFU47gwMdxJYdXg",
+          "onload": false,
+          "viewable": false
+        }
+      ]
+    },
+    "page": "loan-amount",
+    "mode": "preview",
+    "http": 200,
+    "errors": [],
+    "warnings": [
+      "[GPT] Interstitial /23338698373/Latest3 not requested: Format already created on the page.\nhttps://goo.gle/gpt-message#134"
+    ],
+    "network": [
+      {
+        "path": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+        "status": 200
+      },
+      {
+        "path": "https://securepubads.g.doubleclick.net/gampad/ads",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "viewport": 375,
+    "button": {
+      "left": 20,
+      "right": 355,
+      "width": 335,
+      "top": 600.125,
+      "height": 52,
+      "bottom": 652.125
+    },
+    "wrapper": {
+      "left": 20,
+      "right": 355,
+      "width": 335,
+      "top": 334.125,
+      "height": 250,
+      "bottom": 584.125
+    },
+    "slot": {
+      "left": 20,
+      "right": 355,
+      "width": 335,
+      "top": 334.125,
+      "height": 250,
+      "bottom": 584.125
+    },
+    "content": {
+      "width": 335,
+      "paddingLeft": "20px",
+      "paddingRight": "20px"
+    },
+    "aligned": true,
+    "pageOverflow": false,
+    "slotScrollbar": false,
+    "buttonPosition": "static",
+    "gap": 16,
+    "creatives": [],
+    "scripts": 1,
+    "diagnostics": {
+      "page": "employment-type",
+      "release": "20260923-1",
+      "gpt": {
+        "state": "ready",
+        "error": null,
+        "servicesEnabled": true
+      },
+      "lastTrigger": null,
+      "triggerIds": [
+        "interstitial-next-4"
+      ],
+      "errors": [],
+      "slots": [
+        {
+          "id": "display-dropdown-next-employment-type",
+          "kind": "display",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_native_in_content_03",
+          "elementId": "gam-employment-dropdown-next",
+          "sizes": [
+            [
+              300,
+              250
+            ],
+            [
+              250,
+              250
+            ]
+          ],
+          "mapping": [
+            [
+              [
+                480,
+                0
+              ],
+              [
+                [
+                  440,
+                  250
+                ],
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                340,
+                0
+              ],
+              [
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                290,
+                0
+              ],
+              [
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              []
+            ]
+          ],
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CKKVrb-KhJcDFXwKtwAd7Qg90w",
+          "onload": false,
+          "viewable": false
+        },
+        {
+          "id": "interstitial-next-4",
+          "kind": "interstitial",
+          "state": "REQUESTED",
+          "adUnit": "/23338698373/cashloanplatform_interstitial_04",
+          "elementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_04_0",
+          "sizes": null,
+          "mapping": null,
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 0,
+          "renderCount": 0,
+          "isEmpty": null,
+          "renderedSize": null,
+          "responseIdentifier": null,
+          "onload": false,
+          "viewable": false
+        }
+      ]
+    },
+    "page": "employment-type",
+    "mode": "preview",
+    "http": 200,
+    "errors": [],
+    "warnings": [],
+    "network": [
+      {
+        "path": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+        "status": 200
+      },
+      {
+        "path": "https://securepubads.g.doubleclick.net/gampad/ads",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "viewport": 375,
+    "button": {
+      "left": 20,
+      "right": 355,
+      "width": 335,
+      "top": 600.125,
+      "height": 52,
+      "bottom": 652.125
+    },
+    "wrapper": {
+      "left": 20,
+      "right": 355,
+      "width": 335,
+      "top": 334.125,
+      "height": 250,
+      "bottom": 584.125
+    },
+    "slot": {
+      "left": 20,
+      "right": 355,
+      "width": 335,
+      "top": 334.125,
+      "height": 250,
+      "bottom": 584.125
+    },
+    "content": {
+      "width": 335,
+      "paddingLeft": "20px",
+      "paddingRight": "20px"
+    },
+    "aligned": true,
+    "pageOverflow": false,
+    "slotScrollbar": false,
+    "buttonPosition": "static",
+    "gap": 16,
+    "creatives": [],
+    "scripts": 1,
+    "diagnostics": {
+      "page": "loan-type",
+      "release": "20260923-1",
+      "gpt": {
+        "state": "ready",
+        "error": null,
+        "servicesEnabled": true
+      },
+      "lastTrigger": null,
+      "triggerIds": [
+        "interstitial-next-3"
+      ],
+      "errors": [],
+      "slots": [
+        {
+          "id": "display-dropdown-next-loan-type",
+          "kind": "display",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_native_in_content_04",
+          "elementId": "gam-loan-type-dropdown-next",
+          "sizes": [
+            [
+              300,
+              250
+            ],
+            [
+              250,
+              250
+            ]
+          ],
+          "mapping": [
+            [
+              [
+                480,
+                0
+              ],
+              [
+                [
+                  440,
+                  250
+                ],
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                340,
+                0
+              ],
+              [
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                290,
+                0
+              ],
+              [
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              []
+            ]
+          ],
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CNjD6b-KhJcDFRcdZgQdolg9mQ",
+          "onload": false,
+          "viewable": false
+        },
+        {
+          "id": "interstitial-next-3",
+          "kind": "interstitial",
+          "state": "REQUESTED",
+          "adUnit": "/23338698373/cashloanplatform_interstitial_03",
+          "elementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_03_0",
+          "sizes": null,
+          "mapping": null,
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 0,
+          "renderCount": 0,
+          "isEmpty": null,
+          "renderedSize": null,
+          "responseIdentifier": null,
+          "onload": false,
+          "viewable": false
+        }
+      ]
+    },
+    "page": "loan-type",
+    "mode": "preview",
+    "http": 200,
+    "errors": [],
+    "warnings": [],
+    "network": [
+      {
+        "path": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+        "status": 200
+      },
+      {
+        "path": "https://securepubads.g.doubleclick.net/gampad/ads",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "viewport": 375,
+    "button": {
+      "left": 20,
+      "right": 355,
+      "width": 335,
+      "top": 718.125,
+      "height": 52,
+      "bottom": 770.125
+    },
+    "wrapper": {
+      "left": 20,
+      "right": 355,
+      "width": 335,
+      "top": 452.125,
+      "height": 250,
+      "bottom": 702.125
+    },
+    "slot": {
+      "left": 20,
+      "right": 355,
+      "width": 335,
+      "top": 452.125,
+      "height": 250,
+      "bottom": 702.125
+    },
+    "content": {
+      "width": 335,
+      "paddingLeft": "20px",
+      "paddingRight": "20px"
+    },
+    "aligned": true,
+    "pageOverflow": false,
+    "slotScrollbar": false,
+    "buttonPosition": "static",
+    "gap": 16,
+    "creatives": [],
+    "scripts": 1,
+    "diagnostics": {
+      "page": "proceed",
+      "release": "20260923-1",
+      "gpt": {
+        "state": "ready",
+        "error": null,
+        "servicesEnabled": true
+      },
+      "lastTrigger": null,
+      "triggerIds": [
+        "interstitial-next-5"
+      ],
+      "errors": [],
+      "slots": [
+        {
+          "id": "display-dropdown-next-proceed",
+          "kind": "display",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_native_in_content_05",
+          "elementId": "gam-proceed-dropdown-next",
+          "sizes": [
+            [
+              300,
+              250
+            ],
+            [
+              250,
+              250
+            ]
+          ],
+          "mapping": [
+            [
+              [
+                480,
+                0
+              ],
+              [
+                [
+                  440,
+                  250
+                ],
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                340,
+                0
+              ],
+              [
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                290,
+                0
+              ],
+              [
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              []
+            ]
+          ],
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CLbVqMCKhJcDFZDIhAAdZm4CJw",
+          "onload": false,
+          "viewable": false
+        },
+        {
+          "id": "interstitial-next-5",
+          "kind": "interstitial",
+          "state": "RENDERED",
+          "adUnit": "/23338698373/cashloanplatform_interstitial_05",
+          "elementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_05_0",
+          "sizes": null,
+          "mapping": null,
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": false,
+          "renderedSize": [
+            375,
+            900
+          ],
+          "responseIdentifier": "CIjdqcCKhJcDFZDIhAAdZm4CJw",
+          "onload": false,
+          "viewable": false
+        }
+      ]
+    },
+    "page": "proceed",
+    "mode": "preview",
+    "http": 200,
+    "errors": [],
+    "warnings": [
+      "[GPT] Interstitial /23338698373/Latest3 not requested: Format already created on the page.\nhttps://goo.gle/gpt-message#134"
+    ],
+    "network": [
+      {
+        "path": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+        "status": 200
+      },
+      {
+        "path": "https://securepubads.g.doubleclick.net/gampad/ads",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "viewport": 390,
+    "button": {
+      "left": 20,
+      "right": 370,
+      "width": 350,
+      "top": 600.125,
+      "height": 52,
+      "bottom": 652.125
+    },
+    "wrapper": {
+      "left": 20,
+      "right": 370,
+      "width": 350,
+      "top": 334.125,
+      "height": 250,
+      "bottom": 584.125
+    },
+    "slot": {
+      "left": 20,
+      "right": 370,
+      "width": 350,
+      "top": 334.125,
+      "height": 250,
+      "bottom": 584.125
+    },
+    "content": {
+      "width": 350,
+      "paddingLeft": "20px",
+      "paddingRight": "20px"
+    },
+    "aligned": true,
+    "pageOverflow": false,
+    "slotScrollbar": false,
+    "buttonPosition": "static",
+    "gap": 16,
+    "creatives": [
+      {
+        "tag": "IFRAME",
+        "left": 45,
+        "right": 345,
+        "width": 300,
+        "top": 334.125,
+        "height": 250,
+        "bottom": 584.125,
+        "transform": "none"
+      }
+    ],
+    "scripts": 1,
+    "diagnostics": {
+      "page": "index",
+      "release": "20260923-1",
+      "gpt": {
+        "state": "ready",
+        "error": null,
+        "servicesEnabled": true
+      },
+      "lastTrigger": null,
+      "triggerIds": [
+        "interstitial-next-1"
+      ],
+      "errors": [],
+      "slots": [
+        {
+          "id": "display-dropdown-next-index",
+          "kind": "display",
+          "state": "RENDERED",
+          "adUnit": "/23338698373/cashloanplatform_native_in_content_01",
+          "elementId": "gam-index-dropdown-next",
+          "sizes": [
+            [
+              300,
+              250
+            ],
+            [
+              250,
+              250
+            ]
+          ],
+          "mapping": [
+            [
+              [
+                480,
+                0
+              ],
+              [
+                [
+                  440,
+                  250
+                ],
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                340,
+                0
+              ],
+              [
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                290,
+                0
+              ],
+              [
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              []
+            ]
+          ],
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": false,
+          "renderedSize": [
+            300,
+            250
+          ],
+          "responseIdentifier": "CNmz8MCKhJcDFUBAnQkdH0sQxQ",
+          "onload": true,
+          "viewable": false
+        },
+        {
+          "id": "interstitial-next-1",
+          "kind": "interstitial",
+          "state": "RENDERED",
+          "adUnit": "/23338698373/cashloanplatform_interstitial",
+          "elementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_0",
+          "sizes": null,
+          "mapping": null,
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": false,
+          "renderedSize": [
+            390,
+            900
+          ],
+          "responseIdentifier": "CNyz8MCKhJcDFUBAnQkdH0sQxQ",
+          "onload": false,
+          "viewable": false
+        }
+      ]
+    },
+    "page": "index",
+    "mode": "preview",
+    "http": 200,
+    "errors": [],
+    "warnings": [
+      "[GPT] Interstitial /23338698373/Latest3 not requested: Format already created on the page.\nhttps://goo.gle/gpt-message#134",
+      "[GPT] Interstitial /23338698373/Latest3 not requested: Format already created on the page.\nhttps://goo.gle/gpt-message#134"
+    ],
+    "network": [
+      {
+        "path": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+        "status": 200
+      },
+      {
+        "path": "https://securepubads.g.doubleclick.net/gampad/ads",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "viewport": 390,
+    "button": {
+      "left": 20,
+      "right": 370,
+      "width": 350,
+      "top": 600.125,
+      "height": 52,
+      "bottom": 652.125
+    },
+    "wrapper": {
+      "left": 20,
+      "right": 370,
+      "width": 350,
+      "top": 334.125,
+      "height": 250,
+      "bottom": 584.125
+    },
+    "slot": {
+      "left": 20,
+      "right": 370,
+      "width": 350,
+      "top": 334.125,
+      "height": 250,
+      "bottom": 584.125
+    },
+    "content": {
+      "width": 350,
+      "paddingLeft": "20px",
+      "paddingRight": "20px"
+    },
+    "aligned": true,
+    "pageOverflow": false,
+    "slotScrollbar": false,
+    "buttonPosition": "static",
+    "gap": 16,
+    "creatives": [
+      {
+        "tag": "IFRAME",
+        "left": 45,
+        "right": 345,
+        "width": 300,
+        "top": 334.125,
+        "height": 250,
+        "bottom": 584.125,
+        "transform": "none"
+      }
+    ],
+    "scripts": 1,
+    "diagnostics": {
+      "page": "loan-amount",
+      "release": "20260923-1",
+      "gpt": {
+        "state": "ready",
+        "error": null,
+        "servicesEnabled": true
+      },
+      "lastTrigger": null,
+      "triggerIds": [
+        "interstitial-next-2"
+      ],
+      "errors": [],
+      "slots": [
+        {
+          "id": "display-dropdown-next-loan-amount",
+          "kind": "display",
+          "state": "RENDERED",
+          "adUnit": "/23338698373/cashloanplatform_native_in_content_02",
+          "elementId": "gam-loan-amount-dropdown-next",
+          "sizes": [
+            [
+              300,
+              250
+            ],
+            [
+              250,
+              250
+            ]
+          ],
+          "mapping": [
+            [
+              [
+                480,
+                0
+              ],
+              [
+                [
+                  440,
+                  250
+                ],
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                340,
+                0
+              ],
+              [
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                290,
+                0
+              ],
+              [
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              []
+            ]
+          ],
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": false,
+          "renderedSize": [
+            300,
+            250
+          ],
+          "responseIdentifier": "CJm4ysGKhJcDFW7EcwEdMIUDww",
+          "onload": false,
+          "viewable": false
+        },
+        {
+          "id": "interstitial-next-2",
+          "kind": "interstitial",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_interstitial_02",
+          "elementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_02_0",
+          "sizes": null,
+          "mapping": null,
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CJy4ysGKhJcDFW7EcwEdMIUDww",
+          "onload": false,
+          "viewable": false
+        }
+      ]
+    },
+    "page": "loan-amount",
+    "mode": "preview",
+    "http": 200,
+    "errors": [],
+    "warnings": [
+      "[GPT] Interstitial /23338698373/Latest3 not requested: Format already created on the page.\nhttps://goo.gle/gpt-message#134"
+    ],
+    "network": [
+      {
+        "path": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+        "status": 200
+      },
+      {
+        "path": "https://securepubads.g.doubleclick.net/gampad/ads",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "viewport": 390,
+    "button": {
+      "left": 20,
+      "right": 370,
+      "width": 350,
+      "top": 600.125,
+      "height": 52,
+      "bottom": 652.125
+    },
+    "wrapper": {
+      "left": 20,
+      "right": 370,
+      "width": 350,
+      "top": 334.125,
+      "height": 250,
+      "bottom": 584.125
+    },
+    "slot": {
+      "left": 20,
+      "right": 370,
+      "width": 350,
+      "top": 334.125,
+      "height": 250,
+      "bottom": 584.125
+    },
+    "content": {
+      "width": 350,
+      "paddingLeft": "20px",
+      "paddingRight": "20px"
+    },
+    "aligned": true,
+    "pageOverflow": false,
+    "slotScrollbar": false,
+    "buttonPosition": "static",
+    "gap": 16,
+    "creatives": [],
+    "scripts": 1,
+    "diagnostics": {
+      "page": "employment-type",
+      "release": "20260923-1",
+      "gpt": {
+        "state": "ready",
+        "error": null,
+        "servicesEnabled": true
+      },
+      "lastTrigger": null,
+      "triggerIds": [
+        "interstitial-next-4"
+      ],
+      "errors": [],
+      "slots": [
+        {
+          "id": "display-dropdown-next-employment-type",
+          "kind": "display",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_native_in_content_03",
+          "elementId": "gam-employment-dropdown-next",
+          "sizes": [
+            [
+              300,
+              250
+            ],
+            [
+              250,
+              250
+            ]
+          ],
+          "mapping": [
+            [
+              [
+                480,
+                0
+              ],
+              [
+                [
+                  440,
+                  250
+                ],
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                340,
+                0
+              ],
+              [
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                290,
+                0
+              ],
+              [
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              []
+            ]
+          ],
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CN6ulcKKhJcDFfSQrAIdojUZZg",
+          "onload": false,
+          "viewable": false
+        },
+        {
+          "id": "interstitial-next-4",
+          "kind": "interstitial",
+          "state": "REQUESTED",
+          "adUnit": "/23338698373/cashloanplatform_interstitial_04",
+          "elementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_04_0",
+          "sizes": null,
+          "mapping": null,
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 0,
+          "renderCount": 0,
+          "isEmpty": null,
+          "renderedSize": null,
+          "responseIdentifier": null,
+          "onload": false,
+          "viewable": false
+        }
+      ]
+    },
+    "page": "employment-type",
+    "mode": "preview",
+    "http": 200,
+    "errors": [],
+    "warnings": [],
+    "network": [
+      {
+        "path": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+        "status": 200
+      },
+      {
+        "path": "https://securepubads.g.doubleclick.net/gampad/ads",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "viewport": 390,
+    "button": {
+      "left": 20,
+      "right": 370,
+      "width": 350,
+      "top": 600.125,
+      "height": 52,
+      "bottom": 652.125
+    },
+    "wrapper": {
+      "left": 20,
+      "right": 370,
+      "width": 350,
+      "top": 334.125,
+      "height": 250,
+      "bottom": 584.125
+    },
+    "slot": {
+      "left": 20,
+      "right": 370,
+      "width": 350,
+      "top": 334.125,
+      "height": 250,
+      "bottom": 584.125
+    },
+    "content": {
+      "width": 350,
+      "paddingLeft": "20px",
+      "paddingRight": "20px"
+    },
+    "aligned": true,
+    "pageOverflow": false,
+    "slotScrollbar": false,
+    "buttonPosition": "static",
+    "gap": 16,
+    "creatives": [
+      {
+        "tag": "IFRAME",
+        "left": 45,
+        "right": 345,
+        "width": 300,
+        "top": 334.125,
+        "height": 250,
+        "bottom": 584.125,
+        "transform": "none"
+      }
+    ],
+    "scripts": 1,
+    "diagnostics": {
+      "page": "loan-type",
+      "release": "20260923-1",
+      "gpt": {
+        "state": "ready",
+        "error": null,
+        "servicesEnabled": true
+      },
+      "lastTrigger": null,
+      "triggerIds": [
+        "interstitial-next-3"
+      ],
+      "errors": [],
+      "slots": [
+        {
+          "id": "display-dropdown-next-loan-type",
+          "kind": "display",
+          "state": "RENDERED",
+          "adUnit": "/23338698373/cashloanplatform_native_in_content_04",
+          "elementId": "gam-loan-type-dropdown-next",
+          "sizes": [
+            [
+              300,
+              250
+            ],
+            [
+              250,
+              250
+            ]
+          ],
+          "mapping": [
+            [
+              [
+                480,
+                0
+              ],
+              [
+                [
+                  440,
+                  250
+                ],
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                340,
+                0
+              ],
+              [
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                290,
+                0
+              ],
+              [
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              []
+            ]
+          ],
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": false,
+          "renderedSize": [
+            300,
+            250
+          ],
+          "responseIdentifier": "CKXb2sKKhJcDFYGcSwUdkVgzzw",
+          "onload": true,
+          "viewable": false
+        },
+        {
+          "id": "interstitial-next-3",
+          "kind": "interstitial",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_interstitial_03",
+          "elementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_03_0",
+          "sizes": null,
+          "mapping": null,
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CKjb2sKKhJcDFYGcSwUdkVgzzw",
+          "onload": false,
+          "viewable": false
+        }
+      ]
+    },
+    "page": "loan-type",
+    "mode": "preview",
+    "http": 200,
+    "errors": [],
+    "warnings": [
+      "[GPT] Interstitial /23338698373/Latest3 not requested: Format already created on the page.\nhttps://goo.gle/gpt-message#134"
+    ],
+    "network": [
+      {
+        "path": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+        "status": 200
+      },
+      {
+        "path": "https://securepubads.g.doubleclick.net/gampad/ads",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "viewport": 390,
+    "button": {
+      "left": 20,
+      "right": 370,
+      "width": 350,
+      "top": 718.125,
+      "height": 52,
+      "bottom": 770.125
+    },
+    "wrapper": {
+      "left": 20,
+      "right": 370,
+      "width": 350,
+      "top": 452.125,
+      "height": 250,
+      "bottom": 702.125
+    },
+    "slot": {
+      "left": 20,
+      "right": 370,
+      "width": 350,
+      "top": 452.125,
+      "height": 250,
+      "bottom": 702.125
+    },
+    "content": {
+      "width": 350,
+      "paddingLeft": "20px",
+      "paddingRight": "20px"
+    },
+    "aligned": true,
+    "pageOverflow": false,
+    "slotScrollbar": false,
+    "buttonPosition": "static",
+    "gap": 16,
+    "creatives": [],
+    "scripts": 1,
+    "diagnostics": {
+      "page": "proceed",
+      "release": "20260923-1",
+      "gpt": {
+        "state": "ready",
+        "error": null,
+        "servicesEnabled": true
+      },
+      "lastTrigger": null,
+      "triggerIds": [
+        "interstitial-next-5"
+      ],
+      "errors": [],
+      "slots": [
+        {
+          "id": "display-dropdown-next-proceed",
+          "kind": "display",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_native_in_content_05",
+          "elementId": "gam-proceed-dropdown-next",
+          "sizes": [
+            [
+              300,
+              250
+            ],
+            [
+              250,
+              250
+            ]
+          ],
+          "mapping": [
+            [
+              [
+                480,
+                0
+              ],
+              [
+                [
+                  440,
+                  250
+                ],
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                340,
+                0
+              ],
+              [
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                290,
+                0
+              ],
+              [
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              []
+            ]
+          ],
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CPnJmsOKhJcDFZbJhAAdhiQKow",
+          "onload": false,
+          "viewable": false
+        },
+        {
+          "id": "interstitial-next-5",
+          "kind": "interstitial",
+          "state": "REQUESTED",
+          "adUnit": "/23338698373/cashloanplatform_interstitial_05",
+          "elementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_05_0",
+          "sizes": null,
+          "mapping": null,
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 0,
+          "renderCount": 0,
+          "isEmpty": null,
+          "renderedSize": null,
+          "responseIdentifier": null,
+          "onload": false,
+          "viewable": false
+        }
+      ]
+    },
+    "page": "proceed",
+    "mode": "preview",
+    "http": 200,
+    "errors": [],
+    "warnings": [],
+    "network": [
+      {
+        "path": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+        "status": 200
+      },
+      {
+        "path": "https://securepubads.g.doubleclick.net/gampad/ads",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "viewport": 393,
+    "button": {
+      "left": 20,
+      "right": 373,
+      "width": 353,
+      "top": 600.125,
+      "height": 52,
+      "bottom": 652.125
+    },
+    "wrapper": {
+      "left": 20,
+      "right": 373,
+      "width": 353,
+      "top": 334.125,
+      "height": 250,
+      "bottom": 584.125
+    },
+    "slot": {
+      "left": 20,
+      "right": 373,
+      "width": 353,
+      "top": 334.125,
+      "height": 250,
+      "bottom": 584.125
+    },
+    "content": {
+      "width": 353,
+      "paddingLeft": "20px",
+      "paddingRight": "20px"
+    },
+    "aligned": true,
+    "pageOverflow": false,
+    "slotScrollbar": false,
+    "buttonPosition": "static",
+    "gap": 16,
+    "creatives": [],
+    "scripts": 1,
+    "diagnostics": {
+      "page": "index",
+      "release": "20260923-1",
+      "gpt": {
+        "state": "ready",
+        "error": null,
+        "servicesEnabled": true
+      },
+      "lastTrigger": null,
+      "triggerIds": [
+        "interstitial-next-1"
+      ],
+      "errors": [],
+      "slots": [
+        {
+          "id": "display-dropdown-next-index",
+          "kind": "display",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_native_in_content_01",
+          "elementId": "gam-index-dropdown-next",
+          "sizes": [
+            [
+              300,
+              250
+            ],
+            [
+              250,
+              250
+            ]
+          ],
+          "mapping": [
+            [
+              [
+                480,
+                0
+              ],
+              [
+                [
+                  440,
+                  250
+                ],
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                340,
+                0
+              ],
+              [
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                290,
+                0
+              ],
+              [
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              []
+            ]
+          ],
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CJDv4MOKhJcDFfHnVQkdYCA3nA",
+          "onload": false,
+          "viewable": false
+        },
+        {
+          "id": "interstitial-next-1",
+          "kind": "interstitial",
+          "state": "REQUESTED",
+          "adUnit": "/23338698373/cashloanplatform_interstitial",
+          "elementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_0",
+          "sizes": null,
+          "mapping": null,
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 0,
+          "renderCount": 0,
+          "isEmpty": null,
+          "renderedSize": null,
+          "responseIdentifier": null,
+          "onload": false,
+          "viewable": false
+        }
+      ]
+    },
+    "page": "index",
+    "mode": "preview",
+    "http": 200,
+    "errors": [],
+    "warnings": [],
+    "network": [
+      {
+        "path": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+        "status": 200
+      },
+      {
+        "path": "https://securepubads.g.doubleclick.net/gampad/ads",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "viewport": 393,
+    "button": {
+      "left": 20,
+      "right": 373,
+      "width": 353,
+      "top": 600.125,
+      "height": 52,
+      "bottom": 652.125
+    },
+    "wrapper": {
+      "left": 20,
+      "right": 373,
+      "width": 353,
+      "top": 334.125,
+      "height": 250,
+      "bottom": 584.125
+    },
+    "slot": {
+      "left": 20,
+      "right": 373,
+      "width": 353,
+      "top": 334.125,
+      "height": 250,
+      "bottom": 584.125
+    },
+    "content": {
+      "width": 353,
+      "paddingLeft": "20px",
+      "paddingRight": "20px"
+    },
+    "aligned": true,
+    "pageOverflow": false,
+    "slotScrollbar": false,
+    "buttonPosition": "static",
+    "gap": 16,
+    "creatives": [
+      {
+        "tag": "IFRAME",
+        "left": 46.5,
+        "right": 346.5,
+        "width": 300,
+        "top": 334.125,
+        "height": 250,
+        "bottom": 584.125,
+        "transform": "none"
+      }
+    ],
+    "scripts": 1,
+    "diagnostics": {
+      "page": "loan-amount",
+      "release": "20260923-1",
+      "gpt": {
+        "state": "ready",
+        "error": null,
+        "servicesEnabled": true
+      },
+      "lastTrigger": null,
+      "triggerIds": [
+        "interstitial-next-2"
+      ],
+      "errors": [],
+      "slots": [
+        {
+          "id": "display-dropdown-next-loan-amount",
+          "kind": "display",
+          "state": "RENDERED",
+          "adUnit": "/23338698373/cashloanplatform_native_in_content_02",
+          "elementId": "gam-loan-amount-dropdown-next",
+          "sizes": [
+            [
+              300,
+              250
+            ],
+            [
+              250,
+              250
+            ]
+          ],
+          "mapping": [
+            [
+              [
+                480,
+                0
+              ],
+              [
+                [
+                  440,
+                  250
+                ],
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                340,
+                0
+              ],
+              [
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                290,
+                0
+              ],
+              [
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              []
+            ]
+          ],
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": false,
+          "renderedSize": [
+            300,
+            250
+          ],
+          "responseIdentifier": "COuyn8SKhJcDFXKROAgdO_0CZg",
+          "onload": false,
+          "viewable": false
+        },
+        {
+          "id": "interstitial-next-2",
+          "kind": "interstitial",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_interstitial_02",
+          "elementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_02_0",
+          "sizes": null,
+          "mapping": null,
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "COyyn8SKhJcDFXKROAgdO_0CZg",
+          "onload": false,
+          "viewable": false
+        }
+      ]
+    },
+    "page": "loan-amount",
+    "mode": "preview",
+    "http": 200,
+    "errors": [],
+    "warnings": [
+      "[GPT] Interstitial /23338698373/Latest3 not requested: Format already created on the page.\nhttps://goo.gle/gpt-message#134"
+    ],
+    "network": [
+      {
+        "path": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+        "status": 200
+      },
+      {
+        "path": "https://securepubads.g.doubleclick.net/gampad/ads",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "viewport": 393,
+    "button": {
+      "left": 20,
+      "right": 373,
+      "width": 353,
+      "top": 600.125,
+      "height": 52,
+      "bottom": 652.125
+    },
+    "wrapper": {
+      "left": 20,
+      "right": 373,
+      "width": 353,
+      "top": 334.125,
+      "height": 250,
+      "bottom": 584.125
+    },
+    "slot": {
+      "left": 20,
+      "right": 373,
+      "width": 353,
+      "top": 334.125,
+      "height": 250,
+      "bottom": 584.125
+    },
+    "content": {
+      "width": 353,
+      "paddingLeft": "20px",
+      "paddingRight": "20px"
+    },
+    "aligned": true,
+    "pageOverflow": false,
+    "slotScrollbar": false,
+    "buttonPosition": "static",
+    "gap": 16,
+    "creatives": [],
+    "scripts": 1,
+    "diagnostics": {
+      "page": "employment-type",
+      "release": "20260923-1",
+      "gpt": {
+        "state": "ready",
+        "error": null,
+        "servicesEnabled": true
+      },
+      "lastTrigger": null,
+      "triggerIds": [
+        "interstitial-next-4"
+      ],
+      "errors": [],
+      "slots": [
+        {
+          "id": "display-dropdown-next-employment-type",
+          "kind": "display",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_native_in_content_03",
+          "elementId": "gam-employment-dropdown-next",
+          "sizes": [
+            [
+              300,
+              250
+            ],
+            [
+              250,
+              250
+            ]
+          ],
+          "mapping": [
+            [
+              [
+                480,
+                0
+              ],
+              [
+                [
+                  440,
+                  250
+                ],
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                340,
+                0
+              ],
+              [
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                290,
+                0
+              ],
+              [
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              []
+            ]
+          ],
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CNDp48SKhJcDFZzGhAAdkZsh4A",
+          "onload": false,
+          "viewable": false
+        },
+        {
+          "id": "interstitial-next-4",
+          "kind": "interstitial",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_interstitial_04",
+          "elementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_04_0",
+          "sizes": null,
+          "mapping": null,
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CJ325MSKhJcDFZzGhAAdkZsh4A",
+          "onload": false,
+          "viewable": false
+        }
+      ]
+    },
+    "page": "employment-type",
+    "mode": "preview",
+    "http": 200,
+    "errors": [],
+    "warnings": [],
+    "network": [
+      {
+        "path": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+        "status": 200
+      },
+      {
+        "path": "https://securepubads.g.doubleclick.net/gampad/ads",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "viewport": 393,
+    "button": {
+      "left": 20,
+      "right": 373,
+      "width": 353,
+      "top": 600.125,
+      "height": 52,
+      "bottom": 652.125
+    },
+    "wrapper": {
+      "left": 20,
+      "right": 373,
+      "width": 353,
+      "top": 334.125,
+      "height": 250,
+      "bottom": 584.125
+    },
+    "slot": {
+      "left": 20,
+      "right": 373,
+      "width": 353,
+      "top": 334.125,
+      "height": 250,
+      "bottom": 584.125
+    },
+    "content": {
+      "width": 353,
+      "paddingLeft": "20px",
+      "paddingRight": "20px"
+    },
+    "aligned": true,
+    "pageOverflow": false,
+    "slotScrollbar": false,
+    "buttonPosition": "static",
+    "gap": 16,
+    "creatives": [
+      {
+        "tag": "IFRAME",
+        "left": 46.5,
+        "right": 346.5,
+        "width": 300,
+        "top": 334.125,
+        "height": 250,
+        "bottom": 584.125,
+        "transform": "none"
+      }
+    ],
+    "scripts": 1,
+    "diagnostics": {
+      "page": "loan-type",
+      "release": "20260923-1",
+      "gpt": {
+        "state": "ready",
+        "error": null,
+        "servicesEnabled": true
+      },
+      "lastTrigger": null,
+      "triggerIds": [
+        "interstitial-next-3"
+      ],
+      "errors": [],
+      "slots": [
+        {
+          "id": "display-dropdown-next-loan-type",
+          "kind": "display",
+          "state": "RENDERED",
+          "adUnit": "/23338698373/cashloanplatform_native_in_content_04",
+          "elementId": "gam-loan-type-dropdown-next",
+          "sizes": [
+            [
+              300,
+              250
+            ],
+            [
+              250,
+              250
+            ]
+          ],
+          "mapping": [
+            [
+              [
+                480,
+                0
+              ],
+              [
+                [
+                  440,
+                  250
+                ],
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                340,
+                0
+              ],
+              [
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                290,
+                0
+              ],
+              [
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              []
+            ]
+          ],
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": false,
+          "renderedSize": [
+            300,
+            250
+          ],
+          "responseIdentifier": "COGrrcWKhJcDFYu6rAIdKfM5aA",
+          "onload": false,
+          "viewable": false
+        },
+        {
+          "id": "interstitial-next-3",
+          "kind": "interstitial",
+          "state": "REQUESTED",
+          "adUnit": "/23338698373/cashloanplatform_interstitial_03",
+          "elementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_03_0",
+          "sizes": null,
+          "mapping": null,
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 0,
+          "renderCount": 0,
+          "isEmpty": null,
+          "renderedSize": null,
+          "responseIdentifier": null,
+          "onload": false,
+          "viewable": false
+        }
+      ]
+    },
+    "page": "loan-type",
+    "mode": "preview",
+    "http": 200,
+    "errors": [],
+    "warnings": [
+      "[GPT] Interstitial /23338698373/Latest3 not requested: Format already created on the page.\nhttps://goo.gle/gpt-message#134"
+    ],
+    "network": [
+      {
+        "path": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+        "status": 200
+      },
+      {
+        "path": "https://securepubads.g.doubleclick.net/gampad/ads",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "viewport": 393,
+    "button": {
+      "left": 20,
+      "right": 373,
+      "width": 353,
+      "top": 718.125,
+      "height": 52,
+      "bottom": 770.125
+    },
+    "wrapper": {
+      "left": 20,
+      "right": 373,
+      "width": 353,
+      "top": 452.125,
+      "height": 250,
+      "bottom": 702.125
+    },
+    "slot": {
+      "left": 20,
+      "right": 373,
+      "width": 353,
+      "top": 452.125,
+      "height": 250,
+      "bottom": 702.125
+    },
+    "content": {
+      "width": 353,
+      "paddingLeft": "20px",
+      "paddingRight": "20px"
+    },
+    "aligned": true,
+    "pageOverflow": false,
+    "slotScrollbar": false,
+    "buttonPosition": "static",
+    "gap": 16,
+    "creatives": [],
+    "scripts": 1,
+    "diagnostics": {
+      "page": "proceed",
+      "release": "20260923-1",
+      "gpt": {
+        "state": "ready",
+        "error": null,
+        "servicesEnabled": true
+      },
+      "lastTrigger": null,
+      "triggerIds": [
+        "interstitial-next-5"
+      ],
+      "errors": [],
+      "slots": [
+        {
+          "id": "display-dropdown-next-proceed",
+          "kind": "display",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_native_in_content_05",
+          "elementId": "gam-proceed-dropdown-next",
+          "sizes": [
+            [
+              300,
+              250
+            ],
+            [
+              250,
+              250
+            ]
+          ],
+          "mapping": [
+            [
+              [
+                480,
+                0
+              ],
+              [
+                [
+                  440,
+                  250
+                ],
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                340,
+                0
+              ],
+              [
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                290,
+                0
+              ],
+              [
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              []
+            ]
+          ],
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "COWx8MWKhJcDFbNunQkdzEM2-g",
+          "onload": false,
+          "viewable": false
+        },
+        {
+          "id": "interstitial-next-5",
+          "kind": "interstitial",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_interstitial_05",
+          "elementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_05_0",
+          "sizes": null,
+          "mapping": null,
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CN7Z8cWKhJcDFbNunQkdzEM2-g",
+          "onload": false,
+          "viewable": false
+        }
+      ]
+    },
+    "page": "proceed",
+    "mode": "preview",
+    "http": 200,
+    "errors": [],
+    "warnings": [],
+    "network": [
+      {
+        "path": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+        "status": 200
+      },
+      {
+        "path": "https://securepubads.g.doubleclick.net/gampad/ads",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "viewport": 412,
+    "button": {
+      "left": 20,
+      "right": 392,
+      "width": 372,
+      "top": 600.125,
+      "height": 52,
+      "bottom": 652.125
+    },
+    "wrapper": {
+      "left": 20,
+      "right": 392,
+      "width": 372,
+      "top": 334.125,
+      "height": 250,
+      "bottom": 584.125
+    },
+    "slot": {
+      "left": 20,
+      "right": 392,
+      "width": 372,
+      "top": 334.125,
+      "height": 250,
+      "bottom": 584.125
+    },
+    "content": {
+      "width": 372,
+      "paddingLeft": "20px",
+      "paddingRight": "20px"
+    },
+    "aligned": true,
+    "pageOverflow": false,
+    "slotScrollbar": false,
+    "buttonPosition": "static",
+    "gap": 16,
+    "creatives": [
+      {
+        "tag": "IFRAME",
+        "left": 56,
+        "right": 356,
+        "width": 300,
+        "top": 334.125,
+        "height": 250,
+        "bottom": 584.125,
+        "transform": "none"
+      }
+    ],
+    "scripts": 1,
+    "diagnostics": {
+      "page": "index",
+      "release": "20260923-1",
+      "gpt": {
+        "state": "ready",
+        "error": null,
+        "servicesEnabled": true
+      },
+      "lastTrigger": null,
+      "triggerIds": [
+        "interstitial-next-1"
+      ],
+      "errors": [],
+      "slots": [
+        {
+          "id": "display-dropdown-next-index",
+          "kind": "display",
+          "state": "RENDERED",
+          "adUnit": "/23338698373/cashloanplatform_native_in_content_01",
+          "elementId": "gam-index-dropdown-next",
+          "sizes": [
+            [
+              300,
+              250
+            ],
+            [
+              250,
+              250
+            ]
+          ],
+          "mapping": [
+            [
+              [
+                480,
+                0
+              ],
+              [
+                [
+                  440,
+                  250
+                ],
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                340,
+                0
+              ],
+              [
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                290,
+                0
+              ],
+              [
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              []
+            ]
+          ],
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": false,
+          "renderedSize": [
+            300,
+            250
+          ],
+          "responseIdentifier": "CKuGvsaKhJcDFba7rAId1sMjaA",
+          "onload": true,
+          "viewable": false
+        },
+        {
+          "id": "interstitial-next-1",
+          "kind": "interstitial",
+          "state": "RENDERED",
+          "adUnit": "/23338698373/cashloanplatform_interstitial",
+          "elementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_0",
+          "sizes": null,
+          "mapping": null,
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": false,
+          "renderedSize": [
+            412,
+            900
+          ],
+          "responseIdentifier": "CK6GvsaKhJcDFba7rAId1sMjaA",
+          "onload": false,
+          "viewable": false
+        }
+      ]
+    },
+    "page": "index",
+    "mode": "preview",
+    "http": 200,
+    "errors": [],
+    "warnings": [
+      "[GPT] Interstitial /23338698373/Latest3 not requested: Format already created on the page.\nhttps://goo.gle/gpt-message#134",
+      "[GPT] Interstitial /23338698373/Latest3 not requested: Format already created on the page.\nhttps://goo.gle/gpt-message#134"
+    ],
+    "network": [
+      {
+        "path": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+        "status": 200
+      },
+      {
+        "path": "https://securepubads.g.doubleclick.net/gampad/ads",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "viewport": 412,
+    "button": {
+      "left": 20,
+      "right": 392,
+      "width": 372,
+      "top": 600.125,
+      "height": 52,
+      "bottom": 652.125
+    },
+    "wrapper": {
+      "left": 20,
+      "right": 392,
+      "width": 372,
+      "top": 334.125,
+      "height": 250,
+      "bottom": 584.125
+    },
+    "slot": {
+      "left": 20,
+      "right": 392,
+      "width": 372,
+      "top": 334.125,
+      "height": 250,
+      "bottom": 584.125
+    },
+    "content": {
+      "width": 372,
+      "paddingLeft": "20px",
+      "paddingRight": "20px"
+    },
+    "aligned": true,
+    "pageOverflow": false,
+    "slotScrollbar": false,
+    "buttonPosition": "static",
+    "gap": 16,
+    "creatives": [
+      {
+        "tag": "IFRAME",
+        "left": 56,
+        "right": 356,
+        "width": 300,
+        "top": 334.125,
+        "height": 250,
+        "bottom": 584.125,
+        "transform": "none"
+      }
+    ],
+    "scripts": 1,
+    "diagnostics": {
+      "page": "loan-amount",
+      "release": "20260923-1",
+      "gpt": {
+        "state": "ready",
+        "error": null,
+        "servicesEnabled": true
+      },
+      "lastTrigger": null,
+      "triggerIds": [
+        "interstitial-next-2"
+      ],
+      "errors": [],
+      "slots": [
+        {
+          "id": "display-dropdown-next-loan-amount",
+          "kind": "display",
+          "state": "RENDERED",
+          "adUnit": "/23338698373/cashloanplatform_native_in_content_02",
+          "elementId": "gam-loan-amount-dropdown-next",
+          "sizes": [
+            [
+              300,
+              250
+            ],
+            [
+              250,
+              250
+            ]
+          ],
+          "mapping": [
+            [
+              [
+                480,
+                0
+              ],
+              [
+                [
+                  440,
+                  250
+                ],
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                340,
+                0
+              ],
+              [
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                290,
+                0
+              ],
+              [
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              []
+            ]
+          ],
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": false,
+          "renderedSize": [
+            300,
+            250
+          ],
+          "responseIdentifier": "CLqFmMeKhJcDFWWROAgdlfIwMA",
+          "onload": false,
+          "viewable": false
+        },
+        {
+          "id": "interstitial-next-2",
+          "kind": "interstitial",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_interstitial_02",
+          "elementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_02_0",
+          "sizes": null,
+          "mapping": null,
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CLyFmMeKhJcDFWWROAgdlfIwMA",
+          "onload": false,
+          "viewable": false
+        }
+      ]
+    },
+    "page": "loan-amount",
+    "mode": "preview",
+    "http": 200,
+    "errors": [],
+    "warnings": [
+      "[GPT] Interstitial /23338698373/Latest3 not requested: Format already created on the page.\nhttps://goo.gle/gpt-message#134"
+    ],
+    "network": [
+      {
+        "path": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+        "status": 200
+      },
+      {
+        "path": "https://securepubads.g.doubleclick.net/gampad/ads",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "viewport": 412,
+    "button": {
+      "left": 20,
+      "right": 392,
+      "width": 372,
+      "top": 584.734375,
+      "height": 52,
+      "bottom": 636.734375
+    },
+    "wrapper": {
+      "left": 20,
+      "right": 392,
+      "width": 372,
+      "top": 318.734375,
+      "height": 250,
+      "bottom": 568.734375
+    },
+    "slot": {
+      "left": 20,
+      "right": 392,
+      "width": 372,
+      "top": 318.734375,
+      "height": 250,
+      "bottom": 568.734375
+    },
+    "content": {
+      "width": 372,
+      "paddingLeft": "20px",
+      "paddingRight": "20px"
+    },
+    "aligned": true,
+    "pageOverflow": false,
+    "slotScrollbar": false,
+    "buttonPosition": "static",
+    "gap": 16,
+    "creatives": [],
+    "scripts": 1,
+    "diagnostics": {
+      "page": "employment-type",
+      "release": "20260923-1",
+      "gpt": {
+        "state": "ready",
+        "error": null,
+        "servicesEnabled": true
+      },
+      "lastTrigger": null,
+      "triggerIds": [
+        "interstitial-next-4"
+      ],
+      "errors": [],
+      "slots": [
+        {
+          "id": "display-dropdown-next-employment-type",
+          "kind": "display",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_native_in_content_03",
+          "elementId": "gam-employment-dropdown-next",
+          "sizes": [
+            [
+              300,
+              250
+            ],
+            [
+              250,
+              250
+            ]
+          ],
+          "mapping": [
+            [
+              [
+                480,
+                0
+              ],
+              [
+                [
+                  440,
+                  250
+                ],
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                340,
+                0
+              ],
+              [
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                290,
+                0
+              ],
+              [
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              []
+            ]
+          ],
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CPbi5seKhJcDFfG6rAId3hg1pw",
+          "onload": false,
+          "viewable": false
+        },
+        {
+          "id": "interstitial-next-4",
+          "kind": "interstitial",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_interstitial_04",
+          "elementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_04_0",
+          "sizes": null,
+          "mapping": null,
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CMnx58eKhJcDFfG6rAId3hg1pw",
+          "onload": false,
+          "viewable": false
+        }
+      ]
+    },
+    "page": "employment-type",
+    "mode": "preview",
+    "http": 200,
+    "errors": [],
+    "warnings": [],
+    "network": [
+      {
+        "path": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+        "status": 200
+      },
+      {
+        "path": "https://securepubads.g.doubleclick.net/gampad/ads",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "viewport": 412,
+    "button": {
+      "left": 20,
+      "right": 392,
+      "width": 372,
+      "top": 600.125,
+      "height": 52,
+      "bottom": 652.125
+    },
+    "wrapper": {
+      "left": 20,
+      "right": 392,
+      "width": 372,
+      "top": 334.125,
+      "height": 250,
+      "bottom": 584.125
+    },
+    "slot": {
+      "left": 20,
+      "right": 392,
+      "width": 372,
+      "top": 334.125,
+      "height": 250,
+      "bottom": 584.125
+    },
+    "content": {
+      "width": 372,
+      "paddingLeft": "20px",
+      "paddingRight": "20px"
+    },
+    "aligned": true,
+    "pageOverflow": false,
+    "slotScrollbar": false,
+    "buttonPosition": "static",
+    "gap": 16,
+    "creatives": [],
+    "scripts": 1,
+    "diagnostics": {
+      "page": "loan-type",
+      "release": "20260923-1",
+      "gpt": {
+        "state": "ready",
+        "error": null,
+        "servicesEnabled": true
+      },
+      "lastTrigger": null,
+      "triggerIds": [
+        "interstitial-next-3"
+      ],
+      "errors": [],
+      "slots": [
+        {
+          "id": "display-dropdown-next-loan-type",
+          "kind": "display",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_native_in_content_04",
+          "elementId": "gam-loan-type-dropdown-next",
+          "sizes": [
+            [
+              300,
+              250
+            ],
+            [
+              250,
+              250
+            ]
+          ],
+          "mapping": [
+            [
+              [
+                480,
+                0
+              ],
+              [
+                [
+                  440,
+                  250
+                ],
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                340,
+                0
+              ],
+              [
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                290,
+                0
+              ],
+              [
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              []
+            ]
+          ],
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CNyHtsiKhJcDFe2XrAIdUuwgPw",
+          "onload": false,
+          "viewable": false
+        },
+        {
+          "id": "interstitial-next-3",
+          "kind": "interstitial",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_interstitial_03",
+          "elementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_03_0",
+          "sizes": null,
+          "mapping": null,
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "COmGt8iKhJcDFe2XrAIdUuwgPw",
+          "onload": false,
+          "viewable": false
+        }
+      ]
+    },
+    "page": "loan-type",
+    "mode": "preview",
+    "http": 200,
+    "errors": [],
+    "warnings": [],
+    "network": [
+      {
+        "path": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+        "status": 200
+      },
+      {
+        "path": "https://securepubads.g.doubleclick.net/gampad/ads",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "viewport": 412,
+    "button": {
+      "left": 20,
+      "right": 392,
+      "width": 372,
+      "top": 718.125,
+      "height": 52,
+      "bottom": 770.125
+    },
+    "wrapper": {
+      "left": 20,
+      "right": 392,
+      "width": 372,
+      "top": 452.125,
+      "height": 250,
+      "bottom": 702.125
+    },
+    "slot": {
+      "left": 20,
+      "right": 392,
+      "width": 372,
+      "top": 452.125,
+      "height": 250,
+      "bottom": 702.125
+    },
+    "content": {
+      "width": 372,
+      "paddingLeft": "20px",
+      "paddingRight": "20px"
+    },
+    "aligned": true,
+    "pageOverflow": false,
+    "slotScrollbar": false,
+    "buttonPosition": "static",
+    "gap": 16,
+    "creatives": [],
+    "scripts": 1,
+    "diagnostics": {
+      "page": "proceed",
+      "release": "20260923-1",
+      "gpt": {
+        "state": "ready",
+        "error": null,
+        "servicesEnabled": true
+      },
+      "lastTrigger": null,
+      "triggerIds": [
+        "interstitial-next-5"
+      ],
+      "errors": [],
+      "slots": [
+        {
+          "id": "display-dropdown-next-proceed",
+          "kind": "display",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_native_in_content_05",
+          "elementId": "gam-proceed-dropdown-next",
+          "sizes": [
+            [
+              300,
+              250
+            ],
+            [
+              250,
+              250
+            ]
+          ],
+          "mapping": [
+            [
+              [
+                480,
+                0
+              ],
+              [
+                [
+                  440,
+                  250
+                ],
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                340,
+                0
+              ],
+              [
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                290,
+                0
+              ],
+              [
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              []
+            ]
+          ],
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CIv8hMmKhJcDFbu3SwUdRyUsaw",
+          "onload": false,
+          "viewable": false
+        },
+        {
+          "id": "interstitial-next-5",
+          "kind": "interstitial",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_interstitial_05",
+          "elementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_05_0",
+          "sizes": null,
+          "mapping": null,
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CI76hsmKhJcDFbu3SwUdRyUsaw",
+          "onload": false,
+          "viewable": false
+        }
+      ]
+    },
+    "page": "proceed",
+    "mode": "preview",
+    "http": 200,
+    "errors": [],
+    "warnings": [],
+    "network": [
+      {
+        "path": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+        "status": 200
+      },
+      {
+        "path": "https://securepubads.g.doubleclick.net/gampad/ads",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "viewport": 430,
+    "button": {
+      "left": 20,
+      "right": 410,
+      "width": 390,
+      "top": 600.125,
+      "height": 52,
+      "bottom": 652.125
+    },
+    "wrapper": {
+      "left": 20,
+      "right": 410,
+      "width": 390,
+      "top": 334.125,
+      "height": 250,
+      "bottom": 584.125
+    },
+    "slot": {
+      "left": 20,
+      "right": 410,
+      "width": 390,
+      "top": 334.125,
+      "height": 250,
+      "bottom": 584.125
+    },
+    "content": {
+      "width": 390,
+      "paddingLeft": "20px",
+      "paddingRight": "20px"
+    },
+    "aligned": true,
+    "pageOverflow": false,
+    "slotScrollbar": false,
+    "buttonPosition": "static",
+    "gap": 16,
+    "creatives": [
+      {
+        "tag": "IFRAME",
+        "left": 65,
+        "right": 365,
+        "width": 300,
+        "top": 334.125,
+        "height": 250,
+        "bottom": 584.125,
+        "transform": "none"
+      }
+    ],
+    "scripts": 1,
+    "diagnostics": {
+      "page": "index",
+      "release": "20260923-1",
+      "gpt": {
+        "state": "ready",
+        "error": null,
+        "servicesEnabled": true
+      },
+      "lastTrigger": null,
+      "triggerIds": [
+        "interstitial-next-1"
+      ],
+      "errors": [],
+      "slots": [
+        {
+          "id": "display-dropdown-next-index",
+          "kind": "display",
+          "state": "RENDERED",
+          "adUnit": "/23338698373/cashloanplatform_native_in_content_01",
+          "elementId": "gam-index-dropdown-next",
+          "sizes": [
+            [
+              300,
+              250
+            ],
+            [
+              250,
+              250
+            ]
+          ],
+          "mapping": [
+            [
+              [
+                480,
+                0
+              ],
+              [
+                [
+                  440,
+                  250
+                ],
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                340,
+                0
+              ],
+              [
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                290,
+                0
+              ],
+              [
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              []
+            ]
+          ],
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": false,
+          "renderedSize": [
+            300,
+            250
+          ],
+          "responseIdentifier": "CNvz58mKhJcDFbywrAId1PEYMA",
+          "onload": true,
+          "viewable": false
+        },
+        {
+          "id": "interstitial-next-1",
+          "kind": "interstitial",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_interstitial",
+          "elementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_0",
+          "sizes": null,
+          "mapping": null,
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CN3z58mKhJcDFbywrAId1PEYMA",
+          "onload": false,
+          "viewable": false
+        }
+      ]
+    },
+    "page": "index",
+    "mode": "preview",
+    "http": 200,
+    "errors": [],
+    "warnings": [
+      "[GPT] Interstitial /23338698373/Latest3 not requested: Format already created on the page.\nhttps://goo.gle/gpt-message#134"
+    ],
+    "network": [
+      {
+        "path": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+        "status": 200
+      },
+      {
+        "path": "https://securepubads.g.doubleclick.net/gampad/ads",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "viewport": 430,
+    "button": {
+      "left": 20,
+      "right": 410,
+      "width": 390,
+      "top": 600.125,
+      "height": 52,
+      "bottom": 652.125
+    },
+    "wrapper": {
+      "left": 20,
+      "right": 410,
+      "width": 390,
+      "top": 334.125,
+      "height": 250,
+      "bottom": 584.125
+    },
+    "slot": {
+      "left": 20,
+      "right": 410,
+      "width": 390,
+      "top": 334.125,
+      "height": 250,
+      "bottom": 584.125
+    },
+    "content": {
+      "width": 390,
+      "paddingLeft": "20px",
+      "paddingRight": "20px"
+    },
+    "aligned": true,
+    "pageOverflow": false,
+    "slotScrollbar": false,
+    "buttonPosition": "static",
+    "gap": 16,
+    "creatives": [
+      {
+        "tag": "IFRAME",
+        "left": 65,
+        "right": 365,
+        "width": 300,
+        "top": 334.125,
+        "height": 250,
+        "bottom": 584.125,
+        "transform": "none"
+      }
+    ],
+    "scripts": 1,
+    "diagnostics": {
+      "page": "loan-amount",
+      "release": "20260923-1",
+      "gpt": {
+        "state": "ready",
+        "error": null,
+        "servicesEnabled": true
+      },
+      "lastTrigger": null,
+      "triggerIds": [
+        "interstitial-next-2"
+      ],
+      "errors": [],
+      "slots": [
+        {
+          "id": "display-dropdown-next-loan-amount",
+          "kind": "display",
+          "state": "RENDERED",
+          "adUnit": "/23338698373/cashloanplatform_native_in_content_02",
+          "elementId": "gam-loan-amount-dropdown-next",
+          "sizes": [
+            [
+              300,
+              250
+            ],
+            [
+              250,
+              250
+            ]
+          ],
+          "mapping": [
+            [
+              [
+                480,
+                0
+              ],
+              [
+                [
+                  440,
+                  250
+                ],
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                340,
+                0
+              ],
+              [
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                290,
+                0
+              ],
+              [
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              []
+            ]
+          ],
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": false,
+          "renderedSize": [
+            300,
+            250
+          ],
+          "responseIdentifier": "CP-LssqKhJcDFcOpZgId7mc5CA",
+          "onload": true,
+          "viewable": false
+        },
+        {
+          "id": "interstitial-next-2",
+          "kind": "interstitial",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_interstitial_02",
+          "elementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_02_0",
+          "sizes": null,
+          "mapping": null,
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CIGMssqKhJcDFcOpZgId7mc5CA",
+          "onload": false,
+          "viewable": false
+        }
+      ]
+    },
+    "page": "loan-amount",
+    "mode": "preview",
+    "http": 200,
+    "errors": [],
+    "warnings": [
+      "[GPT] Interstitial /23338698373/Latest3 not requested: Format already created on the page.\nhttps://goo.gle/gpt-message#134"
+    ],
+    "network": [
+      {
+        "path": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+        "status": 200
+      },
+      {
+        "path": "https://securepubads.g.doubleclick.net/gampad/ads",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "viewport": 430,
+    "button": {
+      "left": 20,
+      "right": 410,
+      "width": 390,
+      "top": 584.734375,
+      "height": 52,
+      "bottom": 636.734375
+    },
+    "wrapper": {
+      "left": 20,
+      "right": 410,
+      "width": 390,
+      "top": 318.734375,
+      "height": 250,
+      "bottom": 568.734375
+    },
+    "slot": {
+      "left": 20,
+      "right": 410,
+      "width": 390,
+      "top": 318.734375,
+      "height": 250,
+      "bottom": 568.734375
+    },
+    "content": {
+      "width": 390,
+      "paddingLeft": "20px",
+      "paddingRight": "20px"
+    },
+    "aligned": true,
+    "pageOverflow": false,
+    "slotScrollbar": false,
+    "buttonPosition": "static",
+    "gap": 16,
+    "creatives": [],
+    "scripts": 1,
+    "diagnostics": {
+      "page": "employment-type",
+      "release": "20260923-1",
+      "gpt": {
+        "state": "ready",
+        "error": null,
+        "servicesEnabled": true
+      },
+      "lastTrigger": null,
+      "triggerIds": [
+        "interstitial-next-4"
+      ],
+      "errors": [],
+      "slots": [
+        {
+          "id": "display-dropdown-next-employment-type",
+          "kind": "display",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_native_in_content_03",
+          "elementId": "gam-employment-dropdown-next",
+          "sizes": [
+            [
+              300,
+              250
+            ],
+            [
+              250,
+              250
+            ]
+          ],
+          "mapping": [
+            [
+              [
+                480,
+                0
+              ],
+              [
+                [
+                  440,
+                  250
+                ],
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                340,
+                0
+              ],
+              [
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                290,
+                0
+              ],
+              [
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              []
+            ]
+          ],
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CLizm8uKhJcDFULHhAAdlGcbdg",
+          "onload": false,
+          "viewable": false
+        },
+        {
+          "id": "interstitial-next-4",
+          "kind": "interstitial",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_interstitial_04",
+          "elementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_04_0",
+          "sizes": null,
+          "mapping": null,
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CNTGncuKhJcDFULHhAAdlGcbdg",
+          "onload": false,
+          "viewable": false
+        }
+      ]
+    },
+    "page": "employment-type",
+    "mode": "preview",
+    "http": 200,
+    "errors": [],
+    "warnings": [],
+    "network": [
+      {
+        "path": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+        "status": 200
+      },
+      {
+        "path": "https://securepubads.g.doubleclick.net/gampad/ads",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "viewport": 430,
+    "button": {
+      "left": 20,
+      "right": 410,
+      "width": 390,
+      "top": 600.125,
+      "height": 52,
+      "bottom": 652.125
+    },
+    "wrapper": {
+      "left": 20,
+      "right": 410,
+      "width": 390,
+      "top": 334.125,
+      "height": 250,
+      "bottom": 584.125
+    },
+    "slot": {
+      "left": 20,
+      "right": 410,
+      "width": 390,
+      "top": 334.125,
+      "height": 250,
+      "bottom": 584.125
+    },
+    "content": {
+      "width": 390,
+      "paddingLeft": "20px",
+      "paddingRight": "20px"
+    },
+    "aligned": true,
+    "pageOverflow": false,
+    "slotScrollbar": false,
+    "buttonPosition": "static",
+    "gap": 16,
+    "creatives": [],
+    "scripts": 1,
+    "diagnostics": {
+      "page": "loan-type",
+      "release": "20260923-1",
+      "gpt": {
+        "state": "ready",
+        "error": null,
+        "servicesEnabled": true
+      },
+      "lastTrigger": null,
+      "triggerIds": [
+        "interstitial-next-3"
+      ],
+      "errors": [],
+      "slots": [
+        {
+          "id": "display-dropdown-next-loan-type",
+          "kind": "display",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_native_in_content_04",
+          "elementId": "gam-loan-type-dropdown-next",
+          "sizes": [
+            [
+              300,
+              250
+            ],
+            [
+              250,
+              250
+            ]
+          ],
+          "mapping": [
+            [
+              [
+                480,
+                0
+              ],
+              [
+                [
+                  440,
+                  250
+                ],
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                340,
+                0
+              ],
+              [
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                290,
+                0
+              ],
+              [
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              []
+            ]
+          ],
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CNiH38uKhJcDFVLWcwEdegkMww",
+          "onload": false,
+          "viewable": false
+        },
+        {
+          "id": "interstitial-next-3",
+          "kind": "interstitial",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_interstitial_03",
+          "elementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_03_0",
+          "sizes": null,
+          "mapping": null,
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CKu94MuKhJcDFVLWcwEdegkMww",
+          "onload": false,
+          "viewable": false
+        }
+      ]
+    },
+    "page": "loan-type",
+    "mode": "preview",
+    "http": 200,
+    "errors": [],
+    "warnings": [
+      "[GPT] Interstitial /23338698373/Latest3 not requested: Format already created on the page.\nhttps://goo.gle/gpt-message#134"
+    ],
+    "network": [
+      {
+        "path": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+        "status": 200
+      },
+      {
+        "path": "https://securepubads.g.doubleclick.net/gampad/ads",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "viewport": 430,
+    "button": {
+      "left": 20,
+      "right": 410,
+      "width": 390,
+      "top": 718.125,
+      "height": 52,
+      "bottom": 770.125
+    },
+    "wrapper": {
+      "left": 20,
+      "right": 410,
+      "width": 390,
+      "top": 452.125,
+      "height": 250,
+      "bottom": 702.125
+    },
+    "slot": {
+      "left": 20,
+      "right": 410,
+      "width": 390,
+      "top": 452.125,
+      "height": 250,
+      "bottom": 702.125
+    },
+    "content": {
+      "width": 390,
+      "paddingLeft": "20px",
+      "paddingRight": "20px"
+    },
+    "aligned": true,
+    "pageOverflow": false,
+    "slotScrollbar": false,
+    "buttonPosition": "static",
+    "gap": 16,
+    "creatives": [],
+    "scripts": 1,
+    "diagnostics": {
+      "page": "proceed",
+      "release": "20260923-1",
+      "gpt": {
+        "state": "ready",
+        "error": null,
+        "servicesEnabled": true
+      },
+      "lastTrigger": null,
+      "triggerIds": [
+        "interstitial-next-5"
+      ],
+      "errors": [],
+      "slots": [
+        {
+          "id": "display-dropdown-next-proceed",
+          "kind": "display",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_native_in_content_05",
+          "elementId": "gam-proceed-dropdown-next",
+          "sizes": [
+            [
+              300,
+              250
+            ],
+            [
+              250,
+              250
+            ]
+          ],
+          "mapping": [
+            [
+              [
+                480,
+                0
+              ],
+              [
+                [
+                  440,
+                  250
+                ],
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                340,
+                0
+              ],
+              [
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                290,
+                0
+              ],
+              [
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              []
+            ]
+          ],
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CMq7y8yKhJcDFdekZgIdfIoqSQ",
+          "onload": false,
+          "viewable": false
+        },
+        {
+          "id": "interstitial-next-5",
+          "kind": "interstitial",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_interstitial_05",
+          "elementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_05_0",
+          "sizes": null,
+          "mapping": null,
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CPvrzMyKhJcDFdekZgIdfIoqSQ",
+          "onload": false,
+          "viewable": false
+        }
+      ]
+    },
+    "page": "proceed",
+    "mode": "preview",
+    "http": 200,
+    "errors": [],
+    "warnings": [],
+    "network": [
+      {
+        "path": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+        "status": 200
+      },
+      {
+        "path": "https://securepubads.g.doubleclick.net/gampad/ads",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "viewport": 480,
+    "button": {
+      "left": 20,
+      "right": 460,
+      "width": 440,
+      "top": 600.125,
+      "height": 52,
+      "bottom": 652.125
+    },
+    "wrapper": {
+      "left": 20,
+      "right": 460,
+      "width": 440,
+      "top": 334.125,
+      "height": 250,
+      "bottom": 584.125
+    },
+    "slot": {
+      "left": 20,
+      "right": 460,
+      "width": 440,
+      "top": 334.125,
+      "height": 250,
+      "bottom": 584.125
+    },
+    "content": {
+      "width": 440,
+      "paddingLeft": "20px",
+      "paddingRight": "20px"
+    },
+    "aligned": true,
+    "pageOverflow": false,
+    "slotScrollbar": false,
+    "buttonPosition": "static",
+    "gap": 16,
+    "creatives": [
+      {
+        "tag": "IFRAME",
+        "left": 20,
+        "right": 460,
+        "width": 440,
+        "top": 334.125,
+        "height": 250,
+        "bottom": 584.125,
+        "transform": "none"
+      }
+    ],
+    "scripts": 1,
+    "diagnostics": {
+      "page": "index",
+      "release": "20260923-1",
+      "gpt": {
+        "state": "ready",
+        "error": null,
+        "servicesEnabled": true
+      },
+      "lastTrigger": null,
+      "triggerIds": [
+        "interstitial-next-1"
+      ],
+      "errors": [],
+      "slots": [
+        {
+          "id": "display-dropdown-next-index",
+          "kind": "display",
+          "state": "RENDERED",
+          "adUnit": "/23338698373/cashloanplatform_native_in_content_01",
+          "elementId": "gam-index-dropdown-next",
+          "sizes": [
+            [
+              440,
+              250
+            ],
+            [
+              300,
+              250
+            ],
+            [
+              250,
+              250
+            ]
+          ],
+          "mapping": [
+            [
+              [
+                480,
+                0
+              ],
+              [
+                [
+                  440,
+                  250
+                ],
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                340,
+                0
+              ],
+              [
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                290,
+                0
+              ],
+              [
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              []
+            ]
+          ],
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": false,
+          "renderedSize": [
+            440,
+            250
+          ],
+          "responseIdentifier": "CNWqmc2KhJcDFS63rAIdCqgx6w",
+          "onload": false,
+          "viewable": false
+        },
+        {
+          "id": "interstitial-next-1",
+          "kind": "interstitial",
+          "state": "REQUESTED",
+          "adUnit": "/23338698373/cashloanplatform_interstitial",
+          "elementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_0",
+          "sizes": null,
+          "mapping": null,
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 0,
+          "renderCount": 0,
+          "isEmpty": null,
+          "renderedSize": null,
+          "responseIdentifier": null,
+          "onload": false,
+          "viewable": false
+        }
+      ]
+    },
+    "page": "index",
+    "mode": "preview",
+    "http": 200,
+    "errors": [],
+    "warnings": [
+      "[GPT] Interstitial /23338698373/Latest3 not requested: Format already created on the page.\nhttps://goo.gle/gpt-message#134"
+    ],
+    "network": [
+      {
+        "path": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+        "status": 200
+      },
+      {
+        "path": "https://securepubads.g.doubleclick.net/gampad/ads",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "viewport": 480,
+    "button": {
+      "left": 20,
+      "right": 460,
+      "width": 440,
+      "top": 600.125,
+      "height": 52,
+      "bottom": 652.125
+    },
+    "wrapper": {
+      "left": 20,
+      "right": 460,
+      "width": 440,
+      "top": 334.125,
+      "height": 250,
+      "bottom": 584.125
+    },
+    "slot": {
+      "left": 20,
+      "right": 460,
+      "width": 440,
+      "top": 334.125,
+      "height": 250,
+      "bottom": 584.125
+    },
+    "content": {
+      "width": 440,
+      "paddingLeft": "20px",
+      "paddingRight": "20px"
+    },
+    "aligned": true,
+    "pageOverflow": false,
+    "slotScrollbar": false,
+    "buttonPosition": "static",
+    "gap": 16,
+    "creatives": [
+      {
+        "tag": "IFRAME",
+        "left": 90,
+        "right": 390,
+        "width": 300,
+        "top": 334.125,
+        "height": 250,
+        "bottom": 584.125,
+        "transform": "none"
+      }
+    ],
+    "scripts": 1,
+    "diagnostics": {
+      "page": "loan-amount",
+      "release": "20260923-1",
+      "gpt": {
+        "state": "ready",
+        "error": null,
+        "servicesEnabled": true
+      },
+      "lastTrigger": null,
+      "triggerIds": [
+        "interstitial-next-2"
+      ],
+      "errors": [],
+      "slots": [
+        {
+          "id": "display-dropdown-next-loan-amount",
+          "kind": "display",
+          "state": "RENDERED",
+          "adUnit": "/23338698373/cashloanplatform_native_in_content_02",
+          "elementId": "gam-loan-amount-dropdown-next",
+          "sizes": [
+            [
+              440,
+              250
+            ],
+            [
+              300,
+              250
+            ],
+            [
+              250,
+              250
+            ]
+          ],
+          "mapping": [
+            [
+              [
+                480,
+                0
+              ],
+              [
+                [
+                  440,
+                  250
+                ],
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                340,
+                0
+              ],
+              [
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                290,
+                0
+              ],
+              [
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              []
+            ]
+          ],
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": false,
+          "renderedSize": [
+            300,
+            250
+          ],
+          "responseIdentifier": "CN3BiM6KhJcDFSPLhAAdb04JOg",
+          "onload": true,
+          "viewable": false
+        },
+        {
+          "id": "interstitial-next-2",
+          "kind": "interstitial",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_interstitial_02",
+          "elementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_02_0",
+          "sizes": null,
+          "mapping": null,
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CODBiM6KhJcDFSPLhAAdb04JOg",
+          "onload": false,
+          "viewable": false
+        }
+      ]
+    },
+    "page": "loan-amount",
+    "mode": "preview",
+    "http": 200,
+    "errors": [],
+    "warnings": [
+      "[GPT] Interstitial /23338698373/Latest3 not requested: Format already created on the page.\nhttps://goo.gle/gpt-message#134"
+    ],
+    "network": [
+      {
+        "path": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+        "status": 200
+      },
+      {
+        "path": "https://securepubads.g.doubleclick.net/gampad/ads",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "viewport": 480,
+    "button": {
+      "left": 20,
+      "right": 460,
+      "width": 440,
+      "top": 584.734375,
+      "height": 52,
+      "bottom": 636.734375
+    },
+    "wrapper": {
+      "left": 20,
+      "right": 460,
+      "width": 440,
+      "top": 318.734375,
+      "height": 250,
+      "bottom": 568.734375
+    },
+    "slot": {
+      "left": 20,
+      "right": 460,
+      "width": 440,
+      "top": 318.734375,
+      "height": 250,
+      "bottom": 568.734375
+    },
+    "content": {
+      "width": 440,
+      "paddingLeft": "20px",
+      "paddingRight": "20px"
+    },
+    "aligned": true,
+    "pageOverflow": false,
+    "slotScrollbar": false,
+    "buttonPosition": "static",
+    "gap": 16,
+    "creatives": [],
+    "scripts": 1,
+    "diagnostics": {
+      "page": "employment-type",
+      "release": "20260923-1",
+      "gpt": {
+        "state": "ready",
+        "error": null,
+        "servicesEnabled": true
+      },
+      "lastTrigger": null,
+      "triggerIds": [
+        "interstitial-next-4"
+      ],
+      "errors": [],
+      "slots": [
+        {
+          "id": "display-dropdown-next-employment-type",
+          "kind": "display",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_native_in_content_03",
+          "elementId": "gam-employment-dropdown-next",
+          "sizes": [
+            [
+              440,
+              250
+            ],
+            [
+              300,
+              250
+            ],
+            [
+              250,
+              250
+            ]
+          ],
+          "mapping": [
+            [
+              [
+                480,
+                0
+              ],
+              [
+                [
+                  440,
+                  250
+                ],
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                340,
+                0
+              ],
+              [
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                290,
+                0
+              ],
+              [
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              []
+            ]
+          ],
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "COWi2c6KhJcDFfTKcwEdDTgk1w",
+          "onload": false,
+          "viewable": false
+        },
+        {
+          "id": "interstitial-next-4",
+          "kind": "interstitial",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_interstitial_04",
+          "elementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_04_0",
+          "sizes": null,
+          "mapping": null,
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CNnO2s6KhJcDFfTKcwEdDTgk1w",
+          "onload": false,
+          "viewable": false
+        }
+      ]
+    },
+    "page": "employment-type",
+    "mode": "preview",
+    "http": 200,
+    "errors": [],
+    "warnings": [],
+    "network": [
+      {
+        "path": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+        "status": 200
+      },
+      {
+        "path": "https://securepubads.g.doubleclick.net/gampad/ads",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "viewport": 480,
+    "button": {
+      "left": 20,
+      "right": 460,
+      "width": 440,
+      "top": 600.125,
+      "height": 52,
+      "bottom": 652.125
+    },
+    "wrapper": {
+      "left": 20,
+      "right": 460,
+      "width": 440,
+      "top": 334.125,
+      "height": 250,
+      "bottom": 584.125
+    },
+    "slot": {
+      "left": 20,
+      "right": 460,
+      "width": 440,
+      "top": 334.125,
+      "height": 250,
+      "bottom": 584.125
+    },
+    "content": {
+      "width": 440,
+      "paddingLeft": "20px",
+      "paddingRight": "20px"
+    },
+    "aligned": true,
+    "pageOverflow": false,
+    "slotScrollbar": false,
+    "buttonPosition": "static",
+    "gap": 16,
+    "creatives": [],
+    "scripts": 1,
+    "diagnostics": {
+      "page": "loan-type",
+      "release": "20260923-1",
+      "gpt": {
+        "state": "ready",
+        "error": null,
+        "servicesEnabled": true
+      },
+      "lastTrigger": null,
+      "triggerIds": [
+        "interstitial-next-3"
+      ],
+      "errors": [],
+      "slots": [
+        {
+          "id": "display-dropdown-next-loan-type",
+          "kind": "display",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_native_in_content_04",
+          "elementId": "gam-loan-type-dropdown-next",
+          "sizes": [
+            [
+              440,
+              250
+            ],
+            [
+              300,
+              250
+            ],
+            [
+              250,
+              250
+            ]
+          ],
+          "mapping": [
+            [
+              [
+                480,
+                0
+              ],
+              [
+                [
+                  440,
+                  250
+                ],
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                340,
+                0
+              ],
+              [
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                290,
+                0
+              ],
+              [
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              []
+            ]
+          ],
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CL6Qps-KhJcDFUclgwMdnRk32g",
+          "onload": false,
+          "viewable": false
+        },
+        {
+          "id": "interstitial-next-3",
+          "kind": "interstitial",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_interstitial_03",
+          "elementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_03_0",
+          "sizes": null,
+          "mapping": null,
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CJynp8-KhJcDFUclgwMdnRk32g",
+          "onload": false,
+          "viewable": false
+        }
+      ]
+    },
+    "page": "loan-type",
+    "mode": "preview",
+    "http": 200,
+    "errors": [],
+    "warnings": [],
+    "network": [
+      {
+        "path": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+        "status": 200
+      },
+      {
+        "path": "https://securepubads.g.doubleclick.net/gampad/ads",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "viewport": 480,
+    "button": {
+      "left": 20,
+      "right": 460,
+      "width": 440,
+      "top": 718.125,
+      "height": 52,
+      "bottom": 770.125
+    },
+    "wrapper": {
+      "left": 20,
+      "right": 460,
+      "width": 440,
+      "top": 452.125,
+      "height": 250,
+      "bottom": 702.125
+    },
+    "slot": {
+      "left": 20,
+      "right": 460,
+      "width": 440,
+      "top": 452.125,
+      "height": 250,
+      "bottom": 702.125
+    },
+    "content": {
+      "width": 440,
+      "paddingLeft": "20px",
+      "paddingRight": "20px"
+    },
+    "aligned": true,
+    "pageOverflow": false,
+    "slotScrollbar": false,
+    "buttonPosition": "static",
+    "gap": 16,
+    "creatives": [],
+    "scripts": 1,
+    "diagnostics": {
+      "page": "proceed",
+      "release": "20260923-1",
+      "gpt": {
+        "state": "ready",
+        "error": null,
+        "servicesEnabled": true
+      },
+      "lastTrigger": null,
+      "triggerIds": [
+        "interstitial-next-5"
+      ],
+      "errors": [],
+      "slots": [
+        {
+          "id": "display-dropdown-next-proceed",
+          "kind": "display",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_native_in_content_05",
+          "elementId": "gam-proceed-dropdown-next",
+          "sizes": [
+            [
+              440,
+              250
+            ],
+            [
+              300,
+              250
+            ],
+            [
+              250,
+              250
+            ]
+          ],
+          "mapping": [
+            [
+              [
+                480,
+                0
+              ],
+              [
+                [
+                  440,
+                  250
+                ],
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                340,
+                0
+              ],
+              [
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                290,
+                0
+              ],
+              [
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              []
+            ]
+          ],
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CJ3O8c-KhJcDFVGlrAId9E08RQ",
+          "onload": false,
+          "viewable": false
+        },
+        {
+          "id": "interstitial-next-5",
+          "kind": "interstitial",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_interstitial_05",
+          "elementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_05_0",
+          "sizes": null,
+          "mapping": null,
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CIn78s-KhJcDFVGlrAId9E08RQ",
+          "onload": false,
+          "viewable": false
+        }
+      ]
+    },
+    "page": "proceed",
+    "mode": "preview",
+    "http": 200,
+    "errors": [],
+    "warnings": [],
+    "network": [
+      {
+        "path": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+        "status": 200
+      },
+      {
+        "path": "https://securepubads.g.doubleclick.net/gampad/ads",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "viewport": 1440,
+    "button": {
+      "left": 500,
+      "right": 940,
+      "width": 440,
+      "top": 600.125,
+      "height": 52,
+      "bottom": 652.125
+    },
+    "wrapper": {
+      "left": 500,
+      "right": 940,
+      "width": 440,
+      "top": 334.125,
+      "height": 250,
+      "bottom": 584.125
+    },
+    "slot": {
+      "left": 500,
+      "right": 940,
+      "width": 440,
+      "top": 334.125,
+      "height": 250,
+      "bottom": 584.125
+    },
+    "content": {
+      "width": 440,
+      "paddingLeft": "20px",
+      "paddingRight": "20px"
+    },
+    "aligned": true,
+    "pageOverflow": false,
+    "slotScrollbar": false,
+    "buttonPosition": "static",
+    "gap": 16,
+    "creatives": [],
+    "scripts": 1,
+    "diagnostics": {
+      "page": "index",
+      "release": "20260923-1",
+      "gpt": {
+        "state": "ready",
+        "error": null,
+        "servicesEnabled": true
+      },
+      "lastTrigger": null,
+      "triggerIds": [
+        "interstitial-next-1"
+      ],
+      "errors": [],
+      "slots": [
+        {
+          "id": "display-dropdown-next-index",
+          "kind": "display",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_native_in_content_01",
+          "elementId": "gam-index-dropdown-next",
+          "sizes": [
+            [
+              440,
+              250
+            ],
+            [
+              300,
+              250
+            ],
+            [
+              250,
+              250
+            ]
+          ],
+          "mapping": [
+            [
+              [
+                480,
+                0
+              ],
+              [
+                [
+                  440,
+                  250
+                ],
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                340,
+                0
+              ],
+              [
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                290,
+                0
+              ],
+              [
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              []
+            ]
+          ],
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CJDTyNCKhJcDFWmROAgdiTMQCw",
+          "onload": false,
+          "viewable": false
+        },
+        {
+          "id": "interstitial-next-1",
+          "kind": "interstitial",
+          "state": "REQUESTED",
+          "adUnit": "/23338698373/cashloanplatform_interstitial",
+          "elementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_0",
+          "sizes": null,
+          "mapping": null,
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 0,
+          "renderCount": 0,
+          "isEmpty": null,
+          "renderedSize": null,
+          "responseIdentifier": null,
+          "onload": false,
+          "viewable": false
+        }
+      ]
+    },
+    "page": "index",
+    "mode": "preview",
+    "http": 200,
+    "errors": [],
+    "warnings": [],
+    "network": [
+      {
+        "path": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+        "status": 200
+      },
+      {
+        "path": "https://securepubads.g.doubleclick.net/gampad/ads",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "viewport": 1440,
+    "button": {
+      "left": 500,
+      "right": 940,
+      "width": 440,
+      "top": 600.125,
+      "height": 52,
+      "bottom": 652.125
+    },
+    "wrapper": {
+      "left": 500,
+      "right": 940,
+      "width": 440,
+      "top": 334.125,
+      "height": 250,
+      "bottom": 584.125
+    },
+    "slot": {
+      "left": 500,
+      "right": 940,
+      "width": 440,
+      "top": 334.125,
+      "height": 250,
+      "bottom": 584.125
+    },
+    "content": {
+      "width": 440,
+      "paddingLeft": "20px",
+      "paddingRight": "20px"
+    },
+    "aligned": true,
+    "pageOverflow": false,
+    "slotScrollbar": false,
+    "buttonPosition": "static",
+    "gap": 16,
+    "creatives": [
+      {
+        "tag": "IFRAME",
+        "left": 570,
+        "right": 870,
+        "width": 300,
+        "top": 334.125,
+        "height": 250,
+        "bottom": 584.125,
+        "transform": "none"
+      }
+    ],
+    "scripts": 1,
+    "diagnostics": {
+      "page": "loan-amount",
+      "release": "20260923-1",
+      "gpt": {
+        "state": "ready",
+        "error": null,
+        "servicesEnabled": true
+      },
+      "lastTrigger": null,
+      "triggerIds": [
+        "interstitial-next-2"
+      ],
+      "errors": [],
+      "slots": [
+        {
+          "id": "display-dropdown-next-loan-amount",
+          "kind": "display",
+          "state": "RENDERED",
+          "adUnit": "/23338698373/cashloanplatform_native_in_content_02",
+          "elementId": "gam-loan-amount-dropdown-next",
+          "sizes": [
+            [
+              440,
+              250
+            ],
+            [
+              300,
+              250
+            ],
+            [
+              250,
+              250
+            ]
+          ],
+          "mapping": [
+            [
+              [
+                480,
+                0
+              ],
+              [
+                [
+                  440,
+                  250
+                ],
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                340,
+                0
+              ],
+              [
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                290,
+                0
+              ],
+              [
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              []
+            ]
+          ],
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": false,
+          "renderedSize": [
+            300,
+            250
+          ],
+          "responseIdentifier": "COXVqNGKhJcDFbLHhAAdsF824g",
+          "onload": true,
+          "viewable": false
+        },
+        {
+          "id": "interstitial-next-2",
+          "kind": "interstitial",
+          "state": "REQUESTED",
+          "adUnit": "/23338698373/cashloanplatform_interstitial_02",
+          "elementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_02_0",
+          "sizes": null,
+          "mapping": null,
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 0,
+          "renderCount": 0,
+          "isEmpty": null,
+          "renderedSize": null,
+          "responseIdentifier": null,
+          "onload": false,
+          "viewable": false
+        }
+      ]
+    },
+    "page": "loan-amount",
+    "mode": "preview",
+    "http": 200,
+    "errors": [],
+    "warnings": [
+      "[GPT] Interstitial /23338698373/Latest3 not requested: Format already created on the page.\nhttps://goo.gle/gpt-message#134"
+    ],
+    "network": [
+      {
+        "path": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+        "status": 200
+      },
+      {
+        "path": "https://securepubads.g.doubleclick.net/gampad/ads",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "viewport": 1440,
+    "button": {
+      "left": 500,
+      "right": 940,
+      "width": 440,
+      "top": 584.734375,
+      "height": 52,
+      "bottom": 636.734375
+    },
+    "wrapper": {
+      "left": 500,
+      "right": 940,
+      "width": 440,
+      "top": 318.734375,
+      "height": 250,
+      "bottom": 568.734375
+    },
+    "slot": {
+      "left": 500,
+      "right": 940,
+      "width": 440,
+      "top": 318.734375,
+      "height": 250,
+      "bottom": 568.734375
+    },
+    "content": {
+      "width": 440,
+      "paddingLeft": "20px",
+      "paddingRight": "20px"
+    },
+    "aligned": true,
+    "pageOverflow": false,
+    "slotScrollbar": false,
+    "buttonPosition": "static",
+    "gap": 16,
+    "creatives": [],
+    "scripts": 1,
+    "diagnostics": {
+      "page": "employment-type",
+      "release": "20260923-1",
+      "gpt": {
+        "state": "ready",
+        "error": null,
+        "servicesEnabled": true
+      },
+      "lastTrigger": null,
+      "triggerIds": [
+        "interstitial-next-4"
+      ],
+      "errors": [],
+      "slots": [
+        {
+          "id": "display-dropdown-next-employment-type",
+          "kind": "display",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_native_in_content_03",
+          "elementId": "gam-employment-dropdown-next",
+          "sizes": [
+            [
+              440,
+              250
+            ],
+            [
+              300,
+              250
+            ],
+            [
+              250,
+              250
+            ]
+          ],
+          "mapping": [
+            [
+              [
+                480,
+                0
+              ],
+              [
+                [
+                  440,
+                  250
+                ],
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                340,
+                0
+              ],
+              [
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                290,
+                0
+              ],
+              [
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              []
+            ]
+          ],
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CMTk7tGKhJcDFcYZtwAd4dMP8w",
+          "onload": false,
+          "viewable": false
+        },
+        {
+          "id": "interstitial-next-4",
+          "kind": "interstitial",
+          "state": "REQUESTED",
+          "adUnit": "/23338698373/cashloanplatform_interstitial_04",
+          "elementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_04_0",
+          "sizes": null,
+          "mapping": null,
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 0,
+          "renderCount": 0,
+          "isEmpty": null,
+          "renderedSize": null,
+          "responseIdentifier": null,
+          "onload": false,
+          "viewable": false
+        }
+      ]
+    },
+    "page": "employment-type",
+    "mode": "preview",
+    "http": 200,
+    "errors": [],
+    "warnings": [],
+    "network": [
+      {
+        "path": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+        "status": 200
+      },
+      {
+        "path": "https://securepubads.g.doubleclick.net/gampad/ads",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "viewport": 1440,
+    "button": {
+      "left": 500,
+      "right": 940,
+      "width": 440,
+      "top": 600.125,
+      "height": 52,
+      "bottom": 652.125
+    },
+    "wrapper": {
+      "left": 500,
+      "right": 940,
+      "width": 440,
+      "top": 334.125,
+      "height": 250,
+      "bottom": 584.125
+    },
+    "slot": {
+      "left": 500,
+      "right": 940,
+      "width": 440,
+      "top": 334.125,
+      "height": 250,
+      "bottom": 584.125
+    },
+    "content": {
+      "width": 440,
+      "paddingLeft": "20px",
+      "paddingRight": "20px"
+    },
+    "aligned": true,
+    "pageOverflow": false,
+    "slotScrollbar": false,
+    "buttonPosition": "static",
+    "gap": 16,
+    "creatives": [],
+    "scripts": 1,
+    "diagnostics": {
+      "page": "loan-type",
+      "release": "20260923-1",
+      "gpt": {
+        "state": "ready",
+        "error": null,
+        "servicesEnabled": true
+      },
+      "lastTrigger": null,
+      "triggerIds": [
+        "interstitial-next-3"
+      ],
+      "errors": [],
+      "slots": [
+        {
+          "id": "display-dropdown-next-loan-type",
+          "kind": "display",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_native_in_content_04",
+          "elementId": "gam-loan-type-dropdown-next",
+          "sizes": [
+            [
+              440,
+              250
+            ],
+            [
+              300,
+              250
+            ],
+            [
+              250,
+              250
+            ]
+          ],
+          "mapping": [
+            [
+              [
+                480,
+                0
+              ],
+              [
+                [
+                  440,
+                  250
+                ],
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                340,
+                0
+              ],
+              [
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                290,
+                0
+              ],
+              [
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              []
+            ]
+          ],
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CKvCuNKKhJcDFdHdcwEdCEAo5A",
+          "onload": false,
+          "viewable": false
+        },
+        {
+          "id": "interstitial-next-3",
+          "kind": "interstitial",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_interstitial_03",
+          "elementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_03_0",
+          "sizes": null,
+          "mapping": null,
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CKzCuNKKhJcDFdHdcwEdCEAo5A",
+          "onload": false,
+          "viewable": false
+        }
+      ]
+    },
+    "page": "loan-type",
+    "mode": "preview",
+    "http": 200,
+    "errors": [],
+    "warnings": [],
+    "network": [
+      {
+        "path": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+        "status": 200
+      },
+      {
+        "path": "https://securepubads.g.doubleclick.net/gampad/ads",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "viewport": 1440,
+    "button": {
+      "left": 500,
+      "right": 940,
+      "width": 440,
+      "top": 718.125,
+      "height": 52,
+      "bottom": 770.125
+    },
+    "wrapper": {
+      "left": 500,
+      "right": 940,
+      "width": 440,
+      "top": 452.125,
+      "height": 250,
+      "bottom": 702.125
+    },
+    "slot": {
+      "left": 500,
+      "right": 940,
+      "width": 440,
+      "top": 452.125,
+      "height": 250,
+      "bottom": 702.125
+    },
+    "content": {
+      "width": 440,
+      "paddingLeft": "20px",
+      "paddingRight": "20px"
+    },
+    "aligned": true,
+    "pageOverflow": false,
+    "slotScrollbar": false,
+    "buttonPosition": "static",
+    "gap": 16,
+    "creatives": [],
+    "scripts": 1,
+    "diagnostics": {
+      "page": "proceed",
+      "release": "20260923-1",
+      "gpt": {
+        "state": "ready",
+        "error": null,
+        "servicesEnabled": true
+      },
+      "lastTrigger": null,
+      "triggerIds": [
+        "interstitial-next-5"
+      ],
+      "errors": [],
+      "slots": [
+        {
+          "id": "display-dropdown-next-proceed",
+          "kind": "display",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_native_in_content_05",
+          "elementId": "gam-proceed-dropdown-next",
+          "sizes": [
+            [
+              440,
+              250
+            ],
+            [
+              300,
+              250
+            ],
+            [
+              250,
+              250
+            ]
+          ],
+          "mapping": [
+            [
+              [
+                480,
+                0
+              ],
+              [
+                [
+                  440,
+                  250
+                ],
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                340,
+                0
+              ],
+              [
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                290,
+                0
+              ],
+              [
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              []
+            ]
+          ],
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CITukdOKhJcDFW27rAId8O0jJQ",
+          "onload": false,
+          "viewable": false
+        },
+        {
+          "id": "interstitial-next-5",
+          "kind": "interstitial",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_interstitial_05",
+          "elementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_05_0",
+          "sizes": null,
+          "mapping": null,
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CIXukdOKhJcDFW27rAId8O0jJQ",
+          "onload": false,
+          "viewable": false
+        }
+      ]
+    },
+    "page": "proceed",
+    "mode": "preview",
+    "http": 200,
+    "errors": [],
+    "warnings": [],
+    "network": [
+      {
+        "path": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+        "status": 200
+      },
+      {
+        "path": "https://securepubads.g.doubleclick.net/gampad/ads",
+        "status": 200
+      }
+    ]
+  }
+]

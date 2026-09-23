@@ -22,12 +22,13 @@ STUB = r"""
   const empty = mode === 'empty';
   let size = null;
   if (!empty && !slot.format) {
-   const entry = slot.mapping.find(m => innerWidth >= m[0][0]);
-   size = entry && entry[1][0];
+   const fluid = slot.sizes.length === 1 && slot.sizes[0] === 'fluid';
+   const entry = !fluid && slot.mapping.find(m => innerWidth >= m[0][0]);
+   size = fluid ? 'fluid' : entry && entry[1][0];
    if (!size) throw Error('No fitting mapping');
    const creative = document.createElement('div');
    creative.setAttribute('data-test-creative','true');
-   creative.style.cssText = `width:${size[0]}px;height:${size[1]}px;margin:0 auto;background:#345`;
+   creative.style.cssText = size === "fluid" ? "width:100%;height:250px;margin:0 auto;background:#345" : `width:${size[0]}px;height:${size[1]}px;margin:0 auto;background:#345`;
    document.getElementById(slot.id).appendChild(creative);
   }
   if (!empty && slot.format === 'BOTTOM_ANCHOR') size = [320,50];
@@ -102,7 +103,7 @@ def run():
      c.close()
   # Breakpoint boundaries reflect the 40px gutter, including the no-size case.
   for width,expected in [(289,None),(290,250),(339,250),(340,300),(479,300),(480,440)]:
-   c=context(width=width);tab=c.new_page();tab.goto(base+'/index.html');tab.wait_for_function('AdManager.getDiagnostics().gpt.servicesEnabled')
+   c=context(width=width);tab=c.new_page();tab.goto(base+'/blog-auto-loan.html');tab.wait_for_function('AdManager.getDiagnostics().gpt.servicesEnabled')
    slot=tab.evaluate('AdManager.getDiagnostics().slots[0]')
    assert (slot['renderedSize'][0] if slot['renderedSize'] else None)==expected,(width,slot)
    c.close()
@@ -138,7 +139,7 @@ def run():
   assert d['slots'][0]['state']=='CONFIG_ERROR' and d['slots'][1]['state']=='RENDERED',d
   c.close()
   # A filled rectangle survives rotation at natural size without page overflow.
-  c=context(width=1440);tab=c.new_page();tab.goto(base+'/index.html');tab.wait_for_function('AdManager.getDiagnostics().slots[0].renderCount===1')
+  c=context(width=1440);tab=c.new_page();tab.goto(base+'/blog-auto-loan.html');tab.wait_for_function('AdManager.getDiagnostics().slots[0].renderCount===1')
   tab.set_viewport_size({'width':320,'height':844})
   assert tab.evaluate('document.documentElement.scrollWidth<=innerWidth')
   assert tab.locator('[data-test-creative]').evaluate('(e)=>e.getBoundingClientRect().width')==440

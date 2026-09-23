@@ -20,36 +20,36 @@
       logicalId: "display-dropdown-next-index",
       page: "index",
       adUnit: `${BASE_PATH}/cashloanplatform_native_in_content_01`,
-      // Fixed rectangles; smaller creatives retain their natural dimensions.
-      sizes: [[440, 250], [300, 250], [250, 250]],
+      // Confirmed native/fluid inventory: use the full content width.
+      sizes: ["fluid"],
     },
     "display-dropdown-next-loan-amount": {
       logicalId: "display-dropdown-next-loan-amount",
       page: "loan-amount",
       adUnit: `${BASE_PATH}/cashloanplatform_native_in_content_02`,
-      // Fixed rectangles; smaller creatives retain their natural dimensions.
-      sizes: [[440, 250], [300, 250], [250, 250]],
+      // Confirmed native/fluid inventory: use the full content width.
+      sizes: ["fluid"],
     },
     "display-dropdown-next-employment-type": {
       logicalId: "display-dropdown-next-employment-type",
       page: "employment-type",
       adUnit: `${BASE_PATH}/cashloanplatform_native_in_content_03`,
-      // Fixed rectangles; smaller creatives retain their natural dimensions.
-      sizes: [[440, 250], [300, 250], [250, 250]],
+      // Confirmed native/fluid inventory: use the full content width.
+      sizes: ["fluid"],
     },
     "display-dropdown-next-loan-type": {
       logicalId: "display-dropdown-next-loan-type",
       page: "loan-type",
       adUnit: `${BASE_PATH}/cashloanplatform_native_in_content_04`,
-      // Fixed rectangles; smaller creatives retain their natural dimensions.
-      sizes: [[440, 250], [300, 250], [250, 250]],
+      // Confirmed native/fluid inventory: use the full content width.
+      sizes: ["fluid"],
     },
     "display-dropdown-next-proceed": {
       logicalId: "display-dropdown-next-proceed",
       page: "proceed",
       adUnit: `${BASE_PATH}/cashloanplatform_native_in_content_05`,
-      // Fixed rectangles; smaller creatives retain their natural dimensions.
-      sizes: [[440, 250], [300, 250], [250, 250]],
+      // Confirmed native/fluid inventory: use the full content width.
+      sizes: ["fluid"],
     },
     "display-blog-top-blogs": {
       logicalId: "display-blog-top-blogs",
@@ -364,7 +364,7 @@
     debug: false,
     // All page slots exist before the first SRA request.
     settings: { singleRequest: true, disableInitialLoad: false },
-    release: "20260923-1",
+    release: "20260923-3",
     displayLayout: { maxColumnWidth: 480, horizontalGutter: 40 },
     getPageKey: function () {
       var name =

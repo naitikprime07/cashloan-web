@@ -761,10 +761,8 @@
   "additional": [
     "6 size boundaries",
     "Next/blog/Apply navigation: empty/null/blocked",
-    "GPT readiness after 15-second diagnostic timeout",
-    "30-second unconfirmed outcome without retry",
-    "duplicate/missing/already-owned container isolation",
-    "persisted history event idempotence (synthetic)",
-    "rotation retains natural creative width without page overflow"
+    "delayed GPT",
+    "duplicate container isolation",
+    "persisted history idempotence"
   ]
 }

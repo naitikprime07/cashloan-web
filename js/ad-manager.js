@@ -56,6 +56,13 @@
   }
   function displaySizes(record) {
     var configured = record.config.sizes;
+    if (Array.isArray(configured) && configured.length === 1 && configured[0] === "fluid") {
+      // Native fluid creatives size themselves to the publisher container.
+      // Do not apply fixed rectangle breakpoints or resize Google's iframe.
+      record.sizes = ["fluid"];
+      record.mapping = null;
+      return;
+    }
     if (!Array.isArray(configured) || !configured.length || !configured.every(function (size) {
       return Array.isArray(size) && size.length === 2 && size.every(function (value) {
         return Number.isInteger(value) && value > 0;
@@ -93,11 +100,13 @@
         if (!record.sizes.length) { state(record, "UNSUPPORTED_SIZE"); return; }
         record.slot = googletag.defineSlot(record.config.adUnit, record.sizes, record.element.id);
         if (record.slot) {
-          var builder = googletag.sizeMapping();
-          record.mapping.forEach(function (entry) { builder.addSize(entry[0], entry[1]); });
-          var mapping = builder.build();
-          if (!mapping) throw new Error("invalid-size-mapping");
-          record.slot.defineSizeMapping(mapping);
+          if (record.mapping) {
+            var builder = googletag.sizeMapping();
+            record.mapping.forEach(function (entry) { builder.addSize(entry[0], entry[1]); });
+            var mapping = builder.build();
+            if (!mapping) throw new Error("invalid-size-mapping");
+            record.slot.defineSizeMapping(mapping);
+          }
           record.slot.setConfig({ collapseDiv: "DISABLED" });
         }
       } else {

@@ -1,3 +1,5 @@
+> Update: after owner confirmation of fluid inventory, release `20260923-3` changes only the five dropdownNext displays to fluid-only requests. BlogTop fixed sizing is unchanged. See [DROPDOWN-WIDTH.md](DROPDOWN-WIDTH.md) for the current implementation and 45 real no-fill observations. Fixed dropdown sizing/results below describe the earlier audit.
+
 # GPT audit and implementation report - 2026-09-23
 
 Release: `20260923-1`. Local source changes are complete and tested. **Not deployed; full live-serving acceptance is still incomplete.** The production-origin preview below substituted local files only inside a test browser; it did not publish anything.

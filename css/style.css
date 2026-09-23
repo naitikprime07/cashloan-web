@@ -137,7 +137,7 @@ body {
 }
 
 /* Keep controls and reserved ads intact on short screens; the page can scroll. */
-.screen > * {
+.screen>* {
   flex-shrink: 0;
 }
 
@@ -200,18 +200,22 @@ body {
 }
 
 /* Blog-top ads align with the 20px content gutter. */
-.blog-top-ad-container > div {
+.blog-top-ad-container>div {
   max-width: 440px;
 }
 
-/* Loan-step ads share the Next button's content column. Creatives retain
-   their requested dimensions; only the publisher slot expands to fit. */
-.screen > .inline-ad-container > div {
-  max-width: 440px;
+/* Fluid loan creatives use the same content width as Next.
+   Only the publisher slot is styled; GPT owns the creative's dimensions. */
+.screen > .inline-ad-container > [data-ad-logical] {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  height: auto;
+  overflow: visible;
 }
 
 /* Article sections already provide the 20px gutters. */
-.post-emi > .blog-top-ad-container {
+.post-emi>.blog-top-ad-container {
   padding: 0;
 }
 
@@ -228,7 +232,7 @@ body {
   padding-bottom: var(--anchor-space, 0px);
 }
 
-.screen > .cta {
+.screen>.cta {
   margin: 0;
   padding: 0;
 }

@@ -1,3 +1,5 @@
+> Historical report. The 2026-09-23 audit and release `20260923-1` in [AD-CONFIGURATION.md](AD-CONFIGURATION.md) supersede implementation and serving conclusions below. Earlier observations are not current test results.
+
 # Independent display placements ? 2026-09-22
 
 This update supersedes the shared display configuration IDs in the earlier architecture audit. The existing static AdConfig, single GAM bootstrap and shared AdManager remain in use. No interstitial/anchor lifecycle or navigation was changed.

@@ -1,0 +1,770 @@
+{
+  "controlled": true,
+  "matrix": [
+    {
+      "page": "blog-auto-loan",
+      "mode": "filled",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "page": "blog-business-loan",
+      "mode": "filled",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "page": "blog-gold-loan",
+      "mode": "filled",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "page": "blog-home-loan",
+      "mode": "filled",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "page": "blog-payday-loan",
+      "mode": "filled",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "page": "blog-personal-loan",
+      "mode": "filled",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "page": "blog-student-loan",
+      "mode": "filled",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "page": "blogs",
+      "mode": "filled",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "page": "eligibility-check",
+      "mode": "filled",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "page": "employment-type",
+      "mode": "filled",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "page": "index",
+      "mode": "filled",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "page": "loan-amount",
+      "mode": "filled",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "page": "loan-type",
+      "mode": "filled",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "page": "proceed",
+      "mode": "filled",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "page": "blog-auto-loan",
+      "mode": "filled",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "page": "blog-business-loan",
+      "mode": "filled",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "page": "blog-gold-loan",
+      "mode": "filled",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "page": "blog-home-loan",
+      "mode": "filled",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "page": "blog-payday-loan",
+      "mode": "filled",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "page": "blog-personal-loan",
+      "mode": "filled",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "page": "blog-student-loan",
+      "mode": "filled",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "page": "blogs",
+      "mode": "filled",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "page": "eligibility-check",
+      "mode": "filled",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "page": "employment-type",
+      "mode": "filled",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "page": "index",
+      "mode": "filled",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "page": "loan-amount",
+      "mode": "filled",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "page": "loan-type",
+      "mode": "filled",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "page": "proceed",
+      "mode": "filled",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "page": "blog-auto-loan",
+      "mode": "filled",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "page": "blog-business-loan",
+      "mode": "filled",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "page": "blog-gold-loan",
+      "mode": "filled",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "page": "blog-home-loan",
+      "mode": "filled",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "page": "blog-payday-loan",
+      "mode": "filled",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "page": "blog-personal-loan",
+      "mode": "filled",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "page": "blog-student-loan",
+      "mode": "filled",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "page": "blogs",
+      "mode": "filled",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "page": "eligibility-check",
+      "mode": "filled",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "page": "employment-type",
+      "mode": "filled",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "page": "index",
+      "mode": "filled",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "page": "loan-amount",
+      "mode": "filled",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "page": "loan-type",
+      "mode": "filled",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "page": "proceed",
+      "mode": "filled",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "page": "blog-auto-loan",
+      "mode": "empty",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "page": "blog-business-loan",
+      "mode": "empty",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "page": "blog-gold-loan",
+      "mode": "empty",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "page": "blog-home-loan",
+      "mode": "empty",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "page": "blog-payday-loan",
+      "mode": "empty",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "page": "blog-personal-loan",
+      "mode": "empty",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "page": "blog-student-loan",
+      "mode": "empty",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "page": "blogs",
+      "mode": "empty",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "page": "eligibility-check",
+      "mode": "empty",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "page": "employment-type",
+      "mode": "empty",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "page": "index",
+      "mode": "empty",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "page": "loan-amount",
+      "mode": "empty",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "page": "loan-type",
+      "mode": "empty",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "page": "proceed",
+      "mode": "empty",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "page": "blog-auto-loan",
+      "mode": "empty",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "page": "blog-business-loan",
+      "mode": "empty",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "page": "blog-gold-loan",
+      "mode": "empty",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "page": "blog-home-loan",
+      "mode": "empty",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "page": "blog-payday-loan",
+      "mode": "empty",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "page": "blog-personal-loan",
+      "mode": "empty",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "page": "blog-student-loan",
+      "mode": "empty",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "page": "blogs",
+      "mode": "empty",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "page": "eligibility-check",
+      "mode": "empty",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "page": "employment-type",
+      "mode": "empty",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "page": "index",
+      "mode": "empty",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "page": "loan-amount",
+      "mode": "empty",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "page": "loan-type",
+      "mode": "empty",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "page": "proceed",
+      "mode": "empty",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "page": "blog-auto-loan",
+      "mode": "empty",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "page": "blog-business-loan",
+      "mode": "empty",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "page": "blog-gold-loan",
+      "mode": "empty",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "page": "blog-home-loan",
+      "mode": "empty",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "page": "blog-payday-loan",
+      "mode": "empty",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "page": "blog-personal-loan",
+      "mode": "empty",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "page": "blog-student-loan",
+      "mode": "empty",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "page": "blogs",
+      "mode": "empty",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "page": "eligibility-check",
+      "mode": "empty",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "page": "employment-type",
+      "mode": "empty",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "page": "index",
+      "mode": "empty",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "page": "loan-amount",
+      "mode": "empty",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "page": "loan-type",
+      "mode": "empty",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "page": "proceed",
+      "mode": "empty",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "page": "blog-auto-loan",
+      "mode": "null",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "page": "blog-business-loan",
+      "mode": "null",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "page": "blog-gold-loan",
+      "mode": "null",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "page": "blog-home-loan",
+      "mode": "null",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "page": "blog-payday-loan",
+      "mode": "null",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "page": "blog-personal-loan",
+      "mode": "null",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "page": "blog-student-loan",
+      "mode": "null",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "page": "blogs",
+      "mode": "null",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "page": "eligibility-check",
+      "mode": "null",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "page": "employment-type",
+      "mode": "null",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "page": "index",
+      "mode": "null",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "page": "loan-amount",
+      "mode": "null",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "page": "loan-type",
+      "mode": "null",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "page": "proceed",
+      "mode": "null",
+      "width": 320,
+      "passed": true
+    },
+    {
+      "page": "blog-auto-loan",
+      "mode": "null",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "page": "blog-business-loan",
+      "mode": "null",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "page": "blog-gold-loan",
+      "mode": "null",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "page": "blog-home-loan",
+      "mode": "null",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "page": "blog-payday-loan",
+      "mode": "null",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "page": "blog-personal-loan",
+      "mode": "null",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "page": "blog-student-loan",
+      "mode": "null",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "page": "blogs",
+      "mode": "null",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "page": "eligibility-check",
+      "mode": "null",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "page": "employment-type",
+      "mode": "null",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "page": "index",
+      "mode": "null",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "page": "loan-amount",
+      "mode": "null",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "page": "loan-type",
+      "mode": "null",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "page": "proceed",
+      "mode": "null",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "page": "blog-auto-loan",
+      "mode": "null",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "page": "blog-business-loan",
+      "mode": "null",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "page": "blog-gold-loan",
+      "mode": "null",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "page": "blog-home-loan",
+      "mode": "null",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "page": "blog-payday-loan",
+      "mode": "null",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "page": "blog-personal-loan",
+      "mode": "null",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "page": "blog-student-loan",
+      "mode": "null",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "page": "blogs",
+      "mode": "null",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "page": "eligibility-check",
+      "mode": "null",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "page": "employment-type",
+      "mode": "null",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "page": "index",
+      "mode": "null",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "page": "loan-amount",
+      "mode": "null",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "page": "loan-type",
+      "mode": "null",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "page": "proceed",
+      "mode": "null",
+      "width": 1440,
+      "passed": true
+    }
+  ],
+  "additional": [
+    "6 size boundaries",
+    "Next/blog/Apply navigation: empty/null/blocked",
+    "GPT readiness after 15-second diagnostic timeout",
+    "30-second unconfirmed outcome without retry",
+    "duplicate/missing/already-owned container isolation",
+    "persisted history event idempotence (synthetic)",
+    "rotation retains natural creative width without page overflow"
+  ]
+}

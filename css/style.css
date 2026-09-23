@@ -128,14 +128,12 @@ body {
   color: var(--faint);
 }
 
-/* ---------- First section: Next sits low initially and scrolls with the page ---------- */
+/* ---------- Loan controls, rectangle and Next stay in normal flow ---------- */
 .screen {
   position: relative;
   display: flex;
   flex-direction: column;
   padding: clamp(84px, 11vh, 96px) 20px calc(16px + env(safe-area-inset-bottom));
-  min-height: 100vh;
-  min-height: 100dvh;
 }
 
 /* Keep controls and reserved ads intact on short screens; the page can scroll. */
@@ -179,7 +177,7 @@ body {
 }
 
 .inline-ad-container {
-  margin: auto auto 16px;
+  margin: 12px auto 16px;
   min-height: 250px;
 }
 
@@ -195,12 +193,13 @@ body {
   min-width: 0;
   text-align: center;
   line-height: 0;
-  height: 100%;
-  max-width: 300px;
+  min-height: 250px;
+  max-width: 440px;
+  /* Preserve a served creative after rotation without stretching or destroying it. */
+  overflow-x: auto;
 }
 
-/* Blog-top ads align with the 20px content gutter; the publisher slot may
-   host a 440px creative or a fluid one at the column width. */
+/* Blog-top ads align with the 20px content gutter. */
 .blog-top-ad-container > div {
   max-width: 440px;
 }
@@ -211,6 +210,11 @@ body {
   max-width: 440px;
 }
 
+/* Article sections already provide the 20px gutters. */
+.post-emi > .blog-top-ad-container {
+  padding: 0;
+}
+
 /* A blog-top slot that ends without a creative hands its reserved space back
    to the page instead of showing a blank box. The five loan-flow placements
    keep their footprint above the Next button. */
@@ -218,8 +222,7 @@ body {
   display: none;
 }
 
-/* Reserve the 250px footprint before any script runs; a fluid (native
-   in-content) creative may grow the box to its own height. */
+/* Reserve the rectangle footprint without resizing Google-owned creatives. */
 /* The native dialog top layer supplies stacking; no ad z-index overrides. */
 .app.has-bottom-anchor {
   padding-bottom: var(--anchor-space, 0px);

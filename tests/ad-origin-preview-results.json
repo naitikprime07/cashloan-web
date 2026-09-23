@@ -1,0 +1,4548 @@
+[
+  {
+    "source": "local files substituted in test browser ONLY; NOT deployed",
+    "page": "blog-auto-loan",
+    "width": 390,
+    "diagnostics": {
+      "page": "blog-auto-loan",
+      "release": "20260923-1",
+      "gpt": {
+        "state": "ready",
+        "error": null,
+        "servicesEnabled": true
+      },
+      "lastTrigger": null,
+      "triggerIds": [],
+      "errors": [],
+      "slots": [
+        {
+          "id": "display-blog-top-auto-loan",
+          "kind": "display",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_display_blogtop",
+          "elementId": "gam-blog-auto-loan-top",
+          "sizes": [
+            [
+              300,
+              250
+            ],
+            [
+              250,
+              250
+            ]
+          ],
+          "mapping": [
+            [
+              [
+                480,
+                0
+              ],
+              [
+                [
+                  440,
+                  250
+                ],
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                340,
+                0
+              ],
+              [
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                290,
+                0
+              ],
+              [
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              []
+            ]
+          ],
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CO6S7Ln9g5cDFaUJtwAd6O4W4g",
+          "onload": false,
+          "viewable": false
+        }
+      ],
+      "events": [
+        {
+          "event": "slot:defined",
+          "logicalId": "display-blog-top-auto-loan",
+          "page": "blog-auto-loan",
+          "timestamp": "2026-09-23T05:34:44.871Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-auto-loan-top",
+          "detail": null
+        },
+        {
+          "event": "service:added",
+          "logicalId": "display-blog-top-auto-loan",
+          "page": "blog-auto-loan",
+          "timestamp": "2026-09-23T05:34:44.873Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-auto-loan-top",
+          "detail": null
+        },
+        {
+          "event": "DEFINED",
+          "logicalId": "display-blog-top-auto-loan",
+          "page": "blog-auto-loan",
+          "timestamp": "2026-09-23T05:34:44.873Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-auto-loan-top",
+          "detail": null
+        },
+        {
+          "event": "LOADING",
+          "logicalId": "display-blog-top-auto-loan",
+          "page": "blog-auto-loan",
+          "timestamp": "2026-09-23T05:34:44.873Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-auto-loan-top",
+          "detail": null
+        },
+        {
+          "event": "display",
+          "logicalId": "display-blog-top-auto-loan",
+          "page": "blog-auto-loan",
+          "timestamp": "2026-09-23T05:34:44.873Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-auto-loan-top",
+          "detail": null
+        },
+        {
+          "event": "REQUESTED",
+          "logicalId": "display-blog-top-auto-loan",
+          "page": "blog-auto-loan",
+          "timestamp": "2026-09-23T05:34:44.924Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-auto-loan-top",
+          "detail": null
+        },
+        {
+          "event": "RESPONSE_RECEIVED",
+          "logicalId": "display-blog-top-auto-loan",
+          "page": "blog-auto-loan",
+          "timestamp": "2026-09-23T05:34:45.309Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-auto-loan-top",
+          "detail": null
+        },
+        {
+          "event": "slotRenderEnded",
+          "logicalId": "display-blog-top-auto-loan",
+          "page": "blog-auto-loan",
+          "timestamp": "2026-09-23T05:34:45.312Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-auto-loan-top",
+          "detail": {
+            "isEmpty": true,
+            "size": null,
+            "responseIdentifier": "CO6S7Ln9g5cDFaUJtwAd6O4W4g"
+          }
+        },
+        {
+          "event": "NO_FILL",
+          "logicalId": "display-blog-top-auto-loan",
+          "page": "blog-auto-loan",
+          "timestamp": "2026-09-23T05:34:45.312Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-auto-loan-top",
+          "detail": null
+        }
+      ]
+    },
+    "errors": [],
+    "console": [],
+    "network": [
+      {
+        "url": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+        "status": 200
+      },
+      {
+        "url": "https://securepubads.g.doubleclick.net/gampad/ads",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "source": "local files substituted in test browser ONLY; NOT deployed",
+    "page": "blog-business-loan",
+    "width": 390,
+    "diagnostics": {
+      "page": "blog-business-loan",
+      "release": "20260923-1",
+      "gpt": {
+        "state": "ready",
+        "error": null,
+        "servicesEnabled": true
+      },
+      "lastTrigger": null,
+      "triggerIds": [],
+      "errors": [],
+      "slots": [
+        {
+          "id": "display-blog-top-business-loan",
+          "kind": "display",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_display_blogtop",
+          "elementId": "gam-blog-business-loan-top",
+          "sizes": [
+            [
+              300,
+              250
+            ],
+            [
+              250,
+              250
+            ]
+          ],
+          "mapping": [
+            [
+              [
+                480,
+                0
+              ],
+              [
+                [
+                  440,
+                  250
+                ],
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                340,
+                0
+              ],
+              [
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                290,
+                0
+              ],
+              [
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              []
+            ]
+          ],
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CKbKt7r9g5cDFcO3rAIdjmsLLQ",
+          "onload": false,
+          "viewable": false
+        }
+      ],
+      "events": [
+        {
+          "event": "slot:defined",
+          "logicalId": "display-blog-top-business-loan",
+          "page": "blog-business-loan",
+          "timestamp": "2026-09-23T05:34:46.102Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-business-loan-top",
+          "detail": null
+        },
+        {
+          "event": "service:added",
+          "logicalId": "display-blog-top-business-loan",
+          "page": "blog-business-loan",
+          "timestamp": "2026-09-23T05:34:46.104Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-business-loan-top",
+          "detail": null
+        },
+        {
+          "event": "DEFINED",
+          "logicalId": "display-blog-top-business-loan",
+          "page": "blog-business-loan",
+          "timestamp": "2026-09-23T05:34:46.104Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-business-loan-top",
+          "detail": null
+        },
+        {
+          "event": "LOADING",
+          "logicalId": "display-blog-top-business-loan",
+          "page": "blog-business-loan",
+          "timestamp": "2026-09-23T05:34:46.105Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-business-loan-top",
+          "detail": null
+        },
+        {
+          "event": "display",
+          "logicalId": "display-blog-top-business-loan",
+          "page": "blog-business-loan",
+          "timestamp": "2026-09-23T05:34:46.105Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-business-loan-top",
+          "detail": null
+        },
+        {
+          "event": "REQUESTED",
+          "logicalId": "display-blog-top-business-loan",
+          "page": "blog-business-loan",
+          "timestamp": "2026-09-23T05:34:46.156Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-business-loan-top",
+          "detail": null
+        },
+        {
+          "event": "RESPONSE_RECEIVED",
+          "logicalId": "display-blog-top-business-loan",
+          "page": "blog-business-loan",
+          "timestamp": "2026-09-23T05:34:46.912Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-business-loan-top",
+          "detail": null
+        },
+        {
+          "event": "slotRenderEnded",
+          "logicalId": "display-blog-top-business-loan",
+          "page": "blog-business-loan",
+          "timestamp": "2026-09-23T05:34:46.914Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-business-loan-top",
+          "detail": {
+            "isEmpty": true,
+            "size": null,
+            "responseIdentifier": "CKbKt7r9g5cDFcO3rAIdjmsLLQ"
+          }
+        },
+        {
+          "event": "NO_FILL",
+          "logicalId": "display-blog-top-business-loan",
+          "page": "blog-business-loan",
+          "timestamp": "2026-09-23T05:34:46.914Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-business-loan-top",
+          "detail": null
+        }
+      ]
+    },
+    "errors": [],
+    "console": [],
+    "network": [
+      {
+        "url": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+        "status": 200
+      },
+      {
+        "url": "https://securepubads.g.doubleclick.net/gampad/ads",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "source": "local files substituted in test browser ONLY; NOT deployed",
+    "page": "blog-gold-loan",
+    "width": 390,
+    "diagnostics": {
+      "page": "blog-gold-loan",
+      "release": "20260923-1",
+      "gpt": {
+        "state": "ready",
+        "error": null,
+        "servicesEnabled": true
+      },
+      "lastTrigger": null,
+      "triggerIds": [],
+      "errors": [],
+      "slots": [
+        {
+          "id": "display-blog-top-gold-loan",
+          "kind": "display",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_display_blogtop",
+          "elementId": "gam-blog-gold-loan-top",
+          "sizes": [
+            [
+              300,
+              250
+            ],
+            [
+              250,
+              250
+            ]
+          ],
+          "mapping": [
+            [
+              [
+                480,
+                0
+              ],
+              [
+                [
+                  440,
+                  250
+                ],
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                340,
+                0
+              ],
+              [
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                290,
+                0
+              ],
+              [
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              []
+            ]
+          ],
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CJa5krv9g5cDFfSNOAgdUXQorw",
+          "onload": false,
+          "viewable": false
+        }
+      ],
+      "events": [
+        {
+          "event": "slot:defined",
+          "logicalId": "display-blog-top-gold-loan",
+          "page": "blog-gold-loan",
+          "timestamp": "2026-09-23T05:34:47.599Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-gold-loan-top",
+          "detail": null
+        },
+        {
+          "event": "service:added",
+          "logicalId": "display-blog-top-gold-loan",
+          "page": "blog-gold-loan",
+          "timestamp": "2026-09-23T05:34:47.600Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-gold-loan-top",
+          "detail": null
+        },
+        {
+          "event": "DEFINED",
+          "logicalId": "display-blog-top-gold-loan",
+          "page": "blog-gold-loan",
+          "timestamp": "2026-09-23T05:34:47.600Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-gold-loan-top",
+          "detail": null
+        },
+        {
+          "event": "LOADING",
+          "logicalId": "display-blog-top-gold-loan",
+          "page": "blog-gold-loan",
+          "timestamp": "2026-09-23T05:34:47.601Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-gold-loan-top",
+          "detail": null
+        },
+        {
+          "event": "display",
+          "logicalId": "display-blog-top-gold-loan",
+          "page": "blog-gold-loan",
+          "timestamp": "2026-09-23T05:34:47.601Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-gold-loan-top",
+          "detail": null
+        },
+        {
+          "event": "REQUESTED",
+          "logicalId": "display-blog-top-gold-loan",
+          "page": "blog-gold-loan",
+          "timestamp": "2026-09-23T05:34:47.651Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-gold-loan-top",
+          "detail": null
+        },
+        {
+          "event": "RESPONSE_RECEIVED",
+          "logicalId": "display-blog-top-gold-loan",
+          "page": "blog-gold-loan",
+          "timestamp": "2026-09-23T05:34:48.462Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-gold-loan-top",
+          "detail": null
+        },
+        {
+          "event": "slotRenderEnded",
+          "logicalId": "display-blog-top-gold-loan",
+          "page": "blog-gold-loan",
+          "timestamp": "2026-09-23T05:34:48.464Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-gold-loan-top",
+          "detail": {
+            "isEmpty": true,
+            "size": null,
+            "responseIdentifier": "CJa5krv9g5cDFfSNOAgdUXQorw"
+          }
+        },
+        {
+          "event": "NO_FILL",
+          "logicalId": "display-blog-top-gold-loan",
+          "page": "blog-gold-loan",
+          "timestamp": "2026-09-23T05:34:48.464Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-gold-loan-top",
+          "detail": null
+        }
+      ]
+    },
+    "errors": [],
+    "console": [],
+    "network": [
+      {
+        "url": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+        "status": 200
+      },
+      {
+        "url": "https://securepubads.g.doubleclick.net/gampad/ads",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "source": "local files substituted in test browser ONLY; NOT deployed",
+    "page": "blog-home-loan",
+    "width": 390,
+    "diagnostics": {
+      "page": "blog-home-loan",
+      "release": "20260923-1",
+      "gpt": {
+        "state": "ready",
+        "error": null,
+        "servicesEnabled": true
+      },
+      "lastTrigger": null,
+      "triggerIds": [],
+      "errors": [],
+      "slots": [
+        {
+          "id": "display-blog-top-home-loan",
+          "kind": "display",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_display_blogtop",
+          "elementId": "gam-blog-home-loan-top",
+          "sizes": [
+            [
+              300,
+              250
+            ],
+            [
+              250,
+              250
+            ]
+          ],
+          "mapping": [
+            [
+              [
+                480,
+                0
+              ],
+              [
+                [
+                  440,
+                  250
+                ],
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                340,
+                0
+              ],
+              [
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                290,
+                0
+              ],
+              [
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              []
+            ]
+          ],
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CIWLhLz9g5cDFfPLhAAdh7wJvw",
+          "onload": false,
+          "viewable": false
+        }
+      ],
+      "events": [
+        {
+          "event": "slot:defined",
+          "logicalId": "display-blog-top-home-loan",
+          "page": "blog-home-loan",
+          "timestamp": "2026-09-23T05:34:49.461Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-home-loan-top",
+          "detail": null
+        },
+        {
+          "event": "service:added",
+          "logicalId": "display-blog-top-home-loan",
+          "page": "blog-home-loan",
+          "timestamp": "2026-09-23T05:34:49.462Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-home-loan-top",
+          "detail": null
+        },
+        {
+          "event": "DEFINED",
+          "logicalId": "display-blog-top-home-loan",
+          "page": "blog-home-loan",
+          "timestamp": "2026-09-23T05:34:49.462Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-home-loan-top",
+          "detail": null
+        },
+        {
+          "event": "LOADING",
+          "logicalId": "display-blog-top-home-loan",
+          "page": "blog-home-loan",
+          "timestamp": "2026-09-23T05:34:49.462Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-home-loan-top",
+          "detail": null
+        },
+        {
+          "event": "display",
+          "logicalId": "display-blog-top-home-loan",
+          "page": "blog-home-loan",
+          "timestamp": "2026-09-23T05:34:49.463Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-home-loan-top",
+          "detail": null
+        },
+        {
+          "event": "REQUESTED",
+          "logicalId": "display-blog-top-home-loan",
+          "page": "blog-home-loan",
+          "timestamp": "2026-09-23T05:34:49.510Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-home-loan-top",
+          "detail": null
+        },
+        {
+          "event": "RESPONSE_RECEIVED",
+          "logicalId": "display-blog-top-home-loan",
+          "page": "blog-home-loan",
+          "timestamp": "2026-09-23T05:34:49.954Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-home-loan-top",
+          "detail": null
+        },
+        {
+          "event": "slotRenderEnded",
+          "logicalId": "display-blog-top-home-loan",
+          "page": "blog-home-loan",
+          "timestamp": "2026-09-23T05:34:49.961Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-home-loan-top",
+          "detail": {
+            "isEmpty": true,
+            "size": null,
+            "responseIdentifier": "CIWLhLz9g5cDFfPLhAAdh7wJvw"
+          }
+        },
+        {
+          "event": "NO_FILL",
+          "logicalId": "display-blog-top-home-loan",
+          "page": "blog-home-loan",
+          "timestamp": "2026-09-23T05:34:49.961Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-home-loan-top",
+          "detail": null
+        }
+      ]
+    },
+    "errors": [],
+    "console": [],
+    "network": [
+      {
+        "url": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+        "status": 200
+      },
+      {
+        "url": "https://securepubads.g.doubleclick.net/gampad/ads",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "source": "local files substituted in test browser ONLY; NOT deployed",
+    "page": "blog-payday-loan",
+    "width": 390,
+    "diagnostics": {
+      "page": "blog-payday-loan",
+      "release": "20260923-1",
+      "gpt": {
+        "state": "ready",
+        "error": null,
+        "servicesEnabled": true
+      },
+      "lastTrigger": null,
+      "triggerIds": [],
+      "errors": [],
+      "slots": [
+        {
+          "id": "display-blog-top-payday-loan",
+          "kind": "display",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_display_blogtop",
+          "elementId": "gam-blog-payday-loan-top",
+          "sizes": [
+            [
+              300,
+              250
+            ],
+            [
+              250,
+              250
+            ]
+          ],
+          "mapping": [
+            [
+              [
+                480,
+                0
+              ],
+              [
+                [
+                  440,
+                  250
+                ],
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                340,
+                0
+              ],
+              [
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                290,
+                0
+              ],
+              [
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              []
+            ]
+          ],
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CNfxx7z9g5cDFZFVnQkdAOI16A",
+          "onload": false,
+          "viewable": false
+        }
+      ],
+      "events": [
+        {
+          "event": "slot:defined",
+          "logicalId": "display-blog-top-payday-loan",
+          "page": "blog-payday-loan",
+          "timestamp": "2026-09-23T05:34:50.573Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-payday-loan-top",
+          "detail": null
+        },
+        {
+          "event": "service:added",
+          "logicalId": "display-blog-top-payday-loan",
+          "page": "blog-payday-loan",
+          "timestamp": "2026-09-23T05:34:50.574Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-payday-loan-top",
+          "detail": null
+        },
+        {
+          "event": "DEFINED",
+          "logicalId": "display-blog-top-payday-loan",
+          "page": "blog-payday-loan",
+          "timestamp": "2026-09-23T05:34:50.574Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-payday-loan-top",
+          "detail": null
+        },
+        {
+          "event": "LOADING",
+          "logicalId": "display-blog-top-payday-loan",
+          "page": "blog-payday-loan",
+          "timestamp": "2026-09-23T05:34:50.574Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-payday-loan-top",
+          "detail": null
+        },
+        {
+          "event": "display",
+          "logicalId": "display-blog-top-payday-loan",
+          "page": "blog-payday-loan",
+          "timestamp": "2026-09-23T05:34:50.574Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-payday-loan-top",
+          "detail": null
+        },
+        {
+          "event": "REQUESTED",
+          "logicalId": "display-blog-top-payday-loan",
+          "page": "blog-payday-loan",
+          "timestamp": "2026-09-23T05:34:50.621Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-payday-loan-top",
+          "detail": null
+        },
+        {
+          "event": "RESPONSE_RECEIVED",
+          "logicalId": "display-blog-top-payday-loan",
+          "page": "blog-payday-loan",
+          "timestamp": "2026-09-23T05:34:51.073Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-payday-loan-top",
+          "detail": null
+        },
+        {
+          "event": "slotRenderEnded",
+          "logicalId": "display-blog-top-payday-loan",
+          "page": "blog-payday-loan",
+          "timestamp": "2026-09-23T05:34:51.075Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-payday-loan-top",
+          "detail": {
+            "isEmpty": true,
+            "size": null,
+            "responseIdentifier": "CNfxx7z9g5cDFZFVnQkdAOI16A"
+          }
+        },
+        {
+          "event": "NO_FILL",
+          "logicalId": "display-blog-top-payday-loan",
+          "page": "blog-payday-loan",
+          "timestamp": "2026-09-23T05:34:51.075Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-payday-loan-top",
+          "detail": null
+        }
+      ]
+    },
+    "errors": [],
+    "console": [],
+    "network": [
+      {
+        "url": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+        "status": 200
+      },
+      {
+        "url": "https://securepubads.g.doubleclick.net/gampad/ads",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "source": "local files substituted in test browser ONLY; NOT deployed",
+    "page": "blog-personal-loan",
+    "width": 390,
+    "diagnostics": {
+      "page": "blog-personal-loan",
+      "release": "20260923-1",
+      "gpt": {
+        "state": "ready",
+        "error": null,
+        "servicesEnabled": true
+      },
+      "lastTrigger": null,
+      "triggerIds": [],
+      "errors": [],
+      "slots": [
+        {
+          "id": "display-blog-top-personal-loan",
+          "kind": "display",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_display_blogtop",
+          "elementId": "gam-blog-personal-loan-top",
+          "sizes": [
+            [
+              300,
+              250
+            ],
+            [
+              250,
+              250
+            ]
+          ],
+          "mapping": [
+            [
+              [
+                480,
+                0
+              ],
+              [
+                [
+                  440,
+                  250
+                ],
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                340,
+                0
+              ],
+              [
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                290,
+                0
+              ],
+              [
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              []
+            ]
+          ],
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CO7kkL39g5cDFcEGtwAdzhAa6Q",
+          "onload": false,
+          "viewable": false
+        }
+      ],
+      "events": [
+        {
+          "event": "slot:defined",
+          "logicalId": "display-blog-top-personal-loan",
+          "page": "blog-personal-loan",
+          "timestamp": "2026-09-23T05:34:51.758Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-personal-loan-top",
+          "detail": null
+        },
+        {
+          "event": "service:added",
+          "logicalId": "display-blog-top-personal-loan",
+          "page": "blog-personal-loan",
+          "timestamp": "2026-09-23T05:34:51.760Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-personal-loan-top",
+          "detail": null
+        },
+        {
+          "event": "DEFINED",
+          "logicalId": "display-blog-top-personal-loan",
+          "page": "blog-personal-loan",
+          "timestamp": "2026-09-23T05:34:51.761Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-personal-loan-top",
+          "detail": null
+        },
+        {
+          "event": "LOADING",
+          "logicalId": "display-blog-top-personal-loan",
+          "page": "blog-personal-loan",
+          "timestamp": "2026-09-23T05:34:51.761Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-personal-loan-top",
+          "detail": null
+        },
+        {
+          "event": "display",
+          "logicalId": "display-blog-top-personal-loan",
+          "page": "blog-personal-loan",
+          "timestamp": "2026-09-23T05:34:51.761Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-personal-loan-top",
+          "detail": null
+        },
+        {
+          "event": "REQUESTED",
+          "logicalId": "display-blog-top-personal-loan",
+          "page": "blog-personal-loan",
+          "timestamp": "2026-09-23T05:34:51.811Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-personal-loan-top",
+          "detail": null
+        },
+        {
+          "event": "RESPONSE_RECEIVED",
+          "logicalId": "display-blog-top-personal-loan",
+          "page": "blog-personal-loan",
+          "timestamp": "2026-09-23T05:34:52.258Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-personal-loan-top",
+          "detail": null
+        },
+        {
+          "event": "slotRenderEnded",
+          "logicalId": "display-blog-top-personal-loan",
+          "page": "blog-personal-loan",
+          "timestamp": "2026-09-23T05:34:52.261Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-personal-loan-top",
+          "detail": {
+            "isEmpty": true,
+            "size": null,
+            "responseIdentifier": "CO7kkL39g5cDFcEGtwAdzhAa6Q"
+          }
+        },
+        {
+          "event": "NO_FILL",
+          "logicalId": "display-blog-top-personal-loan",
+          "page": "blog-personal-loan",
+          "timestamp": "2026-09-23T05:34:52.262Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-personal-loan-top",
+          "detail": null
+        }
+      ]
+    },
+    "errors": [],
+    "console": [],
+    "network": [
+      {
+        "url": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+        "status": 200
+      },
+      {
+        "url": "https://securepubads.g.doubleclick.net/gampad/ads",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "source": "local files substituted in test browser ONLY; NOT deployed",
+    "page": "blog-student-loan",
+    "width": 390,
+    "diagnostics": {
+      "page": "blog-student-loan",
+      "release": "20260923-1",
+      "gpt": {
+        "state": "ready",
+        "error": null,
+        "servicesEnabled": true
+      },
+      "lastTrigger": null,
+      "triggerIds": [],
+      "errors": [],
+      "slots": [
+        {
+          "id": "display-blog-top-student-loan",
+          "kind": "display",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_display_blogtop",
+          "elementId": "gam-blog-student-loan-top",
+          "sizes": [
+            [
+              300,
+              250
+            ],
+            [
+              250,
+              250
+            ]
+          ],
+          "mapping": [
+            [
+              [
+                480,
+                0
+              ],
+              [
+                [
+                  440,
+                  250
+                ],
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                340,
+                0
+              ],
+              [
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                290,
+                0
+              ],
+              [
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              []
+            ]
+          ],
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CNOf3b39g5cDFaQJgwMd3R0mAw",
+          "onload": false,
+          "viewable": false
+        }
+      ],
+      "events": [
+        {
+          "event": "slot:defined",
+          "logicalId": "display-blog-top-student-loan",
+          "page": "blog-student-loan",
+          "timestamp": "2026-09-23T05:34:52.963Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-student-loan-top",
+          "detail": null
+        },
+        {
+          "event": "service:added",
+          "logicalId": "display-blog-top-student-loan",
+          "page": "blog-student-loan",
+          "timestamp": "2026-09-23T05:34:52.964Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-student-loan-top",
+          "detail": null
+        },
+        {
+          "event": "DEFINED",
+          "logicalId": "display-blog-top-student-loan",
+          "page": "blog-student-loan",
+          "timestamp": "2026-09-23T05:34:52.964Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-student-loan-top",
+          "detail": null
+        },
+        {
+          "event": "LOADING",
+          "logicalId": "display-blog-top-student-loan",
+          "page": "blog-student-loan",
+          "timestamp": "2026-09-23T05:34:52.964Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-student-loan-top",
+          "detail": null
+        },
+        {
+          "event": "display",
+          "logicalId": "display-blog-top-student-loan",
+          "page": "blog-student-loan",
+          "timestamp": "2026-09-23T05:34:52.964Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-student-loan-top",
+          "detail": null
+        },
+        {
+          "event": "REQUESTED",
+          "logicalId": "display-blog-top-student-loan",
+          "page": "blog-student-loan",
+          "timestamp": "2026-09-23T05:34:53.015Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-student-loan-top",
+          "detail": null
+        },
+        {
+          "event": "RESPONSE_RECEIVED",
+          "logicalId": "display-blog-top-student-loan",
+          "page": "blog-student-loan",
+          "timestamp": "2026-09-23T05:34:53.515Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-student-loan-top",
+          "detail": null
+        },
+        {
+          "event": "slotRenderEnded",
+          "logicalId": "display-blog-top-student-loan",
+          "page": "blog-student-loan",
+          "timestamp": "2026-09-23T05:34:53.518Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-student-loan-top",
+          "detail": {
+            "isEmpty": true,
+            "size": null,
+            "responseIdentifier": "CNOf3b39g5cDFaQJgwMd3R0mAw"
+          }
+        },
+        {
+          "event": "NO_FILL",
+          "logicalId": "display-blog-top-student-loan",
+          "page": "blog-student-loan",
+          "timestamp": "2026-09-23T05:34:53.518Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-student-loan-top",
+          "detail": null
+        }
+      ]
+    },
+    "errors": [],
+    "console": [],
+    "network": [
+      {
+        "url": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+        "status": 200
+      },
+      {
+        "url": "https://securepubads.g.doubleclick.net/gampad/ads",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "source": "local files substituted in test browser ONLY; NOT deployed",
+    "page": "blogs",
+    "width": 390,
+    "diagnostics": {
+      "page": "blogs",
+      "release": "20260923-1",
+      "gpt": {
+        "state": "ready",
+        "error": null,
+        "servicesEnabled": true
+      },
+      "lastTrigger": null,
+      "triggerIds": [
+        "interstitial-blog-1",
+        "interstitial-blog-2",
+        "interstitial-blog-3",
+        "interstitial-blog-4",
+        "interstitial-blog-5",
+        "interstitial-blog-6",
+        "interstitial-blog-7"
+      ],
+      "errors": [],
+      "slots": [
+        {
+          "id": "display-blog-top-blogs",
+          "kind": "display",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_display_blogtop",
+          "elementId": "gam-blog-top-blogs",
+          "sizes": [
+            [
+              300,
+              250
+            ],
+            [
+              250,
+              250
+            ]
+          ],
+          "mapping": [
+            [
+              [
+                480,
+                0
+              ],
+              [
+                [
+                  440,
+                  250
+                ],
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                340,
+                0
+              ],
+              [
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                290,
+                0
+              ],
+              [
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              []
+            ]
+          ],
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CI39m779g5cDFcWqZgIdRNQ10w",
+          "onload": false,
+          "viewable": false
+        },
+        {
+          "id": "interstitial:blogs",
+          "kind": "interstitial",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_interstitial",
+          "elementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_0",
+          "sizes": null,
+          "mapping": null,
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CIKHnr79g5cDFcWqZgIdRNQ10w",
+          "onload": false,
+          "viewable": false
+        },
+        {
+          "id": "blogBottomAnchor:blogs",
+          "kind": "anchor",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_anchor_001",
+          "elementId": "gpt_unit_/23338698373/cashloanplatform_anchor_001_0",
+          "sizes": null,
+          "mapping": null,
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CI_9m779g5cDFcWqZgIdRNQ10w",
+          "onload": false,
+          "viewable": false
+        }
+      ],
+      "events": [
+        {
+          "event": "slot:defined",
+          "logicalId": "display-blog-top-blogs",
+          "page": "blogs",
+          "timestamp": "2026-09-23T05:34:54.016Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-top-blogs",
+          "detail": null
+        },
+        {
+          "event": "service:added",
+          "logicalId": "display-blog-top-blogs",
+          "page": "blogs",
+          "timestamp": "2026-09-23T05:34:54.017Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-top-blogs",
+          "detail": null
+        },
+        {
+          "event": "DEFINED",
+          "logicalId": "display-blog-top-blogs",
+          "page": "blogs",
+          "timestamp": "2026-09-23T05:34:54.017Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-top-blogs",
+          "detail": null
+        },
+        {
+          "event": "slot:defined",
+          "logicalId": "interstitial:blogs",
+          "page": "blogs",
+          "timestamp": "2026-09-23T05:34:54.018Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_0",
+          "detail": null
+        },
+        {
+          "event": "service:added",
+          "logicalId": "interstitial:blogs",
+          "page": "blogs",
+          "timestamp": "2026-09-23T05:34:54.019Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_0",
+          "detail": null
+        },
+        {
+          "event": "DEFINED",
+          "logicalId": "interstitial:blogs",
+          "page": "blogs",
+          "timestamp": "2026-09-23T05:34:54.019Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_0",
+          "detail": null
+        },
+        {
+          "event": "slot:defined",
+          "logicalId": "blogBottomAnchor:blogs",
+          "page": "blogs",
+          "timestamp": "2026-09-23T05:34:54.019Z",
+          "adUnitPath": "/23338698373/cashloanplatform_anchor_001",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_anchor_001_0",
+          "detail": null
+        },
+        {
+          "event": "service:added",
+          "logicalId": "blogBottomAnchor:blogs",
+          "page": "blogs",
+          "timestamp": "2026-09-23T05:34:54.019Z",
+          "adUnitPath": "/23338698373/cashloanplatform_anchor_001",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_anchor_001_0",
+          "detail": null
+        },
+        {
+          "event": "DEFINED",
+          "logicalId": "blogBottomAnchor:blogs",
+          "page": "blogs",
+          "timestamp": "2026-09-23T05:34:54.019Z",
+          "adUnitPath": "/23338698373/cashloanplatform_anchor_001",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_anchor_001_0",
+          "detail": null
+        },
+        {
+          "event": "LOADING",
+          "logicalId": "display-blog-top-blogs",
+          "page": "blogs",
+          "timestamp": "2026-09-23T05:34:54.020Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-top-blogs",
+          "detail": null
+        },
+        {
+          "event": "LOADING",
+          "logicalId": "interstitial:blogs",
+          "page": "blogs",
+          "timestamp": "2026-09-23T05:34:54.020Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_0",
+          "detail": null
+        },
+        {
+          "event": "LOADING",
+          "logicalId": "blogBottomAnchor:blogs",
+          "page": "blogs",
+          "timestamp": "2026-09-23T05:34:54.020Z",
+          "adUnitPath": "/23338698373/cashloanplatform_anchor_001",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_anchor_001_0",
+          "detail": null
+        },
+        {
+          "event": "display",
+          "logicalId": "display-blog-top-blogs",
+          "page": "blogs",
+          "timestamp": "2026-09-23T05:34:54.020Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-top-blogs",
+          "detail": null
+        },
+        {
+          "event": "display",
+          "logicalId": "interstitial:blogs",
+          "page": "blogs",
+          "timestamp": "2026-09-23T05:34:54.022Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_0",
+          "detail": null
+        },
+        {
+          "event": "display",
+          "logicalId": "blogBottomAnchor:blogs",
+          "page": "blogs",
+          "timestamp": "2026-09-23T05:34:54.022Z",
+          "adUnitPath": "/23338698373/cashloanplatform_anchor_001",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_anchor_001_0",
+          "detail": null
+        },
+        {
+          "event": "REQUESTED",
+          "logicalId": "display-blog-top-blogs",
+          "page": "blogs",
+          "timestamp": "2026-09-23T05:34:54.076Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-top-blogs",
+          "detail": null
+        },
+        {
+          "event": "REQUESTED",
+          "logicalId": "interstitial:blogs",
+          "page": "blogs",
+          "timestamp": "2026-09-23T05:34:54.076Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_0",
+          "detail": null
+        },
+        {
+          "event": "REQUESTED",
+          "logicalId": "blogBottomAnchor:blogs",
+          "page": "blogs",
+          "timestamp": "2026-09-23T05:34:54.076Z",
+          "adUnitPath": "/23338698373/cashloanplatform_anchor_001",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_anchor_001_0",
+          "detail": null
+        },
+        {
+          "event": "RESPONSE_RECEIVED",
+          "logicalId": "display-blog-top-blogs",
+          "page": "blogs",
+          "timestamp": "2026-09-23T05:34:54.692Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-top-blogs",
+          "detail": null
+        },
+        {
+          "event": "RESPONSE_RECEIVED",
+          "logicalId": "interstitial:blogs",
+          "page": "blogs",
+          "timestamp": "2026-09-23T05:34:54.692Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_0",
+          "detail": null
+        },
+        {
+          "event": "RESPONSE_RECEIVED",
+          "logicalId": "blogBottomAnchor:blogs",
+          "page": "blogs",
+          "timestamp": "2026-09-23T05:34:54.692Z",
+          "adUnitPath": "/23338698373/cashloanplatform_anchor_001",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_anchor_001_0",
+          "detail": null
+        },
+        {
+          "event": "slotRenderEnded",
+          "logicalId": "display-blog-top-blogs",
+          "page": "blogs",
+          "timestamp": "2026-09-23T05:34:54.694Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-top-blogs",
+          "detail": {
+            "isEmpty": true,
+            "size": null,
+            "responseIdentifier": "CI39m779g5cDFcWqZgIdRNQ10w"
+          }
+        },
+        {
+          "event": "NO_FILL",
+          "logicalId": "display-blog-top-blogs",
+          "page": "blogs",
+          "timestamp": "2026-09-23T05:34:54.694Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-top-blogs",
+          "detail": null
+        },
+        {
+          "event": "slotRenderEnded",
+          "logicalId": "interstitial:blogs",
+          "page": "blogs",
+          "timestamp": "2026-09-23T05:34:54.694Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_0",
+          "detail": {
+            "isEmpty": true,
+            "size": null,
+            "responseIdentifier": "CIKHnr79g5cDFcWqZgIdRNQ10w"
+          }
+        },
+        {
+          "event": "NO_FILL",
+          "logicalId": "interstitial:blogs",
+          "page": "blogs",
+          "timestamp": "2026-09-23T05:34:54.694Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_0",
+          "detail": null
+        },
+        {
+          "event": "slotRenderEnded",
+          "logicalId": "blogBottomAnchor:blogs",
+          "page": "blogs",
+          "timestamp": "2026-09-23T05:34:54.694Z",
+          "adUnitPath": "/23338698373/cashloanplatform_anchor_001",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_anchor_001_0",
+          "detail": {
+            "isEmpty": true,
+            "size": null,
+            "responseIdentifier": "CI_9m779g5cDFcWqZgIdRNQ10w"
+          }
+        },
+        {
+          "event": "NO_FILL",
+          "logicalId": "blogBottomAnchor:blogs",
+          "page": "blogs",
+          "timestamp": "2026-09-23T05:34:54.694Z",
+          "adUnitPath": "/23338698373/cashloanplatform_anchor_001",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_anchor_001_0",
+          "detail": null
+        }
+      ]
+    },
+    "errors": [],
+    "console": [],
+    "network": [
+      {
+        "url": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+        "status": 200
+      },
+      {
+        "url": "https://securepubads.g.doubleclick.net/gampad/ads",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "source": "local files substituted in test browser ONLY; NOT deployed",
+    "page": "eligibility-check",
+    "width": 390,
+    "diagnostics": {
+      "page": "eligibility-check",
+      "release": "20260923-1",
+      "gpt": {
+        "state": "ready",
+        "error": null,
+        "servicesEnabled": true
+      },
+      "lastTrigger": null,
+      "triggerIds": [
+        "interstitial-apply-loan"
+      ],
+      "errors": [],
+      "slots": [
+        {
+          "id": "display-blog-top-eligibility-check",
+          "kind": "display",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_display_blogtop",
+          "elementId": "gam-eligibility-check-top",
+          "sizes": [
+            [
+              300,
+              250
+            ],
+            [
+              250,
+              250
+            ]
+          ],
+          "mapping": [
+            [
+              [
+                480,
+                0
+              ],
+              [
+                [
+                  440,
+                  250
+                ],
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                340,
+                0
+              ],
+              [
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                290,
+                0
+              ],
+              [
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              []
+            ]
+          ],
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CK2Qhb_9g5cDFRy7rAIdankVuQ",
+          "onload": false,
+          "viewable": false
+        },
+        {
+          "id": "interstitial-apply-loan",
+          "kind": "interstitial",
+          "state": "RENDERED",
+          "adUnit": "/23338698373/cashloanplatform_interstitial",
+          "elementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_0",
+          "sizes": null,
+          "mapping": null,
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": false,
+          "renderedSize": [
+            390,
+            844
+          ],
+          "responseIdentifier": "CMqXhr_9g5cDFRy7rAIdankVuQ",
+          "onload": false,
+          "viewable": false
+        },
+        {
+          "id": "blogBottomAnchor:eligibility-check",
+          "kind": "anchor",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_anchor_001",
+          "elementId": "gpt_unit_/23338698373/cashloanplatform_anchor_001_0",
+          "sizes": null,
+          "mapping": null,
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CK-Qhb_9g5cDFRy7rAIdankVuQ",
+          "onload": false,
+          "viewable": false
+        }
+      ],
+      "events": [
+        {
+          "event": "slot:defined",
+          "logicalId": "display-blog-top-eligibility-check",
+          "page": "eligibility-check",
+          "timestamp": "2026-09-23T05:34:55.674Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-eligibility-check-top",
+          "detail": null
+        },
+        {
+          "event": "service:added",
+          "logicalId": "display-blog-top-eligibility-check",
+          "page": "eligibility-check",
+          "timestamp": "2026-09-23T05:34:55.678Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-eligibility-check-top",
+          "detail": null
+        },
+        {
+          "event": "DEFINED",
+          "logicalId": "display-blog-top-eligibility-check",
+          "page": "eligibility-check",
+          "timestamp": "2026-09-23T05:34:55.678Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-eligibility-check-top",
+          "detail": null
+        },
+        {
+          "event": "slot:defined",
+          "logicalId": "interstitial-apply-loan",
+          "page": "eligibility-check",
+          "timestamp": "2026-09-23T05:34:55.679Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_0",
+          "detail": null
+        },
+        {
+          "event": "service:added",
+          "logicalId": "interstitial-apply-loan",
+          "page": "eligibility-check",
+          "timestamp": "2026-09-23T05:34:55.679Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_0",
+          "detail": null
+        },
+        {
+          "event": "DEFINED",
+          "logicalId": "interstitial-apply-loan",
+          "page": "eligibility-check",
+          "timestamp": "2026-09-23T05:34:55.679Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_0",
+          "detail": null
+        },
+        {
+          "event": "slot:defined",
+          "logicalId": "blogBottomAnchor:eligibility-check",
+          "page": "eligibility-check",
+          "timestamp": "2026-09-23T05:34:55.680Z",
+          "adUnitPath": "/23338698373/cashloanplatform_anchor_001",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_anchor_001_0",
+          "detail": null
+        },
+        {
+          "event": "service:added",
+          "logicalId": "blogBottomAnchor:eligibility-check",
+          "page": "eligibility-check",
+          "timestamp": "2026-09-23T05:34:55.680Z",
+          "adUnitPath": "/23338698373/cashloanplatform_anchor_001",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_anchor_001_0",
+          "detail": null
+        },
+        {
+          "event": "DEFINED",
+          "logicalId": "blogBottomAnchor:eligibility-check",
+          "page": "eligibility-check",
+          "timestamp": "2026-09-23T05:34:55.680Z",
+          "adUnitPath": "/23338698373/cashloanplatform_anchor_001",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_anchor_001_0",
+          "detail": null
+        },
+        {
+          "event": "LOADING",
+          "logicalId": "display-blog-top-eligibility-check",
+          "page": "eligibility-check",
+          "timestamp": "2026-09-23T05:34:55.681Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-eligibility-check-top",
+          "detail": null
+        },
+        {
+          "event": "LOADING",
+          "logicalId": "interstitial-apply-loan",
+          "page": "eligibility-check",
+          "timestamp": "2026-09-23T05:34:55.681Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_0",
+          "detail": null
+        },
+        {
+          "event": "LOADING",
+          "logicalId": "blogBottomAnchor:eligibility-check",
+          "page": "eligibility-check",
+          "timestamp": "2026-09-23T05:34:55.681Z",
+          "adUnitPath": "/23338698373/cashloanplatform_anchor_001",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_anchor_001_0",
+          "detail": null
+        },
+        {
+          "event": "display",
+          "logicalId": "display-blog-top-eligibility-check",
+          "page": "eligibility-check",
+          "timestamp": "2026-09-23T05:34:55.681Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-eligibility-check-top",
+          "detail": null
+        },
+        {
+          "event": "display",
+          "logicalId": "interstitial-apply-loan",
+          "page": "eligibility-check",
+          "timestamp": "2026-09-23T05:34:55.683Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_0",
+          "detail": null
+        },
+        {
+          "event": "display",
+          "logicalId": "blogBottomAnchor:eligibility-check",
+          "page": "eligibility-check",
+          "timestamp": "2026-09-23T05:34:55.684Z",
+          "adUnitPath": "/23338698373/cashloanplatform_anchor_001",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_anchor_001_0",
+          "detail": null
+        },
+        {
+          "event": "REQUESTED",
+          "logicalId": "display-blog-top-eligibility-check",
+          "page": "eligibility-check",
+          "timestamp": "2026-09-23T05:34:55.812Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-eligibility-check-top",
+          "detail": null
+        },
+        {
+          "event": "REQUESTED",
+          "logicalId": "interstitial-apply-loan",
+          "page": "eligibility-check",
+          "timestamp": "2026-09-23T05:34:55.812Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_0",
+          "detail": null
+        },
+        {
+          "event": "REQUESTED",
+          "logicalId": "blogBottomAnchor:eligibility-check",
+          "page": "eligibility-check",
+          "timestamp": "2026-09-23T05:34:55.812Z",
+          "adUnitPath": "/23338698373/cashloanplatform_anchor_001",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_anchor_001_0",
+          "detail": null
+        },
+        {
+          "event": "RESPONSE_RECEIVED",
+          "logicalId": "display-blog-top-eligibility-check",
+          "page": "eligibility-check",
+          "timestamp": "2026-09-23T05:34:56.615Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-eligibility-check-top",
+          "detail": null
+        },
+        {
+          "event": "slotRenderEnded",
+          "logicalId": "display-blog-top-eligibility-check",
+          "page": "eligibility-check",
+          "timestamp": "2026-09-23T05:34:56.617Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-eligibility-check-top",
+          "detail": {
+            "isEmpty": true,
+            "size": null,
+            "responseIdentifier": "CK2Qhb_9g5cDFRy7rAIdankVuQ"
+          }
+        },
+        {
+          "event": "NO_FILL",
+          "logicalId": "display-blog-top-eligibility-check",
+          "page": "eligibility-check",
+          "timestamp": "2026-09-23T05:34:56.617Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-eligibility-check-top",
+          "detail": null
+        },
+        {
+          "event": "RESPONSE_RECEIVED",
+          "logicalId": "interstitial-apply-loan",
+          "page": "eligibility-check",
+          "timestamp": "2026-09-23T05:34:56.648Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_0",
+          "detail": null
+        },
+        {
+          "event": "RESPONSE_RECEIVED",
+          "logicalId": "blogBottomAnchor:eligibility-check",
+          "page": "eligibility-check",
+          "timestamp": "2026-09-23T05:34:56.648Z",
+          "adUnitPath": "/23338698373/cashloanplatform_anchor_001",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_anchor_001_0",
+          "detail": null
+        },
+        {
+          "event": "slotRenderEnded",
+          "logicalId": "blogBottomAnchor:eligibility-check",
+          "page": "eligibility-check",
+          "timestamp": "2026-09-23T05:34:56.656Z",
+          "adUnitPath": "/23338698373/cashloanplatform_anchor_001",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_anchor_001_0",
+          "detail": {
+            "isEmpty": true,
+            "size": null,
+            "responseIdentifier": "CK-Qhb_9g5cDFRy7rAIdankVuQ"
+          }
+        },
+        {
+          "event": "NO_FILL",
+          "logicalId": "blogBottomAnchor:eligibility-check",
+          "page": "eligibility-check",
+          "timestamp": "2026-09-23T05:34:56.656Z",
+          "adUnitPath": "/23338698373/cashloanplatform_anchor_001",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_anchor_001_0",
+          "detail": null
+        },
+        {
+          "event": "slotRenderEnded",
+          "logicalId": "interstitial-apply-loan",
+          "page": "eligibility-check",
+          "timestamp": "2026-09-23T05:34:56.730Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_0",
+          "detail": {
+            "isEmpty": false,
+            "size": [
+              390,
+              844
+            ],
+            "responseIdentifier": "CMqXhr_9g5cDFRy7rAIdankVuQ"
+          }
+        },
+        {
+          "event": "RENDERED",
+          "logicalId": "interstitial-apply-loan",
+          "page": "eligibility-check",
+          "timestamp": "2026-09-23T05:34:56.730Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_0",
+          "detail": null
+        }
+      ]
+    },
+    "errors": [],
+    "console": [
+      "[GPT] Interstitial /23338698373/Latest3 not requested: Format already created on the page.\nhttps://goo.gle/gpt-message#134"
+    ],
+    "network": [
+      {
+        "url": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+        "status": 200
+      },
+      {
+        "url": "https://securepubads.g.doubleclick.net/gampad/ads",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "source": "local files substituted in test browser ONLY; NOT deployed",
+    "page": "employment-type",
+    "width": 390,
+    "diagnostics": {
+      "page": "employment-type",
+      "release": "20260923-1",
+      "gpt": {
+        "state": "ready",
+        "error": null,
+        "servicesEnabled": true
+      },
+      "lastTrigger": null,
+      "triggerIds": [
+        "interstitial-next-4"
+      ],
+      "errors": [],
+      "slots": [
+        {
+          "id": "display-dropdown-next-employment-type",
+          "kind": "display",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_native_in_content_03",
+          "elementId": "gam-employment-dropdown-next",
+          "sizes": [
+            [
+              300,
+              250
+            ],
+            [
+              250,
+              250
+            ]
+          ],
+          "mapping": [
+            [
+              [
+                480,
+                0
+              ],
+              [
+                [
+                  440,
+                  250
+                ],
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                340,
+                0
+              ],
+              [
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                290,
+                0
+              ],
+              [
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              []
+            ]
+          ],
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "COGS9L_9g5cDFcaJrAIdNFkupA",
+          "onload": false,
+          "viewable": false
+        },
+        {
+          "id": "interstitial-next-4",
+          "kind": "interstitial",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_interstitial_04",
+          "elementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_04_0",
+          "sizes": null,
+          "mapping": null,
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CPi09b_9g5cDFcaJrAIdNFkupA",
+          "onload": false,
+          "viewable": false
+        }
+      ],
+      "events": [
+        {
+          "event": "slot:defined",
+          "logicalId": "display-dropdown-next-employment-type",
+          "page": "employment-type",
+          "timestamp": "2026-09-23T05:34:57.563Z",
+          "adUnitPath": "/23338698373/cashloanplatform_native_in_content_03",
+          "slotElementId": "gam-employment-dropdown-next",
+          "detail": null
+        },
+        {
+          "event": "service:added",
+          "logicalId": "display-dropdown-next-employment-type",
+          "page": "employment-type",
+          "timestamp": "2026-09-23T05:34:57.564Z",
+          "adUnitPath": "/23338698373/cashloanplatform_native_in_content_03",
+          "slotElementId": "gam-employment-dropdown-next",
+          "detail": null
+        },
+        {
+          "event": "DEFINED",
+          "logicalId": "display-dropdown-next-employment-type",
+          "page": "employment-type",
+          "timestamp": "2026-09-23T05:34:57.564Z",
+          "adUnitPath": "/23338698373/cashloanplatform_native_in_content_03",
+          "slotElementId": "gam-employment-dropdown-next",
+          "detail": null
+        },
+        {
+          "event": "slot:defined",
+          "logicalId": "interstitial-next-4",
+          "page": "employment-type",
+          "timestamp": "2026-09-23T05:34:57.565Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial_04",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_04_0",
+          "detail": null
+        },
+        {
+          "event": "service:added",
+          "logicalId": "interstitial-next-4",
+          "page": "employment-type",
+          "timestamp": "2026-09-23T05:34:57.565Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial_04",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_04_0",
+          "detail": null
+        },
+        {
+          "event": "DEFINED",
+          "logicalId": "interstitial-next-4",
+          "page": "employment-type",
+          "timestamp": "2026-09-23T05:34:57.565Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial_04",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_04_0",
+          "detail": null
+        },
+        {
+          "event": "LOADING",
+          "logicalId": "display-dropdown-next-employment-type",
+          "page": "employment-type",
+          "timestamp": "2026-09-23T05:34:57.566Z",
+          "adUnitPath": "/23338698373/cashloanplatform_native_in_content_03",
+          "slotElementId": "gam-employment-dropdown-next",
+          "detail": null
+        },
+        {
+          "event": "LOADING",
+          "logicalId": "interstitial-next-4",
+          "page": "employment-type",
+          "timestamp": "2026-09-23T05:34:57.566Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial_04",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_04_0",
+          "detail": null
+        },
+        {
+          "event": "display",
+          "logicalId": "display-dropdown-next-employment-type",
+          "page": "employment-type",
+          "timestamp": "2026-09-23T05:34:57.566Z",
+          "adUnitPath": "/23338698373/cashloanplatform_native_in_content_03",
+          "slotElementId": "gam-employment-dropdown-next",
+          "detail": null
+        },
+        {
+          "event": "display",
+          "logicalId": "interstitial-next-4",
+          "page": "employment-type",
+          "timestamp": "2026-09-23T05:34:57.572Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial_04",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_04_0",
+          "detail": null
+        },
+        {
+          "event": "REQUESTED",
+          "logicalId": "display-dropdown-next-employment-type",
+          "page": "employment-type",
+          "timestamp": "2026-09-23T05:34:57.632Z",
+          "adUnitPath": "/23338698373/cashloanplatform_native_in_content_03",
+          "slotElementId": "gam-employment-dropdown-next",
+          "detail": null
+        },
+        {
+          "event": "REQUESTED",
+          "logicalId": "interstitial-next-4",
+          "page": "employment-type",
+          "timestamp": "2026-09-23T05:34:57.632Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial_04",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_04_0",
+          "detail": null
+        },
+        {
+          "event": "RESPONSE_RECEIVED",
+          "logicalId": "display-dropdown-next-employment-type",
+          "page": "employment-type",
+          "timestamp": "2026-09-23T05:34:58.506Z",
+          "adUnitPath": "/23338698373/cashloanplatform_native_in_content_03",
+          "slotElementId": "gam-employment-dropdown-next",
+          "detail": null
+        },
+        {
+          "event": "RESPONSE_RECEIVED",
+          "logicalId": "interstitial-next-4",
+          "page": "employment-type",
+          "timestamp": "2026-09-23T05:34:58.506Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial_04",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_04_0",
+          "detail": null
+        },
+        {
+          "event": "slotRenderEnded",
+          "logicalId": "display-dropdown-next-employment-type",
+          "page": "employment-type",
+          "timestamp": "2026-09-23T05:34:58.508Z",
+          "adUnitPath": "/23338698373/cashloanplatform_native_in_content_03",
+          "slotElementId": "gam-employment-dropdown-next",
+          "detail": {
+            "isEmpty": true,
+            "size": null,
+            "responseIdentifier": "COGS9L_9g5cDFcaJrAIdNFkupA"
+          }
+        },
+        {
+          "event": "NO_FILL",
+          "logicalId": "display-dropdown-next-employment-type",
+          "page": "employment-type",
+          "timestamp": "2026-09-23T05:34:58.508Z",
+          "adUnitPath": "/23338698373/cashloanplatform_native_in_content_03",
+          "slotElementId": "gam-employment-dropdown-next",
+          "detail": null
+        },
+        {
+          "event": "slotRenderEnded",
+          "logicalId": "interstitial-next-4",
+          "page": "employment-type",
+          "timestamp": "2026-09-23T05:34:58.508Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial_04",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_04_0",
+          "detail": {
+            "isEmpty": true,
+            "size": null,
+            "responseIdentifier": "CPi09b_9g5cDFcaJrAIdNFkupA"
+          }
+        },
+        {
+          "event": "NO_FILL",
+          "logicalId": "interstitial-next-4",
+          "page": "employment-type",
+          "timestamp": "2026-09-23T05:34:58.508Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial_04",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_04_0",
+          "detail": null
+        }
+      ]
+    },
+    "errors": [],
+    "console": [],
+    "network": [
+      {
+        "url": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+        "status": 200
+      },
+      {
+        "url": "https://securepubads.g.doubleclick.net/gampad/ads",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "source": "local files substituted in test browser ONLY; NOT deployed",
+    "page": "index",
+    "width": 390,
+    "diagnostics": {
+      "page": "index",
+      "release": "20260923-1",
+      "gpt": {
+        "state": "ready",
+        "error": null,
+        "servicesEnabled": true
+      },
+      "lastTrigger": null,
+      "triggerIds": [
+        "interstitial-next-1"
+      ],
+      "errors": [],
+      "slots": [
+        {
+          "id": "display-dropdown-next-index",
+          "kind": "display",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_native_in_content_01",
+          "elementId": "gam-index-dropdown-next",
+          "sizes": [
+            [
+              300,
+              250
+            ],
+            [
+              250,
+              250
+            ]
+          ],
+          "mapping": [
+            [
+              [
+                480,
+                0
+              ],
+              [
+                [
+                  440,
+                  250
+                ],
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                340,
+                0
+              ],
+              [
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                290,
+                0
+              ],
+              [
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              []
+            ]
+          ],
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CK6KncH9g5cDFerGhAAdYssr2g",
+          "onload": false,
+          "viewable": false
+        },
+        {
+          "id": "interstitial-next-1",
+          "kind": "interstitial",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_interstitial",
+          "elementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_0",
+          "sizes": null,
+          "mapping": null,
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CL6LnsH9g5cDFerGhAAdYssr2g",
+          "onload": false,
+          "viewable": false
+        }
+      ],
+      "events": [
+        {
+          "event": "slot:defined",
+          "logicalId": "display-dropdown-next-index",
+          "page": "index",
+          "timestamp": "2026-09-23T05:35:00.252Z",
+          "adUnitPath": "/23338698373/cashloanplatform_native_in_content_01",
+          "slotElementId": "gam-index-dropdown-next",
+          "detail": null
+        },
+        {
+          "event": "service:added",
+          "logicalId": "display-dropdown-next-index",
+          "page": "index",
+          "timestamp": "2026-09-23T05:35:00.253Z",
+          "adUnitPath": "/23338698373/cashloanplatform_native_in_content_01",
+          "slotElementId": "gam-index-dropdown-next",
+          "detail": null
+        },
+        {
+          "event": "DEFINED",
+          "logicalId": "display-dropdown-next-index",
+          "page": "index",
+          "timestamp": "2026-09-23T05:35:00.254Z",
+          "adUnitPath": "/23338698373/cashloanplatform_native_in_content_01",
+          "slotElementId": "gam-index-dropdown-next",
+          "detail": null
+        },
+        {
+          "event": "slot:defined",
+          "logicalId": "interstitial-next-1",
+          "page": "index",
+          "timestamp": "2026-09-23T05:35:00.254Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_0",
+          "detail": null
+        },
+        {
+          "event": "service:added",
+          "logicalId": "interstitial-next-1",
+          "page": "index",
+          "timestamp": "2026-09-23T05:35:00.255Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_0",
+          "detail": null
+        },
+        {
+          "event": "DEFINED",
+          "logicalId": "interstitial-next-1",
+          "page": "index",
+          "timestamp": "2026-09-23T05:35:00.255Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_0",
+          "detail": null
+        },
+        {
+          "event": "LOADING",
+          "logicalId": "display-dropdown-next-index",
+          "page": "index",
+          "timestamp": "2026-09-23T05:35:00.255Z",
+          "adUnitPath": "/23338698373/cashloanplatform_native_in_content_01",
+          "slotElementId": "gam-index-dropdown-next",
+          "detail": null
+        },
+        {
+          "event": "LOADING",
+          "logicalId": "interstitial-next-1",
+          "page": "index",
+          "timestamp": "2026-09-23T05:35:00.255Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_0",
+          "detail": null
+        },
+        {
+          "event": "display",
+          "logicalId": "display-dropdown-next-index",
+          "page": "index",
+          "timestamp": "2026-09-23T05:35:00.255Z",
+          "adUnitPath": "/23338698373/cashloanplatform_native_in_content_01",
+          "slotElementId": "gam-index-dropdown-next",
+          "detail": null
+        },
+        {
+          "event": "display",
+          "logicalId": "interstitial-next-1",
+          "page": "index",
+          "timestamp": "2026-09-23T05:35:00.257Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_0",
+          "detail": null
+        },
+        {
+          "event": "REQUESTED",
+          "logicalId": "display-dropdown-next-index",
+          "page": "index",
+          "timestamp": "2026-09-23T05:35:00.322Z",
+          "adUnitPath": "/23338698373/cashloanplatform_native_in_content_01",
+          "slotElementId": "gam-index-dropdown-next",
+          "detail": null
+        },
+        {
+          "event": "REQUESTED",
+          "logicalId": "interstitial-next-1",
+          "page": "index",
+          "timestamp": "2026-09-23T05:35:00.323Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_0",
+          "detail": null
+        },
+        {
+          "event": "RESPONSE_RECEIVED",
+          "logicalId": "display-dropdown-next-index",
+          "page": "index",
+          "timestamp": "2026-09-23T05:35:00.896Z",
+          "adUnitPath": "/23338698373/cashloanplatform_native_in_content_01",
+          "slotElementId": "gam-index-dropdown-next",
+          "detail": null
+        },
+        {
+          "event": "RESPONSE_RECEIVED",
+          "logicalId": "interstitial-next-1",
+          "page": "index",
+          "timestamp": "2026-09-23T05:35:00.896Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_0",
+          "detail": null
+        },
+        {
+          "event": "slotRenderEnded",
+          "logicalId": "display-dropdown-next-index",
+          "page": "index",
+          "timestamp": "2026-09-23T05:35:00.899Z",
+          "adUnitPath": "/23338698373/cashloanplatform_native_in_content_01",
+          "slotElementId": "gam-index-dropdown-next",
+          "detail": {
+            "isEmpty": true,
+            "size": null,
+            "responseIdentifier": "CK6KncH9g5cDFerGhAAdYssr2g"
+          }
+        },
+        {
+          "event": "NO_FILL",
+          "logicalId": "display-dropdown-next-index",
+          "page": "index",
+          "timestamp": "2026-09-23T05:35:00.899Z",
+          "adUnitPath": "/23338698373/cashloanplatform_native_in_content_01",
+          "slotElementId": "gam-index-dropdown-next",
+          "detail": null
+        },
+        {
+          "event": "slotRenderEnded",
+          "logicalId": "interstitial-next-1",
+          "page": "index",
+          "timestamp": "2026-09-23T05:35:00.899Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_0",
+          "detail": {
+            "isEmpty": true,
+            "size": null,
+            "responseIdentifier": "CL6LnsH9g5cDFerGhAAdYssr2g"
+          }
+        },
+        {
+          "event": "NO_FILL",
+          "logicalId": "interstitial-next-1",
+          "page": "index",
+          "timestamp": "2026-09-23T05:35:00.899Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_0",
+          "detail": null
+        }
+      ]
+    },
+    "errors": [],
+    "console": [],
+    "network": [
+      {
+        "url": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+        "status": 200
+      },
+      {
+        "url": "https://securepubads.g.doubleclick.net/gampad/ads",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "source": "local files substituted in test browser ONLY; NOT deployed",
+    "page": "loan-amount",
+    "width": 390,
+    "diagnostics": {
+      "page": "loan-amount",
+      "release": "20260923-1",
+      "gpt": {
+        "state": "ready",
+        "error": null,
+        "servicesEnabled": true
+      },
+      "lastTrigger": null,
+      "triggerIds": [
+        "interstitial-next-2"
+      ],
+      "errors": [],
+      "slots": [
+        {
+          "id": "display-dropdown-next-loan-amount",
+          "kind": "display",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_native_in_content_02",
+          "elementId": "gam-loan-amount-dropdown-next",
+          "sizes": [
+            [
+              300,
+              250
+            ],
+            [
+              250,
+              250
+            ]
+          ],
+          "mapping": [
+            [
+              [
+                480,
+                0
+              ],
+              [
+                [
+                  440,
+                  250
+                ],
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                340,
+                0
+              ],
+              [
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                290,
+                0
+              ],
+              [
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              []
+            ]
+          ],
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CO7q78H9g5cDFaGkZgIdEhctwQ",
+          "onload": false,
+          "viewable": false
+        },
+        {
+          "id": "interstitial-next-2",
+          "kind": "interstitial",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_interstitial_02",
+          "elementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_02_0",
+          "sizes": null,
+          "mapping": null,
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CJab8sH9g5cDFaGkZgIdEhctwQ",
+          "onload": false,
+          "viewable": false
+        }
+      ],
+      "events": [
+        {
+          "event": "slot:defined",
+          "logicalId": "display-dropdown-next-loan-amount",
+          "page": "loan-amount",
+          "timestamp": "2026-09-23T05:35:01.712Z",
+          "adUnitPath": "/23338698373/cashloanplatform_native_in_content_02",
+          "slotElementId": "gam-loan-amount-dropdown-next",
+          "detail": null
+        },
+        {
+          "event": "service:added",
+          "logicalId": "display-dropdown-next-loan-amount",
+          "page": "loan-amount",
+          "timestamp": "2026-09-23T05:35:01.713Z",
+          "adUnitPath": "/23338698373/cashloanplatform_native_in_content_02",
+          "slotElementId": "gam-loan-amount-dropdown-next",
+          "detail": null
+        },
+        {
+          "event": "DEFINED",
+          "logicalId": "display-dropdown-next-loan-amount",
+          "page": "loan-amount",
+          "timestamp": "2026-09-23T05:35:01.713Z",
+          "adUnitPath": "/23338698373/cashloanplatform_native_in_content_02",
+          "slotElementId": "gam-loan-amount-dropdown-next",
+          "detail": null
+        },
+        {
+          "event": "slot:defined",
+          "logicalId": "interstitial-next-2",
+          "page": "loan-amount",
+          "timestamp": "2026-09-23T05:35:01.714Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial_02",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_02_0",
+          "detail": null
+        },
+        {
+          "event": "service:added",
+          "logicalId": "interstitial-next-2",
+          "page": "loan-amount",
+          "timestamp": "2026-09-23T05:35:01.714Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial_02",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_02_0",
+          "detail": null
+        },
+        {
+          "event": "DEFINED",
+          "logicalId": "interstitial-next-2",
+          "page": "loan-amount",
+          "timestamp": "2026-09-23T05:35:01.714Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial_02",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_02_0",
+          "detail": null
+        },
+        {
+          "event": "LOADING",
+          "logicalId": "display-dropdown-next-loan-amount",
+          "page": "loan-amount",
+          "timestamp": "2026-09-23T05:35:01.714Z",
+          "adUnitPath": "/23338698373/cashloanplatform_native_in_content_02",
+          "slotElementId": "gam-loan-amount-dropdown-next",
+          "detail": null
+        },
+        {
+          "event": "LOADING",
+          "logicalId": "interstitial-next-2",
+          "page": "loan-amount",
+          "timestamp": "2026-09-23T05:35:01.714Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial_02",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_02_0",
+          "detail": null
+        },
+        {
+          "event": "display",
+          "logicalId": "display-dropdown-next-loan-amount",
+          "page": "loan-amount",
+          "timestamp": "2026-09-23T05:35:01.714Z",
+          "adUnitPath": "/23338698373/cashloanplatform_native_in_content_02",
+          "slotElementId": "gam-loan-amount-dropdown-next",
+          "detail": null
+        },
+        {
+          "event": "display",
+          "logicalId": "interstitial-next-2",
+          "page": "loan-amount",
+          "timestamp": "2026-09-23T05:35:01.716Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial_02",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_02_0",
+          "detail": null
+        },
+        {
+          "event": "REQUESTED",
+          "logicalId": "display-dropdown-next-loan-amount",
+          "page": "loan-amount",
+          "timestamp": "2026-09-23T05:35:01.764Z",
+          "adUnitPath": "/23338698373/cashloanplatform_native_in_content_02",
+          "slotElementId": "gam-loan-amount-dropdown-next",
+          "detail": null
+        },
+        {
+          "event": "REQUESTED",
+          "logicalId": "interstitial-next-2",
+          "page": "loan-amount",
+          "timestamp": "2026-09-23T05:35:01.764Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial_02",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_02_0",
+          "detail": null
+        },
+        {
+          "event": "RESPONSE_RECEIVED",
+          "logicalId": "display-dropdown-next-loan-amount",
+          "page": "loan-amount",
+          "timestamp": "2026-09-23T05:35:02.762Z",
+          "adUnitPath": "/23338698373/cashloanplatform_native_in_content_02",
+          "slotElementId": "gam-loan-amount-dropdown-next",
+          "detail": null
+        },
+        {
+          "event": "RESPONSE_RECEIVED",
+          "logicalId": "interstitial-next-2",
+          "page": "loan-amount",
+          "timestamp": "2026-09-23T05:35:02.762Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial_02",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_02_0",
+          "detail": null
+        },
+        {
+          "event": "slotRenderEnded",
+          "logicalId": "display-dropdown-next-loan-amount",
+          "page": "loan-amount",
+          "timestamp": "2026-09-23T05:35:02.767Z",
+          "adUnitPath": "/23338698373/cashloanplatform_native_in_content_02",
+          "slotElementId": "gam-loan-amount-dropdown-next",
+          "detail": {
+            "isEmpty": true,
+            "size": null,
+            "responseIdentifier": "CO7q78H9g5cDFaGkZgIdEhctwQ"
+          }
+        },
+        {
+          "event": "NO_FILL",
+          "logicalId": "display-dropdown-next-loan-amount",
+          "page": "loan-amount",
+          "timestamp": "2026-09-23T05:35:02.767Z",
+          "adUnitPath": "/23338698373/cashloanplatform_native_in_content_02",
+          "slotElementId": "gam-loan-amount-dropdown-next",
+          "detail": null
+        },
+        {
+          "event": "slotRenderEnded",
+          "logicalId": "interstitial-next-2",
+          "page": "loan-amount",
+          "timestamp": "2026-09-23T05:35:02.767Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial_02",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_02_0",
+          "detail": {
+            "isEmpty": true,
+            "size": null,
+            "responseIdentifier": "CJab8sH9g5cDFaGkZgIdEhctwQ"
+          }
+        },
+        {
+          "event": "NO_FILL",
+          "logicalId": "interstitial-next-2",
+          "page": "loan-amount",
+          "timestamp": "2026-09-23T05:35:02.767Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial_02",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_02_0",
+          "detail": null
+        }
+      ]
+    },
+    "errors": [],
+    "console": [],
+    "network": [
+      {
+        "url": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+        "status": 200
+      },
+      {
+        "url": "https://securepubads.g.doubleclick.net/gampad/ads",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "source": "local files substituted in test browser ONLY; NOT deployed",
+    "page": "loan-type",
+    "width": 390,
+    "diagnostics": {
+      "page": "loan-type",
+      "release": "20260923-1",
+      "gpt": {
+        "state": "ready",
+        "error": null,
+        "servicesEnabled": true
+      },
+      "lastTrigger": null,
+      "triggerIds": [
+        "interstitial-next-3"
+      ],
+      "errors": [],
+      "slots": [
+        {
+          "id": "display-dropdown-next-loan-type",
+          "kind": "display",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_native_in_content_04",
+          "elementId": "gam-loan-type-dropdown-next",
+          "sizes": [
+            [
+              300,
+              250
+            ],
+            [
+              250,
+              250
+            ]
+          ],
+          "mapping": [
+            [
+              [
+                480,
+                0
+              ],
+              [
+                [
+                  440,
+                  250
+                ],
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                340,
+                0
+              ],
+              [
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                290,
+                0
+              ],
+              [
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              []
+            ]
+          ],
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CO2X0ML9g5cDFcWjbAkdJcccJA",
+          "onload": false,
+          "viewable": false
+        },
+        {
+          "id": "interstitial-next-3",
+          "kind": "interstitial",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_interstitial_03",
+          "elementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_03_0",
+          "sizes": null,
+          "mapping": null,
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CLqq0cL9g5cDFcWjbAkdJcccJA",
+          "onload": false,
+          "viewable": false
+        }
+      ],
+      "events": [
+        {
+          "event": "slot:defined",
+          "logicalId": "display-dropdown-next-loan-type",
+          "page": "loan-type",
+          "timestamp": "2026-09-23T05:35:03.292Z",
+          "adUnitPath": "/23338698373/cashloanplatform_native_in_content_04",
+          "slotElementId": "gam-loan-type-dropdown-next",
+          "detail": null
+        },
+        {
+          "event": "service:added",
+          "logicalId": "display-dropdown-next-loan-type",
+          "page": "loan-type",
+          "timestamp": "2026-09-23T05:35:03.293Z",
+          "adUnitPath": "/23338698373/cashloanplatform_native_in_content_04",
+          "slotElementId": "gam-loan-type-dropdown-next",
+          "detail": null
+        },
+        {
+          "event": "DEFINED",
+          "logicalId": "display-dropdown-next-loan-type",
+          "page": "loan-type",
+          "timestamp": "2026-09-23T05:35:03.293Z",
+          "adUnitPath": "/23338698373/cashloanplatform_native_in_content_04",
+          "slotElementId": "gam-loan-type-dropdown-next",
+          "detail": null
+        },
+        {
+          "event": "slot:defined",
+          "logicalId": "interstitial-next-3",
+          "page": "loan-type",
+          "timestamp": "2026-09-23T05:35:03.294Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial_03",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_03_0",
+          "detail": null
+        },
+        {
+          "event": "service:added",
+          "logicalId": "interstitial-next-3",
+          "page": "loan-type",
+          "timestamp": "2026-09-23T05:35:03.294Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial_03",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_03_0",
+          "detail": null
+        },
+        {
+          "event": "DEFINED",
+          "logicalId": "interstitial-next-3",
+          "page": "loan-type",
+          "timestamp": "2026-09-23T05:35:03.294Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial_03",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_03_0",
+          "detail": null
+        },
+        {
+          "event": "LOADING",
+          "logicalId": "display-dropdown-next-loan-type",
+          "page": "loan-type",
+          "timestamp": "2026-09-23T05:35:03.294Z",
+          "adUnitPath": "/23338698373/cashloanplatform_native_in_content_04",
+          "slotElementId": "gam-loan-type-dropdown-next",
+          "detail": null
+        },
+        {
+          "event": "LOADING",
+          "logicalId": "interstitial-next-3",
+          "page": "loan-type",
+          "timestamp": "2026-09-23T05:35:03.294Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial_03",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_03_0",
+          "detail": null
+        },
+        {
+          "event": "display",
+          "logicalId": "display-dropdown-next-loan-type",
+          "page": "loan-type",
+          "timestamp": "2026-09-23T05:35:03.294Z",
+          "adUnitPath": "/23338698373/cashloanplatform_native_in_content_04",
+          "slotElementId": "gam-loan-type-dropdown-next",
+          "detail": null
+        },
+        {
+          "event": "display",
+          "logicalId": "interstitial-next-3",
+          "page": "loan-type",
+          "timestamp": "2026-09-23T05:35:03.296Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial_03",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_03_0",
+          "detail": null
+        },
+        {
+          "event": "REQUESTED",
+          "logicalId": "display-dropdown-next-loan-type",
+          "page": "loan-type",
+          "timestamp": "2026-09-23T05:35:03.343Z",
+          "adUnitPath": "/23338698373/cashloanplatform_native_in_content_04",
+          "slotElementId": "gam-loan-type-dropdown-next",
+          "detail": null
+        },
+        {
+          "event": "REQUESTED",
+          "logicalId": "interstitial-next-3",
+          "page": "loan-type",
+          "timestamp": "2026-09-23T05:35:03.343Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial_03",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_03_0",
+          "detail": null
+        },
+        {
+          "event": "RESPONSE_RECEIVED",
+          "logicalId": "display-dropdown-next-loan-type",
+          "page": "loan-type",
+          "timestamp": "2026-09-23T05:35:03.809Z",
+          "adUnitPath": "/23338698373/cashloanplatform_native_in_content_04",
+          "slotElementId": "gam-loan-type-dropdown-next",
+          "detail": null
+        },
+        {
+          "event": "RESPONSE_RECEIVED",
+          "logicalId": "interstitial-next-3",
+          "page": "loan-type",
+          "timestamp": "2026-09-23T05:35:03.809Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial_03",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_03_0",
+          "detail": null
+        },
+        {
+          "event": "slotRenderEnded",
+          "logicalId": "display-dropdown-next-loan-type",
+          "page": "loan-type",
+          "timestamp": "2026-09-23T05:35:03.812Z",
+          "adUnitPath": "/23338698373/cashloanplatform_native_in_content_04",
+          "slotElementId": "gam-loan-type-dropdown-next",
+          "detail": {
+            "isEmpty": true,
+            "size": null,
+            "responseIdentifier": "CO2X0ML9g5cDFcWjbAkdJcccJA"
+          }
+        },
+        {
+          "event": "NO_FILL",
+          "logicalId": "display-dropdown-next-loan-type",
+          "page": "loan-type",
+          "timestamp": "2026-09-23T05:35:03.812Z",
+          "adUnitPath": "/23338698373/cashloanplatform_native_in_content_04",
+          "slotElementId": "gam-loan-type-dropdown-next",
+          "detail": null
+        },
+        {
+          "event": "slotRenderEnded",
+          "logicalId": "interstitial-next-3",
+          "page": "loan-type",
+          "timestamp": "2026-09-23T05:35:03.812Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial_03",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_03_0",
+          "detail": {
+            "isEmpty": true,
+            "size": null,
+            "responseIdentifier": "CLqq0cL9g5cDFcWjbAkdJcccJA"
+          }
+        },
+        {
+          "event": "NO_FILL",
+          "logicalId": "interstitial-next-3",
+          "page": "loan-type",
+          "timestamp": "2026-09-23T05:35:03.812Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial_03",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_03_0",
+          "detail": null
+        }
+      ]
+    },
+    "errors": [],
+    "console": [],
+    "network": [
+      {
+        "url": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+        "status": 200
+      },
+      {
+        "url": "https://securepubads.g.doubleclick.net/gampad/ads",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "source": "local files substituted in test browser ONLY; NOT deployed",
+    "page": "proceed",
+    "width": 390,
+    "diagnostics": {
+      "page": "proceed",
+      "release": "20260923-1",
+      "gpt": {
+        "state": "ready",
+        "error": null,
+        "servicesEnabled": true
+      },
+      "lastTrigger": null,
+      "triggerIds": [
+        "interstitial-next-5"
+      ],
+      "errors": [],
+      "slots": [
+        {
+          "id": "display-dropdown-next-proceed",
+          "kind": "display",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_native_in_content_05",
+          "elementId": "gam-proceed-dropdown-next",
+          "sizes": [
+            [
+              300,
+              250
+            ],
+            [
+              250,
+              250
+            ]
+          ],
+          "mapping": [
+            [
+              [
+                480,
+                0
+              ],
+              [
+                [
+                  440,
+                  250
+                ],
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                340,
+                0
+              ],
+              [
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                290,
+                0
+              ],
+              [
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              []
+            ]
+          ],
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CNK5kMP9g5cDFeipZgIdtrItPw",
+          "onload": false,
+          "viewable": false
+        },
+        {
+          "id": "interstitial-next-5",
+          "kind": "interstitial",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_interstitial_05",
+          "elementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_05_0",
+          "sizes": null,
+          "mapping": null,
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "CP7nksP9g5cDFeipZgIdtrItPw",
+          "onload": false,
+          "viewable": false
+        }
+      ],
+      "events": [
+        {
+          "event": "slot:defined",
+          "logicalId": "display-dropdown-next-proceed",
+          "page": "proceed",
+          "timestamp": "2026-09-23T05:35:04.326Z",
+          "adUnitPath": "/23338698373/cashloanplatform_native_in_content_05",
+          "slotElementId": "gam-proceed-dropdown-next",
+          "detail": null
+        },
+        {
+          "event": "service:added",
+          "logicalId": "display-dropdown-next-proceed",
+          "page": "proceed",
+          "timestamp": "2026-09-23T05:35:04.327Z",
+          "adUnitPath": "/23338698373/cashloanplatform_native_in_content_05",
+          "slotElementId": "gam-proceed-dropdown-next",
+          "detail": null
+        },
+        {
+          "event": "DEFINED",
+          "logicalId": "display-dropdown-next-proceed",
+          "page": "proceed",
+          "timestamp": "2026-09-23T05:35:04.327Z",
+          "adUnitPath": "/23338698373/cashloanplatform_native_in_content_05",
+          "slotElementId": "gam-proceed-dropdown-next",
+          "detail": null
+        },
+        {
+          "event": "slot:defined",
+          "logicalId": "interstitial-next-5",
+          "page": "proceed",
+          "timestamp": "2026-09-23T05:35:04.328Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial_05",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_05_0",
+          "detail": null
+        },
+        {
+          "event": "service:added",
+          "logicalId": "interstitial-next-5",
+          "page": "proceed",
+          "timestamp": "2026-09-23T05:35:04.328Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial_05",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_05_0",
+          "detail": null
+        },
+        {
+          "event": "DEFINED",
+          "logicalId": "interstitial-next-5",
+          "page": "proceed",
+          "timestamp": "2026-09-23T05:35:04.328Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial_05",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_05_0",
+          "detail": null
+        },
+        {
+          "event": "LOADING",
+          "logicalId": "display-dropdown-next-proceed",
+          "page": "proceed",
+          "timestamp": "2026-09-23T05:35:04.328Z",
+          "adUnitPath": "/23338698373/cashloanplatform_native_in_content_05",
+          "slotElementId": "gam-proceed-dropdown-next",
+          "detail": null
+        },
+        {
+          "event": "LOADING",
+          "logicalId": "interstitial-next-5",
+          "page": "proceed",
+          "timestamp": "2026-09-23T05:35:04.328Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial_05",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_05_0",
+          "detail": null
+        },
+        {
+          "event": "display",
+          "logicalId": "display-dropdown-next-proceed",
+          "page": "proceed",
+          "timestamp": "2026-09-23T05:35:04.329Z",
+          "adUnitPath": "/23338698373/cashloanplatform_native_in_content_05",
+          "slotElementId": "gam-proceed-dropdown-next",
+          "detail": null
+        },
+        {
+          "event": "display",
+          "logicalId": "interstitial-next-5",
+          "page": "proceed",
+          "timestamp": "2026-09-23T05:35:04.330Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial_05",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_05_0",
+          "detail": null
+        },
+        {
+          "event": "REQUESTED",
+          "logicalId": "display-dropdown-next-proceed",
+          "page": "proceed",
+          "timestamp": "2026-09-23T05:35:04.381Z",
+          "adUnitPath": "/23338698373/cashloanplatform_native_in_content_05",
+          "slotElementId": "gam-proceed-dropdown-next",
+          "detail": null
+        },
+        {
+          "event": "REQUESTED",
+          "logicalId": "interstitial-next-5",
+          "page": "proceed",
+          "timestamp": "2026-09-23T05:35:04.381Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial_05",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_05_0",
+          "detail": null
+        },
+        {
+          "event": "RESPONSE_RECEIVED",
+          "logicalId": "display-dropdown-next-proceed",
+          "page": "proceed",
+          "timestamp": "2026-09-23T05:35:05.312Z",
+          "adUnitPath": "/23338698373/cashloanplatform_native_in_content_05",
+          "slotElementId": "gam-proceed-dropdown-next",
+          "detail": null
+        },
+        {
+          "event": "RESPONSE_RECEIVED",
+          "logicalId": "interstitial-next-5",
+          "page": "proceed",
+          "timestamp": "2026-09-23T05:35:05.312Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial_05",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_05_0",
+          "detail": null
+        },
+        {
+          "event": "slotRenderEnded",
+          "logicalId": "display-dropdown-next-proceed",
+          "page": "proceed",
+          "timestamp": "2026-09-23T05:35:05.316Z",
+          "adUnitPath": "/23338698373/cashloanplatform_native_in_content_05",
+          "slotElementId": "gam-proceed-dropdown-next",
+          "detail": {
+            "isEmpty": true,
+            "size": null,
+            "responseIdentifier": "CNK5kMP9g5cDFeipZgIdtrItPw"
+          }
+        },
+        {
+          "event": "NO_FILL",
+          "logicalId": "display-dropdown-next-proceed",
+          "page": "proceed",
+          "timestamp": "2026-09-23T05:35:05.316Z",
+          "adUnitPath": "/23338698373/cashloanplatform_native_in_content_05",
+          "slotElementId": "gam-proceed-dropdown-next",
+          "detail": null
+        },
+        {
+          "event": "slotRenderEnded",
+          "logicalId": "interstitial-next-5",
+          "page": "proceed",
+          "timestamp": "2026-09-23T05:35:05.316Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial_05",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_05_0",
+          "detail": {
+            "isEmpty": true,
+            "size": null,
+            "responseIdentifier": "CP7nksP9g5cDFeipZgIdtrItPw"
+          }
+        },
+        {
+          "event": "NO_FILL",
+          "logicalId": "interstitial-next-5",
+          "page": "proceed",
+          "timestamp": "2026-09-23T05:35:05.316Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial_05",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_05_0",
+          "detail": null
+        }
+      ]
+    },
+    "errors": [],
+    "console": [],
+    "network": [
+      {
+        "url": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+        "status": 200
+      },
+      {
+        "url": "https://securepubads.g.doubleclick.net/gampad/ads",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "source": "local files substituted in test browser ONLY; NOT deployed",
+    "page": "index",
+    "width": 1440,
+    "diagnostics": {
+      "page": "index",
+      "release": "20260923-1",
+      "gpt": {
+        "state": "ready",
+        "error": null,
+        "servicesEnabled": true
+      },
+      "lastTrigger": null,
+      "triggerIds": [
+        "interstitial-next-1"
+      ],
+      "errors": [],
+      "slots": [
+        {
+          "id": "display-dropdown-next-index",
+          "kind": "display",
+          "state": "RENDERED",
+          "adUnit": "/23338698373/cashloanplatform_native_in_content_01",
+          "elementId": "gam-index-dropdown-next",
+          "sizes": [
+            [
+              440,
+              250
+            ],
+            [
+              300,
+              250
+            ],
+            [
+              250,
+              250
+            ]
+          ],
+          "mapping": [
+            [
+              [
+                480,
+                0
+              ],
+              [
+                [
+                  440,
+                  250
+                ],
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                340,
+                0
+              ],
+              [
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                290,
+                0
+              ],
+              [
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              []
+            ]
+          ],
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": false,
+          "renderedSize": [
+            440,
+            250
+          ],
+          "responseIdentifier": "CKj68MP9g5cDFSdmKgkd4yAKAA",
+          "onload": true,
+          "viewable": false
+        },
+        {
+          "id": "interstitial-next-1",
+          "kind": "interstitial",
+          "state": "RENDERED",
+          "adUnit": "/23338698373/cashloanplatform_interstitial",
+          "elementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_0",
+          "sizes": null,
+          "mapping": null,
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": false,
+          "renderedSize": [
+            1440,
+            844
+          ],
+          "responseIdentifier": "CKr68MP9g5cDFSdmKgkd4yAKAA",
+          "onload": false,
+          "viewable": false
+        }
+      ],
+      "events": [
+        {
+          "event": "slot:defined",
+          "logicalId": "display-dropdown-next-index",
+          "page": "index",
+          "timestamp": "2026-09-23T05:35:05.898Z",
+          "adUnitPath": "/23338698373/cashloanplatform_native_in_content_01",
+          "slotElementId": "gam-index-dropdown-next",
+          "detail": null
+        },
+        {
+          "event": "service:added",
+          "logicalId": "display-dropdown-next-index",
+          "page": "index",
+          "timestamp": "2026-09-23T05:35:05.900Z",
+          "adUnitPath": "/23338698373/cashloanplatform_native_in_content_01",
+          "slotElementId": "gam-index-dropdown-next",
+          "detail": null
+        },
+        {
+          "event": "DEFINED",
+          "logicalId": "display-dropdown-next-index",
+          "page": "index",
+          "timestamp": "2026-09-23T05:35:05.900Z",
+          "adUnitPath": "/23338698373/cashloanplatform_native_in_content_01",
+          "slotElementId": "gam-index-dropdown-next",
+          "detail": null
+        },
+        {
+          "event": "slot:defined",
+          "logicalId": "interstitial-next-1",
+          "page": "index",
+          "timestamp": "2026-09-23T05:35:05.901Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_0",
+          "detail": null
+        },
+        {
+          "event": "service:added",
+          "logicalId": "interstitial-next-1",
+          "page": "index",
+          "timestamp": "2026-09-23T05:35:05.901Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_0",
+          "detail": null
+        },
+        {
+          "event": "DEFINED",
+          "logicalId": "interstitial-next-1",
+          "page": "index",
+          "timestamp": "2026-09-23T05:35:05.901Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_0",
+          "detail": null
+        },
+        {
+          "event": "LOADING",
+          "logicalId": "display-dropdown-next-index",
+          "page": "index",
+          "timestamp": "2026-09-23T05:35:05.901Z",
+          "adUnitPath": "/23338698373/cashloanplatform_native_in_content_01",
+          "slotElementId": "gam-index-dropdown-next",
+          "detail": null
+        },
+        {
+          "event": "LOADING",
+          "logicalId": "interstitial-next-1",
+          "page": "index",
+          "timestamp": "2026-09-23T05:35:05.901Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_0",
+          "detail": null
+        },
+        {
+          "event": "display",
+          "logicalId": "display-dropdown-next-index",
+          "page": "index",
+          "timestamp": "2026-09-23T05:35:05.901Z",
+          "adUnitPath": "/23338698373/cashloanplatform_native_in_content_01",
+          "slotElementId": "gam-index-dropdown-next",
+          "detail": null
+        },
+        {
+          "event": "display",
+          "logicalId": "interstitial-next-1",
+          "page": "index",
+          "timestamp": "2026-09-23T05:35:05.903Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_0",
+          "detail": null
+        },
+        {
+          "event": "REQUESTED",
+          "logicalId": "display-dropdown-next-index",
+          "page": "index",
+          "timestamp": "2026-09-23T05:35:05.960Z",
+          "adUnitPath": "/23338698373/cashloanplatform_native_in_content_01",
+          "slotElementId": "gam-index-dropdown-next",
+          "detail": null
+        },
+        {
+          "event": "REQUESTED",
+          "logicalId": "interstitial-next-1",
+          "page": "index",
+          "timestamp": "2026-09-23T05:35:05.960Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_0",
+          "detail": null
+        },
+        {
+          "event": "RESPONSE_RECEIVED",
+          "logicalId": "display-dropdown-next-index",
+          "page": "index",
+          "timestamp": "2026-09-23T05:35:06.669Z",
+          "adUnitPath": "/23338698373/cashloanplatform_native_in_content_01",
+          "slotElementId": "gam-index-dropdown-next",
+          "detail": null
+        },
+        {
+          "event": "slotOnload",
+          "logicalId": "display-dropdown-next-index",
+          "page": "index",
+          "timestamp": "2026-09-23T05:35:06.691Z",
+          "adUnitPath": "/23338698373/cashloanplatform_native_in_content_01",
+          "slotElementId": "gam-index-dropdown-next",
+          "detail": null
+        },
+        {
+          "event": "slotRenderEnded",
+          "logicalId": "display-dropdown-next-index",
+          "page": "index",
+          "timestamp": "2026-09-23T05:35:06.692Z",
+          "adUnitPath": "/23338698373/cashloanplatform_native_in_content_01",
+          "slotElementId": "gam-index-dropdown-next",
+          "detail": {
+            "isEmpty": false,
+            "size": [
+              440,
+              250
+            ],
+            "responseIdentifier": "CKj68MP9g5cDFSdmKgkd4yAKAA"
+          }
+        },
+        {
+          "event": "RENDERED",
+          "logicalId": "display-dropdown-next-index",
+          "page": "index",
+          "timestamp": "2026-09-23T05:35:06.692Z",
+          "adUnitPath": "/23338698373/cashloanplatform_native_in_content_01",
+          "slotElementId": "gam-index-dropdown-next",
+          "detail": null
+        },
+        {
+          "event": "RESPONSE_RECEIVED",
+          "logicalId": "interstitial-next-1",
+          "page": "index",
+          "timestamp": "2026-09-23T05:35:06.718Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_0",
+          "detail": null
+        },
+        {
+          "event": "slotRenderEnded",
+          "logicalId": "interstitial-next-1",
+          "page": "index",
+          "timestamp": "2026-09-23T05:35:06.730Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_0",
+          "detail": {
+            "isEmpty": false,
+            "size": [
+              1440,
+              844
+            ],
+            "responseIdentifier": "CKr68MP9g5cDFSdmKgkd4yAKAA"
+          }
+        },
+        {
+          "event": "RENDERED",
+          "logicalId": "interstitial-next-1",
+          "page": "index",
+          "timestamp": "2026-09-23T05:35:06.730Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_0",
+          "detail": null
+        }
+      ]
+    },
+    "errors": [],
+    "console": [
+      "[GPT] Interstitial /23338698373/Latest3 not requested: Format already created on the page.\nhttps://goo.gle/gpt-message#134",
+      "[GPT] Interstitial /23338698373/Latest3 not requested: Format already created on the page.\nhttps://goo.gle/gpt-message#134"
+    ],
+    "network": [
+      {
+        "url": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+        "status": 200
+      },
+      {
+        "url": "https://securepubads.g.doubleclick.net/gampad/ads",
+        "status": 200
+      }
+    ]
+  },
+  {
+    "source": "local files substituted in test browser ONLY; NOT deployed",
+    "page": "blogs",
+    "width": 1440,
+    "diagnostics": {
+      "page": "blogs",
+      "release": "20260923-1",
+      "gpt": {
+        "state": "ready",
+        "error": null,
+        "servicesEnabled": true
+      },
+      "lastTrigger": null,
+      "triggerIds": [
+        "interstitial-blog-1",
+        "interstitial-blog-2",
+        "interstitial-blog-3",
+        "interstitial-blog-4",
+        "interstitial-blog-5",
+        "interstitial-blog-6",
+        "interstitial-blog-7"
+      ],
+      "errors": [],
+      "slots": [
+        {
+          "id": "display-blog-top-blogs",
+          "kind": "display",
+          "state": "RENDERED",
+          "adUnit": "/23338698373/cashloanplatform_display_blogtop",
+          "elementId": "gam-blog-top-blogs",
+          "sizes": [
+            [
+              440,
+              250
+            ],
+            [
+              300,
+              250
+            ],
+            [
+              250,
+              250
+            ]
+          ],
+          "mapping": [
+            [
+              [
+                480,
+                0
+              ],
+              [
+                [
+                  440,
+                  250
+                ],
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                340,
+                0
+              ],
+              [
+                [
+                  300,
+                  250
+                ],
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                290,
+                0
+              ],
+              [
+                [
+                  250,
+                  250
+                ]
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              []
+            ]
+          ],
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": false,
+          "renderedSize": [
+            440,
+            250
+          ],
+          "responseIdentifier": "CK_ov8T9g5cDFW-OrAId-50dng",
+          "onload": true,
+          "viewable": false
+        },
+        {
+          "id": "interstitial:blogs",
+          "kind": "interstitial",
+          "state": "RENDERED",
+          "adUnit": "/23338698373/cashloanplatform_interstitial",
+          "elementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_0",
+          "sizes": null,
+          "mapping": null,
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": false,
+          "renderedSize": [
+            1440,
+            844
+          ],
+          "responseIdentifier": "CLLov8T9g5cDFW-OrAId-50dng",
+          "onload": false,
+          "viewable": false
+        },
+        {
+          "id": "blogBottomAnchor:blogs",
+          "kind": "anchor",
+          "state": "NO_FILL",
+          "adUnit": "/23338698373/cashloanplatform_anchor_001",
+          "elementId": "gpt_unit_/23338698373/cashloanplatform_anchor_001_0",
+          "sizes": null,
+          "mapping": null,
+          "displayed": true,
+          "requestCount": 1,
+          "responseCount": 1,
+          "renderCount": 1,
+          "isEmpty": true,
+          "renderedSize": null,
+          "responseIdentifier": "COHNvsT9g5cDFW-OrAId-50dng",
+          "onload": false,
+          "viewable": false
+        }
+      ],
+      "events": [
+        {
+          "event": "slot:defined",
+          "logicalId": "display-blog-top-blogs",
+          "page": "blogs",
+          "timestamp": "2026-09-23T05:35:07.189Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-top-blogs",
+          "detail": null
+        },
+        {
+          "event": "service:added",
+          "logicalId": "display-blog-top-blogs",
+          "page": "blogs",
+          "timestamp": "2026-09-23T05:35:07.190Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-top-blogs",
+          "detail": null
+        },
+        {
+          "event": "DEFINED",
+          "logicalId": "display-blog-top-blogs",
+          "page": "blogs",
+          "timestamp": "2026-09-23T05:35:07.190Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-top-blogs",
+          "detail": null
+        },
+        {
+          "event": "slot:defined",
+          "logicalId": "interstitial:blogs",
+          "page": "blogs",
+          "timestamp": "2026-09-23T05:35:07.191Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_0",
+          "detail": null
+        },
+        {
+          "event": "service:added",
+          "logicalId": "interstitial:blogs",
+          "page": "blogs",
+          "timestamp": "2026-09-23T05:35:07.191Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_0",
+          "detail": null
+        },
+        {
+          "event": "DEFINED",
+          "logicalId": "interstitial:blogs",
+          "page": "blogs",
+          "timestamp": "2026-09-23T05:35:07.191Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_0",
+          "detail": null
+        },
+        {
+          "event": "slot:defined",
+          "logicalId": "blogBottomAnchor:blogs",
+          "page": "blogs",
+          "timestamp": "2026-09-23T05:35:07.191Z",
+          "adUnitPath": "/23338698373/cashloanplatform_anchor_001",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_anchor_001_0",
+          "detail": null
+        },
+        {
+          "event": "service:added",
+          "logicalId": "blogBottomAnchor:blogs",
+          "page": "blogs",
+          "timestamp": "2026-09-23T05:35:07.191Z",
+          "adUnitPath": "/23338698373/cashloanplatform_anchor_001",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_anchor_001_0",
+          "detail": null
+        },
+        {
+          "event": "DEFINED",
+          "logicalId": "blogBottomAnchor:blogs",
+          "page": "blogs",
+          "timestamp": "2026-09-23T05:35:07.191Z",
+          "adUnitPath": "/23338698373/cashloanplatform_anchor_001",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_anchor_001_0",
+          "detail": null
+        },
+        {
+          "event": "LOADING",
+          "logicalId": "display-blog-top-blogs",
+          "page": "blogs",
+          "timestamp": "2026-09-23T05:35:07.192Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-top-blogs",
+          "detail": null
+        },
+        {
+          "event": "LOADING",
+          "logicalId": "interstitial:blogs",
+          "page": "blogs",
+          "timestamp": "2026-09-23T05:35:07.192Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_0",
+          "detail": null
+        },
+        {
+          "event": "LOADING",
+          "logicalId": "blogBottomAnchor:blogs",
+          "page": "blogs",
+          "timestamp": "2026-09-23T05:35:07.192Z",
+          "adUnitPath": "/23338698373/cashloanplatform_anchor_001",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_anchor_001_0",
+          "detail": null
+        },
+        {
+          "event": "display",
+          "logicalId": "display-blog-top-blogs",
+          "page": "blogs",
+          "timestamp": "2026-09-23T05:35:07.192Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-top-blogs",
+          "detail": null
+        },
+        {
+          "event": "display",
+          "logicalId": "interstitial:blogs",
+          "page": "blogs",
+          "timestamp": "2026-09-23T05:35:07.193Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_0",
+          "detail": null
+        },
+        {
+          "event": "display",
+          "logicalId": "blogBottomAnchor:blogs",
+          "page": "blogs",
+          "timestamp": "2026-09-23T05:35:07.194Z",
+          "adUnitPath": "/23338698373/cashloanplatform_anchor_001",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_anchor_001_0",
+          "detail": null
+        },
+        {
+          "event": "REQUESTED",
+          "logicalId": "display-blog-top-blogs",
+          "page": "blogs",
+          "timestamp": "2026-09-23T05:35:07.249Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-top-blogs",
+          "detail": null
+        },
+        {
+          "event": "REQUESTED",
+          "logicalId": "interstitial:blogs",
+          "page": "blogs",
+          "timestamp": "2026-09-23T05:35:07.249Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_0",
+          "detail": null
+        },
+        {
+          "event": "REQUESTED",
+          "logicalId": "blogBottomAnchor:blogs",
+          "page": "blogs",
+          "timestamp": "2026-09-23T05:35:07.249Z",
+          "adUnitPath": "/23338698373/cashloanplatform_anchor_001",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_anchor_001_0",
+          "detail": null
+        },
+        {
+          "event": "RESPONSE_RECEIVED",
+          "logicalId": "display-blog-top-blogs",
+          "page": "blogs",
+          "timestamp": "2026-09-23T05:35:08.383Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-top-blogs",
+          "detail": null
+        },
+        {
+          "event": "slotOnload",
+          "logicalId": "display-blog-top-blogs",
+          "page": "blogs",
+          "timestamp": "2026-09-23T05:35:08.427Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-top-blogs",
+          "detail": null
+        },
+        {
+          "event": "slotRenderEnded",
+          "logicalId": "display-blog-top-blogs",
+          "page": "blogs",
+          "timestamp": "2026-09-23T05:35:08.429Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-top-blogs",
+          "detail": {
+            "isEmpty": false,
+            "size": [
+              440,
+              250
+            ],
+            "responseIdentifier": "CK_ov8T9g5cDFW-OrAId-50dng"
+          }
+        },
+        {
+          "event": "RENDERED",
+          "logicalId": "display-blog-top-blogs",
+          "page": "blogs",
+          "timestamp": "2026-09-23T05:35:08.429Z",
+          "adUnitPath": "/23338698373/cashloanplatform_display_blogtop",
+          "slotElementId": "gam-blog-top-blogs",
+          "detail": null
+        },
+        {
+          "event": "RESPONSE_RECEIVED",
+          "logicalId": "interstitial:blogs",
+          "page": "blogs",
+          "timestamp": "2026-09-23T05:35:08.440Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_0",
+          "detail": null
+        },
+        {
+          "event": "RESPONSE_RECEIVED",
+          "logicalId": "blogBottomAnchor:blogs",
+          "page": "blogs",
+          "timestamp": "2026-09-23T05:35:08.440Z",
+          "adUnitPath": "/23338698373/cashloanplatform_anchor_001",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_anchor_001_0",
+          "detail": null
+        },
+        {
+          "event": "slotRenderEnded",
+          "logicalId": "blogBottomAnchor:blogs",
+          "page": "blogs",
+          "timestamp": "2026-09-23T05:35:08.442Z",
+          "adUnitPath": "/23338698373/cashloanplatform_anchor_001",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_anchor_001_0",
+          "detail": {
+            "isEmpty": true,
+            "size": null,
+            "responseIdentifier": "COHNvsT9g5cDFW-OrAId-50dng"
+          }
+        },
+        {
+          "event": "NO_FILL",
+          "logicalId": "blogBottomAnchor:blogs",
+          "page": "blogs",
+          "timestamp": "2026-09-23T05:35:08.442Z",
+          "adUnitPath": "/23338698373/cashloanplatform_anchor_001",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_anchor_001_0",
+          "detail": null
+        },
+        {
+          "event": "slotRenderEnded",
+          "logicalId": "interstitial:blogs",
+          "page": "blogs",
+          "timestamp": "2026-09-23T05:35:08.454Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_0",
+          "detail": {
+            "isEmpty": false,
+            "size": [
+              1440,
+              844
+            ],
+            "responseIdentifier": "CLLov8T9g5cDFW-OrAId-50dng"
+          }
+        },
+        {
+          "event": "RENDERED",
+          "logicalId": "interstitial:blogs",
+          "page": "blogs",
+          "timestamp": "2026-09-23T05:35:08.454Z",
+          "adUnitPath": "/23338698373/cashloanplatform_interstitial",
+          "slotElementId": "gpt_unit_/23338698373/cashloanplatform_interstitial_0",
+          "detail": null
+        }
+      ]
+    },
+    "errors": [],
+    "console": [
+      "[GPT] Interstitial /23338698373/Latest3 not requested: Format already created on the page.\nhttps://goo.gle/gpt-message#134",
+      "[GPT] Interstitial /23338698373/Latest3 not requested: Format already created on the page.\nhttps://goo.gle/gpt-message#134"
+    ],
+    "network": [
+      {
+        "url": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+        "status": 200
+      },
+      {
+        "url": "https://securepubads.g.doubleclick.net/gampad/ads",
+        "status": 200
+      }
+    ]
+  }
+]

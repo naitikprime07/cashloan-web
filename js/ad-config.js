@@ -20,163 +20,90 @@
       logicalId: "display-dropdown-next-index",
       page: "index",
       adUnit: `${BASE_PATH}/cashloanplatform_native_in_content_01`,
-      // Fluid-only: the native in-content creative must span the Next button
-      // width on every device. Fixed sizes are dropped so a narrow 300px banner
-      // can never serve and break the button-width match.
-      sizes: ["fluid"],
+      // Fixed rectangles; smaller creatives retain their natural dimensions.
+      sizes: [[440, 250], [300, 250], [250, 250]],
     },
     "display-dropdown-next-loan-amount": {
       logicalId: "display-dropdown-next-loan-amount",
       page: "loan-amount",
       adUnit: `${BASE_PATH}/cashloanplatform_native_in_content_02`,
-      // Fluid-only: the native in-content creative must span the Next button
-      // width on every device. Fixed sizes are dropped so a narrow 300px banner
-      // can never serve and break the button-width match.
-      sizes: ["fluid"],
+      // Fixed rectangles; smaller creatives retain their natural dimensions.
+      sizes: [[440, 250], [300, 250], [250, 250]],
     },
     "display-dropdown-next-employment-type": {
       logicalId: "display-dropdown-next-employment-type",
       page: "employment-type",
       adUnit: `${BASE_PATH}/cashloanplatform_native_in_content_03`,
-      // Fluid-only: the native in-content creative must span the Next button
-      // width on every device. Fixed sizes are dropped so a narrow 300px banner
-      // can never serve and break the button-width match.
-      sizes: ["fluid"],
+      // Fixed rectangles; smaller creatives retain their natural dimensions.
+      sizes: [[440, 250], [300, 250], [250, 250]],
     },
     "display-dropdown-next-loan-type": {
       logicalId: "display-dropdown-next-loan-type",
       page: "loan-type",
       adUnit: `${BASE_PATH}/cashloanplatform_native_in_content_04`,
-      // Fluid-only: the native in-content creative must span the Next button
-      // width on every device. Fixed sizes are dropped so a narrow 300px banner
-      // can never serve and break the button-width match.
-      sizes: ["fluid"],
+      // Fixed rectangles; smaller creatives retain their natural dimensions.
+      sizes: [[440, 250], [300, 250], [250, 250]],
     },
     "display-dropdown-next-proceed": {
       logicalId: "display-dropdown-next-proceed",
       page: "proceed",
       adUnit: `${BASE_PATH}/cashloanplatform_native_in_content_05`,
-      // Fluid-only: the native in-content creative must span the Next button
-      // width on every device. Fixed sizes are dropped so a narrow 300px banner
-      // can never serve and break the button-width match.
-      sizes: ["fluid"],
+      // Fixed rectangles; smaller creatives retain their natural dimensions.
+      sizes: [[440, 250], [300, 250], [250, 250]],
     },
     "display-blog-top-blogs": {
       logicalId: "display-blog-top-blogs",
       page: "blogs",
       adUnit: `${BASE_PATH}/cashloanplatform_display_blogtop`,
-      // "fluid" fills the container (page column) width on every device;
-      // fixed sizes remain the fallback when the response is not fluid.
-      sizes: [
-        [440, 250],
-        [300, 250],
-        [250, 250],
-        "fluid",
-      ],
+      sizes: [[440, 250], [300, 250], [250, 250]],
     },
     "display-blog-top-eligibility-check": {
       logicalId: "display-blog-top-eligibility-check",
       page: "eligibility-check",
       adUnit: `${BASE_PATH}/cashloanplatform_display_blogtop`,
-      // "fluid" fills the container (page column) width on every device;
-      // fixed sizes remain the fallback when the response is not fluid.
-      sizes: [
-        [440, 250],
-        [300, 250],
-        [250, 250],
-        "fluid",
-      ],
+      sizes: [[440, 250], [300, 250], [250, 250]],
     },
     "display-blog-top-personal-loan": {
       logicalId: "display-blog-top-personal-loan",
       page: "blog-personal-loan",
       adUnit: `${BASE_PATH}/cashloanplatform_display_blogtop`,
-      // "fluid" fills the container (page column) width on every device;
-      // fixed sizes remain the fallback when the response is not fluid.
-      sizes: [
-        [440, 250],
-        [300, 250],
-        [250, 250],
-        "fluid",
-      ],
+      sizes: [[440, 250], [300, 250], [250, 250]],
     },
     "display-blog-top-auto-loan": {
       logicalId: "display-blog-top-auto-loan",
       page: "blog-auto-loan",
       adUnit: `${BASE_PATH}/cashloanplatform_display_blogtop`,
-      // "fluid" fills the container (page column) width on every device;
-      // fixed sizes remain the fallback when the response is not fluid.
-      sizes: [
-        [440, 250],
-        [300, 250],
-        [250, 250],
-        "fluid",
-      ],
+      sizes: [[440, 250], [300, 250], [250, 250]],
     },
     "display-blog-top-student-loan": {
       logicalId: "display-blog-top-student-loan",
       page: "blog-student-loan",
       adUnit: `${BASE_PATH}/cashloanplatform_display_blogtop`,
-      // "fluid" fills the container (page column) width on every device;
-      // fixed sizes remain the fallback when the response is not fluid.
-      sizes: [
-        [440, 250],
-        [300, 250],
-        [250, 250],
-        "fluid",
-      ],
+      sizes: [[440, 250], [300, 250], [250, 250]],
     },
     "display-blog-top-business-loan": {
       logicalId: "display-blog-top-business-loan",
       page: "blog-business-loan",
       adUnit: `${BASE_PATH}/cashloanplatform_display_blogtop`,
-      // "fluid" fills the container (page column) width on every device;
-      // fixed sizes remain the fallback when the response is not fluid.
-      sizes: [
-        [440, 250],
-        [300, 250],
-        [250, 250],
-        "fluid",
-      ],
+      sizes: [[440, 250], [300, 250], [250, 250]],
     },
     "display-blog-top-payday-loan": {
       logicalId: "display-blog-top-payday-loan",
       page: "blog-payday-loan",
       adUnit: `${BASE_PATH}/cashloanplatform_display_blogtop`,
-      // "fluid" fills the container (page column) width on every device;
-      // fixed sizes remain the fallback when the response is not fluid.
-      sizes: [
-        [440, 250],
-        [300, 250],
-        [250, 250],
-        "fluid",
-      ],
+      sizes: [[440, 250], [300, 250], [250, 250]],
     },
     "display-blog-top-home-loan": {
       logicalId: "display-blog-top-home-loan",
       page: "blog-home-loan",
       adUnit: `${BASE_PATH}/cashloanplatform_display_blogtop`,
-      // "fluid" fills the container (page column) width on every device;
-      // fixed sizes remain the fallback when the response is not fluid.
-      sizes: [
-        [440, 250],
-        [300, 250],
-        [250, 250],
-        "fluid",
-      ],
+      sizes: [[440, 250], [300, 250], [250, 250]],
     },
     "display-blog-top-gold-loan": {
       logicalId: "display-blog-top-gold-loan",
       page: "blog-gold-loan",
       adUnit: `${BASE_PATH}/cashloanplatform_display_blogtop`,
-      // "fluid" fills the container (page column) width on every device;
-      // fixed sizes remain the fallback when the response is not fluid.
-      sizes: [
-        [440, 250],
-        [300, 250],
-        [250, 250],
-        "fluid",
-      ],
+      sizes: [[440, 250], [300, 250], [250, 250]],
     },
   };
 
@@ -435,7 +362,10 @@
   window.AdConfig = {
     enabled: true,
     debug: false,
+    // All page slots exist before the first SRA request.
     settings: { singleRequest: true, disableInitialLoad: false },
+    release: "20260923-1",
+    displayLayout: { maxColumnWidth: 480, horizontalGutter: 40 },
     getPageKey: function () {
       var name =
         location.pathname

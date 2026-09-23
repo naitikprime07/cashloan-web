@@ -1,3 +1,5 @@
+> Historical report. The 2026-09-23 audit and release `20260923-1` in [AD-CONFIGURATION.md](AD-CONFIGURATION.md) supersede implementation and serving conclusions below. Earlier observations are not current test results.
+
 # Flow-page ads switched to fluid-only - release 20260922-12 (2026-09-22)
 
 User requirement (repeat report): the display ad above each Next button was still rendering at ~300px on mobile instead of the button's width. Root cause: the client already requested `fluid` alongside fixed sizes, but GAM served a fixed 300x250 banner creative, which renders at its natural centered size - a slot can never widen a fixed creative without distortion.

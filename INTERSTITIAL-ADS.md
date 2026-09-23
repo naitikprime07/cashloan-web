@@ -1,3 +1,5 @@
+> Historical report. The 2026-09-23 audit and release `20260923-1` in [AD-CONFIGURATION.md](AD-CONFIGURATION.md) supersede implementation and serving conclusions below. Earlier observations are not current test results.
+
 # Native interstitials
 
 The current implementation is owned by `js/ad-manager.js`, using static `AdConfig` in `js/ad-config.js`. `js/interstitial-ad.js` is only a compatibility entry point.

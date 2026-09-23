@@ -128,11 +128,13 @@ body {
   color: var(--faint);
 }
 
-/* ---------- Loan controls, rectangle and Next stay in normal flow ---------- */
+/* ---------- First viewport: Next at the bottom, details below the fold ---------- */
 .screen {
   position: relative;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
+  min-height: 100dvh;
   padding: clamp(84px, 11vh, 96px) 20px calc(16px + env(safe-area-inset-bottom));
 }
 
@@ -179,6 +181,13 @@ body {
 .inline-ad-container {
   margin: 12px auto 16px;
   min-height: 250px;
+}
+
+/* Use spare vertical space above the ad, keeping ad and Next together.
+   Short screens and tall fluid creatives can grow the section and scroll. */
+.screen > .inline-ad-container {
+  margin-top: auto;
+  padding-top: 12px;
 }
 
 .blog-top-ad-container {

@@ -20,36 +20,41 @@
       logicalId: "display-dropdown-next-index",
       page: "index",
       adUnit: `${BASE_PATH}/cashloanplatform_native_in_content_01`,
-      // Confirmed native/fluid inventory: use the full content width.
-      sizes: ["fluid"],
+      // Square inventory only (no leaderboard strips): fluid is preferred and
+      // 300x250/300x300 fill; ad-manager scales the creative to the button width.
+      sizes: ["fluid", [300, 250], [300, 300]],
     },
     "display-dropdown-next-loan-amount": {
       logicalId: "display-dropdown-next-loan-amount",
       page: "loan-amount",
       adUnit: `${BASE_PATH}/cashloanplatform_native_in_content_02`,
-      // Confirmed native/fluid inventory: use the full content width.
-      sizes: ["fluid"],
+      // Square inventory only (no leaderboard strips): fluid is preferred and
+      // 300x250/300x300 fill; ad-manager scales the creative to the button width.
+      sizes: ["fluid", [300, 250], [300, 300]],
     },
     "display-dropdown-next-employment-type": {
       logicalId: "display-dropdown-next-employment-type",
       page: "employment-type",
       adUnit: `${BASE_PATH}/cashloanplatform_native_in_content_03`,
-      // Confirmed native/fluid inventory: use the full content width.
-      sizes: ["fluid"],
+      // Square inventory only (no leaderboard strips): fluid is preferred and
+      // 300x250/300x300 fill; ad-manager scales the creative to the button width.
+      sizes: ["fluid", [300, 250], [300, 300]],
     },
     "display-dropdown-next-loan-type": {
       logicalId: "display-dropdown-next-loan-type",
       page: "loan-type",
       adUnit: `${BASE_PATH}/cashloanplatform_native_in_content_04`,
-      // Confirmed native/fluid inventory: use the full content width.
-      sizes: ["fluid"],
+      // Square inventory only (no leaderboard strips): fluid is preferred and
+      // 300x250/300x300 fill; ad-manager scales the creative to the button width.
+      sizes: ["fluid", [300, 250], [300, 300]],
     },
     "display-dropdown-next-proceed": {
       logicalId: "display-dropdown-next-proceed",
       page: "proceed",
       adUnit: `${BASE_PATH}/cashloanplatform_native_in_content_05`,
-      // Confirmed native/fluid inventory: use the full content width.
-      sizes: ["fluid"],
+      // Square inventory only (no leaderboard strips): fluid is preferred and
+      // 300x250/300x300 fill; ad-manager scales the creative to the button width.
+      sizes: ["fluid", [300, 250], [300, 300]],
     },
     "display-blog-top-blogs": {
       logicalId: "display-blog-top-blogs",
@@ -364,7 +369,7 @@
     debug: false,
     // All page slots exist before the first SRA request.
     settings: { singleRequest: true, disableInitialLoad: false },
-    release: "20260923-3",
+    release: "20260923-6",
     displayLayout: { maxColumnWidth: 480, horizontalGutter: 40 },
     getPageKey: function () {
       var name =

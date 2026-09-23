@@ -23,8 +23,9 @@ STUB = r"""
   let size = null;
   if (!empty && !slot.format) {
    const fluid = slot.sizes.length === 1 && slot.sizes[0] === 'fluid';
-   const entry = !fluid && slot.mapping.find(m => innerWidth >= m[0][0]);
-   size = fluid ? 'fluid' : entry && entry[1][0];
+   const fallback = slot.sizes.find(s => s !== 'fluid') || null;
+   const entry = !fluid && slot.mapping && slot.mapping.find(m => innerWidth >= m[0][0]);
+   size = fluid ? 'fluid' : entry ? entry[1][0] : fallback;
    if (!size) throw Error('No fitting mapping');
    const creative = document.createElement('div');
    creative.setAttribute('data-test-creative','true');

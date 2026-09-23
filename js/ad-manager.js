@@ -56,11 +56,18 @@
   }
   function displaySizes(record) {
     var configured = record.config.sizes;
-    if (Array.isArray(configured) && configured.length === 1 && configured[0] === "fluid") {
-      // Native fluid creatives size themselves to the publisher container.
-      // Do not apply fixed rectangle breakpoints or resize Google's iframe.
-      record.sizes = ["fluid"];
+    if (Array.isArray(configured) && configured.indexOf("fluid") !== -1) {
+      // Fluid is requested first so a native creative renders full width.
+      // Fixed rectangles listed alongside stay servable; fitRecord() scales
+      // whichever fixed creative fills so it matches the Next button width.
+      if (!configured.every(function (size) {
+        return size === "fluid" || (Array.isArray(size) && size.length === 2 && size.every(function (value) {
+          return Number.isInteger(value) && value > 0;
+        }));
+      })) throw new Error("invalid-fixed-sizes");
+      record.sizes = configured.slice();
       record.mapping = null;
+      record.fitToWidth = true;
       return;
     }
     if (!Array.isArray(configured) || !configured.length || !configured.every(function (size) {
@@ -80,6 +87,51 @@
       return [[size[0] + layout.horizontalGutter, 0], configured.filter(function (candidate) { return candidate[0] <= size[0]; })];
     });
     record.mapping.push([[0, 0], []]);
+  }
+  function fitRecord(record) {
+    var element = record.element;
+    if (!element || !record.fitToWidth) return;
+    if (Array.isArray(record.renderedSize) && record.renderedSize[0] === "fluid") {
+      // A true fluid creative sizes itself to the container; nothing to scale.
+      element.style.removeProperty("height");
+      element.style.removeProperty("overflow");
+      return;
+    }
+    var frame = element.querySelector("iframe, [data-test-creative]");
+    if (!frame) return;
+    // GPT expandable creatives stamp viewport-sizing styles (negative margins,
+    // viewport max-widths, inline widths) onto the slot div. The publisher
+    // content column must own the layout, so override them with !important.
+    element.style.setProperty("width", "100%", "important");
+    element.style.setProperty("max-width", "100%", "important");
+    element.style.setProperty("margin-left", "0px", "important");
+    element.style.setProperty("margin-right", "0px", "important");
+    var naturalW = frame.offsetWidth || (record.renderedSize && record.renderedSize[0]) || 0;
+    var naturalH = frame.offsetHeight || (record.renderedSize && record.renderedSize[1]) || 0;
+    var targetW = element.clientWidth || element.getBoundingClientRect().width;
+    if (!naturalW || !naturalH || !targetW) return;
+    var scale = targetW / naturalW;
+    frame.style.display = "block";
+    frame.style.marginLeft = "0";
+    frame.style.marginRight = "0";
+    frame.style.width = naturalW + "px";
+    frame.style.height = naturalH + "px";
+    frame.style.transformOrigin = "0 0";
+    frame.style.transform = "scale(" + scale + ")";
+    // Keep the reserved footprint for short creatives via the CSS min-height.
+    element.style.overflow = "hidden";
+    element.style.height = Math.round(naturalH * scale) + "px";
+    // Square creatives on narrow phones can render shorter than the 250px
+    // floor; center the scaled frame in the reserved box instead of hugging
+    // the top edge.
+    var boxH = element.offsetHeight;
+    frame.style.marginTop = Math.max(0, Math.round((boxH - naturalH * scale) / 2)) + "px";
+  }
+  function scheduleFit(record) {
+    requestAnimationFrame(function () { fitRecord(record); });
+  }
+  function refitAll() {
+    records.forEach(function (r) { if (r.fitToWidth && r.state === "RENDERED") fitRecord(r); });
   }
   function destroyRecord(record) {
     clearTimeout(record.timer);
@@ -171,8 +223,9 @@
         log("slotRenderEnded", r.id, { isEmpty: e.isEmpty, size: e.size, responseIdentifier: r.responseIdentifier });
         state(r, e.isEmpty ? "NO_FILL" : "RENDERED");
         if (r.kind === "anchor") reserveAnchor(e.isEmpty ? 0 : Math.max(50, (e.size || [0, 50])[1]) + 30);
+        if (!e.isEmpty && r.fitToWidth) { fitRecord(r); scheduleFit(r); }
       });
-      listen("slotOnload", function (r) { r.onload = true; log("slotOnload", r.id); });
+      listen("slotOnload", function (r) { r.onload = true; if (r.fitToWidth) scheduleFit(r); log("slotOnload", r.id); });
       listen("impressionViewable", function (r) { r.viewable = true; log("impressionViewable", r.id); });
       // All DOM containers and all definitions precede services and the first SRA display.
       records.forEach(define);
@@ -210,6 +263,8 @@
     records.forEach(destroyRecord);
     listeners.forEach(function (pair) { googletag.pubads().removeEventListener(pair[0], pair[1]); });
     listeners = [];
+    clearTimeout(fitTimer);
+    window.removeEventListener("resize", onResize);
     document.removeEventListener("click", onClick, true);
   }
   function onClick(e) {
@@ -226,6 +281,9 @@
     log("eligible-link-click", interstitialId, { trigger: id, targetPage: destination.pathname });
   }
   document.addEventListener("click", onClick, true);
+  var fitTimer = null;
+  function onResize() { clearTimeout(fitTimer); fitTimer = setTimeout(refitAll, 150); }
+  window.addEventListener("resize", onResize);
   window.addEventListener("pagehide", function (e) {
     log("pagehide", interstitialId, { persisted: e.persisted });
     if (!e.persisted) destroy();
